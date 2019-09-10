@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="gbk" />
+<meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="author" content="Tencent-CP" />
 <meta name="format-detection" content="telephone=no" />
@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <meta name="Description" content="" />
 <meta name="Keywords" content="" />
-<!-- Éè¼Æ£ºcp  | ÖØ¹¹£ºcp | ´´½¨£º2017/05/03 | ¸üĞÂ£º| ÍÅ¶Ó²©¿Í£ºhttp://tgideas.qq.com/ -->
+<!-- è®¾è®¡ï¼šcp  | é‡æ„ï¼šcp | åˆ›å»ºï¼š2017/05/03 | æ›´æ–°ï¼š| å›¢é˜Ÿåšå®¢ï¼šhttp://tgideas.qq.com/ -->
 <title></title>
 <script>
 function AutoPage(){ 
@@ -52,14 +52,18 @@ a {text-decoration:none;}
 .pa {position:absolute;}
 .db {display:block;text-indent:-999em;}
 
-header,footer {width:100%;margin:0 auto;}
-footer {width: 100%;background-color: #4c4c4c;line-height: 0.3rem;color: #f0f1f2;text-align: center;font-size: 0.2rem;padding:0.2rem 0;}
+body,html{background-color: #f0e9e5;overflow-x: hidden;width: 100%;}
+header,#afooter {width:100%;margin:0 auto;}
+/*footer*/
+#afooter{text-align:center;font-size:0.2rem;line-height:0.4rem;color:#fff;background-color: #000;padding: 0.1rem 0;}
+#afooter a{color: #fff;}
+.listflex{display: flex;display: -webkit-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;justify-content: space-between;-webkit-justify-content: space-between;}
 
-/*********************Êú°æ********************/
+/*********************ç«–ç‰ˆ********************/
 .portrait header{}
 
 
-/*********************ºá°æ********************/
+/*********************æ¨ªç‰ˆ********************/
 .landscape header{}
 		
 		
@@ -70,7 +74,7 @@ footer {width: 100%;background-color: #4c4c4c;line-height: 0.3rem;color: #f0f1f2
 <div class="wrap">
 	<header>
 		  <h1 class="hide"></h1>
-		  <a href="javascript:;" title="ÏÂÔØÓÎÏ·" class="btn-down sp db"  ontouchend="PTTSendClick('btn','download','ÏÂÔØÓÎÏ·');">ÏÂÔØÓÎÏ·</a>
+		  <a href="javascript:;" title="ä¸‹è½½æ¸¸æˆ" class="btn-down sp db"  ontouchend="PTTSendClick('btn','download','ä¸‹è½½æ¸¸æˆ');">ä¸‹è½½æ¸¸æˆ</a>
 	</header>
 	<div class="main">
            
@@ -80,16 +84,16 @@ footer {width: 100%;background-color: #4c4c4c;line-height: 0.3rem;color: #f0f1f2
 <script src="http://game.gtimg.cn/images/js/2018foot/foot.js"></script>
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script>
-//´Ë¶Î´úÂë²»ÄÜ·Åµ½ÍâÁ´JSÖĞ£¬
-var setSite={ //ÉèÖÃÍøÕ¾ÊôĞÔ
- siteType:"axxxxxxxx", //±ØÌîÏî:"os"´ú±íÊÇ¹ÙÍø£¬Èç¹û²»ÊÇ£¬ÔòÌîĞ´actNameÀıÈça20160701xxx
- pageType:"index", //±ØÌîÏî:±¾Ò³ÃæµÄ¶¨Î»£»°´ÕÕÒ³Ãæº¬ÒåÌîĞ´ÀıÈçmain||list||detail||download||share||page1||pageN
- pageName:"Ê×Ò³", //±ØÌîÏî:Ò³ÃæÖĞÎÄÃû
- osact:0, //Ñ¡ÌîÏî:ÊÇ·ñÊÇ¹ÙÍø×¨Ìâ(ÔÚ¹ÙÍøÔËÓªµÄ×¨Ìâ)boolean£»Ä¬ÈÏÊÇ0£»¿ÉÒÔÔÚÁ´½ÓÉÏ¼ÓÈë²ÎÊıosact=1À´Áé»îÉèÖÃ
- ingame:0, //Ñ¡ÌîÏî:ÊÇ·ñÍ¶·ÅÔÚÓÎÏ·APPÄÚboolean£»Ä¬ÈÏÊÇ0£»¿ÉÒÔÔÚÁ´½ÓÉÏ¼ÓÈë²ÎÊıingame=1À´Áé»îÉèÖÃ
- stayTime:0 //Ñ¡ÌîÏî:ÊÇ·ñĞèÒªÍ³¼ÆÍ£ÁôÊ±³¤boolean£»Ä¬ÈÏÊÇ0
+//æ­¤æ®µä»£ç ä¸èƒ½æ”¾åˆ°å¤–é“¾JSä¸­ï¼Œ
+var setSite={ //è®¾ç½®ç½‘ç«™å±æ€§
+ siteType:"axxxxxxxx", //å¿…å¡«é¡¹:"os"ä»£è¡¨æ˜¯å®˜ç½‘ï¼Œå¦‚æœä¸æ˜¯ï¼Œåˆ™å¡«å†™actNameä¾‹å¦‚a20160701xxx
+ pageType:"index", //å¿…å¡«é¡¹:æœ¬é¡µé¢çš„å®šä½ï¼›æŒ‰ç…§é¡µé¢å«ä¹‰å¡«å†™ä¾‹å¦‚main||list||detail||download||share||page1||pageN
+ pageName:"é¦–é¡µ", //å¿…å¡«é¡¹:é¡µé¢ä¸­æ–‡å
+ osact:0, //é€‰å¡«é¡¹:æ˜¯å¦æ˜¯å®˜ç½‘ä¸“é¢˜(åœ¨å®˜ç½‘è¿è¥çš„ä¸“é¢˜)booleanï¼›é»˜è®¤æ˜¯0ï¼›å¯ä»¥åœ¨é“¾æ¥ä¸ŠåŠ å…¥å‚æ•°osact=1æ¥çµæ´»è®¾ç½®
+ ingame:0, //é€‰å¡«é¡¹:æ˜¯å¦æŠ•æ”¾åœ¨æ¸¸æˆAPPå†…booleanï¼›é»˜è®¤æ˜¯0ï¼›å¯ä»¥åœ¨é“¾æ¥ä¸ŠåŠ å…¥å‚æ•°ingame=1æ¥çµæ´»è®¾ç½®
+ stayTime:0 //é€‰å¡«é¡¹:æ˜¯å¦éœ€è¦ç»Ÿè®¡åœç•™æ—¶é•¿booleanï¼›é»˜è®¤æ˜¯0
 }
-if(typeof(pgvMain)=='function')pgvMain();//Ç§Íò²»ÄÜÍü¼Ç£¡
+if(typeof(pgvMain)=='function')pgvMain();//åƒä¸‡ä¸èƒ½å¿˜è®°ï¼
 </script>
 </body>
 </html>
