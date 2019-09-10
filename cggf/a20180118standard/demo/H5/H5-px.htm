@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="gbk" />
+<meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="author" content="Tencent-CP" />
 <meta name="format-detection" content="telephone=no" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<meta name="Description" content="ÕâÀïÊÇ¹Ø¼ü×Ö">
-<meta name="Keywords" content="ÕâÀïÊÇ¹Ø¼ü×Ö" />
+<meta name="Description" content="è¿™é‡Œæ˜¯å…³é”®å­—">
+<meta name="Keywords" content="è¿™é‡Œæ˜¯å…³é”®å­—" />
 <title></title>
 <style>
 /* reset */
@@ -35,7 +35,7 @@ a,em,i,b{color: inherit;font-style: inherit;font-weight: inherit;_font-style: no
 .fr{float: right;}
 .mc{margin: 0 auto;}
 
-/*Ç¿ÖÆÊúÆÁÑùÊ½*/
+/*å¼ºåˆ¶ç«–å±æ ·å¼*/
 .w_pop{position:fixed;left:0;top:0;width: 100%;height: 100%;background: rgba(0,0,0,1);z-index:9999;display: none;}
 .w_pop_img{width:150px;height:99px;background: url(//game.gtimg.cn/images/yxzj/cp/a20180119hdcj/scape.png) no-repeat;background-size: 150px 99px;position: absolute;left: 50%;margin-left:-75px;top: 50%;margin-top: -50px; animation:rotateA 1.5s ease infinite alternate;}
 @keyframes rotateA{
@@ -69,12 +69,12 @@ footer {width: 100%;background-color: #4c4c4c;line-height: 20px;color: #f0f1f2;t
 <body>
 <div class="w_pop">
     <div class="w_pop_img"></div>
-    <p class="w_tips">ÎªÁË¸üºÃµÄÌåÑé£¬Çë½«ÊÖ»ú/Æ½°åÊúÆğ</p>
+    <p class="w_tips">ä¸ºäº†æ›´å¥½çš„ä½“éªŒï¼Œè¯·å°†æ‰‹æœº/å¹³æ¿ç«–èµ·</p>
 </div>
 <div class="wrap">
 	<header>
 		 <h1 class="hide"></h1>
-		 <a href="javascript:;" title="ÏÂÔØÓÎÏ·" class="btn-down sp db"  ontouchend="PTTSendClick('btn','download','ÏÂÔØÓÎÏ·');">ÏÂÔØÓÎÏ·</a>
+		 <a href="javascript:;" title="ä¸‹è½½æ¸¸æˆ" class="btn-down sp db"  ontouchend="PTTSendClick('btn','download','ä¸‹è½½æ¸¸æˆ');">ä¸‹è½½æ¸¸æˆ</a>
 	</header>
 	<div class="main">
            
@@ -100,16 +100,16 @@ window.onresize=function(){
 </script>
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script>
-//´Ë¶Î´úÂë²»ÄÜ·Åµ½ÍâÁ´JSÖĞ£¬
-var setSite={ //ÉèÖÃÍøÕ¾ÊôĞÔ
- siteType:"axxxxxxxx", //±ØÌîÏî:"os"´ú±íÊÇ¹ÙÍø£¬Èç¹û²»ÊÇ£¬ÔòÌîĞ´actNameÀıÈça20160701xxx
- pageType:"index", //±ØÌîÏî:±¾Ò³ÃæµÄ¶¨Î»£»°´ÕÕÒ³Ãæº¬ÒåÌîĞ´ÀıÈçmain||list||detail||download||share||page1||pageN
- pageName:"Ê×Ò³", //±ØÌîÏî:Ò³ÃæÖĞÎÄÃû
- osact:0, //Ñ¡ÌîÏî:ÊÇ·ñÊÇ¹ÙÍø×¨Ìâ(ÔÚ¹ÙÍøÔËÓªµÄ×¨Ìâ)boolean£»Ä¬ÈÏÊÇ0£»¿ÉÒÔÔÚÁ´½ÓÉÏ¼ÓÈë²ÎÊıosact=1À´Áé»îÉèÖÃ
- ingame:0, //Ñ¡ÌîÏî:ÊÇ·ñÍ¶·ÅÔÚÓÎÏ·APPÄÚboolean£»Ä¬ÈÏÊÇ0£»¿ÉÒÔÔÚÁ´½ÓÉÏ¼ÓÈë²ÎÊıingame=1À´Áé»îÉèÖÃ
- stayTime:0 //Ñ¡ÌîÏî:ÊÇ·ñĞèÒªÍ³¼ÆÍ£ÁôÊ±³¤boolean£»Ä¬ÈÏÊÇ0
+//æ­¤æ®µä»£ç ä¸èƒ½æ”¾åˆ°å¤–é“¾JSä¸­ï¼Œ
+var setSite={ //è®¾ç½®ç½‘ç«™å±æ€§
+ siteType:"axxxxxxxx", //å¿…å¡«é¡¹:"os"ä»£è¡¨æ˜¯å®˜ç½‘ï¼Œå¦‚æœä¸æ˜¯ï¼Œåˆ™å¡«å†™actNameä¾‹å¦‚a20160701xxx
+ pageType:"index", //å¿…å¡«é¡¹:æœ¬é¡µé¢çš„å®šä½ï¼›æŒ‰ç…§é¡µé¢å«ä¹‰å¡«å†™ä¾‹å¦‚main||list||detail||download||share||page1||pageN
+ pageName:"é¦–é¡µ", //å¿…å¡«é¡¹:é¡µé¢ä¸­æ–‡å
+ osact:0, //é€‰å¡«é¡¹:æ˜¯å¦æ˜¯å®˜ç½‘ä¸“é¢˜(åœ¨å®˜ç½‘è¿è¥çš„ä¸“é¢˜)booleanï¼›é»˜è®¤æ˜¯0ï¼›å¯ä»¥åœ¨é“¾æ¥ä¸ŠåŠ å…¥å‚æ•°osact=1æ¥çµæ´»è®¾ç½®
+ ingame:0, //é€‰å¡«é¡¹:æ˜¯å¦æŠ•æ”¾åœ¨æ¸¸æˆAPPå†…booleanï¼›é»˜è®¤æ˜¯0ï¼›å¯ä»¥åœ¨é“¾æ¥ä¸ŠåŠ å…¥å‚æ•°ingame=1æ¥çµæ´»è®¾ç½®
+ stayTime:0 //é€‰å¡«é¡¹:æ˜¯å¦éœ€è¦ç»Ÿè®¡åœç•™æ—¶é•¿booleanï¼›é»˜è®¤æ˜¯0
 }
-if(typeof(pgvMain)=='function')pgvMain();//Ç§Íò²»ÄÜÍü¼Ç£¡
+if(typeof(pgvMain)=='function')pgvMain();//åƒä¸‡ä¸èƒ½å¿˜è®°ï¼
 </script>	
 </body>
 </html>
