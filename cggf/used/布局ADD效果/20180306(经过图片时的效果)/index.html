@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;font-weight: normal;}
+body{-webkit-text-size-adjust:none; font-size: 0.24rem;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong{font-weight:normal;font-style:normal;}
+a {text-decoration:none;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db {display:block;text-indent:-999em;}
+img{display: block;border: none;}
+:focus {outline: none;}
+.wrap{width: 100%;height:100%;overflow: hidden;}
+
+
+
+.list li{float: left;display: inline;width: 353px;height: 420px;overflow: hidden;margin-left: 20px;}
+.sbox{height: 100%; width: 100%; margin: auto;overflow: visible;position: relative;}
+.list li .sboxh{display:block;width: 100%;height: 100%;background: url(ossweb-img/v1.jpg) no-repeat;opacity: 1;transition: all 0.5s ease 0s;}
+.list li:hover .list li .sboxh {opacity: 0.3;}
+.sboxh:hover {opacity: 1;}
+.sboxh img{transform: scale(1, 1);transition: all 1.2s ease 0s;}
+.sboxh:hover img { opacity: 0;transform: scale(1.2, 1.2);}
+.sboxh span{display: block;position: absolute;transition: all 0.7s ease 0s;}
+/**/
+.lline{left:0;top:0;width:5px;background:#fcc400;height: 0;}
+.tline{left:0;top:0;height:5px;background:#fcc400;width: 0;}
+.rline{right:0;bottom:0;width:5px;background:#fcc400;height: 0;}
+.bline{right:0;bottom:0;height:5px;background:#fcc400;width: 0;}
+.sboxh:hover .lline {height: 100%;}
+.sboxh:hover .tline {width: 100%;}
+.sboxh:hover .rline {height: 100%;}
+.sboxh:hover .bline {width: 100%;}
+		</style>
+	</head>
+	<body>
+		<ul class="list c">
+			<li>
+				<div class="sbox">
+					<a href="javascript:;"class="sboxh">
+						<img src="ossweb-img/v1.jpg" alt="" />
+						<span class="lline"></span>
+						<span class="tline"></span>
+						<span class='rline'></span>
+						<span class="bline"></span>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="sbox">
+					<a href="javascript:;"class="sboxh">
+						<img src="ossweb-img/v1.jpg" alt="" />
+						<span class="lline"></span>
+						<span class="tline"></span>
+						<span class='rline'></span>
+						<span class="bline"></span>
+					</a>
+				</div>
+			</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>

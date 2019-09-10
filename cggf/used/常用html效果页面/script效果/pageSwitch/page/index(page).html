@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+			}
+			body{
+				position: relative;
+			}
+			.content{
+				width: 100%;
+				height: 846px;
+			}
+			.content li{
+				width: 100%;
+				height: 100%;
+				display: none;
+			}
+			.content .show{
+				display: block;
+			}
+			.section1{
+				background: yellow;
+			}
+			.section2{
+				background: red;
+			}
+			.section3{
+				background: blue;
+			}
+			.section4{
+				background: black;
+			}
+			.section5{
+				background: pink;
+			}
+			.section6{
+				background: purple;
+			}
+			.section7{
+				background: green;
+			}
+			/*左右按钮*/
+			.btn_next{
+				display: block;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				left: 0;
+				top: 50px;
+				background: #FFFFFF;
+			}
+			.btn_pre{
+				display: block;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				right: 0;
+				top: 50px;
+				background: #FFFFFF;
+			}
+			/*侧导航*/
+			.nav-box{
+				position: fixed;
+				right: 20px;
+				top: 200px;
+				background: #034674;
+				width: 30px;
+				height: 217px;
+			}
+			.nav-box li{
+				width: 100%;
+				height: 30px;
+				border-bottom: 1px solid #FFFFFF;
+			}
+			.nav-box li a{
+				display: block;
+				width: 100%;
+				height: 100%;
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="content"class="content">
+			<li class="section1 show">1</li>
+			<li class="section2">2</li>
+			<li class="section3">3</li>
+			<li class="section4">4</li>
+			<li class="section5">5</li>
+			<li class="section6">6</li>
+			<li class="section7">7</li>
+		</ul>
+		<!--左右按钮-->
+		<a href="javascript:;"class="btn_next"><</a>
+		<a href="javascript:;"class="btn_pre">></a>
+		<!--侧导航-->
+		<ul class="nav-box">
+			<li class="">
+				<a href="javascript:;">1</a>
+			</li>
+			<li>
+				<a href="javascript:;">2</a>
+			</li>
+			<li>
+				<a href="javascript:;">3</a>
+			</li>
+			<li>
+				<a href="javascript:;">4</a>
+			</li>
+			<li>
+				<a href="javascript:;">5</a>
+			</li>
+			<li>
+				<a href="javascript:;">6</a>
+			</li>
+			<li>
+				<a href="javascript:;">7</a>
+			</li>
+		</ul>
+		<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+		<script src="pageSwitch.js"></script>
+		<!--    http://www.internetke.com/tutorial/html5/2015/0729/1648.html       用法-->
+		<script>
+			var reg = location.search.match(/ts=([^&]*)/),
+                ts = reg && reg[1] || 'scrollX',
+                pw = new pageSwitch('content', {
+	                duration: 500,
+	                start: 0,
+	                direction: 1,
+	                loop: false,
+	                ease: 'ease',
+	                transition: ts,
+	                mouse: true,
+	                mousewheel: true,
+	                arrowkey: true
+                });
+                $('.btn_next').click(function () {// 左边按钮点击
+                    pw.next();
+                    return false;
+                });
+                $('.btn_pre').click(function () {// 右边按钮点击
+                    pw.prev();
+                    return false;
+                });
+                //导航点击滚动
+//              function mafun(n){ 
+//                      $('.nav-box a').eq(n).removeClass('on');
+//                      $('.nav-box a').eq(n).click(function () {
+//                          alert('敬请期待')
+//                      });
+//                      return false;
+//              };
+                $('.nav-box a').each(function (i) {
+                        $(this).click(function () {
+                            pw.slide(i);
+                            return false;
+                        });
+                    });
+//              var dj=document.getElementsByClassName("on");
+//              for(var i=0;i<dj.length;i++){
+//              	dj[i].index=i;
+//              	dj[i].onclick=function(){
+//              		for(var i=0;i<dj.length;i++){
+//              			dj[i].style.backgroundPosition="-138px -47px";
+//              			dj[this.index].style.backgroundPosition="-208px -47px";
+//              			dj[i].style.color="#6f6764";
+//              			dj[this.index].style.color="#b05e47";
+//              		}
+//              	}
+//              }
+
+		</script>
+	</body>
+</html>

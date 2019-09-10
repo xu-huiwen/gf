@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="format-detection" content="telephone=no" />
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-CP" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title></title>
+<!-- 页面设计：cp | 页面制作：cp | 创建：2016-05-26 -->
+<style>
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure{ margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline }
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ display:block }
+ol,ul{  list-style: none }
+html,body{ height: 100%;}
+body{  background:#fff; font-family:"\5FAE\8F6F\96C5\9ED1";height: 100%;
+ color:#333; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; 
+ -webkit-touch-callout: none; -webkit-user-select: text; -webkit-touch-callout: none;  word-break: break-all; word-wrap: break-word;}
+h1,h2,h3,h4,h5,h6{ font-weight: normal }
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{  font-weight: inherit }
+input,select,form,img { vertical-align:middle; outline:none; }
+a, button, input, select, textarea, a:focus, button:focus, input:focus, select:focus, textarea:focus, [onclick] {outline: 0;  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+a {-webkit-touch-callout: none; text-decoration: none; color: #333;outline: 0; }
+.c:before,.c:after {content:"";display:table}
+.c:after {clear:both}
+.c {zoom:1}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db{display:block;text-indent:-999px;}
+.wrap{ width: 100%;}
+.body_wrap{ width: 100%;display: none;}
+.fl{ float: left;}
+.fr{ float: right;}
+</style>
+</head>
+<body>
+<div class="wrap" >
+	<div id="body_wrap"class="body_wrap">
+	 	<div class="head"></div>
+	 	<div class="content"></div>
+		<footer>腾讯公司保留在法律规定范围内对上述规则进行解释权利</footer>
+	</div>
+</div>
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script>
+/*PX自适应*/
+var 
+	winh=$(window).height(),
+	winw=$(window).width(),
+	scale=winw/375;
+var showPage = function() {
+	$('#body_wrap').fadeIn();
+	$('body').css({
+		'overflow-y':'auto',
+		'overflow-x':'hidden'
+	});
+	autoScale();
+}
+showPage();
+/*自适应*/
+function autoScale(){
+	$('#body_wrap').css({
+		'width':'375px',
+		'-webkit-transform':'scale('+scale+')',
+		'transform':'scale('+scale+')',
+		'-webkit-transform-origin':'0 0'
+	});
+	$('.loading').height(winh)
+}
+$(window).resize(function(){
+	winh=$(window).height();
+	winw=$(window).width();
+	scale=winw/375;
+	autoScale();
+});
+
+</script>
+<script src="http://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+ //此段代码不能放到外链JS中，
+ var setSite = { //设置网站属性
+ siteType: "", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName: "首页", //必填项:页面中文名
+ osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+ }
+ if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

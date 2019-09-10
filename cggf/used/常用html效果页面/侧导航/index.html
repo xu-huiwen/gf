@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			/*reset*/
+			body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+			table{border-collapse:collapse;border-spacing:0;}
+			address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+			ol,ul{list-style:none;}
+			caption,th{text-align:left;}
+			h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+			q:before,q:after{content:'';}
+			fieldset,img,abbr,acronym{border:0;}
+			.nav{
+			    width: 140px;
+			    height: 300px;
+			    position: fixed;
+			    right: 50%;
+			    margin-right: -780px;
+			    top: 100px;
+			    background: pink;
+			    display: none;
+			    z-index: 999;
+				*position:absolute;
+				*top:expression(eval(document.documentElement.scrollTop+50));
+			}
+			*html{
+				background-image:url(blank:about);
+			    background-attachment:absolute;
+			}
+			.box1{
+					height: 500px;
+					background: red;
+				}
+				.box2{
+					height: 500px;
+					background: orange;
+				}
+				.box3{
+					height: 500px;
+					background: blue;
+				}
+				.box4{
+					height: 500px;
+					background: green;
+				}
+				.box5{
+					height: 500px;
+					background: purple;
+				}
+				.box6{
+					height: 500px;
+					background: yellow;
+				}
+				.box7{
+					height: 500px;
+					background: black;
+				}
+		</style>
+	</head>
+	<body>
+		<!--内容-->
+		<ul>
+			<li class="box1"></li>
+			<li class="box2"></li>
+			<li class="box3"></li>
+			<li class="box4"></li>
+			<li class="box5"></li>
+			<li class="box6"></li>
+			<li class="box7"></li>
+		</ul>
+		<!--侧导航-->
+		<div class="nav"></div>
+		<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript">
+			//滑动到一定程度导航出现
+			$(window).on("scroll",function(){
+				if($(window).scrollTop()>=600){
+					$(".nav").fadeIn()
+				}
+				if($(window).scrollTop()<=50){
+					$(".nav").fadeOut()
+				}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			.content{width: 1000px;margin: 0 auto;padding-top: 100px;}
+			.lottery{width: 636px;height: 400px;margin: 0 auto;}
+			.list_lot{width: 100%;height: 100%;position: relative;-webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-o-transform-style: preserve-3d;-ms-transform-style: preserve-3d;transform-style: preserve-3d;-webkit-perspective: 1000px;-moz-perspective: 1000px;-o-perspective: 1000px;-ms-perspective: 1000px;perspective: 1000px;}
+			.list_lot li{position: absolute;display: inline-block;}
+			.list_lot .pos3{transform: translateX(0) translateZ(0) rotateY(0);transition: all linear 0.6s;z-index: 9;transition: all 0.3s;transition-delay: 0.2s;}
+			.list_lot .pos1{transform: translateX(-350px) translateZ(-200px) rotateY(30deg);transition: all linear 0.5s;}
+			.list_lot .pos2{transform: translateX(-220px) translateZ(-200px) rotateY(45deg);transition: all linear 0.5s;}
+			.list_lot .pos4{transform: translateX(220px) translateZ(-200px) rotateY(-45deg);transition: all linear 0.5s;}
+			.list_lot .pos5{transform: translateX(350px) translateZ(-200px) rotateY(-30deg);transition: all linear 0.5s;}
+			
+			.next{float: right;}
+			.prev{float: left;}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="lottery">
+				<ul class="list_lot">
+					<li class="pos1">
+						<a href="javascript:;">
+							<img src="ossweb-img/1/sl_pic1.png" width="636"/>
+						</a>
+					</li>
+					<li class="pos2">
+						<a href="javascript:;">
+							<img src="ossweb-img/1/sl_pic2.png" width="636"/>
+						</a>
+					</li>
+					<li class="pos3">
+						<a href="javascript:;">
+							<img src="ossweb-img/1/sl_pic3.png" width="636"/>
+						</a>
+					</li>
+					<li class="pos4">
+						<a href="javascript:;">
+							<img src="ossweb-img/1/sl_pic4.png" width="636"/>
+						</a>
+					</li>
+					<li class="pos5">
+						<a href="javascript:;">
+							<img src="ossweb-img/1/sl_pic5.png" width="636"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="">
+				<a href="javascript:;" class="next">next</a>
+				<a href="javascript:;" class="prev">prev</a>
+			</div>
+			
+		</div>
+		
+		<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script> 
+		<script>
+			var n=0;
+			var arrySort=[];
+			for (var i = 0; i < 5; i++) {
+				var posName='pos'+(i+1);
+				arrySort.push(posName)
+			};
+			$('.prev').on('click',function(){
+				var firstStr=arrySort[arrySort.length-1];
+				arrySort.pop();
+				arrySort.unshift(firstStr);
+				SingSort();
+				return false;
+			});
+		
+			$('.next').on('click',function(){
+				var firstStr=arrySort[0];
+				arrySort.shift();
+				arrySort.push(firstStr);
+				SingSort();
+				return false;
+			});
+			function SingSort(){
+				$('.list_lot li').each(function(){
+					var rest=$(this).index();
+					$(this).attr('class',arrySort[rest])
+				});
+			};
+			
+			
+			
+			
+		</script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

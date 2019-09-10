@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="Tencent-CP" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="Description" content="这里是关键字">
+<meta name="Keywords" content="这里是关键字" />
+<title></title>
+<script>
+function adaptVP(g){function j(){var b,a;return f.uWidth=g.uWidth?g.uWidth:640,f.dWidth=g.dWidth?g.dWidth:window.screen.width||window.screen.availWidth,f.ratio=window.devicePixelRatio?window.devicePixelRatio:1,f.userAgent=navigator.userAgent,f.bConsole=g.bConsole?g.bConsole:!1,g.mode?(f.mode=g.mode,void 0):(b=f.userAgent.match(/Android/i),b&&(f.mode="android-2.2",a=f.userAgent.match(/Android\s(\d+.\d+)/i),a&&(a=parseFloat(a[1])),2.2==a||2.3==a?f.mode="android-2.2":4.4>a?f.mode="android-dpi":a>=4.4&&(f.mode=f.dWidth>f.uWidth?"android-dpi":"android-scale")),void 0)}function i(){var l,k,b,a,n="",m=!1;switch(f.mode){case"apple":n="width="+f.uWidth+", user-scalable=no";break;case"android-2.2":g.dWidth||(f.dWidth=2==f.ratio?720:1.5==f.ratio?480:1==f.ratio?320:0.75==f.ratio?240:480),l=window.screen.width||window.screen.availWidth,320==l?f.dWidth=f.ratio*l:640>l&&(f.dWidth=l),f.mode="android-dpi",m=!0;case"android-dpi":k=160*f.uWidth/f.dWidth*f.ratio,n="target-densitydpi="+k+", width="+f.uWidth+", user-scalable=no",m&&(f.mode="android-2.2");break;case"android-scale":k=160*f.uWidth/f.dWidth*f.ratio;n="target-densitydpi="+k+", width="+f.uWidth+", user-scalable=no"}b=document.querySelector("meta[name='viewport']")||document.createElement("meta"),b.name 
+="viewport",b.content=n,a=document.getElementsByTagName("head"),a.length>0&&a[0].appendChild(b)}function h(){var b="";for(key in f){b+=key+": "+f[key]+"; "}alert(b)}if(g){var f={uWidth:0,dWidth:0,ratio:1,mode:"apple",userAgent:null,bConsole:!1};j(),i(),f.bConsole&&h()}}adaptVP({uWidth:640});	
+</script>
+<style>
+/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+body{font-family:"\5FAE\8F6F\96C5\9ED1",Helvetica;-webkit-text-size-adjust:none;font-size:12px;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong{font-weight:normal;font-style:normal;}
+a{text-decoration:none;}
+.hide{display:none;}
+.c:before,.c:after{content:"";display:table;}
+.c:after{clear:both;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.db{display:block;text-indent:-999em;}
+html,body,.wrap{background: #213960;width: 100%;}
+a,em,i,b{color: inherit;font-style: inherit;font-weight: inherit;_font-style: normal;_font-weight: normal;}
+.fl{float: left;}
+.fr{float: right;}
+
+.wrap{ width: 100%;}
+header,footer {width:100%;margin:0 auto;}
+footer {width: 100%;background-color: #4c4c4c;line-height: 30px; color: #f0f1f2;text-align: center;font-size: 20px;padding:20px 0;}
+
+
+</style>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		 <h1 class="hide"></h1>
+		 <a href="javascript:;" title="下载游戏" class="btn-down sp db"  ontouchend="PTTSendClick('btn','download','下载游戏');">下载游戏</a>
+	</header>
+	<div class="main">
+           
+	</div>
+</div>
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script src="http://game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+ siteType:"axxxxxxxx", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName:"首页", //必填项:页面中文名
+ osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>	
+</body>
+</html>

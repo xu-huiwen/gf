@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="《天涯明月刀》为国内首款定位于“电影网游”的作品，是由古龙版权委员会授权，腾讯北极光工作室研发的3D武侠题材MMORPG游戏，为武侠玩家悉心打造。电影网游新艺术，这就是武侠！"/>
+<meta name="Keywords" content="天涯明月刀,天涯明月刀ol,腾讯游戏,网游,腾讯网游,电影网游,武侠,武侠游戏,武侠网游,古龙,古龙改编,古龙游戏,游戏下载"/>
+<!-- 设计：cp  | 重构：cp | 创建：2017/12/14  -->
+<title>金装飒雪，暖冬扬纱-天涯明月刀官方网站-腾讯游戏-电影网游新艺术，这就是武侠</title>
+<style>
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+fieldset,img,abbr,acronym{border:0}
+
+/* footer */
+#footer_ied {text-align:center;font-size:12px;line-height:19px;color:#fefefe;background:url(ossweb-img/ft.jpg) no-repeat 50% 0;}
+.wrap_ied {margin:0 auto;padding:30px;width:940px}
+.wrap_ied a {color:#fefefe;}
+#footer_ied .e {font-size:10px;-webkit-text-size-adjust:none;}
+.ftop{margin-top: 3456px;}
+
+/* 页面样式 */
+.c:before,.c:after {content:"";display:table}
+.c:after {clear:both}
+.c {zoom:1}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;overflow-x: hidden;}
+a {text-decoration:none;overflow:hidden;}
+a:hover {text-decoration:none;}
+.wrap1,.wrap2,.wrap3,#footer_ied {width:100%;min-width:1200px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1202?'1200px':'');}
+.wrap1{background:url(ossweb-img/rp1.jpg) no-repeat 50% 0;}
+.wrap2{background: url(ossweb-img/rp2.jpg) no-repeat 50% 1457px;}
+.wrap3{background: url(ossweb-img/rp3.jpg) no-repeat 50% 2780px;}
+.container {width:1000px;margin:0 auto;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.fl{float: left;}
+.fr{float: right;}
+.db {display:block;text-indent:-999em;}
+.sp{background: url(ossweb-img/sp.png) no-repeat;}
+.mr{margin-right: 0 !important;}
+
+/*导航部分*/
+.blacktop,.blacktop a{color:#fff;text-decoration:none;}
+.blacktop,.blacktop_logo,.blacktop_btnavs .blacktop_bta{background-image:url(http://ossweb-img.qq.com/images/wuxia/picture/blacktop-spr.png);background-repeat:no-repeat;}
+.blacktop{position:relative;height:60px;width:100%;overflow:hidden;background-color:#000;background-position:0 0;background-repeat:repeat-x;z-index:999;box-shadow:0 2px 2px rgba(0,0,0,.3);}
+.blacktop_logo{position:absolute;top:50%;left:20px;width:100px;height:35px;margin:-15px 0 0;background-position:0 100%;text-indent:-9999px;}
+.blacktop_logo a{display:block;height:100%;text-indent:-9999px;}
+.blacktop_topsilder{float:right;}
+.blacktop_topsilder .logfrg{float:right;}
+.blacktop_topsilder .logstate{float:right;line-height:60px;}
+.blacktop_topsilder .logstate p span{color:#2fc3a3;margin-left:5px;font-weight:bold;}
+.blacktop_topsilder .logstate p a,.blacktop_topsilder .logstate .areainfo em{margin:0 5px;}
+.blacktop_topsilder .logined a:hover{color:#fff;}
+.blacktop_topsilder .logstate .dologout{color:#cfae69;}
+.blacktop_topsilder .logstate .bang:hover,.blacktop_topsilder .logstate .rebang:hover{color:#2FC3A3}
+.blacktop_btnavs{width:235px;*width:245px;padding:13px 10px 0;height:100%;float:right;overflow:hidden;*display:inline;}
+.blacktop_btnavs .blacktop_btnav{float:left;border:2px solid #2fc3a3;padding:0 15px;margin:0 0 0 10px;border-radius:15px;line-height:30px;}
+.blacktop_btnavs .blacktop_bta{display:block;padding:0 0 0 20px;font-size:13px;}
+.blacktop_btnavs .blacktop_tohome{background-position:-167px -75px;}
+.blacktop_btnavs .blacktop_toevent{background-position:-167px -135px;}
+.blacktop_btnavs .blacktop_bta:hover{color:#ececec;}
+.c_kj{position:absolute;left:-99999px;}
+/*head*/
+.head{background: url(ossweb-img/hd.jpg) no-repeat 50% 0;height: 851px;}
+.logo1{top: 90px;left: -53px;position: absolute;width: 187px;height: 62px;}
+/*content*/
+.content{background: url(ossweb-img/ct1.jpg) no-repeat 50% 0px;}
+.content1{background: url(ossweb-img/ct2.jpg) no-repeat 50% 1412px;}
+.list-nav li{float: left;margin-right: 10px;}
+.list-nav a{width: 326px;height: 102px;}
+.list-nav .btn-nav1{background-position: 0 0;}
+.list-nav .btn-nav2{background-position: -337px 0;}
+.list-nav .btn-nav3{background-position: -676px 0;}
+.list-nav .on .btn-nav1{background-position: 0 -1332px;}
+.list-nav .on .btn-nav2{background-position: -338px -1332px;}
+.list-nav .on .btn-nav3{background-position: -676px -1332px;}
+.ct-txt{background-position: 0 -146px;width: 1000px;height: 41px;text-align: center;color: #000000;font-size: 14px;margin-top: 30px;}
+
+.part1{padding-top: 53px;}
+.tit1{background-position: 0 -256px;width: 1000px;height: 58px;margin: 0 auto;}
+.list-tab1{margin-top: 30px;}
+.list-tab1 li{float: left;}
+.list-tab1 li a{height: 80px;}
+.list-tab1 .btn-wd{width: 522px;background-position:-1px -895px;}
+.list-tab1 .btn-dx{width: 546px;background-position: 0 -988px;margin-left: -68px;}
+.list-tab1 .on .btn-wd{background-position:-554px -893px;}
+.list-tab1 .on .btn-dx{background-position:-551px -985px;}
+.panes{background: url(ossweb-img/pic-bg1.jpg) no-repeat;width: 1000px;height: 549px;}
+.pane{display: none;}
+.pane1{height: 440px;display: none;padding-top: 28px;padding-left: 12px;}
+.list-tab2{padding-top: 9px;}
+.list-tab2 li{float: left;margin-right: 1px;}
+.list-tab2 li a{width: 124px;height: 72px;}
+.list-tab2 .btn-tb{background-position: -1px -1084px;}
+.list-tab2 .btn-sw{background-position:-127px -1084px;}
+.list-tab2 .btn-gb{background-position:-252px -1084px;}
+.list-tab2 .btn-tm{background-position:-377px -1084px;}
+.list-tab2 .btn-zw{background-position: -502px -1084px;}
+.list-tab2 .btn-tx{background-position: -627px -1084px;}
+.list-tab2 .btn-wg{background-position: -752px -1084px;}
+.list-tab2 .btn-sd{background-position: -877px -1084px;}
+
+.slides {width:704px;float: left;}
+.slides .act1{width:704px;height:427px;display: none;}
+.slides .act2{width:704px;height:427px;display: none;}
+.slides .act3{width:704px;height:427px;display: none;}
+.slides .act4{width:704px;height:427px;display: none;}
+.slides .act5{width:704px;height:427px;display: none;}
+.slides .act6{width:704px;height:427px;display: none;}		
+.slides .prev {left: 11px;top:182px;z-index: 99;display: block;width:30px;height:64px;background-position: 0 -1234px;}
+.slides .next {right: 9px;top: 181px;z-index: 99;display: block;width:30px;height:64px;background-position:-34px -1234px;}
+.slides_container{overflow: hidden;}
+
+.message{float: left;width: 258px;padding-top:20px;margin-left: 10px;}
+.message-tit{height:32px;width: 142px;margin: 0 auto;}
+.message-tit1{background-position: -4px -1184px;}
+.message-tit2{background-position: -163px -1184px;}
+.message-tit3{background-position: -326px -1185px;}
+.message-tit4{background-position: -478px -1184px;}
+.message-tit5{background-position: -637px -1183px;}
+.message-tit6{background-position: -792px -1183px;}
+.message-tit7{background-position: -945px -1182px;}
+.message-tit8{background-position: -1017px -1104px;}
+.message span{color: #ffffff;font-size: 22px;display: block;width: 100%;text-align: center;padding-top: 20px;}
+.message p{width: 100%;text-align: center;color: #ffffff;font-size: 16px;padding-top: 15px;}
+.list-rw{padding-top: 30px;padding-left: 15px;}
+.list-rw li{float: left;width: 117px;cursor: pointer;}
+.list-rw .ml{margin-left: 55px;}
+.list-rw img{display: block;}
+.list-rw em{background-position: -83px -1265px;width: 63px;height: 20px;line-height: 7px;color: #FFFFFF;font-size: 16px;display: block;text-align: center;margin: 8px auto 0;}
+
+.part2{padding-top: 149px;}
+.tit2{background-position: 0 -350px;width: 1000px;height: 66px;margin: 0 auto;}
+.txt2{width: 100%;text-align: center;color: #ffffff;font-size: 16px;}
+.part2-main{background: url(ossweb-img/pic-bg2.jpg) no-repeat;width: 1000px;height: 477px;margin-top: 25px;}
+.list-tab4 li{float: left;margin-right: 1px;}
+.list-tab4 li a{width: 332px;height: 72px;}
+.list-tab4 .btn-bf{background-position: 0 -733px;}
+.list-tab4 .btn-lp{background-position: -337px -733px;}
+.list-tab4 .btn-ys{background-position: -670px -733px;}
+.list-tab4 .on .btn-bf{background-position: -2px -814px;}
+.list-tab4 .on .btn-lp{background-position: -336px -814px;}
+.list-tab4 .on .btn-ys{background-position: -670px -814px;}
+.message1-tit{width: 223px;height:28px;margin: 0 auto;}
+.message1-tit1{background-position: -177px -1254px;}
+.message1-tit2{background-position: -419px -1254px;}
+.message1 span{font-size: 16px;}
+.message1 p{font-size: 14px;}
+.slides1 {width:983px;float: left;}
+.slides1 .act1{width:983px;height:451px;display: none;}
+.slides1 .act2{width:983px;height:451px;display: none;}
+.slides1 .act3{width:983px;height:451px;display: none;}
+.slides1 .act4{width:983px;height:451px;display: none;}
+.slides1 .act5{width:983px;height:451px;display: none;}
+.slides1 .act6{width:983px;height:451px;display: none;}	
+.slides1 .act7{width:983px;height:451px;display: none;}
+.slides1 .act8{width:983px;height:451px;display: none;}	
+.pane2{padding-top: 13px;padding-left: 8px;}
+.slides1 .prev {left: 28px;top:190px;z-index: 99;display: block;width:30px;height:64px;background-position: 0 -1234px;}
+.slides1 .next {right: 28px;top: 190px;z-index: 99;display: block;width:30px;height:64px;background-position:-34px -1234px;}
+
+.part3{padding-top: 170px;padding-bottom: 213px;}
+.tit3{background-position: -1px -445px;width: 1000px;height: 58px;margin: 0 auto;}
+.txt3{width: 100%;text-align: center;color: #000000;font-size: 16px;padding-top: 15px;}
+.login{color: #291b00;font-size: 14px;width: 100%;text-align: center;padding-top: 10px;}
+.login a{color: #9f8143;}
+.list-tab5{padding-top: 10px;}
+.list-tab5 li{float: left;width: 332px;margin-right: 1px;}
+.list-tab5 a{width: 332px;height: 72px;}
+.list-tab5 .btn-nx{background-position:-2px -647px;}
+.list-tab5 .btn-mx{background-position:-336px -647px;}
+.list-tab5 .btn-zx{background-position:-670px -647px;}
+.list-tab5 .on .btn-nx{background-position:-2px -569px;}
+.list-tab5 .on .btn-mx{background-position:-336px -569px;}
+.list-tab5 .on .btn-zx{background-position:-670px -569px;}
+.panes4{width: 1000px;height: 820px;background: #291b00;margin-top: 2px;}
+.pane3{padding-top: 40px;padding-left: 23px;display: none;}
+.nx-btn a{float: left;width: 222px;height: 380px;display: block;margin-right: 20px;position: relative;}
+.nx-btn .btn-nx1{background: url(ossweb-img/part3-img1.jpg) no-repeat;}
+.nx-btn .btn-nx2{background: url(ossweb-img/part3-img2.jpg) no-repeat;}
+.nx-btn .btn-nx3{background: url(ossweb-img/part3-img3.jpg) no-repeat;}
+.nx-btn .btn-nx4{background: url(ossweb-img/part3-img4.jpg) no-repeat;}
+.nx-btn .btn-mx1{background: url(ossweb-img/part3-img5.jpg) no-repeat;}
+.nx-btn .btn-mx2{background: url(ossweb-img/part3-img6.jpg) no-repeat;}
+.nx-btn .btn-mx3{background: url(ossweb-img/part3-img7.jpg) no-repeat;}
+.nx-btn .btn-mx4{background: url(ossweb-img/part3-img8.jpg) no-repeat;}
+.nx-btn .btn-zx1{background: url(ossweb-img/part3-img9.jpg) no-repeat;}
+.nx-btn .btn-zx2{background: url(ossweb-img/part3-img10.jpg) no-repeat;}
+.nx-btn .btn-zx3{background: url(ossweb-img/part3-img11.jpg) no-repeat;}
+.nx-btn .btn-zx4{background: url(ossweb-img/part3-img12.jpg) no-repeat;}
+.nx-btn em{width: 100%;text-align: center;color: #ffffff;font-size: 16px;position: absolute;bottom: 5px;line-height: 22px;}
+.nx-btn .em1{bottom: 0;}
+.nx-btn .em2{bottom: 16px;}
+.lb-box{padding-top: 50px;}
+.lb-box .btn-x{background: url(ossweb-img/pic-sm.jpg) no-repeat; width: 375px;height: 307px;display: block;float: left;}
+.lx-massage{float: left;padding-left: 25px;}
+.list-lb li{float: left;width: 123px;margin-right: 20px;}
+.list-lb li img{display: block;}
+.list-lb em{width: 100%;text-align: center;color: #FFFFFF;font-size: 16px;text-align: center;display: block;padding-top: 10px;}
+.lx-massage p{color: #fbd88f;font-size: 14px;padding-top: 20px;}
+.btn-lb2{background-position: -678px -1243px;width: 190px;height: 69px;margin-top: 20px;}
+
+/*弹窗*/
+.pop{width: 712px;height: 437px;}
+.dia-close{background: url(ossweb-img/close.png) no-repeat;width: 46px;height: 46px;position: absolute;top: 0;right:-50px ;}
+/*part1*/
+:focus{outline: none;}
+</style>
+</head>
+
+<body>
+<div class="blacktop">
+	<a class="blacktop_logo" href="http://wuxia.qq.com/?ADTAG=EventBlackTop.button.logo" title="天涯明月刀官方网站" target="_blank">天涯明月刀官方网站</a>
+    <div class="blacktop_topsilder">
+        <ul class="blacktop_btnavs">
+            <li class="blacktop_btnav ">
+                <a class="blacktop_bta blacktop_tohome" href="http://wuxia.qq.com/main.shtml?ADTAG=EventBlackTop.button.btnav.enter" target="_blank">返回官网</a>
+            </li>
+            <li class="blacktop_btnav">
+            	<a class="blacktop_bta blacktop_toevent" href="http://wuxia.qq.com/events.shtml?ADTAG=EventBlackTop.button.btnav.ecter" target="_blank">活动中心</a>
+            </li>
+        </ul>
+       <div class="logstate">
+			<p class="unlogin" id="unlogin">您好，请先<a href="javascript:LoginManager.login();" id="dologin">【登录】</a></p>
+            <p class="logined" id="logined" style="display:none">
+            <a class="dologout logfrg" href="javascript:LoginManager.logout();" id="dologout">注销</a>
+            <b class="logfrg">您好<span id="login_qq_span"></span>，</b></p>
+        </div>
+    </div>
+</div>
+<div class="wrap1">
+	<div class="wrap2">
+		<div class="wrap3">
+			<div class="container">
+				<div class="head pr">
+					<h1 class="hide">金装飒雪，暖冬扬纱</h1>
+					<a class="logo1 db" href="http://wuxia.qq.com/?ADTAG=EventBlackTop.button.logo" title="天涯明月刀官方网站" target="_blank">天涯明月刀官方网站</a>
+				</div>
+				<div class="content">
+					<div class="content1">
+						<ul class="list-nav c">
+							<li class="on"><a href="javascript:pos(1);" class="btn-nav1 sp db" onclick="PTTSendClick('btn','nav1','八荒新装');" title="八荒新装">八荒新装</a></li>
+							<li><a href="javascript:pos(2);" class="btn-nav2 sp db" onclick="PTTSendClick('btn','nav2','暖冬扬沙');" title="八荒新装">八荒新装</a></li>
+							<li class="mr"><a href="javascript:pos(3);" class="btn-nav3 sp db" onclick="PTTSendClick('btn','nav3','冬季时装周');" title="冬季时装周">八荒新装</a></li>
+						</ul>
+						<p class="ct-txt sp">八荒新校服PVP系列，战场英姿再现；八荒新校服PVE系列，江湖踏雪飞扬；“圣绣·白凤”外观，冬季必备雍容飒爽；<br />
+丰富配饰和全新玩具系列，趣味丛生；更有八荒专属挂饰来就送，抒写门派豪情！</p>
+						<div class="part1" id="box1">
+							<h2 class="tit1 sp db">八荒新装</h2>
+							<ul class="list-tab1 c">
+								<li class="on"><a href="javascript:;" class="btn-wd db sp" onclick="PTTSendClick('btn','wd','武道PVP金装');" title="武道PVP金装">武道PVP金装</a></li>
+								<li><a href="javascript:;" class="btn-dx db sp" onclick="PTTSendClick('btn','dx','喋血PVE金装');" title="喋血PVE金装">喋血PVE金装</a></li>
+							</ul>
+							<div class="panes">
+								<div class="pane pr" style="display:block;">
+									<div class="panes1">
+										<div class="pane1 c" style="display:block;">
+											<div id="slides1" class="slides pr">
+												<div class="slides_container pr slides_container1">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pep-bg1.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pep-bg2.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pep-bg6.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pep-bg5.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pep-bg4.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pep-bg3.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit1" >太白</h3>
+												<span>月影天霜</span>
+												<p>月影秦涧深，蛟螭出无痕。<br />玉阙天霜晚，剑寒九州尘。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pep-sm1.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm2.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm3.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides2" class="slides pr">
+												<div class="slides_container pr slides_container2">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pep-bg7.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pep-bg8.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pep-bg9.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pep-bg10.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pep-bg11.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pep-bg12.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit2">神威</h3>
+												<span>九州寸心</span>
+												<p>茫茫山海尽，何处觅魂英。<br />戎马寸心志，九州俱太平。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pep-sm4.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm5.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm6.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides3" class="slides pr">
+												<div class="slides_container pr slides_container3">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pep-bg13.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pep-bg14.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pep-bg15.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pep-bg16.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pep-bg17.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pep-bg18.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit3">丐帮</h3>
+												<span>梦泽千觞</span>
+												<p>云梦大泽茫，啸歌破夜长。<br />江湖凭我饮，何妨醉千觞。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pep-sm7.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm8.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm9.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides4" class="slides pr">
+												<div class="slides_container pr slides_container4">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pep-bg19.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pep-bg20.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pep-bg21.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pep-bg22.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pep-bg23.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pep-bg24.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit4">唐门</h3>
+												<span>晓梦寒星</span>
+												<p>清梦巫峡晓，苍崖万仞倾。<br />千机霜玉碎，寒沁一天星。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pep-sm10.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm11.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm12.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div> 
+										<div class="pane1 c">
+											<div id="slides5" class="slides pr">
+												<div class="slides_container pr slides_container5">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pep-bg25.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pep-bg26.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pep-bg27.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pep-bg28.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pep-bg29.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pep-bg30.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit5">真武</h3>
+												<span>冥鸿归云</span>
+												<p>驾鸿凌紫冥，虚步蹑太清。<br />杳杳归云去，凡心弃刀兵。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pep-sm13.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm14.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm15.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides6" class="slides pr">
+												<div class="slides_container pr slides_container6">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pep-bg31.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pep-bg32.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pep-bg33.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pep-bg34.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit6">天香</h3>
+												<span>瑶台清月</span>
+												<p>芳菲菲袭予，花袅袅光晗。<br />谁言瑶台月，会向群玉山。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pep-sm16.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li class="ml"><img src="ossweb-img/pep-sm17.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides7" class="slides pr">
+												<div class="slides_container pr slides_container7">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pep-bg35.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pep-bg36.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pep-bg37.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pep-bg38.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pep-bg39.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pep-bg40.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit7">五毒</h3>
+												<span>暮鸦苍羽</span>
+												<p>动静螭蜃作，杀止明暗间。<br />暮鸦天将尽，残阳人独还。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pep-sm18.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm19.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm20.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides8" class="slides pr">
+												<div class="slides_container pr slides_container8">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pep-bg41.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pep-bg42.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pep-bg43.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pep-bg44.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pep-bg45.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pep-bg46.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit8">神刀</h3>
+												<span>寂夜劫火</span>
+												<p>寂历兹夜永，扣我修罗门。<br />断刃重铸日，劫火漫红尘。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pep-sm21.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm22.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm23.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<ul class="list-tab2 c">
+										<li class="on"><a href="javascript:;" class="btn-tb db sp" onclick="PTTSendClick('btn','tb','太白');" title="太白">太白</a></li>
+										<li><a href="javascript:;" class="btn-sw db sp" onclick="PTTSendClick('btn','sw','神威');" title="神威">神威</a></li>
+										<li><a href="javascript:;" class="btn-gb db sp" onclick="PTTSendClick('btn','gb','丐帮');" title="丐帮">丐帮</a></li>
+										<li><a href="javascript:;" class="btn-tm db sp" onclick="PTTSendClick('btn','tm','唐门');" title="唐门">唐门</a></li>
+										<li><a href="javascript:;" class="btn-zw db sp" onclick="PTTSendClick('btn','zw','真武');" title="真武">真武</a></li>
+										<li><a href="javascript:;" class="btn-tx db sp" onclick="PTTSendClick('btn','tx','天香');" title="天香">天香</a></li>
+										<li><a href="javascript:;" class="btn-wg db sp" onclick="PTTSendClick('btn','wg','五毒');" title="五毒">五毒</a></li>
+										<li class="mr"><a href="javascript:;" class="btn-sd db sp" onclick="PTTSendClick('btn','sd','神刀');" title="神刀">神刀</a></li>
+									</ul>
+								</div>
+								<div class="pane">
+									<div class="panes1 panes2">
+										<div class="pane1 c" style="display:block;">
+											<div id="slides9" class="slides pr">
+												<div class="slides_container pr slides_container9">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pve1.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pve2.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pve3.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pve4.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pve5.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pve6.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit1" >太白</h3>
+												<span>月影天霜</span>
+												<p>月影秦涧深，蛟螭出无痕。<br />玉阙天霜晚，剑寒九州尘。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pve-sm01.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm02.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm03.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides10" class="slides pr">
+												<div class="slides_container pr slides_container10">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pve7.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pve8.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pve9.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pve10.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pve11.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pve12.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit2">神威</h3>
+												<span>九州寸心</span>
+												<p>茫茫山海尽，何处觅魂英。<br />戎马寸心志，九州俱太平。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pve-sm04.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm05.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm06.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides11" class="slides pr">
+												<div class="slides_container pr slides_container11">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pve13.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pve14.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pve15.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pve16.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pve17.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pve18.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit3">丐帮</h3>
+												<span>梦泽千觞</span>
+												<p>云梦大泽茫，啸歌破夜长。<br />江湖凭我饮，何妨醉千觞。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pve-sm1.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm2.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm3.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides12" class="slides pr">
+												<div class="slides_container pr slides_container12">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pve19.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pve20-1.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pve20.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pve21.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pve22.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pve23.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit4">唐门</h3>
+												<span>晓梦寒星</span>
+												<p>清梦巫峡晓，苍崖万仞倾。<br />千机霜玉碎，寒沁一天星。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pve-sm4.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm5.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm6.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div> 
+										<div class="pane1 c">
+											<div id="slides13" class="slides pr">
+												<div class="slides_container pr slides_container13">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pve24.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pve25.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pve26.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pve27.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pve28.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pve29.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit5">真武</h3>
+												<span>冥鸿归云</span>
+												<p>驾鸿凌紫冥，虚步蹑太清。<br />杳杳归云去，凡心弃刀兵。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pve-sm7.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm8.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm9.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides14" class="slides pr">
+												<div class="slides_container pr slides_container14">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pve30.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pve31.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pve32.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pve33.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit6">天香</h3>
+												<span>瑶台清月</span>
+												<p>芳菲菲袭予，花袅袅光晗。<br />谁言瑶台月，会向群玉山。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pve-sm10.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li class="ml"><img src="ossweb-img/pve-sm11.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides15" class="slides pr">
+												<div class="slides_container pr slides_container15">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pve34.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pve35.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pve36.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pve37.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pve38.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pve39.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit7">五毒</h3>
+												<span>暮鸦苍羽</span>
+												<p>动静螭蜃作，杀止明暗间。<br />暮鸦天将尽，残阳人独还。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pve-sm12.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm13.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm14.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides16" class="slides pr">
+												<div class="slides_container pr slides_container16">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pve40.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pve41.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pve42.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pve43.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pve44.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pve45.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message">
+												<h3 class="message-tit sp db message-tit8">神刀</h3>
+												<span>寂夜劫火</span>
+												<p>寂历兹夜永，扣我修罗门。<br />断刃重铸日，劫火漫红尘。</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pve-sm15.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm16.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pve-sm17.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<ul class="list-tab2 c list-tab3">
+										<li class="on"><a href="javascript:;" class="btn-tb db sp" onclick="PTTSendClick('btn','tb','太白');" title="太白">太白</a></li>
+										<li><a href="javascript:;" class="btn-sw db sp" onclick="PTTSendClick('btn','sw','神威');" title="神威">神威</a></li>
+										<li><a href="javascript:;" class="btn-gb db sp" onclick="PTTSendClick('btn','gb','丐帮');" title="丐帮">丐帮</a></li>
+										<li><a href="javascript:;" class="btn-tm db sp" onclick="PTTSendClick('btn','tm','唐门');" title="唐门">唐门</a></li>
+										<li><a href="javascript:;" class="btn-zw db sp" onclick="PTTSendClick('btn','zw','真武');" title="真武">真武</a></li>
+										<li><a href="javascript:;" class="btn-tx db sp" onclick="PTTSendClick('btn','tx','天香');" title="天香">天香</a></li>
+										<li><a href="javascript:;" class="btn-wg db sp" onclick="PTTSendClick('btn','wg','五毒');" title="五毒">五毒</a></li>
+										<li class="mr"><a href="javascript:;" class="btn-sd db sp" onclick="PTTSendClick('btn','sd','神刀');" title="神刀">神刀</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="part2" id="box2">
+							<h2 class="tit2 sp db">暖冬扬纱</h2>
+							<p class="txt2">“圣绣·白凤”外装暖心上线，冬季必备雍容飒爽；琴魔同款外观副本装备“清音厉魄”待你拿；八荒门派专属腰饰来就送！</p>
+							<div class="part2-main">
+								<div class="panes3">
+										<div class="pane1 c" style="display:block;">
+											<div id="slides17" class="slides pr">
+												<div class="slides_container pr slides_container17">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pep-bg47.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pep-bg48.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pep-bg50.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pep-bg49.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pep-bg51.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pep-bg52.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message message1">
+												<h3 class="message1-tit sp db message1-tit1" >圣绣·白凤</h3>
+												<span>天魔心，多情人。<br />追白羽，渺平生。</span>
+												<p>傅红雪之母花白凤年轻时自天山魔教<br />闯入中原，帅气明媚的衣装令人惊艳</p>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pep-sm24.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm25.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm26.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 c">
+											<div id="slides18" class="slides pr">
+												<div class="slides_container pr slides_container18">
+													<div class="act1 pr act">
+														<img src="ossweb-img/pep-bg53.jpg" width="704" height="427"/>
+													</div>
+													<div class="act2 pr act">
+														<img src="ossweb-img/pep-bg54.jpg" width="704" height="427"/>
+													</div>
+													<div class="act3 pr act">
+														<img src="ossweb-img/pep-bg55.jpg" width="704" height="427"/>
+													</div>
+													<div class="act4 pr act">
+														<img src="ossweb-img/pep-bg56.jpg" width="704" height="427"/>
+													</div>
+													<div class="act5 pr act">
+														<img src="ossweb-img/pep-bg57.jpg" width="704" height="427"/>
+													</div>
+													<div class="act6 pr act">
+														<img src="ossweb-img/pep-bg58.jpg" width="704" height="427"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+											<div class="message message1">
+												<h3 class="message1-tit sp db message1-tit2">清音厉魄</h3>
+												<span>掉落自嘲天宫副本</span>
+												<ul class="list-rw c">
+													<li class="ml"><img src="ossweb-img/pep-sm27.jpg" width="117" height="85" />
+														<em class="sp">少女</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm28.jpg" width="117" height="85" />
+														<em class="sp">成男</em>
+													</li>
+													<li><img src="ossweb-img/pep-sm29.jpg" width="117" height="85" />
+														<em class="sp">成女</em>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="pane1 pane2">
+											<div id="slides19" class="slides pr slides1">
+												<div class="slides_container pr">
+													<div class="act1 pr">
+														<img src="ossweb-img/mp1.jpg" width="983" height="451"/>
+													</div>
+													<div class="act2 pr">
+														<img src="ossweb-img/mp2.jpg" width="983" height="451"/>
+													</div>
+													<div class="act3 pr">
+														<img src="ossweb-img/mp3.jpg" width="983" height="451"/>
+													</div>
+													<div class="act4 pr">
+														<img src="ossweb-img/mp4.jpg" width="983" height="451"/>
+													</div>
+													<div class="act5 pr">
+														<img src="ossweb-img/mp5.jpg" width="983" height="451"/>
+													</div>
+													<div class="act6 pr">
+														<img src="ossweb-img/mp6.jpg" width="983" height="451"/>
+													</div>
+													<div class="act7 pr">
+														<img src="ossweb-img/mp7.jpg" width="983" height="451"/>
+													</div>
+													<div class="act8 pr">
+														<img src="ossweb-img/mp8.jpg" width="983" height="451"/>
+													</div>
+												</div>
+												<a href="JavaScript:;" class="prev pa sp" title="上一页"></a>
+												<a href="JavaScript:;" class="next pa sp" title="下一页"></a>
+											</div>
+										</div>
+								</div>
+							</div>
+							<ul class="list-tab4 c">
+										<li class="on"><a href="javascript:;" class="btn-bf db sp" onclick="PTTSendClick('btn','bf','圣绣·白凤');" title="圣绣·白凤">圣绣·白凤</a></li>
+										<li><a href="javascript:;" class="btn-lp db sp" onclick="PTTSendClick('btn','lp','清音厉魄');" title="清音厉魄">清音厉魄</a></li>
+										<li><a href="javascript:;" class="btn-ys db sp" onclick="PTTSendClick('btn','ys','战八荒系列腰饰');" title="战八荒系列腰饰">战八荒系列腰饰</a></li>
+									</ul>
+						</div>
+						<div class="part3" id="box3">
+							<h2 class="tit3 sp db">冬季时装周</h2>
+							<p class="txt3">冬季外装携时装周上新，领“烟沙雪”造型利器，12月20日冬季版本同步开启！</p>
+							<div class="login">
+							 <p id="unlogin">亲爱的用户，请<a href="javascript:LoginManager.login();">登录</a></p>
+							 <p id="logined" style="display:none;">欢迎您，<span id='login_qq_span'></span>，<a href="javascript:LoginManager.logout();">注销</a></p>
+							 </div>
+							 <ul class="list-tab5 c">
+							 	<li class="on"><a href="javascript:;" class="btn-nx db sp" onclick="PTTSendClick('btn','nx','暖心');" title="暖心">暖心</a></li>
+								<li><a href="javascript:;" class="btn-mx db sp" onclick="PTTSendClick('btn','mx','萌心');" title="萌心">萌心</a></li>
+								<li class="mr"><a href="javascript:;" class="btn-zx db sp" onclick="PTTSendClick('btn','zx','战心');" title="战心">战心</a></li>
+							 </ul>
+							 <div class="panes4">
+							 	<div class="pane3" style="display: block;">
+							 		<div class="nx-btn c">
+							 			<a href="javascript:TGDialogS('pop1');" class="btn-nx1 sp" onclick="PTTSendClick('btn','nx1','查看大图');" title="查看大图">
+							 				<em>
+							 					她是天山的雪，风风火火，<br />明媚艳冶。
+							 				</em>
+							 			</a>
+							 			<a href="javascript:TGDialogS('pop2');" class="btn-nx2 sp" onclick="PTTSendClick('btn','nx2','查看大图');" title="查看大图">
+							 				<em>她是秦川的雪，恬恬淡淡，<br />娇俏温婉。</em>
+							 			</a>
+							 			<a href="javascript:TGDialogS('pop3');" class="btn-nx3 sp" onclick="PTTSendClick('btn','nx3','查看大图');" title="查看大图">
+							 				<em>他是大漠的雪，自天而来，<br />踏浪而去。</em>
+							 			</a>
+							 			<a href="javascript:TGDialogS('pop4');" class="btn-nx4 sp" onclick="PTTSendClick('btn','nx4','查看大图');" title="查看大图">
+							 			     <em>他是盛世的雪，雍容尔雅，<br />海清河晏。</em>
+							 			</a>
+							 		</div>
+							 		<div class="lb-box c">
+							 			<a href="javascript:TGDialogS('pop13');" class="btn-x sp" onclick="PTTSendClick('btn','xue','查看大图');" title="查看大图">
+							 			</a>
+							 			<div class="lx-massage">
+							 				<ul class="list-lb c">
+							 					<li><img src="ossweb-img/dj1.jpg" width="123" height="121" alt="步步生红叶·7天"/>
+							 						<em>步步生红叶·7天</em>
+							 					</li>
+							 					<li><img src="ossweb-img/dj2.jpg" width="123" height="121" alt="碎银200金"/>
+							 						<em>碎银200金</em>
+							 					</li>
+							 					<li><img src="ossweb-img/dj3.jpg" width="123" height="121" alt="修为200万"/>
+							 						<em>修为200万</em>
+							 					</li>
+							 					<li><img src="ossweb-img/dj4.jpg" width="123" height="121" alt="称号：暖心"/>
+							 						<em>称号：暖心</em>
+							 					</li>
+							 				</ul>
+							 				<p>全部集齐【暖心】篇章时装，可获得专属面纱【烟沙雪·雪】、称号【暖心】、步步生红<br />叶等好礼。</p>
+							 				<a href="javascript:;" class="btn-lb2 sp db" onclick="PTTSendClick('btn','lb','查看礼包');" title="查看礼包">查看礼包</a>
+							 			</div>
+							 		</div>
+							 	</div>
+							 	<div class="pane3">
+							 		<div class="nx-btn c">
+							 			<a href="javascript:TGDialogS('pop5');" class="btn-mx1 sp" onclick="PTTSendClick('btn','nx1','查看大图');" title="查看大图">
+							 				<em class="em1">
+							 					抱一只“萌主”回家！<br />收藏任意一款萌趣萌主背部<br />挂件即可达成任务
+							 				</em>
+							 			</a>
+							 			<a href="javascript:TGDialogS('pop6');" class="btn-mx2 sp" onclick="PTTSendClick('btn','nx2','查看大图');" title="查看大图">
+							 				<em class="em2">Biu~Biu~Biu~</em>
+							 			</a>
+							 			<a href="javascript:TGDialogS('pop7');" class="btn-mx3 sp" onclick="PTTSendClick('btn','nx3','查看大图');" title="查看大图">
+							 				<em class="em2">嗯……</em>
+							 			</a>
+							 			<a href="javascript:TGDialogS('pop8');" class="btn-mx4 sp" onclick="PTTSendClick('btn','nx4','查看大图');" title="查看大图">
+							 			     <em class="em2">长大以后我要开花。</em>
+							 			</a>
+							 		</div>
+							 		<div class="lb-box c">
+							 			<a href="javascript:TGDialogS('pop14');" class="btn-x sp" onclick="PTTSendClick('btn','xue','查看大图');" title="查看大图">
+							 			</a>
+							 			<div class="lx-massage">
+							 				<ul class="list-lb c">
+							 					<li><img src="ossweb-img/dj5.jpg" width="123" height="121" alt="步步生花·7天"/>
+							 						<em>步步生花·7天</em>
+							 					</li>
+							 					<li><img src="ossweb-img/dj2.jpg" width="123" height="121" alt="碎银200金"/>
+							 						<em>碎银200金</em>
+							 					</li>
+							 					<li><img src="ossweb-img/dj3.jpg" width="123" height="121" alt="修为200万"/>
+							 						<em>修为200万</em>
+							 					</li>
+							 					<li><img src="ossweb-img/dj6.jpg" width="123" height="121" alt="称号：暖心"/>
+							 						<em>称号：萌心</em>
+							 					</li>
+							 				</ul>
+							 				<p>全部集齐【萌心】篇章时装，可获得专属面纱【烟沙雪·烟】、称号【萌心】、步步生花<br />等好礼。</p>
+							 				<a href="javascript:;" class="btn-lb2 sp db" onclick="PTTSendClick('btn','lb','查看礼包');" title="查看礼包">查看礼包</a>
+							 			</div>
+							 		</div>
+							 	</div>
+							 	<div class="pane3">
+							 		<div class="nx-btn c">
+							 			<a href="javascript:TGDialogS('pop9');" class="btn-zx1 sp" onclick="PTTSendClick('btn','nx1','查看大图');" title="查看大图">
+							 				<em class="em2">
+							 					利落矫健，身手不凡。
+							 				</em>
+							 			</a>
+							 			<a href="javascript:TGDialogS('pop10');" class="btn-zx2 sp" onclick="PTTSendClick('btn','nx2','查看大图');" title="查看大图">
+							 				<em class="em2">棋局输赢，江湖进退。</em>
+							 			</a>
+							 			<a href="javascript:TGDialogS('pop11');" class="btn-zx3 sp" onclick="PTTSendClick('btn','nx3','查看大图');" title="查看大图">
+							 				<em class="em2">天芒陨铁，四海搜求。</em>
+							 			</a>
+							 			<a href="javascript:TGDialogS('pop12');" class="btn-zx4 sp" onclick="PTTSendClick('btn','nx4','查看大图');" title="查看大图">
+							 			     <em class="em2">战意至处，神歌鬼哭。</em>
+							 			</a>
+							 		</div>
+							 		<div class="lb-box c">
+							 			<a href="javascript:TGDialogS('pop15');" class="btn-x sp" onclick="PTTSendClick('btn','xue','查看大图');" title="查看大图">
+							 			</a>
+							 			<div class="lx-massage">
+							 				<ul class="list-lb c">
+							 					<li><img src="ossweb-img/dj7.jpg" width="123" height="121" alt="步步生红叶·7天"/>
+							 						<em>步步生莲·7天</em>
+							 					</li>
+							 					<li><img src="ossweb-img/dj2.jpg" width="123" height="121" alt="碎银200金"/>
+							 						<em>碎银200金</em>
+							 					</li>
+							 					<li><img src="ossweb-img/dj3.jpg" width="123" height="121" alt="修为200万"/>
+							 						<em>修为200万</em>
+							 					</li>
+							 					<li><img src="ossweb-img/dj8.jpg" width="123" height="121" alt="称号：战心"/>
+							 						<em>称号：战心</em>
+							 					</li>
+							 				</ul>
+							 				<p>全部集齐【战心】篇章时装，可获得专属面纱【烟沙雪·沙】、称号【战心】、步步生莲<br />等好礼。</p>
+							 				<a href="javascript:;" class="btn-lb2 sp db" onclick="PTTSendClick('btn','lb','查看礼包');" title="查看礼包">查看礼包</a>
+							 			</div>
+							 		</div>
+							 	</div>
+							 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--弹出大图-->
+<div class="pop pr" id="pop1" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop1.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop2" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop2.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop3" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop3.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop4" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop4.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop5" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop5.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop6" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop6.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop7" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop7.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop8" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop8.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop9" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop9.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop10" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop10.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop11" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop11.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop12" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop12.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop13" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop13.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop14" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop14.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<div class="pop pr" id="pop15" style="display:none">
+	<div class="dia-con"><img src="ossweb-img/pop15.png" width="712" height="437" alt="圣绣·白凤"/></div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//ossweb-img.qq.com/images/js/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo/milo.js"></script>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script> 
+<script src="//ossweb-img.qq.com/images/js/login/loginmanagerv3.js" charset="gb2312"></script>
+<script src="slides.js" type="text/javascript" charset="utf-8"></script>
+<script>
+ //检查是否已登录，已登录则获取QQ号显示已登录状态
+ LoginManager.checkLogin(function(){
+ document.getElementById("login_qq_span").innerText= LoginManager.getUserUin();//获取QQ号
+ });
+slid(".slides_container1 .act")
+slid(".slides_container2 .act")
+slid(".slides_container3 .act")
+slid(".slides_container4 .act")
+slid(".slides_container5 .act")
+slid(".slides_container6 .act")
+slid(".slides_container7 .act")
+slid(".slides_container8 .act")
+slid(".slides_container9 .act")
+slid(".slides_container10 .act")
+slid(".slides_container11 .act")
+slid(".slides_container12 .act")
+slid(".slides_container13 .act")
+slid(".slides_container14 .act")
+slid(".slides_container15 .act")
+slid(".slides_container16 .act")
+slid(".slides_container17 .act")
+slid(".slides_container18 .act")
+function slid(sid){
+	var lists = $('.list-rw');
+	for (var i = 0; i < lists.length; i++) {
+		var li = lists[i].getElementsByTagName('li');
+		$(li).each(function(){
+			$(this).click(function(){
+				var _index = $(this).index() * 2;
+				$(sid+':eq('+_index+')').show().siblings().hide();
+			})
+		})
+	}
+}
+$(function(){
+	$('.list-nav li').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+	})
+	$('.list-tab1 li').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
+	})
+	$('.list-tab2 li').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.panes1>div:eq('+$(this).index()+')').show().siblings().hide();	
+	})
+	$('.list-tab3 li').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.panes2>div:eq('+$(this).index()+')').show().siblings().hide();	
+	})
+	$('.list-tab4 li').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.panes3>div:eq('+$(this).index()+')').show().siblings().hide();	
+	})
+	$('.list-tab5 li').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.panes4>div:eq('+$(this).index()+')').show().siblings().hide();	
+	})
+})
+slides("#slides1");
+slides("#slides2");
+slides("#slides3");
+slides("#slides4");
+slides("#slides5");
+slides("#slides6");
+slides("#slides7");
+slides("#slides8");
+slides("#slides9");
+slides("#slides10");
+slides("#slides11");
+slides("#slides12");
+slides("#slides13");
+slides("#slides14");
+slides("#slides15");
+slides("#slides16");
+slides("#slides17");
+slides("#slides18");
+slides("#slides19");
+function slides(num){
+	$(num).slides({
+		generatePagination: false,
+		play: 4000,
+		pause: 1500,
+		effect: 'slide',
+		hoverPause: true
+	});
+}
+function TGDialogS(e){
+			need("biz.dialog-min",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+		function closeDialog(){
+			need("biz.dialog-min",function(Dialog){
+				Dialog.hide();
+			});
+		}
+jQuery.extend(jQuery.easing, {
+	def: 'easeInOutQuint',
+	easeInOutQuint: function(x, t, b, c, d) {
+		if ((t /= d / 2) < 1) return c / 2 * t * t * t * t * t + b;
+		return c / 2 * ((t -= 2) * t * t * t * t + 2) + b;
+	}
+});
+var index = 0;
+// 跳转指定位置
+function pos(num) {
+	$('html, body').stop(true, false).animate({
+			scrollTop: $("#box" + num).offset().top
+		}, 1000, 'easeInOutQuint');
+}		
+</script>
+</script>
+<script src="http://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+var setSite={ //设置网站属性
+	siteType:"a20171214bhxz", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+	pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+	pageName:"首页", //必填项:页面中文名
+	osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+	ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+	stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

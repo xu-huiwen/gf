@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{-webkit-text-size-adjust: none;margin:0;padding:0;}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;}h1,h2,h3,h4,h5,h6{font-size:100%;}address,cite,dfn,em,var{font-style:normal;}code,kbd,pre,samp{font-family:courier new,courier,monospace;}small{font-size:12px;}ul,ol{list-style:none;}a{text-decoration:none;outline:0 none}a:hover{text-decoration:underline;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}legend{color:#000;}fieldset,img{border:0;}button,input,select,textarea{font-size:100%;resize: none;}table{border-collapse:collapse;border-spacing:0;}
+.header_m_box:after,.news_box_tab:after,.news_list_wrap:after,.nlb_tab ul:after{content:'\20';display:block;height:0;clear:both;}
+.header_m_box,.news_box_tab,.news_list_wrap{*zoom:1;}
+body,html{min-width: 1200px;/* overflow-x:auto; */background:#DCE5F6;font-family:"Microsoft Yahei";}
+/*a{color:#5B5B5B}
+a:hover{text-decoration: none;}
+#footer_ied{background: #5c3fc5;padding:34px 0;text-align: center;line-height:2;position: relative;}
+#footer_ied a,#footer_ied{color:#fff}
+.ctb_wrap li a,.ctb_wrap li a:hover,.ctb_wrap li a:hover .l,.ctb_wrap li a:hover .r,.ctb_wrap li a .l,.ctb_wrap li a .r{-webkit-transition:all .2s ease-in;}
+.ctb_wrap li a:hover .l{transform: translateX(-5px);}
+.ctb_wrap li a:hover .r{transform: translateX(5px);}
+body{ overflow-x:auto;font-size: 14px;line-height: 28px;min-width: 1180px;color: #060606;}
+.ost_box{min-width: 1180px !important;}
+.chromeframe{background-color: #000;color: #fff;padding: 10px 0; text-align: center;width: 100%;font-size: 14px; z-index: 9999;}
+.chromeframe a{color: #F13C35}
+.wrapper{width: 100%;min-height: 500px;overflow-x:hidden;}
+.wrapper,.content{margin: 0 auto; position: relative;}
+.wrapper{width: 100%;min-width: 1180px;}
+.content{width: 1200px;min-height:200px;overflow: hidden;}
+.part{background-position: center top; background-repeat: no-repeat;}*/
+
+
+
+
+.slide-box{position: relative;width: 1100px;margin: 40px auto 0;}
+.slide-list{width: 1000px;position: relative;top:0;left:0;list-style: none;height: 417px;margin: 0 auto;perspective: 500px;}
+.slide-list li{position: absolute;width: 707px;height: 398px;transition: all .5s;transform: translate3d(100px,0,0) scale(0.9);transform-origin: 0 50%;z-index: -1;opacity: 0;filter: alpha(opacity = 0);}
+.slide-box li.po-1{left: 78px;top: 88px;z-index: 4;width: 428px;height: 246px;transform: translate3d(-77px,0,0) scale(0.9);transform-origin: 0 50%;opacity: 1;filter: alpha(opacity = 100);}
+.slide-box li.po-2{left: 144px;top: 0px;z-index: 5;opacity: 1;filter: alpha(opacity = 100);transform: translate3d(-15px,0,0) scale(1);}
+.slide-box li.po-3{left: 498px;top: 88px;z-index: 4;width: 426px;height: 241px;transform: translate3d(38px,0,0) scale(0.9);transform-origin: 100% 50%;opacity: 1;filter: alpha(opacity = 100);}
+.slide-box li.po-4{left: 197px;top: 0px;}
+.slide-box li.po-5{left: 197px;top: 0px;}
+.slide-box li.po-6{left: 197px;top: 0px;}
+.slide-list li img{width: 100%;}
+.prev,.next{display: block;width: 90px;height: 65px;position: absolute;top: 173px;left: -50px;background: url(next.png) center left no-repeat;z-index: 999;cursor: pointer;}
+.next{left: auto;right: 0;background-position: center right;}
+.dot-list{width: 155px;margin: 25px auto 40px;overflow: hidden;}
+.dot-list li{display: block;width: 15px;height: 15px;float: left;background-color: #674bd4;margin: 0 5px;border-radius: 50%;}
+.dot-list li.cur{background-color: #75cff1;}
+
+		</style>
+	</head>
+	<body>
+		<div class="slide-box" id="pic">
+            <ul class="slide-list">
+              <li class="carousel-list-1 po-1" data-order="1"><img src="swiper-img1.jpg" alt=""></li>
+              <li class="carousel-list-2 po-2" data-order="2"><img src="swiper-img2.jpg" alt=""></li>
+              <li class="carousel-list-3 po-3" data-order="3"><img src="swiper-img3.jpg" alt=""></li>
+              <li class="carousel-list-4 po-4" data-order="4"><img src="swiper-img4.jpg" alt=""></li>
+              <li class="carousel-list-5 po-5" data-order="5"><img src="swiper-img5.jpg" alt=""></li>
+            </ul>
+            <span class="btn prev btn-arrow" data-direction="left"></span>
+            <span class="btn next btn-arrow" data-direction="right"></span>
+            <ul class="dot-list">
+              <li class="sp cur"></li>
+              <li class="sp"></li>
+              <li class="sp"></li>
+              <li class="sp"></li>
+              <li class="sp"></li>
+            </ul>
+          </div>
+		<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+		<script>
+//图片轮播
+var carousel = function(obj) {
+    this.container = $(obj.container),
+        this.count = obj.count,
+        this.defaultSrc = obj.defaultSrc,
+        this.picType = obj.picType,
+        this.classname = obj.classname,
+        this.tab = $(obj.tab),
+        this.tabIndex = 0,
+        this.timer = null;
+}
+
+carousel.prototype = {
+    autoplay: function() {
+        var _this = this;
+        this.timer = setInterval(function() {
+            _this.turnRight();
+        }, 2500);
+    },
+    endplay: function() {
+        clearInterval(this.timer);
+    },
+    init: function() {
+        var _this = this
+        $('.' + _this.classname).on('click', function(event) {
+            _this.endplay();
+            event.preventDefault();
+            var direction = $(this).attr('data-direction');
+            if (direction == 'left') {
+                _this.turnLeft()
+            } else {
+                _this.turnRight()
+            }
+        })
+        _this.autoplay();
+    },
+    turnLeft: function() {
+        var _this = this;
+        this.tabIndex--;
+        this.tabIndex = this.tabIndex < 0 ? 4 : this.tabIndex;
+        this.defaultFun('left')
+    },
+    turnRight: function() {
+        var _this = this;
+        this.tabIndex++;
+        this.tabIndex = this.tabIndex > 4 ? 0 : this.tabIndex;
+        this.defaultFun('right')
+    },
+    defaultFun: function(direction) {
+        var _this = this;
+        this.tab.find('li').removeClass('cur').eq(this.tabIndex).addClass('cur');
+        $(this.container).find('li').each(function() {
+            var old_order = $(this).attr('data-order');
+            if (direction == 'left') { old_order--; }
+            if (direction == 'right') { old_order++; }
+            if (old_order == 6) { old_order = 1; }
+            if (old_order == 0) { old_order = 5; }
+            $(this).removeClass('po-1 po-2 po-3 po-4 po-5')
+            $(this).addClass('po-' + old_order);
+            $(this).attr({ 'data-order': old_order });
+        })
+    }
+}
+
+var ex = new carousel({
+    container: '.slide-list', //绑定ID
+    count: 5, //轮播图总数量
+    defaultSrc: 'swiper-img', //图片路径公共部分
+    picType: 'jpg', //图片的类型
+    classname: 'btn-arrow', //左右切换点的公共类
+    tab: '.dot-list'
+});
+
+ex.init();
+$('.slide-box').mouseenter(function(event) {
+    ex.endplay();
+});
+$('.slide-box').mouseleave(function(event) {
+    ex.autoplay();
+});
+
+//$('.sys-list li').click(function(event) {
+//  var index = $(this).index();
+//  $('.sys-list li').removeClass('on').eq(index).addClass('on');
+//});
+
+		</script>
+	</body>
+</html>

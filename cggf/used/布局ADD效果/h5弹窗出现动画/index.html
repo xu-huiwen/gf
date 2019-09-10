@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<script>
+function AutoPage(){ 
+	document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 750 + 'px';
+ } ;
+AutoPage();
+window.addEventListener('resize',AutoPage,false)  
+</script>
+
+		<style>
+			/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+body{-webkit-text-size-adjust:none; font-size: 0.24rem;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong{font-weight:normal;font-style:normal;}
+a {text-decoration:none;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db {display:block;text-indent:-999em;}
+body,html{background-color: #066866;}
+header,footer {width:100%;margin:0 auto;}
+footer{color:#8a6e68;background-color:#100d0c;padding:0.2rem 0;font-size:0.2rem;text-align:center;}
+
+
+.pop_bg{
+	display: none;
+	position: absolute;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: rgba(0,0,0,.8);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    top: 20%;
+    -webkit-animation: pop-bg .8s linear forwards;
+    -moz-animation: pop-bg .8s linear forwards;
+    -ms-animation: pop-bg .8s linear forwards;
+    animation: pop-bg .8s linear forwards;}
+
+@-webkit-keyframes pop-bg {
+	0% {
+		-webkit-transform: scale(0.5);
+		-moz-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		-o-transform: scale(0.5)
+	}
+	100% {
+		-webkit-transform: scale(2.8);
+		-moz-transform: scale(2.8);
+		-ms-transform: scale(2.8);
+		-o-transform: scale(2.8)
+	}
+}
+
+@-moz-keyframes pop-bg {
+	0% {
+		-webkit-transform: scale(0.5);
+		-moz-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		-o-transform: scale(0.5)
+	}
+	100% {
+		-webkit-transform: scale(2.8);
+		-moz-transform: scale(2.8);
+		-ms-transform: scale(2.8);
+		-o-transform: scale(2.8)
+	}
+}
+
+@-ms-keyframes pop-bg {
+	0% {
+		-webkit-transform: scale(0.5);
+		-moz-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		-o-transform: scale(0.5)
+	}
+	100% {
+		-webkit-transform: scale(2.8);
+		-moz-transform: scale(2.8);
+		-ms-transform: scale(2.8);
+		-o-transform: scale(2.8)
+	}
+}
+
+@-o-keyframes pop-bg {
+	0% {
+		-webkit-transform: scale(0.5);
+		-moz-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		-o-transform: scale(0.5)
+	}
+	100% {
+		-webkit-transform: scale(2.8);
+		-moz-transform: scale(2.8);
+		-ms-transform: scale(2.8);
+		-o-transform: scale(2.8)
+	}
+}
+
+@keyframes pop-bg {
+	0% {
+		-webkit-transform: scale(0.5);
+		-moz-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		-o-transform: scale(0.5)
+	}
+	100% {
+		-webkit-transform: scale(2.8);
+		-moz-transform: scale(2.8);
+		-ms-transform: scale(2.8);
+		-o-transform: scale(2.8)
+	}
+}
+
+
+.popContent{width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-size: 100% 100%}
+	
+	
+@-webkit-keyframes pop-content {
+	0% {
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		opacity: 0
+	}
+	100% {
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		opacity: 1
+	}
+}
+
+@-moz-keyframes pop-content {
+	0% {
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		opacity: 0
+	}
+	100% {
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		opacity: 1
+	}
+}
+
+@-ms-keyframes pop-content {
+	0% {
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		opacity: 0
+	}
+	100% {
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		opacity: 1
+	}
+}
+
+@-o-keyframes pop-content {
+	0% {
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		opacity: 0
+	}
+	100% {
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		opacity: 1
+	}
+}
+
+@keyframes pop-content {
+	0% {
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		opacity: 0
+	}
+	100% {
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		opacity: 1
+	}
+}
+
+.popContent.ani {
+	-webkit-animation: pop-content .8s ease-in-out forwards;
+	-moz-animation: pop-content .8s ease-in-out forwards;
+	-ms-animation: pop-content .8s ease-in-out forwards;
+	animation: pop-content .8s ease-in-out forwards
+}
+
+
+.btn{display: block;width: 3rem;height: 3rem;background: red;}
+.img{display: block;width: 7.5rem;height: 7.5rem;}
+		</style>
+	</head>
+	<body>
+		<a href="javascript:;" class="btn"></a>
+		
+		
+		<div class="pop_bg"></div>
+		<div class="popContent">
+			<img src="https://qn.res.netease.com/m/fab/20180919154618/img/pop_reserve_11db0b3.png" alt="" class="img"/>
+		</div>
+		
+		<script src="http://ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
+		<script>
+			$(".btn").click(function(){
+				$(".pop_bg").css("display","block")
+				$(".popContent").addClass("ani")
+			})
+			
+		</script>
+	</body>
+	
+</html>

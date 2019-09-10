@@ -1,0 +1,44 @@
+/*!
+ * app script
+ * require jquery.js
+ */
+
+$(function(){
+    
+    if( UA.examine.isIE( 6 )
+      || UA.examine.isIE( 7 )
+      || UA.examine.isIE( 8 )
+    ){
+        $('body *').hide();
+        $('.browser-tips, .browser-tips *')
+        .show();
+    }
+    
+	$('.i18n').each(function(){
+		var $_this = $(this),
+		    t = $_this.attr('t'),
+		    k = t.toLowerCase();
+
+		$_this.html( I18N.zh[k] );
+	});
+    
+	function set_cont_height(){
+		var 
+		content = $('section.content'),
+		h = $('.header').height(),
+		f = $('.footer').height(), 
+		ch = document.documentElement.clientHeight;
+
+		content.css({
+			'min-height':
+			(ch - h - f - 80) + 'px'
+		});
+	}
+
+	$(window).resize(function(){
+		set_cont_height.apply();
+	});
+
+	set_cont_height();
+
+});

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP" />
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="《QQ飞车》是首款腾讯自主研发的竞速类休闲网络游戏，底层架构基于世界领先的物理引擎PhysX，游戏手感全面超越市场同类产品，全力为用户打造逼真的驾驶体验；3D时尚人物造型、古朴潮流幻想的赛道主题、第三人称尾随视角，力求为用户营造身历其境的感觉。在2011年的5月，最高同时在线帐户数突破200万，乃中国网游史上第九款同时在线冲破百万大关的产品，并为全球游戏市场奉献了第一款同时在线破百万的竞速类网络游戏，同时，也使腾讯拥有了第一款同时在线破百万的自主研发产品。" />
+<meta name="Keywords" content="QQ飞车,飞车,QQ飞车官网,QQ飞车官方下载,QQ飞车,QQ飞车新手,QQ飞车音乐,QQ飞车视频,QQ飞车论坛,QQ飞车入门,QQ飞车玩家，QQ飞车比赛，QQ飞车图标,客户端下载,SSC超级联赛,赛车游戏,卡丁车,休闲区,同城交友,跑跑,跑跑卡丁车,最好玩,时尚,时尚赛车,剃刀,针尖,针尖杯,腾讯游戏,视频,WCG,赛道视频,沉睡森林,海滨发夹,海洋公园,漂移,飞车宝贝,宝贝,车队,QQ飞车车队" />
+<title>全民魔法阵-QQ飞车官方网站-腾讯游戏-竞速网游王者 突破300万同时在线</title>
+<!-- 设计：cp  | 重构：cp | 创建：2014/2/25  -->
+
+<link href="//ossweb-img.qq.com/images/speed/comm/act_top/act_top.css" rel="stylesheet">
+<style>
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:before,q:after{content:'';}
+fieldset,img,abbr,acronym{border:0;}
+
+/*footer*/
+#footer_ied{text-align:center;font-size:12px;line-height:19px;min-width:1000px;color:#ded5f0;background-color: #110c29;}
+.wrap_ied{margin:0 auto;padding:25px 30px;width:940px;}
+.wrap_ied a{color:#ded5f0;}
+#footer_ied .e{font-size:10px;-webkit-text-size-adjust:none;}
+#footer_ied .e{font-size:10px;-webkit-text-size-adjust:none;}
+#comm_act_wrap{ z-index:999 !important;}
+
+/*页面样式*/
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.c {zoom:1;}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;text-align:justify;background-color: #160f38;}
+a {text-decoration:none;}
+a:hover {text-decoration:none;}
+.wrap,#footer_ied {min-width:1000px;width:100%;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?'1000px':'');}
+.wrap {background:url(ossweb-img/bg.jpg) no-repeat 50% 0;min-width:1000px;}
+.container {width:1000px;margin:0 auto;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.fl{float: left;}
+.fr{float: right;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.db{display:block;text-indent:-999em;}
+.sp{background: url(ossweb-img/sp.png) no-repeat;}
+/*查看奖励弹窗*/
+.pop_o{background-color: #5e72b3;border:3px solid #fff;position: relative;display: none;}
+.pop-close_2{display: block;background-color: #fff;width: 40px;height: 40px;text-align: center;line-height: 40px;font-size: 38px;color: #493c5c;position: absolute;top:-3px;right: -40px;}
+.pop-close_2:hover,.pop-btn:hover{text-decoration: none;}
+.pop-w1{width: 614px;padding:20px;}
+.pop-w2{width: 614px;padding:50px 0;}
+.pop-em{width: 100%;text-align: center;font-size: 18px;color: #fff;line-height: 32px;}
+/* 表格 */
+.pop-tb2 {width:100%;margin-top: 20px;}
+.pop-tb2 th,.pop-tb2 td {text-align:center;border:1px solid #4962ad;height:30px;}
+.pop-tb2 th {background-color:#1d2d5c;color:#fff778;font-weight:bold;text-align:center;}
+.pop-tb2 tbody td {background-color:#6e83c1;color:#fff;}
+.pop-tb2 tfoot td {background-color:#1d2d5c;color:#fff778;}
+.pop-tb2 tfoot a {color:#fff778;margin:0 10px;}
+.pop-btn{display: block;background-position: 0 0;width: 191px;height: 58px;text-align: center;line-height: 58px;font-size:20px;font-weight: bold;color: #963c1a;margin: 50px auto 0;}
+
+
+/* head */
+.head{height: 748px;background: url(ossweb-img/head.jpg) no-repeat 50% 0;}
+.logo{width: 112px;height: 90px;top: 54px;left: 40px;}
+.code{top: 65px;left: 165px;}
+.btn-cz{width: 143px;height: 104px;background-position: -5px -4px;top: 520px;right: 124px;}
+.btn-cz:hover{background-position: -153px -5px;}
+.time{font-size: 20px;color: #eeedff;width: 100%;text-align: center;top: 650px;left: 0;}
+.list{width: 780px;height: 21px;top: 710px;left: 50%;margin-left: -390px;}
+.list p{font-size: 14px;color: #ecdeff;}
+/* content */
+.content{height: 2220px;background: url(ossweb-img/ct.jpg) no-repeat 50% 0;overflow: hidden;}
+.buy{width: 885px;margin: 38px auto 0;}
+.buy a{float: left;width: 274px;height: 91px;background-position: -10px -120px;margin-right: 31px;position: relative;}
+.buy a:hover{background-position: -305px -120px;}
+.buy .nl{margin-right: 0;}
+.buy span{display: block;font-size: 16px;color: #923d1b;text-align: center;padding-top: 21px;}
+.buy em{display: block;font-size: 20px;color: #1f1252;text-align: center;line-height: 22px;}
+.buy i{width: 58px;height: 59px;background-position: -316px -27px;position: absolute;top: -30px;right: -23px;text-align: center;line-height: 59px;font-size: 20px;color: #eeedff;font-weight: bold;font-style: normal;}
+.intr{font-size: 18px;color: #bec1fe;text-align: center;padding-top: 32px;}
+.box{padding-top: 20px;}
+.award{width: 970px;margin: 15px auto 0;}
+.award li{float: left;width: 190px;height: 172px;background: url(ossweb-img/floor.png) no-repeat;margin-right: 5px;position: relative;}
+.award .nl{margin-right: 0;}
+.award img{display: block;margin: 8px auto 0;}
+.award span{display: block;text-align: center;font-size: 14px;color: #ffffff;padding-top: 12px;line-height: 15px;}
+.award em{width: 44px;height: 43px;background-position: -392px -35px;top: -1px;right: 14px;text-align: center;line-height: 43px;font-size: 15px;font-weight: bold;color: #ffffff;position: absolute;}
+.award .cloth{background: url(ossweb-img/floor2.png) no-repeat;}
+.award .clothn{padding-top: 5px;}
+.award .prop{background: url(ossweb-img/floor3.png) no-repeat;}
+.call{font-size: 18px;color: #d1cdff;text-align: center;padding-top: 30px;}
+.btn-zh{width: 274px;height: 91px;background-position: -10px -120px;display: block;margin: 12px auto 0;}
+.btn-zh:hover{background-position: -305px -120px;}
+.btn-zh span{font-size: 24px;color: #19244d;display: block;text-align: center;padding-top: 6px;}
+.btn-zh em{display: block;text-align: center;font-size: 18px;color: #c75c05;}
+.exchange{padding-top: 51px;+padding-top: 71px;}
+.tit-01{font-size: 48px;font-weight: bold;text-align: center;color: #fff7ff;}
+.num{width: 885px;margin: 60px auto 0;}
+.num li{float: left;width: 245px;height: 300px;background: url(ossweb-img/floor4.png) no-repeat 50% 50px;margin-right: 75px;}
+.num .nl{margin-right: 0;}
+.num p{font-size: 24px;font-weight: bold;text-align: center;color: #fef6fe;}
+.num img{display: block;margin: 27px auto 0;}
+.num span{display: block;text-align: center;font-size: 14px;font-weight: bold;color: #fef6fe;padding-top: 8px;}
+.num a{width: 167px;height: 59px;background-position: -21px -224px;display: block;margin: 40px auto 0;text-align: center;
+line-height: 50px;font-size: 20px;color: #593c14;}
+.num a:hover{background-position: -201px -224px;}
+.active{padding-top: 80px;}
+.tit-02{font-size: 48px;font-weight: bold;color: #fff7ff;text-indent: 397px;}
+.rule{width: 725px;margin: 40px auto 0;}
+.rule li{font-size: 14px;color: #ecdeff;line-height: 30px;}
+:focus{outline: none;}
+.dialog{width: 781px;height: 486px;background: url(ossweb-img/dialog.png) no-repeat;display: none;z-index: 9999;}
+.tit-03{font-size: 22px;font-weight: bold;text-align: center;padding-top: 11px;color: #ffffff;}
+.close{width: 58px;height: 59px;background-position: -490px -25px;top: -33px;right: -33px;}
+.ever{font-size: 18px;font-weight: bold;color: #ffffff;text-align: center;padding-top: 18px;}
+.universal{width: 665px;margin: 5px auto 0;}
+.universal li{width: 186px;height: 170px;margin: 14px 53px 0 0;background: url(ossweb-img/floor5.png) no-repeat 50% 0;float: left;}
+.universal .nl{margin-right: 0;}
+.universal .four{margin-left: 105px;}
+.universal .five{margin-right: 105px;}
+.universal img{display: block;margin: 6px auto 0;}
+.universal span{display: block;text-align: center;font-size: 14px;color: #fef6fe;}
+.universal .fc{padding-top: 25px;}
+.btn-lj{width: 119px;height: 34px;background-position: -397px -231px;display: block;text-align: center;
+margin: 12px auto 0;line-height: 34px;font-size: 18px;font-weight: bold;color: #fff603;}
+.btn-lj:hover{background-position: -537px -231px; }
+.award .cloth1{top: 140px;left: 0;z-index: 999;display: none;}
+.award .cloth2{top: 140px;left: 0;z-index: 999;display: none;}
+.award .cloth3{top: 140px;left: 0;z-index: 999;display: none;}
+.award .cloth4{top: 140px;left: 0;z-index: 999;display: none;}
+.award .cloth5{top: 140px;right: 0;z-index: 999;display: none;}
+.racing{top: 140px;left: 0;}
+.pet{top: 140px;left: -190px;}
+.dialog2{width: 512px;height: 301px;background: url(ossweb-img/dialog2.png) no-repeat;display: none;}
+.enter{font-size: 18px;font-weight: bold;text-align: center;color: #ffffff;padding-top: 40px;}
+.yellow{color: #f8f522;}
+.money{font-size: 18px;color: #f8f522;text-align: center;padding-top: 30px;}
+.btn{width: 325px;margin: 28px auto 0;}
+.btn2{margin: 23px auto 0;}
+.give{padding-top: 20px;}
+.charm{font-size: 18px;font-weight: bold;text-align: center;color: #ffffff;padding-top: 16px;}
+.sorry{font-size: 18px;text-align: center;font-weight: bold;color: #ffffff;padding: 60px 0 20px;}
+.dialog3{width: 512px;height: 201px;background: url(ossweb-img/dialog3.png) no-repeat;display: none;}
+.revise{width: 475px;font-size: 18px;font-weight: bold;color: #ffffff;margin: 0 auto;padding-top: 50px;}
+.dialog4{width: 512px;height: 358px;background: url(ossweb-img/dialog4.png) no-repeat;display: none;}
+.congr{font-size: 18px;font-weight: bold;text-align: center;color: #ffffff;padding-top: 25px;}
+.univer{display: block;margin: 5px auto 0;}
+.name{text-align: center;font-size: 20px;color: #ffffff;display: block;padding-top: 10px;}
+.last{width: 375px;margin: 15px auto 0;}
+.last li{width: 160px;background: url(ossweb-img/floor6.png) no-repeat 50% 0;}
+.last img{display: block;margin: 6px auto 0;}
+.last span{display: block;text-align: center;font-size: 15px;color: #ffffff;padding-top: 5px;}
+.last input{margin: 5px auto 0;display: block;}
+.want{padding-top: 5px;}
+</style>
+</head>
+
+<div class="wrap">
+	<div id="comm_act_wrap">
+<!-- 专题公用头部Start -->
+    <div class="act_comm_box blue_act_comm_box">
+      <!-- 左侧链接Start -->
+    	<div class="acb_links">
+    	   <a href="http://speed.qq.com/web201008/download.shtml" title="下载QQ飞车客户端" class="acb_big_btn acb_top_ico" target="_blank"><i class="acb_top_ico acb_down_ico "></i>下载游戏</a>
+    	   <a href="http://speed.qq.com/" title="QQ飞车官方网站" class="acb_big_btn acb_top_ico"  target="_blank"><i class="acb_top_ico acb_home_ico "></i>官方网站</a>
+    	   <a href="javascript:share('qqzone')" title="分享到Qzone" class="acb_qq_btn acb_top_ico"></a>
+    	   <a href="javascript:share('qqwb')" title="分享到QQ微博" class="acb_qt_btn acb_top_ico"></a>
+    	</div>	
+      <!-- 左侧链接Start -->
+    	<div class="acb_user">
+          <ul class="user_links">
+           <li id="spanNotBind"><a href="javascript:setType(1);" title="绑定大区" class="l">绑定大区</a><i class="c"></i></li>
+			<li id="spanBind" style="display:none">所绑大区：
+				<span id="area_info"></span>
+			</li>
+           <li><a href="javascript:TGDialogS('showMyGiftContent');" title="查看我的奖励" class="l">查看我的奖励</a></li>
+          </ul>
+
+        <!-- 用户登录模块Start -->
+    	  <div class="user_login">
+    		   <span id="unlogin">亲爱的用户，请<a href="javascript:;" id="dologin" class="acb_log_btn acb_top_ico">登录</a></span>
+    		   <span id="logined" style="display:none">欢迎您，<span id='login_qq_span'></span>，<a href="javascript:;" id="dologout"  class="acb_log_btn acb_top_ico">注销</a></span>
+         </div>
+        </div>
+        <!-- 用户登录模块END -->
+    </div>
+<!-- 专题公用头部END -->
+<!-- 这里放页面主要内容 -->
+</div>
+
+	<div class="container">
+		<div class="head pr">
+	        <h1 class="hide">全民魔法阵</h1>
+	        <a href="http://speed.qq.com" class="logo db pa" title="QQ飞车官网" target="_blank">QQ飞车官网</a>
+	        <img src="ossweb-img/code.jpg" width="74" height="74" class="code pa" alt="二维码" />
+	        <a href="javascript:;" class="btn-cz sp db pa" title="充值Q币">充值Q币</a>
+	        <p class="time pa">活动时间：8.4-8.20</p>
+	        <ul class="list pa" id="carouselContent">
+	        	<li class="c">
+	        		<p class="fl">恭喜<span>XXXXXXXX</span>人品爆发获得，获得了<span>XXXXXXX（X天）</span></p>
+	        		<p class="fr">恭喜<span>XXXXXXXX</span>人品爆发获得，获得了<span>XXXXXXX（X天）</span></p>
+	        	</li>
+	        </ul>
+		</div>
+		<div class="content">	
+	        <div class="c buy">
+	        	<a href="javascript:;" class="sp">
+	        		<span>购买小橘子挂饰（2天）/2Q币</span>
+	        		<em>赠送2张全民召唤卡</em>
+	        	</a>
+	        	<a href="javascript:;" class="sp">
+	        		<span>购买小橘子挂饰（20天）/20Q币</span>
+	        		<em>赠送21张全民召唤卡</em>
+	        		<i class="sp">95折</i>
+	        	</a>
+	        	<a href="javascript:;" class="nl sp">
+	        		<span>购买小橘子挂饰（50天）/50Q币</span>
+	        		<em>赠送55张全民召唤卡</em>
+	        		<i class="sp">9折</i>
+	        	</a>
+	        </div>
+			<p class="intr">活动期间，玩家每进行一次召唤，必得以下奖励之一；已获得的奖励不会重复获得！</p>
+			<div class="box">
+				<ul class="award award1 c">
+					<li class="canshow">
+						<img src="ossweb-img/prop1.png" width="125" height="105" alt="赛车万能卡" />
+						<span>赛车万能卡</span>
+						<em class="sp">永久</em>
+						<div class="dialog racing pa">				
+							<h3 class="tit-03 db">温馨提示</h3>
+							<p class="ever">使用“万能赛车卡”兑换一下任意XX</p>
+							<ul class="universal c">
+								<li>
+									<img src="ossweb-img/prop36.png" width="140" height="95" alt="银天使-圣光" />
+									<span class="fc">银天使-圣光（永久）</span>
+								</li>
+								<li>
+									<img src="ossweb-img/prop37.png" width="140" height="95" alt="刺甲黄金龙" />
+									<span class="fc">刺甲黄金龙（永久）</span>
+								</li>
+								<li class="nl">
+									<img src="ossweb-img/prop38.png" width="140" height="95" alt="九周年极限赛车" />
+									<span class="fc">九周年极限赛车（永久）</span>
+								</li>
+								<li class="four">
+									<img src="ossweb-img/prop39.png" width="140" height="95" alt="烈火噬魂" />
+									<span class="fc">烈火噬魂（永久）</span>
+								</li>
+								<li class="five">
+									<img src="ossweb-img/prop40.png" width="140" height="95" alt="魔甲战神" />
+									<span class="fc">魔甲战神（永久）</span>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<img src="ossweb-img/prop2.png" width="125" height="105" alt="座椅万能卡" />
+						<span>座椅万能卡</span>
+						<em class="sp">永久</em>
+						<div class="dialog racing pa">
+							<h3 class="tit-03 db">温馨提示</h3>
+							<p class="ever">使用“万能座椅卡”兑换一下任意XX</p>
+							<ul class="universal c">
+								<li>
+									<img src="ossweb-img/prop26.png" width="140" height="95" alt="盛世仙境" />
+									<span class="fc">盛世仙境（永久）</span>
+								</li>
+								<li>
+									<img src="ossweb-img/prop27.png" width="140" height="95" alt="翎蓝奢疑飞椅" />
+									<span class="fc">翎蓝奢疑飞椅（永久）</span>
+								</li>
+								<li class="nl">
+									<img src="ossweb-img/prop28.png" width="140" height="95" alt="挚恋金丝椅" />
+									<span class="fc">挚恋金丝椅（永久）</span>
+								</li>
+								<li class="four">
+									<img src="ossweb-img/prop29.png" width="140" height="95" alt="甜蜜物语座椅" />
+									<span class="fc">甜蜜物语座椅（永久）</span>
+								</li>
+								<li class="five">
+									<img src="ossweb-img/prop30.png" width="140" height="95" alt="暗月幽蝶座椅" />
+									<span class="fc">暗月幽蝶座椅（永久）</span>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<img src="ossweb-img/prop3.png" width="125" height="105" alt="宠物万能卡" />
+						<span>宠物万能卡</span>
+						<em class="sp">永久</em>
+						<div class="dialog pet pa">
+							<h3 class="tit-03 db">温馨提示</h3>
+							<p class="ever">使用“万能宠物卡”兑换一下任意XX</p>
+							<ul class="universal c">
+								<li>
+									<img src="ossweb-img/prop31.png" width="140" height="95" alt="南瓜宝宝" />
+									<span class="fc">南瓜宝宝（永久）</span>
+								</li>
+								<li>
+									<img src="ossweb-img/prop32.png" width="140" height="95" alt="小王子" />
+									<span class="fc">小王子（永久）</span>
+								</li>
+								<li class="nl">
+									<img src="ossweb-img/prop33.png" width="140" height="95" alt="粉恋小天使" />
+									<span class="fc">粉恋小天使（永久）</span>
+								</li>
+								<li class="four">
+									<img src="ossweb-img/prop34.png" width="140" height="95" alt="蝴蝶仙子" />
+									<span class="fc">蝴蝶仙子（永久）</span>
+								</li>
+								<li class="five">
+									<img src="ossweb-img/prop35.png" width="140" height="95" alt="小公举" />
+									<span class="fc">小公举（永久）</span>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<img src="ossweb-img/prop4.png" width="125" height="105" alt="月兔精灵卡" />
+						<span>月兔精灵卡</span>
+						<em class="sp">永久</em>
+					</li>
+					<li class="nl">
+						<img src="ossweb-img/prop5.png" width="125" height="105" alt="樱冥殿" />
+						<span>樱冥殿</span>
+						<em class="sp">永久</em>
+					</li>
+				</ul>
+				<ul class="award c award2">
+					<li class="cloth">
+						<img src="ossweb-img/prop6.png" width="125" height="105" alt="黑桃皇后/骑士服饰" />
+						<span class="clothn">黑桃骑士/皇后<br />服饰</span>
+						<em class="sp">永久</em>
+						<img src="ossweb-img/cloth1.png" class="cloth1 pa" width="332" height="445" alt="黑桃皇后/骑士服饰" />
+					</li>
+					<li class="cloth">
+						<img src="ossweb-img/prop7.png" width="125" height="105" alt="幽碟迷踪服饰" />
+						<span class="clothn">幽碟迷踪服饰</span>
+						<em class="sp">永久</em>
+						<img src="ossweb-img/cloth2.png" class="cloth2 pa" width="332" height="445" alt="袅袅弥音礼服" />
+					</li>
+					<li class="cloth">
+						<img src="ossweb-img/prop8.png" width="125" height="105" alt="蝉鸣林溪套装" />
+						<span class="clothn">蝉鸣林溪套装</span>
+						<em class="sp">永久</em>
+						<img src="ossweb-img/cloth3.png" class="cloth3 pa" width="332" height="445" alt="蝉鸣林溪套装" />
+					</li>
+					<li class="cloth">
+						<img src="ossweb-img/prop9.png" width="125" height="105" alt="碧海穹天套装" />
+						<span class="clothn">锦樱仙琼套装</span>
+						<em class="sp">永久</em>
+						<img src="ossweb-img/cloth4.png" class="cloth4 pa" width="332" height="445" alt="碧海穹天套装" />
+					</li>
+					<li class="nl cloth">
+						<img src="ossweb-img/prop10.png" width="125" height="105" alt="景春丽鸳套装" />
+						<span class="clothn">景春丽鸳套装</span>
+						<em class="sp">永久</em>
+						<img src="ossweb-img/cloth5.png"  class="cloth5 pa" width="332" height="445" alt="景春丽鸳套装" />
+					</li>
+				</ul>
+				<ul class="award c">
+					<li class="cloth">
+						<img src="ossweb-img/prop11.png" width="170" height="105" alt="黑桃皇室羽翼" />
+						<span>黑桃皇室羽翼</span>
+						<em class="sp">永久</em>	
+					</li>
+					<li class="cloth">
+						<img src="ossweb-img/prop12.png" width="170" height="105" alt="黑桃皇室戒指" />
+						<span>黑桃皇室戒指</span>
+						<em class="sp">永久</em>						
+					</li>
+					<li class="cloth">
+						<img src="ossweb-img/prop13.png" width="170" height="105" alt="黑桃骑士发饰 " />
+						<span class="clothn">黑桃骑士/皇后<br />发饰 </span>
+						<em class="sp">永久</em>						
+					</li>
+					<li class="cloth">
+						<img src="ossweb-img/prop14.png" width="170" height="105" alt="幽碟迷踪发饰" />
+						<span>幽碟迷踪发饰</span>
+						<em class="sp">永久</em>						
+					</li>
+					<li class="nl cloth">
+						<img src="ossweb-img/prop15.png" width="170" height="105" alt="黑桃皇室手杖" />
+						<span>黑桃皇室手杖</span>
+						<em class="sp">永久</em>						
+					</li>
+				</ul>
+				<ul class="award c">
+					<li class="prop">
+						<img src="ossweb-img/prop16.png" width="125" height="105" alt="圣白梨影尾饰" />
+						<span>圣白梨影尾饰</span>
+						<em class="sp">永久</em>
+					</li>
+					<li class="prop">
+						<img src="ossweb-img/prop17.png" width="125" height="105" alt="圣白梨影头饰" />
+						<span>圣白梨影头饰</span>
+						<em class="sp">永久</em>
+					</li>
+					<li class="prop">
+						<img src="ossweb-img/prop18.png" width="125" height="105" alt="红宝石 " />
+						<span>红宝石 </span>
+					</li>
+					<li class="prop">
+						<img src="ossweb-img/prop19.png" width="125" height="105" alt="钻石魔法合成卡" />
+						<span>钻石魔法合成卡</span>
+					</li>
+					<li class="nl prop">
+						<img src="ossweb-img/prop20.png" width="125" height="105" alt="赛车觉醒卡" />
+						<span>赛车觉醒卡</span>
+					</li>
+				</ul>
+				<ul class="award c">
+					<li class="prop">
+						<img src="ossweb-img/prop21.png" width="125" height="105" alt="魔法百宝箱" />
+						<span>魔法百宝箱</span>
+					</li>
+					<li class="prop">
+						<img src="ossweb-img/prop22.png" width="125" height="105" alt="普通合成药剂" />
+						<span>普通合成药剂</span>
+					</li>
+					<li class="prop">
+						<img src="ossweb-img/prop23.png" width="125" height="105" alt="宠物幻化卡" />
+						<span>宠物幻化卡</span>
+					</li>
+					<li class="prop">
+						<img src="ossweb-img/prop24.png" width="125" height="105" alt="初级魔法合成卡" />
+						<span>初级魔法合成卡</span>
+					</li>
+					<li class="nl prop">
+						<img src="ossweb-img/prop25.png" width="125" height="105" alt="宠物强化卡" />
+						<span>宠物强化卡</span>
+					</li>
+				</ul>
+				<p class="call">剩余全民召唤卡：1000张</p>
+				<a href="javascript:;" class="btn-zh sp" title="召唤">
+					<span>召唤</span>
+					<em>本次召唤需要10张全民召唤卡</em>
+				</a>
+			</div>
+			<div class="exchange">
+				<h2 class="tit-01">兑换专区</h2>
+				<ul class="num c">
+					<li>
+						<p>拥有X张</p>
+						<img src="ossweb-img/prop1.png" width="125" height="105" alt="赛车万能卡" />
+						<span>赛车万能卡</span>
+						<a href="javascript:TGDialogS(pop3);" title="兑换永久赛车" class="sp">兑换永久赛车</a>
+					</li>
+					<li>
+						<p>拥有X张</p>
+						<img src="ossweb-img/prop2.png" width="125" height="105" alt="座椅万能卡" />
+						<span>座椅万能卡</span>
+						<a href="javascript:TGDialogS(pop1);" title="兑换永久座椅" class="sp">兑换永久座椅</a>
+					</li>
+					<li class="nl">
+						<p>拥有X张</p>
+						<img src="ossweb-img/prop3.png" width="125" height="105" alt="宠物万能卡" />
+						<span>宠物万能卡</span>
+						<a href="javascript:TGDialogS(pop2);" title="兑换永久宠物" class="sp">兑换永久宠物</a>
+					</li>
+				</ul>
+			</div>
+			<div class="active">
+				<h2 class="tit-02">活动规则</h2>
+				<ul class="rule">
+					<li>1. 活动时间：XXX</li>
+					<li>2. 活动期间，玩家每进行1次召唤，必得展示奖励之一，且已获得的奖励不会重复获得。</li>
+					<li>3. 全民魔法阵活动限时开启，活动结束后，所有数据将会清空。</li>
+					<li>4. 若玩家背包/仓库已有当前召唤道具的永久期限，则本轮消耗的全民召唤卡将会返还给玩家。</li>
+					<li>5. 玩家在本页面消费所产生的魅力值、回馈点24小时内发放给玩家。</li>
+					<li>6. 由于不可抗拒因素、网络、作弊等非腾讯公司原因导致活动出现异常情况，腾讯公司有权采取调整、暂停等。</li>
+					<li>7. 本活动解释权在法律允许的范围内归腾讯公司所有。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="dialog pr" id="pop1">
+	<a href="javascript:closeDialog();" class="close pa sp db" title="关闭">关闭</a>
+	<h3 class="tit-03">温馨提示</h3>
+	<p class="ever">使用“万能座椅卡”兑换一下任意XX</p>
+	<ul class="universal c">
+		<li>
+			<img src="ossweb-img/prop26.png" width="140" height="95" alt="盛世仙境" />
+			<span>盛世仙境（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li>
+			<img src="ossweb-img/prop27.png" width="140" height="95" alt="翎蓝奢疑飞椅" />
+			<span>翎蓝奢疑飞椅（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li class="nl">
+			<img src="ossweb-img/prop28.png" width="140" height="95" alt="挚恋金丝椅" />
+			<span>挚恋金丝椅（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li class="four">
+			<img src="ossweb-img/prop29.png" width="140" height="95" alt="甜蜜物语座椅" />
+			<span>甜蜜物语座椅（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li class="five">
+			<img src="ossweb-img/prop30.png" width="140" height="95" alt="暗月幽蝶座椅" />
+			<span>暗月幽蝶座椅（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+	</ul>
+</div>
+<div class="dialog pr" id="pop2">
+	<a href="javascript:closeDialog();" class="close pa sp db" title="关闭">关闭</a>
+	<h3 class="tit-03">温馨提示</h3>
+	<p class="ever">使用“万能宠物卡”兑换一下任意XX</p>
+	<ul class="universal c">
+		<li>
+			<img src="ossweb-img/prop31.png" width="140" height="95" alt="南瓜宝宝" />
+			<span>南瓜宝宝（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li>
+			<img src="ossweb-img/prop32.png" width="140" height="95" alt="小王子" />
+			<span>小王子（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li class="nl">
+			<img src="ossweb-img/prop33.png" width="140" height="95" alt="粉恋小天使" />
+			<span>粉恋小天使（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li class="four">
+			<img src="ossweb-img/prop34.png" width="140" height="95" alt="蝴蝶仙子" />
+			<span>蝴蝶仙子（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li class="five">
+			<img src="ossweb-img/prop35.png" width="140" height="95" alt="小公举" />
+			<span>小公举（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+	</ul>
+</div>
+<div class="dialog pr" id="pop3">
+	<a href="javascript:closeDialog();" class="close pa sp db" title="关闭">关闭</a>
+	<h3 class="tit-03">温馨提示</h3>
+	<p class="ever">使用“万能赛车卡”兑换一下任意XX</p>
+	<ul class="universal c">
+		<li>
+			<img src="ossweb-img/prop36.png" width="140" height="95" alt="银天使-圣光" />
+			<span>银天使-圣光（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li>
+			<img src="ossweb-img/prop37.png" width="140" height="95" alt="刺甲黄金龙" />
+			<span>刺甲黄金龙（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li class="nl">
+			<img src="ossweb-img/prop38.png" width="140" height="95" alt="九周年极限赛车" />
+			<span>九周年极限赛车（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li class="four">
+			<img src="ossweb-img/prop39.png" width="140" height="95" alt="烈火噬魂" />
+			<span>烈火噬魂（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+		<li class="five">
+			<img src="ossweb-img/prop40.png" width="140" height="95" alt="魔甲战神" />
+			<span>魔甲战神（永久）</span>
+			<a href="javascript:;" class="btn-lj sp" title="立即兑换">立即兑换</a>
+		</li>
+	</ul>
+</div>
+<div class="dialog2 pr" id="pop4">
+	<a href="javascript:closeDialog();" class="close pa sp db" title="关闭">关闭</a>
+	<h3 class="tit-03">温馨提示</h3>
+	<p class="enter">您确定购买小橘子挂饰（<span class="yellow">20天</span>）吗？<br />赠送<span class="yellow">21</span>张全民召唤卡 </p>
+	<p class="money">应付金额：19Q币（95折）</p>
+	<div class="btn c">
+		<a href="javascript:;" class="btn-lj sp fl" title="确定">取消</a>
+		<a href="javascript:;" class="btn-lj sp fr" title="取消">取消</a>
+	</div>
+</div>
+<div class="dialog2 pr" id="pop5">
+	<a href="javascript:closeDialog();" class="close pa sp db" title="关闭">关闭</a>
+	<h3 class="tit-03">温馨提示</h3>
+	<p class="enter">您确定购买小橘子挂饰（<span class="yellow">50天</span>）吗？<br />赠送<span class="yellow">55</span>张全民召唤卡 </p>
+	<p class="money">应付金额：45Q币（9折）</p>
+	<div class="btn c">
+		<a href="javascript:;" class="btn-lj sp fl" title="确定">取消</a>
+		<a href="javascript:;" class="btn-lj sp fr" title="取消">取消</a>
+	</div>
+</div>
+<div class="dialog2 pr" id="pop5">
+	<a href="javascript:closeDialog();" class="close pa sp db" title="关闭">关闭</a>
+	<h3 class="tit-03">温馨提示</h3>
+	<p class="enter">恭喜您获得：小橘子挂饰<span class="yellow">（X天）</span></p>
+	<p class="money give">同时赠送你X张全民召唤卡</p>
+	<p class="charm">本次购买您获得XX魅力值和XX回馈点</p>
+	<div class="btn btn2 c">
+		<a href="javascript:;" class="btn-lj sp fl" title="确定">取消</a>
+		<a href="javascript:;" class="btn-lj sp fr" title="取消">取消</a>
+	</div>
+</div>	
+<div class="dialog3 pr" id="pop5">
+	<a href="javascript:closeDialog();" class="close pa sp db" title="关闭">关闭</a>
+	<p class="revise">温馨提示：你确定绑定所选大区与角色么？一经绑定将不能修改喔。</p>
+	<div class="btn btn2 c">
+		<a href="javascript:;" class="btn-lj sp fl" title="确定">取消</a>
+		<a href="javascript:;" class="btn-lj sp fr" title="取消">取消</a>
+	</div>
+</div>
+<div class="dialog4 pr" id="pop6">
+	<a href="javascript:closeDialog();" class="close pa sp db" title="关闭">关闭</a>
+	<h3 class="tit-03">温馨提示</h3>
+	<p class="congr">恭喜您获得：</p>
+	<img src="ossweb-img/prop3.png" width="125" height="105" class="univer" alt="宠物万能卡" />
+	<span class="name">宠物万能卡</span>
+	<p class="charm">道具奖励24小时内发放至您所在大区账户</p>
+	<a href="javascript:;" class="btn-lj sp" title="确定">确定</a>
+</div>
+<div class="dialog4 pr" id="pop6">
+	<a href="javascript:closeDialog();" class="close pa sp db" title="关闭">关闭</a>
+	<h3 class="tit-03">温馨提示</h3>
+	<p class="congr">恭喜您获得：</p>
+	<ul class="c last">
+		<li class="fl">
+			<img src="ossweb-img/prop41.png" width="70" height="105" alt="" />
+			<span>景春丽鸳套装(女/永久)</span>
+			<input type="radio" />
+		</li>
+		<li class="fr">
+			<img src="ossweb-img/prop42.png" width="70" height="105" alt="" />
+			<span>景春丽鸳套装(女/永久)</span>
+			<input type="radio" />
+		</li>
+	</ul>
+	<p class="congr want">请选择你想要的道具</p>
+	<a href="javascript:;" class="btn-lj sp" title="确定">确定</a>
+</div>	
+<!--弹窗2E-->
+<div class="pop_o pop-w1" id="showMyGiftContent">
+  <div class="pop-bd">
+    <p class="pop-em">温馨提示：虚拟道具奖品将在24小时内发到您的游戏仓库，<br>请耐心等候，谢谢您的理解与支持！</p>
+    <table class="pop-tb2">
+      <thead>
+        <tr>
+          <th>获奖时间</th>
+          <th>获奖大区</th>
+          <th>所获礼包</th>
+        </tr>
+      </thead>
+      <tbody id="getGiftContent_179646"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" id="getGiftPageContent_179646">
+		  <a href="###">上一页</a><span>1/3</span>
+		  <a href="###">下一页</a>
+		  </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <a href="javascript:showDialog.hide()" class="pop-close_2">&times</a>
+</div>
+
+<script src="http://ossweb-img.qq.com/images/js/milo/milo.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/top_js/speed_top_201007.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/foot.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script> 
+<script>
+//浮层
+$(".award1").find("li").each(function(){
+	$(this).hover(function(){
+	    $(".award1 li").css("z-index",1);
+	    $(this).css("z-index",9999);
+	    $(this).children("div").show();
+	},function(){
+	    $(".award1 li").css("z-index",0);
+	    $(".award1 li").children("div").hide();
+	});
+})	
+	
+	
+	
+	
+//浮层
+//$(".award1 li").mouseover(function(){
+//	$(this).children("div").show();
+//	$(this).css("z-index",999);
+//})
+//$(".award1 li").mouseout(function(){
+//	$(this).children("div").hide();
+//	$(this).css("z-index","");
+//})
+$(".award2 li").mouseover(function(){
+	$(this).children("img:last-child").show();
+	$(this).css("z-index",999);
+})
+$(".award2 li").mouseout(function(){
+	$(this).children("img:last-child").hide();
+	$(this).css("z-index","");
+})
+//登录
+milo.addEvent(g("dologin"), "click", function() {
+  need("biz.login-min",function(LoginManager){
+    LoginManager.init({
+      needReloadPage:true
+    });
+    LoginManager.login();
+  });
+  return false;
+});
+milo.addEvent(g("dologout"), "click", function() {
+  need("biz.login-min",function(LoginManager){
+    LoginManager.logout(function(){window.location.reload()});
+  });
+  return false;
+});
+milo.ready(function() {
+  need("biz.login-min",function(LoginManager){
+    LoginManager.checkLogin(function(){
+      g("login_qq_span").innerHTML = LoginManager.getUserUin();//获取QQ号
+    });
+  });
+});
+//弹窗
+function TGDialogS(e){
+	need("biz.dialog-min",function(Dialog){
+		Dialog.show({
+			id:e,
+			bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+			opacity:50      //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+		});
+	});
+}
+function closeDialog(){
+	need("biz.dialog-min",function(Dialog){
+		Dialog.hide();
+	});
+}
+function share(site) {
+    var _url = encodeURI(document.location);//页面地址
+    var _title = encodeURI(document.title);//页面title
+    var _pic = encodeURI("");//图片：例如：var _pic='图片url1|图片url2|图片url3....
+    var _appkey = encodeURI(""); //你从腾讯获得的appkey
+    var _summary = encodeURIComponent("请输入转播的内容");//转播内容，特殊字符"#"="%23"
+    //微博
+    if (site == "qqwb") {
+      var _t = _summary + encodeURI("地址：");
+      var _u = '//v.t.qq.com/share/share.php?title=' + _t + '&url=' + _url + '&appkey=' + _appkey + '&pic=' + _pic;
+    };
+    //空间
+    if (site == "qqzone") {
+      var _u = '//sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + _url + '&title=' + _title + '&pics=' + _pic + '&summary=' + _summary;
+    };
+    window.open(_u, '', 'width=700,height=680,top=0,left=0,toolbar=no,menubar=no,scrollbars=no,location=yes,resizable=no,status=no');
+};
+</script>
+<script src="http://ossweb-img.qq.com/images/script/bootmanager.js"></script>
+<script language="javascript">
+	$import('com.qq.basic.*');
+	//下面代码仅仅为测试代码而已，正式的时候，不用提供。
+	ScrollMarqueeUP.init({
+		'contentId' : 'carouselContent', //容器ID
+		'scrollstep' : 1, //每次移动的像素
+		'scrollstoptime' : 20 //间断时间(毫秒)
+	});
+</script>
+<script src="http://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+var setSite={ //设置网站属性
+	siteType:"a20170802qmmfz", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+	pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+	pageName:"全民魔法阵", //必填项:页面中文名
+	osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+	ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+	stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

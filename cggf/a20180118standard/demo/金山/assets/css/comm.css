@@ -1,0 +1,37 @@
+﻿@charset "utf-8";
+/* 
+---------------------------------
+Site: jx3.xoyo.com 
+Author:  
+Last Changed by : Jona 7Jing
+Last Update : 2017-1-12
+--------------------------------- 
+*/
+/* topbar */
+#V2-xoyo-topNav { position:absolute; top:0; left:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+.c:before,.c:after {content:"";display:table}
+.c:after {clear:both}
+.c {zoom:1}
+.hide {display: block;width: 0;height: 0;overflow: hidden;}
+.db {display: block;text-indent: -999em;}
+
+body {background-color: #6e4a58;}
+html{overflow-x: hidden;}
+.wrap{width:100%;min-width:1000px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?'1000px':'');}
+.container {width: 1000px;margin: 0px auto;}
+.head {height: 530px;background: url(../images/hd.jpg) no-repeat 50% 0;}
+.content {background: url(../images/ct.jpg) no-repeat 50% 0;height: 346px;padding: 23px 0 0 23px;}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-TGideas">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<title>重构规范</title>
+<link href="../css/comm.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="hide">重构规范</h1>
+<div class="topbox">
+     <div class="container c">
+     	  <a href="javascript:;" class="logo db" title="西安奇境文化传播有限公司"><img src="../images/logo.jpg" alt="" /></a>
+     	  <ul class="toplist c">
+     	  	  <li><a href="../index.htm" title="腾讯">腾讯</a></li>
+     	  	  <li><a href="../畅游.htm" title="畅游">畅游</a></li>
+     	  	  <li><a href="../金山.htm" title="金山">金山</a></li>
+     	  	  <li><a href="../effect.htm" title="效果">效果</a></li>
+     	  	  <li><a href="../study.htm" title="学习内容">学习内容</a></li>
+     	  </ul>
+     </div>
+</div>
+<div class="wrap">
+	 <div class="container pat20">
+	 	   <h3 class="stit">一.国内的打点用的是tcss，PTTsendclick那一套，这套东西在国外我们不能使用，我们要改用google打点。</h3>
+	 	   <div class="info">
+	 	   	   <p><span>1、引入</span></p>
+	 	   	   <img src="../images/pic-hw1.png" width="603" height="204"/>
+	 	   	   <p><span>2、点击统计</span></p>
+	 	   	   <img src="../images/pic-hw2.png" width="602" height="115"/>
+	 	   	   <p>注：具体文档    <a href="https://developers.google.com/analytics/devguides/collection/gtagjs/" target="_blank" class="key">https://developers.google.com/analytics/devguides/collection/gtagjs/</a></p>
+	 	   	   <p>具体实现：</p>
+	 	   	   <p><b>a、移除如下的代码，如下图</b></p>
+	 	   	   <img src="../images/pic-hw3.png" width="613" height="177"/>
+	 	   	   <img src="../images/pic-hw4.png" width="530" height="91"/>
+	 	   	   <p><b>b、用<span>google</span>的替代，<span>click事件改成 gtag('event', 'fnav', {'value': 1, 'name': '游戏介绍'});</span></b></p>
+	 	   	   <h3 class="stit">二、页面统一<span>采用utf-8编码</span>，不要使用gbk编码。</h3>
+	           <img src="../images/pic-hw5.png" width="563" height="93"/>
+	           <h3 class="stit">三、video播放模块，原来用的是国内txplayer那一套，在国外需要<span>换成youtube</span>的。</h3>
+	           <p><b>A、PC端：</b></p>
+	           <p>1、代码:</p>
+	           <p>
+	           	  <strong>
+	           	  	  function showVideo(){<br>
+							$('.video_player').css('z-index', '100');<br>
+							$('#vplayer').append<br>('&lt;iframe class="video_frame" src="//www.youtube.com/embed/fc4ur4rwRbM" frameborder="0" allowfullscreen></iframe&gt;'+
+							'&lt;a class="video_close" href="javascript:closeVideo()" title="X">X</a>'+<br>
+							'&lt;div id="vmask" class="video_mask" onclick="javascript:closeVideo()"></div?');<br>
+						}<br>
+						function closeVideo(){<br>
+							$('#vplayer').html("");<br>
+							$('.video_player').css('z-index', '-1');<br>
+						}
+	           	  </strong>
+	           </p>
+	           <p>2、css:</p>
+	           <p>
+	           	  <strong>
+	           	  	  /*--------------Video-------------------*/<br>
+					.video_player{width: 100%;height: 100%;position: fixed;top: 0;left: 0;z-index:-1;}<br>
+					.video_frame{position: absolute;top:20%;left:25%;width:50%;height: 50%;z-index: 100;}<br>
+					.video_close{width: 32px;height: 32px;color: #fff;position: absolute;left: 74.5%;top: 15.5%;z-index: 100;text-align: center;}<br>
+					.video_mask{background-color:#000;position: absolute;height: 100%;z-index: 99;width: 100%;left: 0px;top: 0px;opacity: 0.7;display: block;}
+
+	           	  </strong>
+	           </p>
+	           <p><b>B、移动端：</b></p>
+	           <p>1、html:</p>
+	           <p>
+	           	   <strong>
+	           	   	   &lt;div class="b_bg" style="display: none;">&lt;/div&gt;<br>
+					   &lt;div class="pop_vid" style="display: none;"><br>
+							&lt;a href="javascript:hidepop('.pop_vid');" class="close">X&lt;/a&gt;
+					   &lt;/div&gt;
+	           	   </strong>
+	           </p>
+	           <p>2、css:</p>
+	           <p>
+	           	  <strong>
+	           	  	  .b_bg{width:100%;height:100%;position:fixed;left: 0;top: 0;background-color: rgba(0,0,0,0.9);z-index:200;}<br>
+					  #video{width:6.4rem;height:4rem;}			<br>
+					  .pop_vid{position:fixed;width:6.4rem;height:4rem;left:50%;margin-left:-3.2rem;top:50%;margin-top:-2rem;z-index:201;}<br>
+					  .close{width:0.15rem;height:0.6rem;color:#fff;font-size:0.5rem;font-weight:bold;position:absolute;right:0.15rem;top:-0.7rem;}
+
+	           	  </strong>
+	           </p>
+	           <h3 class="stit">四、<span>引用的js插件，引用海外cdnjs网站里的（cloudflare）</span>，不要引用qq域名下的。</h3>
+	           <p>例如：</p>
+	           <p>
+	           	   <strong>
+	           	   	   &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" integrity="sha256-R7DnEprdmCwOOU8N+o2WIebJ5BJoWbJuGtJcGN7w2BI=" crossorigin="anonymous" /&gt;
+	           	   </strong>
+	           </p>
+	           <h3 class="stit">五、图片文件夹名字不要用ossweb-img，直接用images就可以。</h3>
+	           <h3 class="stit">六、给出来的页面，请自带一个默认的alert框（不要用系统的）。</h3>
+	 	   </div>
+           
+	 	   
+	 </div>
+</div>
+</body>
+
+</html>

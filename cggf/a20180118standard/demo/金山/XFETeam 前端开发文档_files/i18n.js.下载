@@ -1,0 +1,29 @@
+/*!
+ * i18n adapter
+ * require jquery.js
+ */
+
+(function( w ){
+
+	var I18N = {
+
+		'zh': {
+			'main': '主要的',
+			'spec': '开发规范',
+			'design': '设计规范',
+			'libs': '开发框架',
+            'archaic': '旧版通用模块',
+			'com': '通用模块',
+            'xapp': '西山居游戏-APP',
+            'wx': '微信',
+			'jx3': '剑网3',
+			'code': '常用代码',
+			'statis': '监控统计',
+			'other': '其他'
+		}
+
+	};
+
+	w.I18N = I18N;
+
+})( window );

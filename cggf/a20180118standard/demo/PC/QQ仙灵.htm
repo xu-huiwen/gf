@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-CP" />
+<meta name="Description" content="《QQ仙灵》作为腾讯首款回合制网络游戏巨作，比起一般的2D回合制网络游戏，在玩法上作出了大量有意思的创新和优化。多样而不重复的游戏玩法、炫丽的游戏场景和战斗画面，都会让你眼前一亮！其独有的APC玩法更是让你不再是一个人在游戏，让你的游戏路上不再孤独！在《QQ仙灵》的游戏世界里随时随地都让你惊喜不已！《QQ仙灵》！一款为腾讯用户量身定做的2D回合制网络游戏！" />
+<meta name="Keywords" content="QQ仙灵，仙灵，QQ仙灵官网，腾讯首款，腾讯2D回合制网游，2D回合，QQ仙灵下载， qqxl，h2，mmog，mmorpg，回合制网游，网游，腾讯游戏，好玩的游戏，好玩的网游，腾讯，qq游戏，马化腾" />
+<!-- 设计：cp  | 重构：cp | 创建：2017/08/24  -->
+<title>-QQ仙灵官方网站-腾讯游戏</title>
+<style>
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+ol,ul{list-style:none}
+caption{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+fieldset,img,abbr,acronym{border:0}
+
+/* 页面样式 */
+.c:before,.c:after {content:"";display:table}
+.c:after {clear:both}
+.c {zoom:1}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;}
+a {text-decoration:none;overflow:hidden;}
+a:hover {text-decoration:none;}
+.wrap,#footer_ied {width:100%;min-width:1000px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?'1000px':'');}
+.wrap {background:url(ossweb-img/bg.jpg) no-repeat 50% 0;}
+.container {width:1000px;margin:0 auto;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.fl {float: left;}
+.fr {float: right;}
+.db {display:block;text-indent:-999em;}
+
+/* footer */
+#afooter{text-align:center; line-height:20px;color: #6a6a6a;background-color: #0e0e0e;padding: 20px 0;}
+#afooter a{ color: #6a6a6a;}
+
+/* head */
+.head{height: 3px; background:url(ossweb-img/hd.jpg) no-repeat 50% 0; height: 200px;}
+
+/* content */
+.content{height: 3px; background:url(ossweb-img/ct.jpg) no-repeat 50% 0;}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+    <div class="container">
+        <div class="head pr">
+            <h1 class="hide"></h1>
+            <a href="http://h2.qq.com/" title="QQ仙灵" class="logo db pa" target="_blank">QQ仙灵</a>
+            <div class="login pa">
+               <p id="unlogin">亲爱的用户，请<a href="javascript:LoginManager.login();">【登录】</a></p>
+               <p id="logined" style="display:none;">欢迎您，<span id='login_qq_span'></span>，<a href="javascript:LoginManager.logout();">注销</a></p>
+            </div>                         
+        </div>    	
+        <div class="content">
+        </div>
+    </div>
+</div>
+
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+ siteType:"axxxxxxxx", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName:"首页", //必填项:页面中文名
+ osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:before,q:after{content:'';}
+fieldset,img,abbr,acronym{border:0;}
+
+/*footer*/
+#footer_ied{text-align:center;font-size:12px;line-height:19px;min-width:1200px;color:#6f6f6f;background-color: #FFFFFF}
+.wrap_ied{margin:0 auto;padding:25px 30px;width:940px;}
+.wrap_ied a{color:#6f6f6f;}
+#footer_ied .e{font-size:10px;-webkit-text-size-adjust:none;}
+
+/*页面样式*/
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.c {zoom:1;}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;text-align:justify;background-color: #ffffff}
+html{overflow-x: hidden;}
+a {text-decoration:none;overflow:hidden;}
+a:hover {text-decoration:none;}
+.wrap1a,.wrap1b,.wrap2,.wrap3,.wrap4,.wrap5,.wrap6,.wrap7,.wrap8,.wrap9,#footer_ied {min-width:1200px;width:100%;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?'1000px':'');}
+.container {width:1200px;margin:0 auto;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.db{display:block;text-indent:-999em;}
+.sp{background: url(//game.gtimg.cn/images/cfm/cp/a20171227city/sp.png) no-repeat;}
+.sptit{background: url(//game.gtimg.cn/images/cfm/cp/a20171227city/sptit.png) no-repeat;}
+
+
+			/*轮播*/
+.box{width: 1200px;height: 430px;position: relative;margin: 0 auto;}
+.list{width: 1200px;height: 430px;overflow: hidden;position: absolute;left: 0;top: 0;}
+.btn{display: block;position: absolute;top:205px;width: 26px;height: 58px;cursor: pointer;z-index: 999;}
+.prev{background-position:-32px -262px;left: 0;}
+.prev:hover{background-position: -152px -264px;}
+.next{background-position: -110px -262px;right: 0;}
+.next:hover{background-position:-75px -262px;}
+.list li{position: absolute;top: 32px;left: 0;list-style: none;transition: all 0.3s ease-out;}
+.p1{transform:translate3d(180px,0,0) scale(0.71);}
+.p2{transform:translate3d(100px,0,0) scale(0.71);transform-origin:0 50%;opacity: 0.8;z-index: 2;}
+.p3{transform:translate3d(180px,0,0) scale(1);z-index: 3;opacity: 1;}
+.p4{transform:translate3d(280px,0,0) scale(0.71);transform-origin:100% 50%;opacity: 0.8;z-index: 2;}
+
+.buttons{position: absolute;width: 1200px;height:52px;bottom: -70px;left: 50%;margin-left: -600px;text-align: center;z-index: 900;}
+.buttons a{display: inline-block;width: 90px;height: 52px; cursor: pointer;}
+.v-xz,.buttons a span{background-color: #d1d1d1;width: 52px;height: 8px;}
+.buttons  span{display: block;width: 100%;height: 100%;}
+.buttons  span.on{background-color: #2a84db}
+
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="box">
+		    <div class="list">
+				<ul>
+					<li class="p1">
+						<a href="javascript:;"><img src="//game.gtimg.cn/images/cfm/cp/a20171227city/pic_jcsj1.jpg" width="836" height="394"/></a>
+					</li>
+					<li class="p2">            
+		                <a href="javascript:;"><img src="http://game.gtimg.cn/images/cfm/cp/a20171220ver/lb2.jpg" width="836" height="394"/></a>
+				   </li>
+					<li class="p3">
+						<a href="javascript:;"><img src="http://game.gtimg.cn/images/cfm/cp/a20171220ver/lb4.jpg" width="836" height="394"/></a>
+					</li>
+					<li class="p4">
+						<a href="javascript:;"><img src="http://game.gtimg.cn/images/cfm/cp/a20171220ver/lb3.jpg" width="836" height="394"/></a>
+					</li>
+				</ul>
+			</div>
+			<div class="buttons">
+				<a href="javascript:;"><span class="on"></span></a>
+				<a href="javascript:;"><span></span></a>
+				<a href="javascript:;"><span></span></a>
+				<a href="javascript:;"><span></span></a>
+			</div>
+			<a href="javascript:;" class="prev btn sp"></a>
+			<a href="javascript:;" class="next btn sp"></a>
+    	</div>
+    	
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script>
+var $a=$(".buttons a");
+var $s=$(".buttons span");
+var cArr=["p1","p2","p3","p4"];
+var index=0;
+$(".next").click(
+	function(){
+	nextimg();
+	}
+)
+$(".prev").click(
+	function(){
+	previmg();
+	}
+)
+//上一张
+function previmg(){
+	cArr.unshift(cArr[3]);
+	cArr.pop();
+	//i是元素的索引，从0开始
+	//e为当前处理的元素
+	//each循环，当前处理的元素移除所有的class，然后添加数组索引i的class
+	$(".list li").each(function(i,e){
+		$(e).removeClass().addClass(cArr[i]);
+	})
+	index--;
+	if (index<0) {
+		index=3;
+	}
+	show();
+}
+
+//下一张
+function nextimg(){
+	cArr.push(cArr[0]);
+	cArr.shift();
+	$(".list li").each(function(i,e){
+		$(e).removeClass().addClass(cArr[i]);
+	})
+	index++;
+	if (index>3) {
+		index=0;
+	}
+	show();
+}
+
+//通过底下按钮点击切换
+$a.each(function(){
+	$(this).click(function(){
+		var myindex=$(this).index();
+		var b=myindex-index;
+		if(b==0){
+			return;
+		}
+		else if(b>0) {
+			/*
+			 * splice(0,b)的意思是从索引0开始,取出数量为b的数组
+			 * 因为每次点击之后数组都被改变了,所以当前显示的这个照片的索引才是0
+			 * 所以取出从索引0到b的数组,就是从原本的这个照片到需要点击的照片的数组
+			 * 这时候原本的数组也将这部分数组进行移除了
+			 * 再把移除的数组添加的原本的数组的后面
+			 */
+			var newarr=cArr.splice(0,b);
+			cArr=$.merge(cArr,newarr);
+			$(".list li").each(function(i,e){
+			$(e).removeClass().addClass(cArr[i]);
+			})
+			index=myindex;
+			show();
+		}
+		else if(b<0){
+			/*
+			 * 因为b<0,所以取数组的时候是倒序来取的,也就是说我们可以先把数组的顺序颠倒一下
+			 * 而b现在是负值,所以取出索引0到-b即为需要取出的数组
+			 * 也就是从原本的照片到需要点击的照片的数组
+			 * 然后将原本的数组跟取出的数组进行拼接
+			 * 再次倒序,使原本的倒序变为正序
+			 */
+			cArr.reverse();
+			var oldarr=cArr.splice(0,-b)
+			cArr=$.merge(cArr,oldarr);
+			cArr.reverse();
+			$(".list li").each(function(i,e){
+			$(e).removeClass().addClass(cArr[i]);
+			})
+			index=myindex;
+			show();
+		}
+	})
+})
+
+//改变底下按钮的背景色
+function show(){
+		$($s).eq(index).addClass("on").parent().siblings().children().removeClass("on");
+}
+
+//点击class为p2的元素触发上一张照片的函数
+$(document).on("click",".p2",function(){
+	previmg();
+	return false;//返回一个false值，让a标签不跳转
+});
+
+//点击class为p4的元素触发下一张照片的函数
+$(document).on("click",".p4",function(){
+	nextimg();
+	return false;
+});
+
+//鼠标移入box时清除定时器
+$(".box").mouseover(function(){
+	clearInterval(timer);
+})
+
+//鼠标移出box时开始定时器
+$(".box").mouseleave(function(){
+	timer=setInterval(nextimg,4000);
+})
+
+//进入页面自动开始定时器
+timer=setInterval(nextimg,4000);
+
+</script>
+	</body>
+</html>

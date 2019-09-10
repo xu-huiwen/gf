@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="《灵山奇缘》是腾讯游戏全新发布的国风造物回合网游，也是其布局回合制游戏的决心力作，由一群痴迷回合十几年的拥趸诚意打造。精致画面、深度策略，邀你一起玩转下一个回合。" />
+<meta name="Keywords" content="灵山奇缘，不删档，灵山，代号零，回合，回合制，腾讯，腾讯游戏，腾讯新游，2D ，3D，回合游戏，新游" />
+<meta name="Keywords" content="零，回合，回合制，腾讯，腾讯游戏，腾讯新游，2D ，3D，回合游戏，代号，新游" />
+<!-- 设计：cp  | 重构：cp | 创建：2018/05/22-->
+<title>这一回合 万物生灵-灵山奇缘官方网站-腾讯游戏</title>
+<style>
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+fieldset,img,abbr,acronym{border:0}
+
+/*footer*/
+#afooter{text-align:center; line-height:20px;color: #6a6a6a;background-color: #0e0e0e;padding: 20px 0;}
+#afooter a{ color: #6a6a6a;}
+
+/* basic */
+.c:before,.c:after {content:"";display:table}
+.c:after {clear:both}
+.c {zoom:1}
+a {text-decoration:none;overflow:hidden;}
+a:hover {text-decoration:none;}
+:focus{outline: none;}
+.container {width:1000px;margin:0 auto}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db{display:block;text-indent:-999em;}
+.wrap img{display: block;}
+body{background-color:#4469B0;overflow-x:hidden;}
+.wrap{width: 100%;overflow: hidden;position: relative;}
+	.item{position:relative;}
+		.bg{position:absolute;left:0px;top:0px;width:100%;height:100%;background: url(ossweb-img/bg.jpg);}
+		.item img{width:100%;height:100%;}
+.star{display: block;width: 288px;height: 89px;background:url(ossweb-img/btn1.png) no-repeat;position: absolute;left: 32%;top: 39%;}
+.star:hover{animation:movebottom 1s 0s ease-in both infinite;-webkit-animation:movebottom 0.7s 0s ease-in both infinite;}
+.get{display: block;width: 288px;height: 89px;background:url(ossweb-img/btn2.png) no-repeat;position: absolute;left: 53%;top: 39%;}
+.get:hover{animation:movebottom 1s 0s ease-in both infinite;-webkit-animation:movebottom 0.7s 0s ease-in both infinite;}
+.zi{font-size: 30px;color: #ffff;font-weight: bold;}
+.zi:hover{animation:movebottom 1s 0s ease-in both infinite;-webkit-animation:movebottom 0.7s 0s ease-in both infinite;}
+@keyframes movebottom{
+	from{transform: translateY(-3px);}
+	25%{transform: translateY(0px);}
+	50%{transform: translateY(3px);}
+	75%{transform: translateY(0px);}
+	to{transform: translateY(-3px);}
+}
+@-webkit-keyframes movebottom{
+	from{-webkit-transform: translateY(-3px);}
+	25%{-webkit-transform: translateY(0px);}
+	50%{-webkit-transform: translateY(3px);}
+	75%{-webkit-transform: translateY(0px);}
+	to{-webkit-transform: translateY(-3px);}
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="item">
+		<div class="bg zoom"></div>
+		<div class="ct pa zoom">
+			<p class="zi">64646746464674687467467</p>
+			<a href="GameRun://GameID=11664||||" class="star sp  db " title="启动游戏" onclick="PTTSendClick('btn','btn2','启动游戏')">启动游戏</a>
+			<a href="http://huihe.qq.com/" class="get sp db " title="进入官网" target="_blank" onclick="PTTSendClick('btn','btn1','进入官网')">进入官网</a>
+		</div>
+		
+	</div>
+</div>
+<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script>
+//自适应
+function _getOs(){
+    var sWidth=$(window).width(),sHeight=$(window).height(),w,h;
+    if(sWidth>1920){
+		sWidth=1920;
+	};
+	w=sWidth/1920;
+	h=sWidth/(1920/1080);
+	$(".item").css({height:h});
+    if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){   //判断是否为火狐浏览器
+        $(".zoom").css({"-moz-transform":"scale("+w+")","-moz-transform-origin":"top left"});
+    }else{
+		$(".zoom").css({zoom:sWidth/1920});
+    }
+}
+_getOs();
+$(window).bind("resize",function(){
+	_getOs();
+});
+</script>
+<!--统计-->
+<script src="http://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+ siteType:"a20180726fgzwwsl", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName:"首页", //必填项:页面中文名
+ osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

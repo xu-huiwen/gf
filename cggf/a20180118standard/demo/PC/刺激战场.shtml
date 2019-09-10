@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="腾讯光子工作室群自研大作，正版战斗特训手游《绝地求生：刺激战场》！虚幻4引擎,次世代完美画质,重现端游视听感受;8000M×8000M实景地图,全面自由施展战术;百人竞技,真实射击手感;好友一键组队,语音开黑;给您带来一场刺激的竞技体验" />
+<meta name="Keywords" content="绝地求生,绝地求生刺激战场,绝地求生手游,刺激战场,绝地求生手游下载,绝地求生刺激战场下载,绝地求生国服,吃鸡手游,刺激战场下载,绝地求生 刺激战场,绝地求生下载,掘地求生刺激战场,腾讯吃鸡手游,绝地求生大逃杀,腾讯绝地求生手游"/>
+<title>-绝地求生刺激战场官网网站-腾讯游戏 </title>
+<!--双端判断-->
+<script>
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    	//移动端页面地址
+        window.location.href = "";
+    }
+    if(window.location.protocol == "https:"){
+        window.location.href = window.location.href.replace(/https/,"http");
+    }
+</script>
+<style>
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+ol,ul{list-style:none}
+caption{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+fieldset,img,abbr,acronym{border:0}
+/* footer */
+#afooter{text-align:center;font-size:12px;line-height:19px;min-width:1000px;color:#656565;background-color: #171717;}
+.wrap_ieg{margin:0 auto;padding:25px 30px;width:940px;}
+.wrap_ieg a{color:#656565;}
+#afooter .e{font-size:10px;-webkit-text-size-adjust:none;}
+/* 页面样式 */
+.c:before,.c:after {content:"";display:table}
+.c:after {clear:both}
+.c {zoom:1}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;background-color:#5BAEFE;}
+a {text-decoration:none;overflow:hidden;}
+a:hover {text-decoration:none;}
+:focus{outline: none;}
+.navbox,.par1,.par2,.par3,.par4,.par5,.par6,.par7,#footer_ied {width:100%;min-width:1000px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?'1000px':'');}
+.containerz {width:1000px;margin:0 auto;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db {display:block;text-indent:-999em;}
+.sp{background: url(ossweb-img/sp.png) no-repeat;}
+/*页面样式*/
+</style>
+<link rel="stylesheet" href="//game.gtimg.cn/images/cjm/web201801/public.css">
+</head>
+<body>
+<h1 class="hide"></h1>
+<!-- 头部开始 -->
+<!--#include virtual="/web201801/inc/topnav.htm" -->
+<!-- 头部结束 -->
+<div class="par1">
+	<div class="containerz">
+			
+	</div>
+</div>
+<div class="nav2_wrap">
+	<div class="containerz">
+		
+	</div>
+</div>
+<div class="par2" id="ct1">
+	<div class="containerz">
+		
+	</div>
+</div>
+<div class="par3" id="ct2">
+	<div class="containerz">
+		
+	</div>
+</div>
+<div class="par4" id="ct3">
+	<div class="containerz">
+		
+	</div>
+</div>
+<div class="par5">
+	<div class="containerz">
+		
+	</div>
+</div>
+<div class="par6">
+	<div class="containerz">
+		
+	</div>
+</div>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.7.2.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//game.gtimg.cn/images/cjm/web201801/script.js"></script>
+<!--统计-->
+<script src="http://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+ siteType:"axxxxx", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName:"首页", //必填项:页面中文名
+ osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

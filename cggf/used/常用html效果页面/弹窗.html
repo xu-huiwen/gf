@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+		
+/*弹窗*/
+.par1-btn1{display: block;width: 124px;height: 39px;background:red;}
+.dialog{display: none;}
+.pop1{width: 500px;height: 800px;background: #ECECEC;overflow: hidden;}
+.pop1-tit1{margin: 0 auto;margin-top: 20px;background: #000000;width: 430px;height: 50px;}
+.dia-close{width: 45px;height: 45px;background:#ED5E20;right: -45px;top: 0px;display: block;font-size: 43px;color: #FFFFFF;text-align: center;line-height: 45px;font-weight: 100;font-family: serif;position: absolute;}
+</style>
+<a href="javascript:TGDialogS('test1');"class="par1-btn1"></a>
+<!-- 弹出层test1 Start-->
+<div class="dialog pr" id="test1">
+	<div class="pop1">
+		<h5 class="pop1-tit1"></h5>
+	</div>
+	<a class="dia-close pa" href="javascript:showDialog.hide()" title="关闭">×</a>
+</div>
+<!-- 弹出层test1 End-->
+
+
+
+
+
+
+
+
+
+		<style>
+			/*a{text-decoration: none;overflow: hidden;}
+			a:hover{text-decoration: none;overflow: hidden;}
+			:focus{outline: none;}*/
+			/*p{cursor: pointer;}*/
+		</style>
+	</head>
+	<body>
+		<!--<p onClick="TGDialogS('test1')">弹出id为test1的div：</p>
+		<p onClick="TGDialogS('test2')">弹出id为test2的div：</p>-->
+		<!-- 弹出层test1 Start-->
+		<!--<div class="dialog pr" id="test1" style="display:none">
+			<div class="dia-con">我是弹出层test1</div>
+			<a class="dia-close pa" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>-->
+		<!-- 弹出层test1 End-->
+		<!-- 弹出层test2 Start-->
+		<!--<div class="dialog pr" id="test2" style="display:none">
+			<div class="dia-con">我是弹出层test2</div>
+			<a class="dia-close pa" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>-->
+		<!-- 弹出层test2 End-->
+		<script src="http://ossweb-img.qq.com/images/js/milo/milo.js"></script>
+		<script>
+			function TGDialogS(e){
+				need("biz.dialog",function(Dialog){
+					Dialog.show({
+						id:e,
+						bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+						opacity:70 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+					});
+				});
+			}
+			function closeDialog(){
+				need("biz.dialog",function(Dialog){
+					Dialog.hide();
+				});
+			}
+			
+			
+	</script>
+	</body>
+	
+	
+	
+	<!--<body>-->
+		<!--1-->
+		<!--<a class="dia-btn" href="javascript:showDia();">点击显示弹层1</a>
+		<div class="dia" id="dia" style="display:none">
+			<div class="dia-con">弹出层内容1</div>
+			<a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>-->
+		
+		
+		<!--2-->
+		<!--<a class="dia-btn" href="javascript:showDia2();">点击显示弹层2</a>
+		<div class="dia" id="dia2" style="display:none">
+			<div class="dia-con">弹出层内容2</div>
+			<a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>
+		<script src="http://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>-->
+		<!--<script>
+			function showDia(){
+				showDialog.show({
+					id:"dia", //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+					bgcolor:"#000",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			}
+			function showDia2(){
+				showDialog.show({
+					id:"dia2", //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+					bgcolor:"#000",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			}
+		</script>
+	</body>-->
+</html>

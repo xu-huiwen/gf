@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="暗黑品类史诗级ARPG手游，《代号-R》高度还原了暗黑经典玩法，美术品质匠心打造，丰富的关卡和完善的剧情，全方位保证玩家的游戏代入感，为玩家带来游戏乐趣同时奉上绝美的视听盛宴。" />
+<meta name="Keywords" content="POE,流放之路,暗黑,暗黑破坏神,大菠萝,暗黑2,暗黑3,破坏神,NGA,暴雪,Blizzard,魔兽,风暴英雄" />
+<!-- 设计：cp  | 重构：cp | 创建：2018/12/24  -->
+<title>黑暗降临，世界濒临毁灭-拉结尔手游官方网站</title>
+<script>
+//屏幕适配函数
+(function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+        var clientWidth = docEl.clientWidth
+        if (!clientWidth) return;
+        // 750 为设计稿的宽度，以实际情况修改
+        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px'
+    }
+    if (!doc.addEventListener) return
+    recalc()
+    win.addEventListener(resizeEvt, recalc, false)
+    doc.addEventListener('DOMContentLoaded', recalc, false)
+})(document, window)
+</script>
+<link rel="stylesheet" href="https://ossweb-img.qq.com/images/js/swiper/swiper-4.3.3.min.css">
+<style>
+
+</style>
+<link rel="stylesheet" href="css/comm.css" />
+</head>
+<body>
+<div class="wrap" id="wrap">
+	<h1 class="hide">黑暗降临，世界濒临毁灭</h1>
+	<!--loading-->
+    <div class="preload">
+        <p class="preload_line sp">
+        	<span class="sp"></span>
+        </p>
+        <p class="preload_percent"><span>0</span>%</p>
+    </div>
+    <div class="preload_ct">
+    	<!-- Swiper -->
+		<div class="swiper-container swiper-container-v">
+	        <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+	        		<div class="vbg pa">
+						<video src="media/mian.mp4" loop="loop" class="myvideo" id="myvideo" preload="preload" x-webkit-airplay="true" airplay="allow" webkit-playsinline="true" playsinline="true" style="height: 667px; width: auto;"></video>
+						<div class="fm_img" id="fm_img"></div>
+					</div>
+					<a href="javascript:;" class="index_vb db sp" title="视频">视频</a>
+					<a href="javascript:;" class="logo1 sp pa db" title="拉结尔">拉结尔</a>
+					<a href="javascript:;" class="logo2 sp pa db" title="QQ专属">QQ专属</a>
+					<span class="xl_arrow sp"></span>
+					
+				</div>
+		       </div>
+	        <div class="swiper-pagination swiper-pagination-v"></div>
+	    </div>
+    	<a href="javascript:;" class="guajian db" title="立即预约">立即预约</a>
+    </div>	
+</div>
+
+<script src="https://ossweb-img.qq.com/images/js/zepto/zepto1.2.min.js"></script>
+<script src="https://ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
+<script src="https://imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2.js" charset="utf-8"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

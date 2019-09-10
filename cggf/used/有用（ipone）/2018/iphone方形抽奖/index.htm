@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="Tencent-CP" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<!-- 设计：cp  | 重构：cp | 创建：2018/02/22  -->
+<title>华为专属豪礼，五星武将蔡琰助您为王</title>
+<script>
+function AutoPage(){ 
+	document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 640 + 'px';
+ } ;
+AutoPage();
+window.addEventListener('resize',AutoPage,false)  
+</script>
+<style>
+/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;font-weight: normal;}
+body{-webkit-text-size-adjust:none; font-size: 0.24rem;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong{font-weight:normal;font-style:normal;}
+a {text-decoration:none;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db {display:block;text-indent:-999em;}
+img{display: block;border: none;}
+:focus {outline: none;}
+.wrap{width: 100%;overflow: hidden;}
+body,html{background-color: #CEE3FB;}
+.sp {background: url(ossweb-img/sp.png) no-repeat;background-size: 5.29rem 4.98rem;-webkit-background-size: 5.29rem 4.98rem;}
+.popsp {background: url(ossweb-img/popsp.png) no-repeat;background-size: 3.83rem 2.32rem;-webkit-background-size: 3.83rem 2.32rem;}
+footer {width: 100%;background-color: #516BAC;height: 0.72rem;line-height: 0.72rem;color: #DEDEF8;text-align: center;font-size: 0.2rem;}
+header {height: 7.26rem;background: url(ossweb-img/hd.jpg) no-repeat 50% 0; background-size: 100%;-webkit-background-size: 100%;position: relative;}
+
+/*main*/
+.main{height: 34.3rem;background: url(ossweb-img/ct.jpg) no-repeat 50% 0;background-size: 100%;-webkit-background-size: 100%;}
+/*section1*/
+
+
+/*3*/
+.section3{padding-top: 1.05rem;}
+.tit3{width: 4.45rem;height: 0.66rem;background-position:0 -4.32rem;margin: 0 auto;}
+/*抽奖*/
+.flash{width: 5.63rem;height: 4.31rem;margin: 0 auto;margin-top: 0.15rem;position: relative;position: relative;}
+.flash img{display: block;width: 5.63rem;height: 4.31rem;}
+
+
+</style>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		
+	</header>
+	<div class="main">
+		
+		<section class="section section3">
+			<h3 class="tit3 sp"></h3>
+			<p class='se1-msg1'>主公，登录游戏即可参与抽奖，日限一次</p>
+			<div class='flash'>
+				<div class="lottery" id="lotterycontent" style="">
+			    <img src="ossweb-img/flash.jpg" style="">
+			</div>
+			</div>
+			
+		</section>
+		
+	</div>
+	<footer>腾讯公司保留在法律规定的范围内对上述规则进行解释的权利</footer>
+</div>
+<script src="http://game.gtimg.cn/images/js/delottery/lottery.js"></script>
+
+<script>
+//点击开始抽奖 通知js flash->js
+
+	//开始抽奖lottery->js
+	function callJsToStart() {
+		lottery.disable();
+		calllotteryToRoll(4);
+	}
+	//开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+	function calllotteryToRoll(id) {
+		if (lottery) lottery.stopRoll(id);
+	}
+	//动画完成通知js lottery->js		
+	function callJsToComplete() {
+		alert('恭喜你获得大奖哟！！');
+	}
+
+	//初始化抽奖的 可以不知道内部
+	var lottery = new Lottery({
+		'lighturl': 'http://ossweb-img.qq.com/images/js/delottery/sel.png',//外部光圈png 不填写就用默认的效果
+		'starturl': 'http://ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', //外部按钮png 不填写就用默认的按钮效果
+		'width':5.63,
+		'height': 4.31,
+		'total': 8,
+		'sbtnx': 1.85,
+		'sbtny': 1.34,
+		'sbtnw': 1.86,
+		'sbtnh': 1.49,
+		'boxw': 1.77,
+		'boxh':1.33,
+		'position':"0_0,1.93_0,3.86_0,3.86_1.49,3.86_2.98,1.93_2.98,0_2.95,0_1.49",
+		//奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+		'contentId': 'lotterycontent',//嵌入lottery 的div层的 id 
+		'onClickRollEvent': callJsToStart,//对应上面接口
+		'onCompleteRollEvent': callJsToComplete //对应上面接口
+	});
+</script>
+
+</body>
+</html>

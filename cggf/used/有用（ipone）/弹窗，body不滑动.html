@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			.pf {position: fixed;}
+			
+			#popmask{position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index: 999;}
+			.pop{display: none;position: relative;}
+			.pop_close{display: block;width: 0.34rem;height: 0.34rem;background: #3a3838;font-size: 0.32rem;color: #f2f2f2;line-height: 0.34rem;text-align: center;position: absolute;top: 0.1rem;right: 0.1rem;}
+		</style>
+	</head>
+	<body>
+		<script>
+			//弹窗
+  	var sTop;
+    window.popNames=null;
+	function gE(e) {
+			return document.querySelector(e)
+	}
+	function pop(e) {
+		if(window.popNames!==null){
+			hidePopOk(window.popNames);
+		}else{
+			window.popNames=e;
+		}
+		showpop(e);
+		sTop = $(window).scrollTop();
+        $('body').css("top",-sTop+"px");//给body一个负的top值；
+        $('body').addClass('pf');//给body增加一个类，position:fixed; 
+        return sTop;
+	}
+	function showpop(e){
+		gE(e).style.display = "block";
+		var popH = gE(e).offsetHeight,
+				popW = gE(e).offsetWidth;
+		gE(e).style.cssText = "position:fixed;left:50%;display:block;top:50%;z-index:9999;" + "margin-left:-" + popW / 2 + "px;" + "margin-top:-" + popH / 2 + "px;";
+		if(!gE('#popmask')) {
+			var bgObj = document.createElement("div");
+			bgObj.setAttribute('id', 'popmask');
+			document.body.appendChild(bgObj);
+		}
+		var conH = document.body.offsetHeight;
+		gE('#popmask').style.height = conH + "px";
+		window.popNames=e;
+	}
+	window.addEventListener('resize',function(){
+		if(window.popNames!==null){
+			 showpop(window.popNames);
+		}
+	},false);
+	function hidePopOk(e) {
+		$('body').removeClass('pf');//去掉给body的类
+        $(window).scrollTop(sTop);//设置页面滚动的高度，如果不设置，关闭弹出层时页面会回到顶部。
+		if(window.popNames!==null){
+			gE(window.popNames).style.display = "none";
+			var bgObj = gE("#popmask");
+			document.body.removeChild(bgObj);
+			window.popNames=null;
+			PTTSendClick('btn','pop_close','关闭')
+		}
+	}
+		</script>
+	</body>
+</html>

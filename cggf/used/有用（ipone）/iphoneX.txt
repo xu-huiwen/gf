@@ -1,0 +1,16 @@
+window.addEventListener('resize', resize, false);
+		window.addEventListener('load', function(){
+			if(document.documentElement.clientWidth > document.documentElement.clientHeight&&isIhoneX()){
+				document.documentElement.style.width = 812+'px';
+				document.documentElement.style.fontSize = 812 /13.34 + "px";
+			}
+			if(document.documentElement.clientWidth < document.documentElement.clientHeight&&isIhoneX()){
+				document.documentElement.style.height = 812+'px';
+				document.documentElement.style.fontSize = 375 /7.5 + "px";
+			}
+		}, false);
+		
+		function isIhoneX(){
+			var isIX = /iphone/gi.test(navigator.userAgent) && (screen.height == 812 && screen.width == 375);
+			return isIX;
+	   	}

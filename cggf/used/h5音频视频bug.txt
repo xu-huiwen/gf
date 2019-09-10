@@ -1,0 +1,26 @@
+pc   谷歌  视频必须静音才能播放
+               音频必须触发才能播放
+
+安卓  视频不能测试，只能在安卓测试
+
+        音频       可以自动播放
+
+ios  视频         
+      音频         在微信上不能自动播放加上以下代码就可以，自带浏览器不能播放
+<script src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
+<script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+//解决苹果手机下不自动播放
+	function autoPlayAu(){
+		wx.config({
+			debug:false,
+			appId:'',
+			timestamp:1,
+			signature:'',
+			jsApiList:[]
+		})
+		wx.ready(function(){
+			var glbala=document.getElementById('myaudio')
+			glbala.play();
+		})
+	}
+	autoPlayAu()

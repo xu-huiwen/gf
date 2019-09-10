@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="页面的描述内容" />
+<meta name="Keywords" content="页面关键字" />
+<title>pop弹窗</title>
+<script>
+function AutoPage(){ 
+	document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 750 + 'px';
+ } ;
+AutoPage();
+window.addEventListener('resize',AutoPage,false)  
+</script>
+
+	</head>
+	<link rel="stylesheet" href="comm.css" />
+	<body>
+	<div class="wrap">
+		<div class="head">
+			<a href="javascript:show_pop('.pop_id_8');">规则1</a>
+		</div>
+		<div>
+			<div class="part1">
+				<a href="javascript:show_pop('.pop_id_8');">规则2</a>
+			</div>
+			<div class="part2">
+				<a href="javascript:show_pop('.pop_id_8');">规则3</a>
+			</div>
+			<div class="part3">
+				<a href="javascript:show_pop('.pop_id_8');">规则4</a>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+<!-- S 登录浮动层 -->
+<div class="pop_box pop_style_1 pop_id_1" data-popname="登录浮动层">
+	<div class="pop_hd">
+		<h3>登录</h3>
+	</div>
+	<div class="pop_bd">
+		<div class="pop_login_1">
+			<a href="javascript:gotoWx();" class="wx"><i class="pop_ico_des pop_ico_des_1"></i><span>微信登录</span></a>
+			<a href="javascript:goToQQ();" class="qq"><i class="pop_ico_des pop_ico_des_2"></i><span>QQ登录</span></a>
+		</div>
+	</div>
+	<a class="pop_close" href="javascript:myClose();">×</a>
+</div>
+<!-- E 登录浮动层 -->
+<!-- S 提示语弹出框 只有确定按钮 -->
+<div class="pop_box pop_style_1 pop_id_2" data-popname="提示语弹窗">
+	<div class="pop_hd">
+		<h3>提示</h3>
+	</div>
+	<div class="pop_bd">
+		<div class="pop_dia_1">
+			<p>公共提示音？</p>
+		</div>
+		<div class="pop_return"><a href="javascript:myClose();" class="pop_btn pop_btn_2">确定</a></div>
+	</div>
+	<a class="pop_close" href="javascript:myClose();">×</a>
+</div>
+<!-- E 提示语弹出框 -->
+<!-- S 提示语弹出框 只有确定按钮 -->
+<div class="pop_box pop_style_1 pop_id_2_1" data-popname="下载弹窗">
+	<div class="pop_hd">
+		<h3>下载游戏</h3>
+	</div>
+	<div class="pop_bd">
+		<div class="pop_dia_1">
+			<p>为了奖励的顺利发放，创建过游戏角<br>色的账号才能参与活动。<br>前往下载游戏创建角色>></p>
+		</div>
+		<div class="pop_return"><a href="javascript:myClose();enterGame();" class="pop_btn pop_btn_2">下载游戏</a></div>
+	</div>
+	<a class="pop_close" href="javascript:myClose();">×</a>
+</div>
+<!-- E 提示语弹出框 -->
+<!-- S 装备介绍 -->
+<div class="pop_box pop_style_1 pop_id_3" data-popname="装备介绍">
+	<div class="pop_hd">
+		<h3 class="zb_title">Kar98K</h3>
+	</div>
+	<div class="pop_bd">
+		<div class="pop_dia_1">
+			<p>拥有<span class="color_strong">X</span>个</p>
+		</div>
+		<div class="pop_giftinfo_1">
+			<div class="thumb"><img src="ossweb-img/pk_d_1.png" alt=""/></div>
+			<div class="desc">
+				<p class="zb_desc">这是装备描述</p>
+			</div>
+		</div>
+		<div class="pop_return">
+			<a href="javascript:;" class="pop_btn pop_btn_2" ontouchend="PTTSendClick('btn','pop_id_3_zs','装备介绍赠送');">赠送</a><a href="javascript:;" ontouchend="PTTSendClick('btn','pop_id_3_sy','装备介绍索要');" class="pop_btn pop_btn_2">索要</a>
+		</div>
+		<div class="pop_return_tips">
+			<span class="pop_btn_tx">剩余<span class="zs_num">0</span>次</span><span class="pop_btn_tx">剩余<span class="sy_num">0</span>次</span>
+		</div>
+	</div>
+	<a class="pop_close" href="javascript:myClose();">×</a>
+</div>
+<!-- E 提示语弹出框 -->
+<!-- S 获取装备 -->
+<div class="pop_box pop_style_1 pop_id_3_1" data-popname="获取装备">
+	<div class="pop_hd">
+		<h3>获取装备</h3>
+	</div>
+	<div class="pop_bd">
+		<div class="pop_dia_1">
+			<p>恭喜获得【<span class="color_strong zb_title">八倍镜</span>】</p>
+		</div>
+		<div class="pop_giftinfo_1">
+			<div class="thumb"><img src="ossweb-img/pk_l_3.png" alt=""/></div>
+			<div class="desc">
+				<p class="zb_desc">这是装备描述</p>
+			</div>
+		</div>
+		<div class="pop_return">
+			<a href="javascript:myClose();" class="pop_btn pop_btn_2">确定</a>
+		</div>
+		
+		<div class="pop_return_tips" style="display: none;">
+			<span class="pop_btn_tx">剩余3次</span><span class="pop_btn_tx">剩余3次</span>
+		</div>
+	</div>
+	<a class="pop_close" href="javascript:myClose();">×</a>
+</div>
+<!-- E 提示语弹出框 -->
+<!-- S 每日任务 -->
+<div class="pop_box pop_style_1 pop_id_7" data-popname="每日任务">
+	<div class="pop_hd">
+		<h3>赚取次数</h3>
+	</div>
+	<div class="pop_bd">
+		<div class="pop_task_box">
+			<p class="desc"><span class="color_strong">每天可获得5次获取装备次数(次日0点重置)</span></p>
+			<ul class="task_list_1">
+				<li>
+					<h3>登录游戏</h3>
+					<p>+1</p>
+					<!--<i class="ico_des ico_des_8"></i>-->
+					<div class="stauts" id="task_1">
+						<a href="javascript:;" ontouchend="PTTSendClick('btn','pop_id_7_game','获取次数进入游戏');">进入游戏</a>
+					</div>
+				</li>
+				<li>
+					<h3>赠送1个装备</h3>
+					<p>+2</p>
+					<div class="stauts" id="task_2">
+						<a href="javascript:;" ontouchend="PTTSendClick('btn','pop_id_7_zs','获取次数赠送');">赠送</a>
+					</div>
+				</li>
+				<li>
+					<h3>索要1个装备</h3>
+					<p>+1</p>
+					<div class="stauts" id="task_3">
+						<a href="javascript:;" ontouchend="PTTSendClick('btn','pop_id_7_sy','获取次数索要');">索要</a>
+					</div>
+				</li>
+				<li>
+					<h3>发出或接受1次交换</h3>
+					<p>+1</p>
+					<div class="stauts" id="task_4">
+						<a href="javascript:;" ontouchend="PTTSendClick('btn','pop_id_7_jh','获取次数交换');">交换</a>
+					</div>
+				</li>
+			</ul>
+			<p class="desc">活动火爆，进度刷新可能会存在一些延迟</p>
+		</div>
+		<div class="pop_return"><a ontouchend="PTTSendClick('btn','entergame','进入游戏');" id="go_to" href="javascript:enterGame();" class="pop_btn pop_btn_2" style="display: none;">进入游戏</a></div>
+		<a class="pop_close" href="javascript:myClose();">×</a>
+	</div>
+</div>
+<!-- E 每日任务 -->
+<!-- S 活动说明 -->
+<div class="pop_box pop_style_1 pop_id_8" data-popname="活动说明">
+	<div class="pop_hd">
+		<h3>活动规则</h3>
+	</div>
+	<div class="pop_bd">
+		<div class="pop_info_box">
+			<h4 style="display: none;">整个活动分两阶段</h4>
+			<ul class="rules_style_1">
+				<li><div class="num">1.</div>【活动时间】x月x日-x月x日。</li>
+				<li><div class="num">2.</div>【获取装备】完成登录、赠送、索要和交换任务可获得抽取次数，点击[获取装备]按钮即可消耗次数抽取装备，任务及次数次日0点重置。</li>
+				<li><div class="num">3.</div>【赠送】每日可发出 2次 赠送，接受好友 2次 赠送。</li>
+				<li><div class="num">4.</div>【索要】每日可发出 1次 索要，响应好友 1次 索要。</li>
+				<li><div class="num">5.</div>【交换】每日可发出 1次 交换，接受好友 1次 交换。</li>
+				<li><div class="num">6.</div>【记录】未完成的分享可在“记录”中继续分享，且不会消耗当天的主动发出次数，但不能完成当天的分享任务。</li>
+				<li><div class="num">7.</div>【头盔皮肤】消耗2套装备（1套6种装备各需1个），可兑换 特殊使命头盔皮肤(1~3级)(永久)。1~3级的头盔皮肤各限换1次，兑换整套头盔皮肤需6套装备。</li>
+				<li><div class="num">8.</div>【降落伞】集6种装备即送，无需消耗装备可领取 特殊使命降落伞(永久)，限领1次。</li>
+				<li><div class="num">9.</div>【金币宝箱】消耗2个不同装备可兑换1个天天对决金币宝箱，限换10个。</li>
+				<li><div class="num">10.</div>【奖励到账】同一微信/手Q账号参加活动，限换/领1次的奖励只能领取到账号下的某一角色内。请注意选择确认系统及相应角色。奖励将在成功领取后24小时内通过邮件发放至相应角色。</li>
+				<li><div class="num">11.</div>根据腾讯健康系统规则，未满16周岁用户参与本活动，需在满16周岁后才可以登录游戏领取奖励。</li>
+			</ul>
+			<h4 style="display: none;">FAQ</h4>
+			<dl style="display: none;">
+				<dt>1.2222</dt>
+				<dd>点击按钮“索要”，将索要请求发送给好友，好友点击链接确认赠送，即可获得好友送出的碎片，每个帐号每天最多可领取他人赠送的1个碎片。</dd>
+				<dt>2.我要如何交换碎片？</dt>
+				<dd>点击按钮“交换”，将碎片交换请求发送给好友，好友点击链接确认交换，即可获得你所需碎片，每个帐号每日最多可与他人<span onclick="gotest();">交换2次</span>。</dd>
+			</dl>
+		</div>
+	</div>
+	<a class="pop_close" href="javascript:myClose();">×</a>
+</div>
+<!-- E 活动说明 -->
+<!-- S 分享朋友圈 -->
+<div class="pop_box pop_style_1 pop_id_9" data-popname="分享">
+	<div class="pop_hd">
+		<h3>分享</h3>
+	</div>
+	<div class="pop_bd">
+		<ul class="pop_channel_list clearfix">
+			<li><a href="javascript:msdkToShare('wxfriend');"><i class="ico_pop_channel ico_pop_channel_2"></i><span>微信好友</span></a></li>
+			<li><a href="javascript:msdkToShare('wxzone');"><i class="ico_pop_channel ico_pop_channel_1"></i><span>朋友圈</span></a></li>
+			<li><a href="javascript:msdkToShare('qqfriend');"><i class="ico_pop_channel ico_pop_channel_3"></i><span>QQ好友</span></a></li>
+			<li><a href="javascript:msdkToShare('qqzone');"><i class="ico_pop_channel ico_pop_channel_4"></i><span>QQ空间</span></a></li>
+		</ul>
+	</div>
+	<a class="pop_close" href="javascript:myClose();">×</a>
+</div>
+<!-- E 分享朋友圈 -->
+<!-- S 选择角色 -->
+<div class="pop_box pop_style_1 pop_id_10" data-popname="选择角色">
+	<div class="pop_hd">
+		<h3>选择角色</h3>
+	</div>
+	<div class="pop_bd">
+		<ul class="pop_select_list">
+			<li>
+				<select name="" id="channelContentId" style="display: none;">
+					<option value="">平台</option>
+				</select>
+			</li>
+			<li>
+				<select name="" id="systemContentId">
+					<option value="">系统</option>
+				</select>
+			</li>
+			<li style="display: none;" >
+				<select name="" id="areaContentId">
+					<option value="">大区</option>
+				</select>
+			</li>
+			<li>
+				<select name="" id="roleContentId">
+					<option value="">角色</option>
+				</select>
+			</li>
+			<li  id="changeVerifyImg" style="display: none;"></li>
+		</ul>
+		<div class="pop_return"><a href="javascript:;" class="pop_btn pop_btn_2" id="btn_submit">确认</a></div>
+	</div>
+	<a class="pop_close" href="javascript:myClose();">×</a>
+</div>
+<!-- E 选择角色 -->
+<!-- S 记录 -->
+<div class="pop_box pop_style_1 pop_id_36" data-popname="记录">
+	<div class="pop_hd">
+		<h3>记录</h3>
+	</div>
+	<div class="pop_bd">
+		<div class="pop_record_box_2">
+			<ul class="pop_record_1" style="max-height: 6rem;overflow-y: auto;">
+				<li>
+					<div class="date">2018-05-02 10:00:00</div>
+					<p>您索要了一个<span class="color_strong">碎片名称</span>暂未有好友赠送</p>
+					<div class="action"><a href="javascript:;">继续邀请</a></div>
+				</li>
+				<li>
+					<div class="date">2018-05-02 10:00:00</div>
+					<p>赠送1个<span class="color_strong">碎片名称</span>未被领取</p>
+				</li>
+				<li>
+					<div class="date">2018-05-02 10:00:00</div>
+					<p>赠送了1个<span class="color_strong">玩家ID</span>1个<span class="color_strong">碎片名称</span></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<a class="pop_close" href="javascript:myClose();">×</a>
+</div>
+<!-- E 记录 -->
+<!-- S 分享指引 -->
+<div class="pop_box pop_share" data-popname="分享">
+	<a href="javascript:myClose();"></a>
+</div>
+
+<!-- msdk分享遮罩 -->
+<div class="pop_box pop_id_33" data-popname="msdk分享遮罩" style="display:none;" onclick="myClose();"></div>
+
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto1.2.min.js"  ></script>
+<script>
+//弹窗
+function show_pop(pop_id) {
+	myClose();
+	$(".pop_box").hide();
+	var ptt = $(pop_id).data('popname')
+	PTTSendClick('btn', pop_id, '打开浮动层');
+	$(pop_id).css('display','block');
+	var pop_mask = "<div class='pop_mask'></div>";
+	$("body").append(pop_mask);
+	$(pop_id).css({"z-index": "999"});
+	$("html").addClass("noscroll");
+}
+function myClose() {
+	$("div.pop_mask").remove();
+	$(".pop_box").hide();
+	$("html").removeClass("noscroll");
+}
+</script>
+</body>
+</html>

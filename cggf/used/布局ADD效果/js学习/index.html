@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>随机生成颜色,生成指定范围随机数</title>
+		<style>
+			.bg1{width: 50px;height: 50px;background: #000;margin-bottom: 20px;color: #FFFFFF;font-size: 20px;text-align: center;line-height: 50px;}
+		</style>
+	</head>
+	<body>
+		<div class="bg1"></div>
+		<div class="bg1"></div>
+		<div class="bg1"></div>
+		<div class="bg1"></div>
+		<script>
+			 window.onload = function () {
+				//随机生成颜色
+//				function randomColor() {
+//			    	return '#' + ('00000' + (Math.random() * 0x1000000 << 0).toString(16)).slice(-6);
+//				}
+//				randomColor();
+//				var col=randomColor();
+				//第1种
+//				var bg2=document.getElementsByClassName("bg1")
+//				var i;
+//				for (i = 0; i < bg2.length; i++) {
+//				    bg2[i].style.backgroundColor = ""+col;
+//				}
+//				console.log(bg2)
+				//第2种
+//				var bg1=document.getElementsByClassName("bg1")[0]
+//				bg1.style.backgroundColor = ""+col;
+//				console.log(bg1)
+
+				//生成指定范围随机数
+				function randomNum(min, max) {
+		    		return Math.floor(min + Math.random() * (max - min));
+				}
+				randomNum(200, 100)
+				var num = randomNum(100, 200)
+				var bg2=document.getElementsByClassName("bg1")
+				var i;
+				for (i = 0; i < bg2.length; i++) {
+				    bg2[i].innerHTML = ""+num;
+				}
+			}
+		</script>
+	</body>
+</html>

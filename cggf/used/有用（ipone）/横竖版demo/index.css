@@ -1,0 +1,31 @@
+/*---- global.css begin----*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;}
+body{font:normal normal normal .24rem/1.5em "HelveticaNeue-Light","Helvetica Neue Light","Clockopia";text-align:center;height:100%;word-break:break-all; font-size: 0.26rem;}
+div{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active,a:focus{outline:none;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+::-moz-selection{color:#FFFFFF;background-color:#209EEB;}
+li{list-style-type:none;}
+img{border:none;}
+fieldset{border-style:none}
+label,button{cursor:pointer;}
+select,input,textarea{font-size:.24rem;line-height:1.2em;}
+.clearfix:before,.clearfix:after{clear:both;content:'.';display:block;height:0;visibility:hidden;line-height:0;}
+.clearfix{*zoom:1;}
+.fix{word-break:keep-all;overflow:hidden;text-overflow:ellipsis;}
+.clear{font-size:0;line-height:0;height:0;clear:both;overflow:hidden;display:block;}
+.none{display:none;}
+input[type=text]{outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+html,body{background:#28262b;overflow-x: hidden;}
+body{-webkit-text-size-adjust : 100% ;-moz-text-size-adjust : 100% ;-ms-text-size-adjust : 100% ;text-size-adjust : 100%;}
+
+/* ˙∆¡*/
+@media screen and (orientation: portrait) {}
+
+/*∫·∆¡*/
+@media screen and (orientation: landscape) {}
+

@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="页面的描述内容" />
+<meta name="Keywords" content="页面关键字" />
+<!-- 设计：cp  | 重构：cp | 创建：2018/01/22 | 更新：| 团队博客：http://tgideas.qq.com/ -->
+<title>抽奖</title>
+<script>
+function AutoPage(){ 
+	document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 750 + 'px';
+ } ;
+AutoPage();
+window.addEventListener('resize',AutoPage,false)  
+</script>
+
+<style>
+/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+body{-webkit-text-size-adjust:none; font-size: 0.24rem;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong{font-weight:normal;font-style:normal;}
+a {text-decoration:none;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db {display:block;text-indent:-999em;}
+body,html{background-color: #1659aa;overflow-x: hidden;}
+
+
+
+
+
+.lottery{ width: 7.50rem; height: 5.58rem; position: relative; margin-top: 0.50rem;background: url(img/flash.jpg) no-repeat;background-size: 7.5rem 5.58rem;}
+.lottery-list li{ position:absolute; width:1.28rem; height:1.04rem;}
+.lottery-list li img{display: block;width: 100%;}
+.lottery-list li p{ padding-top:0; text-align: center; line-height: 0.24rem; color: #9ecbff; font-size: 0.20rem; text-shadow:3px 3px 9px #000000; padding: 0 0.09rem 0 0.09rem;}
+.lottery .prize{ display: inline-block;}
+.lottery .active img{ -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter:gray;}
+.lottery .active p{ color: #ffffff;}
+.li1{ left:2.86rem; top:0.08rem;}
+.li2{ left:4.10rem; top:0.45rem;}
+.li3{ left:5.05rem; top:1.32rem;}
+.li4{ left:4.85rem; top:2.90rem;}
+.li5{ left:4.01rem; top:4.19rem;}
+.li6{ left:2.80rem; top:3.69rem;}
+.li7{ left:1.44rem; top:3.16rem;}
+.li8{ left:1.11rem; top:1.88rem;}
+.li9{ left:1.51rem; top:0.52rem;}
+.icon2{ display: block; width: 0.66rem; height: 0.66rem; background: url(img/icon2.png) no-repeat; background-size: 0.66rem 0.66rem; position: absolute; left: 0.9rem; top: 0;}
+.icon3{ left: 0.20rem; top: -0.35rem;}
+.cj-btn{ width: 1.78rem; height: 1.78rem;position: absolute; left: 2.84rem; top: 1.85rem; text-indent: -99.99rem;}
+.cj-btn a{ display: block;  width: 1.78rem; height: 1.78rem; background: url(img/lottery.png) no-repeat; background-size: 1.78rem 1.78rem; animation:scale 1s 0s ease infinite both; -webkit-animation:scale 1s 0s ease infinite both;}
+@-webkit-keyframes scale{
+    0%{-webkit-transform:scale(1);}
+    50%{-webkit-transform:scale(0.9);}
+    100%{-webkit-transform:scale(1);}
+}
+@keyframes scale{
+    0%{-ms-transform:scale(1);transform:scale(1);}
+    50%{-ms-transform:scale(0.9);transform:scale(0.9);}
+    100%{-ms-transform:scale(1);transform:scale(1);}
+}
+		</style>
+	</head>
+	<body>
+		<!--抽奖S-->
+				<div class="lottery" id="J_lottery">
+                    <ul class="lottery-list">
+                    	<li class="li1 luck-unit luck-unit-0">
+                    		<div class="prize"><img src="img/p0.png" alt="HUAWEI P30 Pro"/></div>
+							<p>HUAWEI P30 Pro</p>
+                    	</li>
+						<li class="li2 luck-unit luck-unit-1">
+                    		<div class="prize"><img src="img/p1.png" alt="50元京东卡"/></div>
+							<p>50元京东卡</p>
+                    	</li>
+                        <li class="li3 luck-unit luck-unit-2">
+                    		<div class="prize"><img src="img/p2.png" alt="HUAWEI小天鹅蓝牙音箱"/></div>
+							<p>HUAWEI<br/>小天鹅蓝牙音箱</p>
+                    	</li>
+                        <li class="li4 luck-unit luck-unit-3">
+                    		<div class="prize"><img src="img/p3.png" alt="华为定制棒球服"/></div>
+							<p>华为定制<br/>棒球服(15天)</p>
+							<i class="icon2"></i>
+                    	</li>
+                    	<li class="cj-btn">
+                    		<a href="javascript:;" id="J_cj">立即抽奖</a>
+                    	</li>
+                        <li class="li5 luck-unit luck-unit-4">
+                            <div class="prize"><img src="img/p4.png" alt="谢谢参与"/></div>
+                            <p>谢谢参与</p>
+                    	</li>
+                        <li class="li6 luck-unit luck-unit-5">
+                    		<div class="prize"><img src="img/p5.png" alt="HUAWEI3e跑步手环"/></div>
+							<p>HUAWEI<br/>3e跑步手环</p>
+                    	</li>
+                        <li class="li7 luck-unit luck-unit-6">
+                    		<div class="prize"><img src="img/p6.png" alt="华为定制赛车+车牌"/></div>
+							<p>华为定制赛车<br/>(15天)</p>
+							<i class="icon2"></i>
+                    	</li>
+                        <li class="li8 luck-unit luck-unit-7">
+                    		<div class="prize"><img src="img/p7.png" alt="HUAWEI 体脂秤"/></div>
+							<p>HUAWEI 体脂秤</p>
+                    	</li>
+                        <li class="li9 luck-unit luck-unit-8">
+                            <div class="prize"><img src="img/p8.png" alt="200元京东卡"/></div>
+                            <p>华为定制赛车<br/>(30天)</p>
+                            <i class="icon2 icon3"></i>
+                        </li>
+                    </ul>
+				</div>	
+				<!--抽奖E-->
+				
+				
+				<!-- 1. 显示中奖结果S -->
+	<div class="winning" id="J_winning">
+		<div class="cover"></div>
+		<div class="result">
+			<p class="r_tit">恭喜你</p>
+			<p class="result_txt">获得<span id="J_prizeName"></span></p>
+			<div class="result_img"><img id="J_prizeImg" src="" alt=""></div>
+			<p class="result_ts">您可在7天内进入“我的”->“奖品”中领取</p>
+			<div class="btn">
+				<a href="javascript:;" class="close"><img src="img/clo-btn.png" alt="关闭"/></a>
+				<a href="javascript:;"><img src="img/get-btn.png" alt="关闭"/></a>
+			</div>
+		</div>
+	</div>
+	<!-- 1. 显示中奖结果E -->
+	</body>
+	
+	<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+	<script>
+		//抽奖
+	var click=false;	
+	var luck={
+		index:-1,	//当前转动到哪个位置，起点位置
+		count:8,	//总共有多少个位置的下标最大为多少，下标从0开始
+		timer:0,	//setTimeout的ID，用clearTimeout清除
+		speed:20,	//初始转动速度
+		times:0,	//转动次数
+		cycle:10,	//转动基本次数：即至少需要转动多少次再进入抽奖环节
+		prize:-1,	//中奖位置
+		init:function(id){
+			if ($("#"+id).find(".luck-unit").length>0) {
+				$luck = $("#"+id);
+				$units = $luck.find(".luck-unit");
+				this.obj = $luck;
+				this.count = $units.length;
+				$luck.find(".luck-unit-"+this.index).addClass("active");
+			};
+		},		
+		roll:function(){
+			var index = this.index;
+			var count = this.count;
+			var luck = this.obj;
+			$(luck).find(".luck-unit-"+index).removeClass("active");
+			index += 1;
+			if (index>count-1) {
+				index = 0;
+			};
+			$(luck).find(".luck-unit-"+index).addClass("active");
+			this.index=index;			
+			return false;
+		},
+		stop:function(index){
+			this.prize=index;
+			return false;
+		}
+	};
+	luck.init('J_lottery');
+	function roll(){
+		luck.times += 1;
+		luck.roll();
+		if (luck.times > luck.cycle*2 && luck.prize==luck.index) {  //转2圈之后才能进入奖项满足条件
+			clearTimeout(luck.timer);			
+			winningShow(luck.prize);	
+			luck.times=0;			
+			luck.prize=-1;
+			$("#J_cj").removeClass("cj_btn_dom");
+			click=false;			
+		}else{
+			if (luck.times<luck.cycle) {
+				luck.speed -= 10;    //起步时加速的速度
+			}else if(luck.times==luck.cycle) {              //点击抽奖会立马进入这里开始动画
+				var index = Math.random()*(luck.count)|0;   //中奖物品通过一个随机数生成
+//				console.log(index)
+				luck.prize = index;		
+				
+			}else{
+				if (luck.times > luck.cycle*2 && ((luck.prize==0 && luck.index==7) || luck.prize==luck.index+1)) {    //2圈进入奖项时的动画
+                      luck.speed += 110;             //旋转结束时的速度
+				}else{
+					luck.speed += 20;             //旋转中间时的速度
+				}
+			}
+			if (luck.speed<40) {                //起步时的匀速速度
+				luck.speed=40;		
+			};
+			luck.timer = setTimeout(roll,luck.speed); //循环调用
+		};		
+		return false;
+	};
+	//显示中奖
+	function winningShow(id){
+		var t = "";
+		switch(id){
+			case 0 : t = 'HUAWEI P30 Pro'; break;
+			case 1 : t = '50元京东卡'; break;
+			case 2 : t = '华为小天鹅蓝牙音箱'; break;
+			case 3 : t = '华为定制棒球服'; break;
+			case 4 : t = '谢谢参与'; break;
+			case 5 : t = '华为3e跑步手环'; break;
+			case 6 : t = '华为定制赛车(15天)'; break;
+			case 7 : t = 'HUAWEI 体脂秤'; break;
+            case 8 : t = '华为定制赛车(30天)'; break;
+		};
+		$('#J_prizeImg').attr('src','img/p'+ id +'.png');
+		$('#J_winning').fadeIn().find('#J_prizeName').text(t);
+		$('.cover').on('click',function () {
+			$('#J_winning').fadeOut();
+		});
+	};
+	//点击抽奖按钮
+	$('#J_cj').on('click',function(){
+		$(this).addClass("cj_btn_dom");
+		if(click) {
+			return false;
+		}
+		else{
+			luck.speed=100;
+			roll();			
+			click=true;
+			return false;
+		}
+	})
+	</script>
+</html>

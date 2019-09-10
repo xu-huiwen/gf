@@ -1,0 +1,12 @@
+/*!
+ * Optimized stylesheets
+ * 2015-03-10
+ */
+
+body { text-align: center; font-size: 12px; background-color: #f8f8f8; }
+.browser-tips { padding: 80px 60px 60px; width: 840px; }
+.header { text-align: center; }
+.header .s-txt { color: #fff; }
+.container-fluid { margin: 0 auto; max-width: 1200px; text-align: left; }
+pre, code { font-size: 11px; }
+.footer { text-align: center; }

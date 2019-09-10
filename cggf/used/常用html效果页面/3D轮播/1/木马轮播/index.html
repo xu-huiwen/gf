@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0}
+body,button,input,select,textarea{font:12px/1.5 tahoma,'\5b8b\4f53',sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,b{font-style:normal}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+img{border:0}
+button,input,select,textarea{font-size:100%;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol{padding:0;list-style:none;}
+body{padding-top:42px; background-color:#140a09;}
+.clearfix:after{content:" "; clear:both; height:0; visibility:hidden; display:block;}
+.clearfix{*zoom:1;}
+.hide{height:0; line-height:0; font-size:0; visibility:hidden; display:none;}
+
+/*轮播图*/
+.mod_scroll{position:relative;width:955px;height:425px;overflow:hidden;margin:190px auto 0 auto;}
+.mod_scroll ul{position:relative;width:754px;height:292px;}
+.mod_scroll li{position:absolute;width:0;height:0;top:146px;left:377px;z-index:0;cursor:pointer;overflow:hidden;border-radius:3px;}
+.mod_scroll li img{width:100%;height:100%;vertical-align:top;}
+.mod_scroll .prev, .mod_scroll .next{display:none;position:absolute;top:50%;width:39px;height:80px;margin-top:-40px;overflow:hidden;text-indent:-999px;cursor:pointer;}
+.mod_scroll .prev{left:-60px;}
+.mod_scroll .next{right:-60px;}
+.box-bg,.box-bg-on{width:100%;position:absolute;top:0;left:0;z-index:-1;}
+.box-bg-on{display:none;}
+.current .box-bg-on{display:block;}
+.current .box-bg{display:none;}
+.mod_scroll .name{position: absolute;left:0;top:81%;font-size:18px;width: 100%;text-align: center;}
+
+</style>
+	</head>
+	<body>
+		<div class="mod_scroll" id="box">
+				<pre class="prev">prev</pre>
+				<pre class="next">next</pre>
+				<ul>
+					<li>
+						<div class="box-bg"><img src="//game.gtimg.cn/images/ava/cp/a20171122weapon/weapon01.png" alt="钢铁骑兵SCAR-L" /></div>
+						<div class="box-bg-on"><img src="//game.gtimg.cn/images/ava/cp/a20171122weapon/h_weapon01.png" alt="钢铁骑兵SCAR-L" /></div>
+						<p class="name">钢铁骑兵SCAR-L</p>
+					</li>
+					<li>
+						<div class="box-bg"><img src="//game.gtimg.cn/images/ava/cp/a20171122weapon/weapon02.png" alt="幻翼M24" /></div>
+						<div class="box-bg-on"><img src="//game.gtimg.cn/images/ava/cp/a20171122weapon/h_weapon02.png" alt="幻翼M24" /></div>
+						<p class="name">幻翼M24</p>
+					</li>
+					<li>
+						<div class="box-bg"><img src="//game.gtimg.cn/images/ava/cp/a20171122weapon/weapon03.png" alt="金粉男爵·M1加兰德" /></div>
+						<div class="box-bg-on"><img src="//game.gtimg.cn/images/ava/cp/a20171122weapon/h_weapon03.png" alt="金粉男爵·M1加兰德" /></div>
+						<p class="name">金粉男爵·M1加兰德</p>
+					</li>
+					<li>
+						<div class="box-bg"><img src="//game.gtimg.cn/images/ava/cp/a20171122weapon/weapon04.png" alt="伏特之怒AK47" /></div>
+						<div class="box-bg-on"><img src="//game.gtimg.cn/images/ava/cp/a20171122weapon/h_weapon04.png" alt="伏特之怒AK47" /></div>
+						<p class="name">伏特之怒AK47</p>
+					</li>
+					<li>
+						<div class="box-bg"><img src="//game.gtimg.cn/images/ava/cp/a20171122weapon/weapon05.png" alt="宇宙战舰Galil MAR" /></div>
+						<div class="box-bg-on"><img src="//game.gtimg.cn/images/ava/cp/a20171122weapon/h_weapon05.png" alt="宇宙战舰Galil MAR" /></div>
+						<p class="name">宇宙战舰Galil MAR</p>
+					</li>
+				</ul>
+			</div>
+<script src="scroll.js"></script>
+<script>
+	need("biz.tabs",function (tabs){
+		//渐变切换
+		tabs.init("fadeTab", "tab-panel",{
+			timeout: 80,//延迟切换时间。默认参数为60;
+			currCls: "on",//设置当前标签（li）class 名。默认参数为"on";
+			disCls: "dis",//控制显示class名。默认参数为"dis";
+			event: "mouseover",//事件类型。默认为"mouseover";
+			//animation: "fade",//有动画效果设置此参数。参数可选slide/fade (滚动/渐入)
+			auto: false,//是否自动切换。默认为false
+			Pause: 300 //每次自动停顿时间(auto为true时有效)
+		})
+
+	})
+
+</script>
+	</body>
+</html>

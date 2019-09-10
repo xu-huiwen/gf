@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+	</head>
+	<body>
+		<a href="javascript:addFavorite('拼图的秘密-枪神纪官方网站');" class="collection sp db" title="点击收藏" >点击收藏</a>
+		
+		<script>
+				//收藏活动
+function addFavorite(sURL, sTitle) {
+    try {
+        window.external.addFavorite(sURL, sTitle);
+    } catch (e) {
+        try {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        } catch (e) {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+		</script>
+	</body>
+</html>

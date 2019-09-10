@@ -1,0 +1,1682 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+		<meta charset="gbk" />
+		<meta name="author" content="Tencent-TGideas" />
+		<meta name="robots" content="all" />
+		<meta name="Copyright" content="Tencent" />
+        <meta name="Description" content="《地下城与勇士》DNF下载官方网站。《地下城与勇士》是由腾讯代理引进的一款超人气格斗网游作品，WCG2011年DNF中国区总决赛一起超越格斗极限。" />
+		<meta name="Keywords" content="地下城与勇士,DNF,Dungeon&Fighter,DF,D&F,地下城,勇士,名将,三国志,横版,2D,腾讯游戏,免费,ACT,转职,觉醒,冒险家,鬼剑士,格斗,格斗家,神枪手,枪手,圣职,红眼,白手,鬼气,阿修罗,气功师,大枪,漫游,阿拉德,召唤兽,投币,复活币" />
+		<title>自助专区-地下城与勇士-腾讯游戏</title>
+		<!--表单填写时间组件-->
+		<!--<link rel="stylesheet" href="./js/jquery-ui.css">-->
+<!-- 页面设计：cp | 页面制作：cp | 创建：2017-05-02-->
+<style>
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,
+details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+table{border-collapse:collapse;border-spacing:0}
+audio,canvas,video { display: inline-block;*display: inline;*zoom: 1;}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+body,button,input,select,textarea{font:12px/1.5 tahoma,'\5b8b\4f53',sans-serif}
+body{font-family:"\5fae\8f6f\96c5\9ed1",arial,"\5b8b\4f53"}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+img{border:0; vertical-align:top;}
+td,th,ul,ol{padding:0}
+.clearfix:after { display:block; visibility:hidden; height:0; content:'.'; clear:both; }
+.clearfix { zoom:1; }
+.hide{display:none; }
+html { min-width: 1200px;}
+a:hover { text-decoration:none;}
+.fl_left { float:left;}
+
+
+/*foot*/
+.wrap_ied{ margin:0 auto; padding-top:35px;height:90px; width:740px;text-align:center;}
+#footer_ied{ text-align:left; font-size:12px; line-height:19px;color:#fff; background-color:#000;}
+#footer_ied p.e{ margin-bottom:4px; font-size:11px;}
+#footer_ied a { color:#fff;text-decoration:none;}
+#footer_ied a:hover { color:#ff0;text-decoration:underline;}
+/*head*/
+.con_head { background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/con_head.jpg) no-repeat center top; width: 100%; height: 401px; position: relative;}
+.con_cen { width: 1000px; margin: 0 auto; height: 100%; position: relative; z-index: 4;}
+.head_info { position: absolute; left: 0; bottom: 0; width: 100%; height: 30px; line-height: 30px; background-color: rgba(0,0,0,0.4);}
+.head_location { float: left; width: 360px; height: 30px; padding-left: 46px; font-size: 16px; color: #ffffff;}
+.head_location a { color: #ffffff;}
+.con_login { float: right; *display: inline; margin-right: 16px; color: #fffefe; font-size: 16px; text-align: right;}
+.con_login a{ color: #15baff;}
+.head_info a:hover { color: #ff0;}
+/*mian*/
+.con_main { background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/con_main.jpg) no-repeat center top; width: 100%; height: auto; min-height: 782px; position: relative;}
+.home_box { width: 1200px; height: 100%; margin: 0 auto;}
+.home_btns { width: 1000px; margin: 0 auto; height: 131px;}
+.home_btns ul { font-size: 0; text-align: center; padding-top: 42px;}
+.home_btns ul li { display: inline-block; vertical-align: top; *display: inline; *zoom: 1; font-size: 22px; height: 52px;}
+.home_btns ul li a { background-image: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/home_btn_spr.png); background-repeat: no-repeat; display: block; width: 100%; height: 100%; color: #a6a5ca; line-height: 48px;}
+.home_btns_list1 { width: 259px;}
+.home_btns_list1 a { background-position: 0 0;}
+.home_btns_list2 { width: 237px;}
+.home_btns_list2 a { background-position: -259px 0;}
+.home_btns_list3 { width: 237px;}
+.home_btns_list3 a { background-position: -496px 0;}
+.home_btns_list4 { width: 259px;}
+.home_btns_list4 a { background-position: -733px 0;}
+.home_btns_list1.cur a { background-position: 0 -60px;}
+.home_btns_list2.cur a { background-position: -259px -60px;}
+.home_btns_list3.cur a { background-position: -496px -60px;}
+.home_btns_list4.cur a { background-position: -733px -60px;}
+.home_btns_list1:hover a { background-position: 0 -60px;}
+.home_btns_list2:hover a { background-position: -259px -60px;}
+.home_btns_list3:hover a { background-position: -496px -60px;}
+.home_btns_list4:hover a { background-position: -733px -60px;}
+.home_btns ul li.cur a { color: #f2d279;}
+.home_btns ul li:hover a { color: #f2d279;}
+.home_tab { width: 1200px; height: auto; overflow: hidden; margin: 80px auto 0 auto;}
+.home_tab_box { width: 100%; height: 100%; position: relative;}
+.home_tab_box ul li { width: 196px; height: 196px; margin: 0 8px 16px 8px; float: left; *display: inline; background-color: #2a304a; cursor: pointer; position: relative;}
+.home_tab_box ul li img { display: block; width: 196px; height: 140px;}
+.home_tab_box ul li p { width: 196px; text-align: center; height: 56px; line-height: 56px; color: #131920; font-size: 24px; font-weight: bold; background-color: #7f8baf;}
+.home_tab_box ul li:hover p { background-color: #2a304a; color: #aab7e9;}
+.home_tab_box ul li a { position: absolute; top: 0; left: 0; z-index: 5; width: 100%; height: 100%;}
+.home_tab_qb,.home_tab_cx,.home_tab_xf { width: 1060px; overflow: hidden; height: auto; margin: 0 auto;}
+.home_tab_qb ul li { display: block;}
+.home_tab_cx ul li { display: none;}
+.home_tab_cx ul li.home_cx { display: block;}
+.home_tab_xf ul li.home_cx { display: none;}
+.main_box { margin: 0 auto 0 auto; width: 1000px; position: relative;}
+.main_title { width: 1000px; margin: 0 auto; height: 113px; padding-top: 18px;}
+.main_title h4 { width: 417px; height: 98px; background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/main_title.png) no-repeat 0 0; display: block; margin: 0 auto; color: #ffffff; line-height: 78px; font-size: 30px; font-weight: bold; text-align: center;}
+.main_cont { border: 3px solid #252535; background-color: #1a1a26; width: 994px; height: 635px; margin: 11px auto 0 auto; position: relative;}
+.main_return { position: absolute;}
+.main_box_sub { background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/query_sub.jpg) no-repeat 0 0; width: 21px; height: 21px; position: absolute; left: -3px; top: -3px;}
+.main_return { color: #b0aed9; font-size: 15px; width: 60px; height: 28px; line-height: 28px; background-color: #464665; border: 1px solid #56567d; border-radius: 2px; position: absolute; right: 27px; top: 19px; z-index: 10; text-align: center;}
+.user_agreement { width: 938px; height: 512px; margin: 68px auto 0 auto; background-color: #0d0e11; overflow-y: auto;}
+.user_agreement h4 { color: #fefefe; font-size: 26px; font-weight: bold; line-height: 80px; width: 100%; text-align: center;}
+.user_agreement h5 { color: #807faa; font-size: 20px; line-height: 40px; width: 100%; text-align: center;}
+.user_agreement p { color: #696a95; font-size: 17px; line-height: 24px; width: 856px; margin: 0 auto;}
+.user_agreementBtn { color: #dadada; font-size: 15px; width: 182px; height: 28px; line-height: 28px; background-color: #464665; border: 1px solid #56567d; border-radius: 2px; display: block; margin: 0 auto 20px auto; text-align: center;}
+.hacking_top { width: 928px; margin: 0 auto; height: 128px; border-bottom: 1px dashed #333347;}
+.hack_step_p1 { float: left; width: 340px; text-align: right; padding-top:54px; font-size: 16px; font-weight: bold; color: #70708e; line-height: 20px;}
+.hack_step { width: 384px; height: auto; margin-top: 38px; float: left;}
+.hack_step img { width: 300px; height: 44px; display: block; margin: 0 auto;}
+.hack_step p { float: left; width: 128px; text-align: center; color: #70708e; font-size: 15px; line-height: 36px;}
+.hacking_middle { width: 928px; margin: 0 auto; height: auto; padding: 12px 0; border-bottom: 1px dashed #333347;}
+.hacking_middle p { margin-left: 188px; position: relative; padding-left: 82px; color: #a73636; font-size: 15px; line-height: 20px;}
+.hacking_middle p span { position: absolute; left: 0; top: 0; position: absolute;}
+.hacking_middle p a { color: #a73636;}
+.hacking_middle p a:hover { color: #fff;}
+.hacking_bottom { width: 928px; margin: 0 auto;}
+.hacking_user { margin: 5px auto 0 auto; height: 60px; line-height: 60px; width: 100%; text-align: center; color: #daba69; font-size: 20px; font-weight: bold;}
+.hacking_user span { color: #cececf;}
+.hacking_bottom li { width: 540px; height: auto; overflow: hidden; margin: 0 auto 10px auto;}
+.hacking_bottom li span { display: block; float: left; width: 146px; text-align: right; padding-right: 26px; height: 29px; background-color: #464665; border: 2px solid #2e2e43; border-right: none; color: #daba69; font-size: 18px; line-height: 29px;}
+.hacking_bottom li select,.hacking_bottom li input { width: 366px; height: 33px; outline: none; border: 2px solid #2e2e43; border-left: none; display: block; float: left; background-color: #1a1a26; color: #aaaac6; font-size: 18px; padding: 0 10px;}
+.hacking_bottom li input { height: 29px; width: 344px;}
+.hacking_bottom li.texta span { height: 86px; line-height: 86px;}
+.hacking_bottom li.texta textarea { width: 344px; height: 78px; outline: none; border: 2px solid #2e2e43; border-left: none; display: block; float: left; background-color: #1a1a26; color: #aaaac6; font-size: 18px; line-height: 24px; padding: 4px 10px; resize: none;}
+.hacking_btn { display: block; margin: 6px auto 0 auto; background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/submit_spr.png) no-repeat -293px 0; width: 163px; height: 42px; line-height:  42px; color: #ffffff; font-size: 20px; text-align: center;}
+.hacking_btn.btn_gray { background-position: -293px -50px;}
+.success_box { margin: 170px auto 0 auto; width: 770px; height: 164px; background-color: #3a3a46; padding-top: 76px;}
+.success_box p { color: #ffffff; font-size: 17px; line-height: 24px; width: 100%; text-align: center;}
+.success_box p a { color: #fff;}
+.success_box p a:hover { color: #ff0;}
+.succ_btn { color: #b0aed9; font-size: 15px; width: 150px; height: 28px; line-height: 28px; background-color: #464665; border: 1px solid #56567d; border-radius: 2px; display: block; margin: 32px auto 0 auto; text-align: center;}
+.evaluate_box { width: 100%; position: absolute; bottom: 8px; left: 0; font-size: 0; text-align: center;}
+.evaluate_box span { display: inline-block; *display: inline; *zoom: 1; vertical-align: top; color: #adadb0; font-size: 14px; line-height: 22px;}
+.helpInner { display: inline-block; *display: inline; *zoom: 1; vertical-align: top;}
+.helpInner a { display: inline-block; width: 44px; height: 20px; background-color: #3c3c5a; border: 1px solid #4a4a6e; color: #fff; margin: 0 9px; font-size: 12px;}
+.helpInner a.on { background-color: #787777; border-color: #949393;}
+.misoperation_top { padding-top: 44px;}
+.misoperation_btn { background:url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/submit_spr.png) 0 0; width: 293px; height: 59px; line-height: 59px; text-align: center; color: #ffffff; display: block; margin: 40px auto 0 auto; font-size: 26px;}
+.misoperation_btn.btn_gray { background-position: 0 -70px;}
+
+/*从这里开始*/
+.cs_spr{background:url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/cs_spr.png) no-repeat;}
+.cs_header{height:112px;margin:0 auto;width:100%;position:relative;padding-top:18px;}
+.cs_header h3{width:417px;height:98px;margin:0 auto;font-size:30px;color:#fff;font-weight:bold;line-height:75px;text-align:center;background-position: -10px -10px;}
+.cs_cont{width:993px;margin:10px auto 0;border:3px solid #252535;background-color:#1a1a26;position:relative;height:640px;border-bottom:0;}
+.cs_cont .icon_top{position:absolute;top:0;left:0;width:21px;height:21px;background-position: -437px -83px}
+.main_query{padding-top:48px;}
+.cs_cont .rule_box{width:930px;min-height:40px;padding-bottom:15px;border-bottom:1px dashed #333347;margin:0 auto;text-align:center;}
+.cs_cont .rule_box .rule_inner{display:inline-block;*display:inline;*zoom:1;vertical-align:top;text-align:left;color:#a73636;font-size:15px;line-height:18px;position:relative;}
+.cs_cont .rule_box h4{position:absolute;top:0;left:0;}
+.cs_cont .rule_box p{padding-left:77px;}
+.cs_cont .main_list h5{font-size:20px;color:#daba69;line-height:24px;text-align:center;padding:25px 0 40px;}
+.cs_cont .main_list h5 span{color:#cececf;}
+.cs_cont .main_list ul{width:100%;position:relative;}
+.cs_cont .main_list ul li{width:535px;margin:0 auto;border:2px solid #2e2e43;height:30px;background-color:#1a1a26;line-height:30px;margin-bottom:10px;}
+.cs_cont .main_list ul li span{display:block;width:150px;height:100%;text-align:right;padding-right:25px;background-color:#464665;color:#daba69;font-size:18px;float:left;_display:inline;}
+.cs_cont .main_list ul li select{float:left;_display:inline;width:360px;height:100%;background-color:#1a1a26;font-size:20px;color:#cececf;border:0;outline:0;text-indent: 1em;}
+.cs_cont .main_list ul li.date_list{margin-bottom:0;border:0;width:539px;}
+.cs_cont .main_list ul li.date_list span{border:2px solid #2e2e43;}
+.cs_cont .main_list ul li.date_list input{float:left;_display:inline;height:100%;width:152px;border:2px solid #2e2e43;background-color:#1a1a26;outline:0;margin-left:10px;text-indent:1em;font-size:20px;color:#cececf;}
+.cs_cont .main_list ul li.date_list em{font-size:16px;color:#6c6c93;float:left;_display:inline;margin-left:11px;}
+.queryBtn{display:block;width:297px; height:63px; background-position: -744px -10px;margin:75px auto 0;font-size:26px;text-align:center;line-height:60px;color:#fff;}
+.queryBtn:hover{color:#e9c257;}
+.queryBtn.on{background-position: -437px -10px;}
+.queryBtn.on:hover{color:#fff;}
+.main_query_table{padding-top:90px;}
+.main_query_table table{width:662px;margin:0 auto;}
+.main_query_table table tr th{font-size:18px;color:#daba69;height:40px;width:33%;border-left:2px solid #323247;border-right:2px solid #323247;text-align:center;background-color:#3d3d5a;}
+.main_query_table table tr td{border-left:2px solid #1e1e25;border-right:2px solid #1e1e25;text-align:center;font-size:16px;line-height:18px;color:#bfbeba;height:32px;background-color:#16161a;}
+.main_query_table table tr.t_even td{background-color:#1e1e2a;border-left:2px solid #22222e;border-right:2px solid #22222e;}
+.table_digg{font-size:0;text-align:center;width:100%;margin-top:30px;}
+.table_digg li{display:inline-block;*display:inline;*zoom:1;font-size:16px;color:#717197;}
+.table_digg li a{color:#717197;}
+.table_digg li a:hover{color:#d0d0f5;}
+.digg_index,.digg_prev{margin-right:10px;}
+.digg_next,.digg_end{margin-left:10px;}
+.help-box{width:100%;text-align:center;position:absolute;left:0;bottom:10px;font-size:0;}
+.help-box span{display:inline-block;*display:inline;*zoom:1;vertical-align:top;font-size:14px;line-height:21px;color:#ffffff;}
+.help-box a{display:inline-block;*display:inline;*zoom:1;vertical-align:top;width:42px;height:21px;background-color:#787777;border:1px solid #979698;font-size:12px;color:#fff;margin-left:15px;}
+.help-box a.on{background-color:#bd030b;border:1px solid #e6020c;}
+
+.main_query_table.table_row5 table tr th{width:20%;}
+.main_query_table.table_row5 table{width:845px;}
+.main_query_table.table_row8 table tr th.tab_t1{width:45px;}
+.main_query_table.table_row8 table tr th{width:130px;}
+.main_query_table.table_row8 table{width:955px;}
+.main_query_table table .icon_gou{display:block;margin:0 auto;width:20px;height:25px;background-position:-755px -122px;}
+.main_query_table table .icon_gou.on{background-position:-714px -122px;}
+.get_btn{display:block;width:100px;height:40px;background-color:#8c0e0e;margin:30px auto 0;border-radius:5px;border:1px solid #ac1111;font-size:20px;color:#fff;text-align:center;line-height:38px;}
+.get_btn:hover{background-color:#b81111;border:1px solid #f90000;}
+.suspend_queryBox .cs_cont{padding-top:160px;height:480px;}
+.result_queryBox .main_query_table table tr td{height:94px;padding:0 10px;}
+/*侧滑*/
+.con_slide { background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/con_slide.png) no-repeat 0 0; width: 173px; height: 173px; position: fixed; top: 50%; margin-top: -86px; right: 0; z-index: 10;}
+.con_slide p { color: #daba69; font-size: 20px; line-height: 24px; padding-top: 132px; width: 100%; text-align: center;}
+.con_code { clear: both; margin-left: 174px; margin-top: 6px; color: #cececf; line-height: 33px; padding-top: 10px;}
+.con_code img { width: 132px; height: 32px; margin-right: 10px;}
+.con_code a { color: #cececf;}
+.con_code a:hover { color: #fff;}
+/*5-17*/
+.loading_layer { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 9999; background-color: rgba(0,0,0,0.6);}
+.pop_loading { display: block; background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/icon_loading.gif) no-repeat 0 0; width: 185px; height: 163px; outline: none; position: absolute; top: 50%; left: 50%; margin: -81px 0 0 -92px;}
+/*评价成功弹窗*/
+.pop_pjcg { background-color: #3a3a46; width: 356px; height: 186px; border-radius: 10px; outline: none; position: relative;}
+.pop_pjcg_box { width: 100%; text-align: center; padding-top: 36px; height: auto;}
+.pop_pjcg_box em { background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/pjcg_icon.jpg) no-repeat 0 0; width: 45px; height: 40px; display: block; margin-left: 161px;}
+.pop_pjcg_box p { line-height: 36px; width: 100%; margin-bottom: 11px; color: #ffffff; font-size: 18px;}
+.pop_pjcg_btn { color: #b0aed9; font-size: 15px; width: 128px; height: 28px; line-height: 28px; background-color: #464665; border: 1px solid #56567d; border-radius: 2px; text-align: center; display: block; margin: 0 auto;}
+.table_digg li a.cur {color:#717197;}
+</style>
+</head>
+<body>
+<div class="con_wrap">
+	<!--头部-->
+	<div class="con_head">
+		<div class="head_info">
+			<div class="con_cen">
+				<p class="head_location">您的位置：<a href="http://dnf.qq.com/main.shtml">首页</a>&gt;地下城与勇士自助专区</p>
+				<div class="con_login">
+					<!--登录前状态 Start-->
+				<p id="unlogin">亲爱的用户，请 <a href="javascript:;" id="dologin">【登录】</a></p>
+				<!--登录前状态 End-->
+				<!--登录后状态 Start-->
+				<p id="logined" style="display:none">您好，<span id='login_qq_span'></span>，<span><a href="javascript:;">【绑定大区】</a></span><a href="javascript:;">【我的礼包】</a><a href="javascript:;" id="dologout">【注销】</a></p>
+				<!--登录后状态 End-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--主体部分-->
+	<div class="con_main">
+		<!--首页-->
+		<div class="home_box" id="home_box" style="display: block;">
+			<div class="home_btns">
+				<ul>
+					<li class="home_btns_list1 cur">
+						<a href="javascript:void(0);" title="全部" onclick="PTTSendClick('btn','home_tab_btns01','首页');">全部</a>
+					</li>
+					<li class="home_btns_list2">
+						<a href="javascript:void(0);" title="查询类功能" onclick="PTTSendClick('btn','home_tab_btns02','查询类功能');">查询类功能</a>
+					</li>
+					<li class="home_btns_list3">
+						<a href="javascript:void(0);" title="修复类功能" onclick="PTTSendClick('btn','home_tab_btns03','修复类功能');">修复类功能</a>
+					</li>
+					<li class="home_btns_list4">
+						<a href="javascript:void(0);" title="受理结果查询" onclick="PTTSendClick('btn','home_tab_btns04','受理结果查询');">受理结果查询</a>
+					</li>
+				</ul>
+			</div>
+			<div class="home_tab">
+				<div class="home_tab_box">
+					<div class="home_tab_qb" id="home_tab_list">
+						<ul>
+							<!--查询类功能给li添加class:  home_cx-->
+							<li class="home_cx">
+								<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/s_t1.png" width="196" height="140" alt="封号查询" />
+								<p>封号查询</p>
+								<a href="javascript:nav01('#fhcx');" onclick="my_tlog.clickReport(1,'ban_query');"></a>
+							</li>
+							<li class="home_cx">
+								<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/s_t2.png" width="196" height="140" alt="金钱流水查询" />
+								<p>金钱流水查询</p>
+								<a href="javascript:nav01('#money_queryBox1');" onclick="my_tlog.clickReport(2,'money_query');"></a>
+							</li>
+							<li class="home_cx">
+								<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/s_t3.png" width="196" height="140" alt="装备流水查询" />
+								<p>装备流水查询</p>
+								<a href="javascript:nav01('#equip_queryBox3');" onclick="my_tlog.clickReport(3,'equip_query');"></a>
+							</li>
+							<li>
+								<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/s_t4.png" width="196" height="140" alt="兑换CDKEY" />
+								<p>兑换CDKEY</p>
+								<a href="http://dnf.qq.com/gift.shtml" onclick="my_tlog.clickReport(4,'gift_cdkey');"target="_blank"></a>
+							</li>
+							<li>
+								<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/s_t5.png" width="196" height="140" alt="角色恢复" />
+								<p>角色恢复</p>
+								<a href="javascript:nav01('#role_restore');" onclick="my_tlog.clickReport(5,'role_restore');"></a>
+							</li>
+							<li>
+								<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/s_t6.png" width="196" height="140" alt="点亮图标" />
+								<p>点亮图标</p>
+								<a href="http://dnf.qq.com/act/a20090219dltb/" onclick="my_tlog.clickReport(6,'dianliang_tubiao');"></a>
+							</li>
+							<li style="display:none;">
+								<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/s_t7.png" width="196" height="140" alt="装备误操作找回" />
+								<p>装备误操作找回&gt;</p>
+								<a href="javascript:void(0);"></a>
+							</li>
+							<li style="display:none;">
+								<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/s_t8.png" width="196" height="140" alt="盗号找回" />
+								<p>盗号找回&gt;</p>
+								<a href="javascript:nav01('#user_agreement')"></a>
+							</li>
+							<li class="home_cx">
+								<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/s_t9.png" width="196" height="140" alt="点券流水查询" />
+								<p>点券流水查询</p>
+								<a href="javascript:nav01('#coupon_queryBox1');" onclick="my_tlog.clickReport(9,'coupon_query');"></a>
+							</li>
+							<li class="home_cx">
+								<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/s_t10.png" width="196" height="140" alt="点券充值" />
+								<p>点券充值</p>
+								<a href="http://dnf.qq.com/comm-htdocs/pay/new_index.htm?t=dnf" onclick="my_tlog.clickReport(7,'pay_dnf');"></a>
+							</li>
+							<li class="home_cx">
+								<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/s_t11.png" width="196" height="140" alt="预约组队" />
+								<p>预约组队</p>
+								<a href="http://dnf.qq.com/act/a20140504team/" onclick="my_tlog.clickReport(8,'team_yuyue');"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--盗号找回功能-用户协议-->
+		<div class="main_box" id="user_agreement" style="display: none;">
+			<div class="main_title">
+				<h4>盗号找回功能</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<!--用户协议-->
+				<div class="user_agreement">
+					<h4>被盗找回协议</h4>
+					<h5>“地下城与勇士”游戏道具、装备丢失找回服务协议</h5>
+					<p>1.总则</p>
+					<p>1.1 《地下城与勇士》（DNF）游戏，是一款由韩国neople公司开发的、深圳市腾讯计算机系统有限公司（以下简称“腾讯公司”）代理运营的网络游戏。游戏道具、装备丢失找回服务（以下简称“被盗找回服务”）是腾讯公司该游戏中设立的网络增值服务窗口。</p>
+					<p>1.2  被盗找回服务的所有权和运营权，以及被盗找回服务制度和活动的解释权均为腾讯公司所有。</p>
+					<p>1.3 被盗找回服务秉承以下宗旨：保障用户利益，尽最大努力帮用户挽回损失。</p>
+					<p>2. 腾讯公司郑重申明</p>
+					<p>2.1被盗找回服务，不影响《地下城与勇士》（DNF）游戏现有的一切服务并保证服务质量。</p>
+					<p>3.服务申请及服务流程</p>
+					<br />
+					<br />
+					<br />
+					<a href="javascript:nav01('#hackingbox');" class="user_agreementBtn" title="同意协议">同意协议</a>
+				</div>
+			</div>
+		</div>
+		<!--盗号找回功能-填单页-->
+		<div class="main_box" id="hackingbox" style="display: none;">
+			<div class="main_title">
+				<h4>盗号找回功能</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="hacking_top">
+					<p class="hack_step_p1">操作步骤：</p>
+					<div class="hack_step">
+						<img src="//ossweb-img.qq.com/images/chanpin/tgclub/public/a20170502dnfservice/step_img.png" width="300" height="44" alt="步骤" />
+						<p>提交盗号单</p>
+						<p>修改账号密码 </p>
+						<p>盗号找回处理</p>
+					</div>
+				</div>
+				<div class="hacking_middle">
+					<p><span>温馨提示：</span>1、该功能最多只能处理4个角色的被盗找回。</p>
+					<p>2、被盗角色需≥70级别。</p>
+					<p>3、被盗账号不能处理封停状态的账号。</p>
+					<p>4、提交被盗找回申请后，请前往QQ安全中心（<a href="http://aq.qq.com" target="_blank">aq.qq.com</a>)修改QQ密码。</p>
+				</div>
+				<div class="hacking_bottom">
+					<p class="hacking_user">QQ号码:<span class="user_uin"></span></p>
+					<ul class="clearfix">
+						<li>
+							<span>选择大区：</span>
+							<select>
+								<option>大区</option>
+							</select>
+						</li>
+						<li>
+							<span>选择服务器：</span>
+							<select>
+								<option></option>
+							</select>
+						</li>
+						<li>
+							<span>希望恢复角色：</span>
+							<select>
+								<option></option>
+							</select>
+						</li>
+						<li>
+							<span>发现被盗时间：</span>
+							<input id="datepicker" />
+						</li>
+						<li class="texta">
+							<span>被盗详细描述：</span>
+							<textarea></textarea>
+						</li>
+					</ul>
+					<!--添加btn_gray表示灰色-->
+					<a href="javascript:void(0);" title="提交" class="hacking_btn btn_gray">提交</a>
+				</div>
+			</div>
+		</div>
+		<!--盗号找回  提交成功-->
+		<div class="main_box" id="" style="display: none;">
+			<div class="main_title">
+				<h4>盗号找回功能</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="success_box">
+					<p>您的被盗找回申诉已提交成功，请尽快前往QQ安全中心（<a href="http://aq.qq.com">aq.qq.com</a>）<br />修改QQ密码，如3个工作日内未修改密码，将无法完成申诉找回。</p>
+					<a href="javascript:void(0);" title="点击修改密码" class="succ_btn">点击修改密码</a>
+				</div>
+				<div class="evaluate_box">
+					<span>工具是否对你有帮助：</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" title="有" class="on" onclick="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" title="没有" class="" onclick="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--装备误操作找回  -填单页-->
+		<div class="main_box" id="" style="display: none;">
+			<div class="main_title">
+				<h4>装备误操作找回</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="hacking_middle misoperation_top">
+					<p><span>温馨提示：</span>1、功能只能恢复7天内的误操作装备，超过该时间将无法恢复。</p>
+					<p>2、误操作功能每月仅限使用1次。</p>
+					<p>3、每次操作仅可恢复一件装备。</p>
+					<p>4、白、蓝、紫装强化等级需≥+10才可恢复，传说类装备不在受理范围。</p>
+				</div>
+				<div class="hacking_bottom">
+					<p class="hacking_user">QQ号码:<span class="user_uin"></span></p>
+					<ul class="clearfix">
+						<li>
+							<span>选择大区：</span>
+							<select>
+								<option>大区</option>
+							</select>
+						</li>
+						<li>
+							<span>选择服务器：</span>
+							<select>
+								<option></option>
+							</select>
+						</li>
+						<li>
+							<span>选择角色：</span>
+							<select>
+								<option></option>
+							</select>
+						</li>
+						<li>
+							<span>误操作时间：</span>
+							<input id="datepicker1" />
+						</li>
+					</ul>
+					<!--添加btn_gray表示灰色-->
+					<a href="javascript:void(0);" title="查询" class="misoperation_btn">查询</a>
+				</div>
+			</div>
+		</div>
+		<!--装备误操作找回  -表格页-->
+		<div class="main_box" id="" style="display: none;">
+			<div class="main_title">
+				<h4>装备误操作找回</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="main_query_table table_row8">
+					<table>
+						<thead>
+							<tr>
+								<th class="tab_t1">&nbsp;</th>
+								<th>装备</th>
+								<th>强化等级</th>
+								<th>附魔</th>
+								<th>异次元类型</th>
+								<th>异次元属性</th>
+								<th>锻造</th>
+								<th>丢失原因</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><i class="cs_spr icon_gou on"></i></td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td><i class="cs_spr icon_gou"></i></td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td><i class="cs_spr icon_gou"></i></td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td><i class="cs_spr icon_gou"></i></td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td><i class="cs_spr icon_gou"></i></td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td><i class="cs_spr icon_gou"></i></td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td><i class="cs_spr icon_gou"></i></td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td><i class="cs_spr icon_gou"></i></td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td><i class="cs_spr icon_gou"></i></td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td><i class="cs_spr icon_gou"></i></td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+						</tbody>
+					</table>
+					<ul class="table_digg">
+						<li>
+							<a href="javascript:void(0)" title="首页" class="digg_index">首页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="上一页" class="digg_prev">上一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="1">1</a>
+							<span>，</span>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="2">2</a>
+							<span>，</span>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="3">3</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="下一页" class="digg_next">下一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="末页" class="digg_end">末页</a>
+						</li>
+						
+					</ul>
+					<a href="javascript:void(0)" title="提交" class="get_btn">提交</a>
+				</div>
+				<div class="evaluate_box">
+					<span>工具是否对你有帮助：</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" title="有" class="on" onclick="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" title="没有" class="" onclick="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--角色恢复  -填单页-->
+		<div class="main_box" id="role_restore" style="display: none;">
+			<div class="main_title">
+				<h4>角色恢复</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="hacking_middle misoperation_top">
+					<p><span>温馨提示：</span>1.该功能24小内仅可使用1次（游戏官网使用工具同样计算使用次数）。</p>
+					<p>2.恢复角色需≥18级。</p>
+					<p>3.游戏在线时角色无法恢复，请下线后进行恢复操作。</p>
+				</div>
+				<div class="hacking_bottom">
+					<p class="hacking_user">QQ号码:<span class="user_uin"></span></p>
+					<ul class="clearfix">
+						<li>
+							<span>选择大区：</span>
+							<select id="addArea" name="">
+								
+							</select>
+						</li>
+						<li>
+							<span>选择服务器：</span>
+							<select id="childArea" name="">
+
+							</select>
+						</li>
+						<li>
+							<span>需要恢复角色：</span>
+							<select id="role" name="">
+
+							</select>
+						</li>
+						<li>
+							<span>验证码：</span>
+							<input type="text" value="" id="verifyCodeInput"/>
+							<div class="con_code">
+								<img style="width:132px;height:55px;" id="imgVerify" src="http://ptlogin2.qq.com/getimage?aid=21018118&rd=156" alt="" />
+								<a href="javascript:;" id="changeVerifyCode">看不清，换一张</a>
+							</div>
+						</li>
+					</ul>
+					<!--添加btn_gray表示灰色-->
+					<a href="javascript:void(0);" title="提交" id="roleRes" class="misoperation_btn">提交</a>
+				</div>
+			</div>
+		</div>
+		<!--角色恢复  提交成功-->
+		<div class="main_box" id="" style="display: none;">
+			<div class="main_title">
+				<h4>盗号找回功能</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="success_box">
+					<p>角色已恢复成功，请登录游戏查看</p>
+					<a href="javascript:void(0);" title="确认" class="succ_btn">确认</a>
+				</div>
+				<div class="evaluate_box">
+					<span>工具是否对你有帮助：</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" title="有" class="on" ontouchend="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" title="没有" class="" ontouchend="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--封号查询-->
+		<div class="suspend_queryBox" id="fhcx" style="display:none;">
+			<div class="cs_header">
+				<h3 class="cs_spr">封号查询</h3>
+			</div>
+			<div class="cs_cont">
+				<i class="icon_top cs_spr"></i>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="main_query">
+					
+					<div class="main_list">
+						<h5>QQ号码:<span class="user_uin"></span></h5>
+						
+					</div>
+					<a href="javascript:;" title="查询" id="ban_btn" class="queryBtn cs_spr">查询</a>
+				</div>
+			</div>
+		</div>
+		<!--封号查询2-->
+		<div class="suspend_queryBox2" id="fhcx2" style="display:none;">
+			<div class="cs_header">
+				<h3 class="cs_spr">封号查询</h3>
+			</div>
+			<div class="cs_cont">
+				<i class="icon_top cs_spr"></i>
+				<a href="javascript:nav01('#fhcx');" class="main_return">返回</a>
+				<div class="main_query_table table_row5">
+					<table>
+						<thead>
+							<tr>
+								<th>时间</th>
+								<th>违规大区</th>
+								<th>违规原因</th>
+								<th>处罚截止时间</th>
+								<th>处罚时长</th>
+							</tr>
+						</thead>
+						<tbody class="ban_list">
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					<ul class="table_digg" style="display:none">
+						<li>
+							<a href="javascript:void(0)" title="首页" class="digg_index">首页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="上一页" class="digg_prev">上一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="1">1</a>
+							<span>，</span>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="2">2</a>
+							<span>，</span>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="3">3</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="下一页" class="digg_next">下一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="末页" class="digg_end">末页</a>
+						</li>
+						
+					</ul>
+				</div>
+				
+				<div class="evaluate_box">
+					<span>问题是否已经解决？</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" onclick="record.evaluateLog(1,160,'','',this);" title="有" class="" ontouchend="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" onclick="record.evaluateLog(0,160,'','',this);" title="无" class="" ontouchend="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--点券流水查询-->
+		<div class="coupon_queryBox" id="coupon_queryBox1" style="display:none;">
+			<div class="cs_header">
+				<h3 class="cs_spr">点券流水查询</h3>
+			</div>
+			<div class="cs_cont">
+				<i class="icon_top cs_spr"></i>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="main_query">
+					<div class="rule_box">
+						<div class="rule_inner">
+							<h4>温馨提示：</h4>
+							<p>1. 部分查询类日志数据存在1-2小时左右的延时</p>
+							<p>2. 日志查询单项功能每日只可使用3次，超出使用次数请待隔日进行查询</p>
+							<p>3. 查询范围为即日起7天内有效数据，超出该范围则无法提交查询</p>
+							<p>4. 部分功能只能查到游戏内常规的变化流水</p>
+						</div>
+					</div>
+					<div class="main_list main_query">
+						<h5>QQ号码:<span class="user_uin"></span></h5>
+						
+					</div>
+					<a href="javascript:;" id="coupon_btn" title="查询" class="queryBtn cs_spr">查询</a>
+				</div>
+			</div>
+		</div>
+		<!--点券流水查询2-->
+		<div class="coupon_queryBox2" id="coupon_queryBox2" style="display:none;">
+			<div class="cs_header">
+				<h3 class="cs_spr">点券流水查询</h3>
+			</div>
+			<div class="cs_cont">
+				<i class="icon_top cs_spr"></i>
+				<a href="javascript:nav01('#coupon_queryBox1');" class="main_return">返回</a>
+				<div class="main_query_table">
+					<table>
+						<thead>
+							<tr>
+								<th>时间</th>
+								<th>操作类型</th>
+								<th>点券变化量</th>
+			
+							</tr>
+						</thead>
+						<tbody class="coupon_list">
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>操作类型</td>
+								<td>+123</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					<ul class="table_digg coupon_page">
+						<li>
+							<a href="javascript:void(0)" title="首页" class="digg_index">首页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="上一页" class="digg_prev">上一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="1">1</a>
+							<span>，</span>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="2">2</a>
+							<span>，</span>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="3">3</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="下一页" class="digg_next">下一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="末页" class="digg_end">末页</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="evaluate_box">
+					<span>工具是否对你有帮助：</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" onclick="record.evaluateLog(1,163,'','',this);" title="有" class="" onclick="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" onclick="record.evaluateLog(0,163,'','',this);" title="没有" class="" onclick="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--金钱流水查询-->
+		<div class="money_queryBox" id="money_queryBox1" style="display:none;">
+			<div class="cs_header">
+				<h3 class="cs_spr">金钱流水查询</h3>
+			</div>
+			<div class="cs_cont">
+				<i class="icon_top cs_spr"></i>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="main_query">
+					<div class="rule_box">
+						<div class="rule_inner">
+							<h4>温馨提示：</h4>
+							<p>1. 部分查询类日志数据存在1-2小时左右的延时</p>
+							<p>2. 日志查询单项功能每日只可使用3次，超出使用次数请待隔日进行查询</p>
+							<p>3. 查询范围为即日起7天内有效数据，超出该范围则无法提交查询</p>
+							<p>4. 部分功能只能查到游戏内常规的变化流水</p>
+						</div>
+					</div>
+					<div class="main_list">
+						<h5>QQ号码:<span class="user_uin"></span></h5>
+						<ul>
+							<li class="clearfix">
+								<span>选择大区：</span>
+								<select id="money_area1">
+									<option value="">请选择大区</option>
+								</select>
+							</li>
+							<li class="clearfix">
+								<span>选择服务器：</span>
+								<select id="money_area">
+									<option value="">请选择服务器</option>
+								</select>
+							</li>
+							<li class="clearfix">
+								<span>选择角色：</span>
+								<select id="money_role">
+									<option value="">请选择角色</option>
+								</select>
+							</li>
+							<li class="clearfix date_list">
+								<span>查询日期：</span>
+								<input type="text" id="money_day1" />
+								<!--<em>至</em>
+								<input type="text" id="money_day2" />-->
+							</li>
+						</ul>
+					</div>
+					<a href="javascript:;" id="money_btn" title="查询" class="queryBtn cs_spr">查询</a>
+				</div>
+			</div>
+		</div>
+		<!--金钱流水查询2-->
+		<div class="money_queryBox2" id="money_queryBox2" style="display:none;">
+			<div class="cs_header">
+				<h3 class="cs_spr">金钱流水查询</h3>
+			</div>
+			<div class="cs_cont">
+				<i class="icon_top cs_spr"></i>
+				<a href="javascript:nav01('#money_queryBox1');" class="main_return">返回</a>
+				<div class="main_query_table table_row5">
+					<table>
+						<thead>
+							<tr>
+								<th>时间</th>
+								<th>角色名</th>
+								<th>金钱数量</th>
+								<th>变化量</th>
+								<th>变化原因</th>
+							</tr>
+						</thead>
+						<tbody class="money_list">
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>角色名</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>角色名</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>角色名</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>角色名</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>角色名</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>角色名</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>角色名</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>角色名</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26 11:00</td>
+								<td>角色名</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26 11:00</td>
+								<td>角色名</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					<ul class="table_digg money_page">
+						<li>
+							<a href="javascript:void(0)" title="首页" class="digg_index">首页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="上一页" class="digg_prev">上一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="下一页" class="digg_next">下一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="末页" class="digg_end">末页</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="evaluate_box">
+					<span>问题是否已经解决？</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" onclick="record.evaluateLog(1,161,'','',this);" title="有" class="" onclick="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" onclick="record.evaluateLog(0,161,'','',this);" title="没有" class="" onclick="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--装备流水查询-->
+		<div class="equip_queryBox3" id="equip_queryBox3" style="display:none;">
+			<div class="cs_header">
+				<h3 class="cs_spr">装备流水查询</h3>
+			</div>
+			<div class="cs_cont">
+				<i class="icon_top cs_spr"></i>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="main_query">
+					<div class="rule_box">
+						<div class="rule_inner">
+							<h4>温馨提示：</h4>
+							<p>1. 部分查询类日志数据存在1-2小时左右的延时</p>
+							<p>2. 日志查询单项功能每日只可使用3次，超出使用次数请待隔日进行查询</p>
+							<p>3. 查询范围为即日起7天内有效数据，超出该范围则无法提交查询</p>
+							<p>4. 部分功能只能查到游戏内常规的变化流水</p>
+						</div>
+					</div>
+					<div class="main_list">
+						<h5>QQ号码:<span class="user_uin"></span></h5>
+						<ul>
+							<li class="clearfix">
+								<span>选择大区：</span>
+								<select id="equip_area1">
+									<option value="">请选择大区</option>
+								</select>
+							</li>
+							<li class="clearfix">
+								<span>选择服务器：</span>
+								<select id="equip_area">
+									<option value="">请选择服务器</option>
+								</select>
+							</li>
+							<li class="clearfix">
+								<span>选择角色：</span>
+								<select id="equip_role">
+									<option value="">请选择角色</option>
+								</select>
+							</li>
+							<li class="clearfix date_list">
+								<span>查询日期：</span>
+								<input type="text" id="equip_day1"/>
+								<!--<em>至</em>
+								<input type="text" id="equip_day2"/>-->
+							</li>
+						</ul>
+					</div>
+					<a href="javascript:;" id="equip_btn" title="查询" class="queryBtn cs_spr">查询</a>
+				</div>
+			</div>
+		</div>
+		<!--装备流水查询2-->
+		<div class="equip_queryBox4" id="equip_queryBox4" style="display:none;">
+			<div class="cs_header">
+				<h3 class="cs_spr">装备流水查询</h3>
+			</div>
+			<div class="cs_cont">
+				<i class="icon_top cs_spr"></i>
+				<a href="javascript:nav01('#equip_queryBox3');" class="main_return">返回</a>
+				<div class="main_query_table table_row8">
+					<table>
+						<thead>
+							<tr>
+								<th>时间</th>
+								<th>装备</th>
+								<th>强化等级</th>
+								
+								<th>增幅类型</th>
+								<th>增幅属性信息</th>
+								<th>锻造</th>
+								<th>变化原因</th>
+							</tr>
+						</thead>
+						<tbody class="equip_list">
+							<tr>
+								<td>2017/4/26</td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26</td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26</td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26</td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26</td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26</td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26</td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26</td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr>
+								<td>2017/4/26</td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+							<tr class="t_even">
+								<td>2017/4/26</td>
+								<td>123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+								<td>+123</td>
+								<td>物品</td>
+								<td>+123</td>
+							</tr>
+						</tbody>
+					</table>
+					<ul class="table_digg equip_page">
+						<li>
+							<a href="javascript:void(0)" title="首页" class="digg_index">首页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="上一页" class="digg_prev">上一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="1">1</a>
+							<span>，</span>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="2">2</a>
+							<span>，</span>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="3">3</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="下一页" class="digg_next">下一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="末页" class="digg_end">末页</a>
+						</li>
+						
+					</ul>
+				</div>
+				
+				<div class="evaluate_box">
+					<span>工具是否对你有帮助：</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" onclick="record.evaluateLog(1,162,'','',this);" title="有" class="" onclick="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" onclick="record.evaluateLog(0,162,'','',this);" title="没有" class="" onclick="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--受理结果查询-->
+		<div class="result_queryBox" id="sljg" style="display:none;">
+			<div class="cs_header">
+				<h3 class="cs_spr">受理结果查询</h3>
+			</div>
+			<div class="cs_cont">
+				<i class="icon_top cs_spr"></i>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				
+				<div class="success_box">
+					<p>暂无记录</p>
+					<a href="javascript:nav01('#home_box');" title="确认" class="succ_btn">确认</a>
+				</div>
+				
+				<div class="main_query_table" style="display:none;">
+					<table>
+						<thead>
+							<tr>
+								<th>工具类型</th>
+								<th>使用时间</th>
+								<th>受理结果</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>装备误操作找回</td>
+								<td>2017.04.20  18:40</td>
+								<td>很抱歉，您此次DNF被盗申诉选择的角色信息不正确，我们无法为您处理，您可以再次填单进行申诉。</td>
+							</tr>
+							<tr class="t_even">
+								<td>装备误操作找回</td>
+								<td>2017.04.20  18:40</td>
+								<td>已补送</td>
+							</tr>
+							<tr>
+								<td>装备误操作找回</td>
+								<td>2017.04.20  18:40</td>
+								<td>已补送</td>
+							</tr>
+							<tr class="t_even">
+								<td>装备误操作找回</td>
+								<td>2017.04.20  18:40</td>
+								<td>已补送</td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+					<ul class="table_digg">
+						<li>
+							<a href="javascript:void(0)" title="首页" class="digg_index">首页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="上一页" class="digg_prev">上一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="1">1</a>
+							<span>，</span>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="2">2</a>
+							<span>，</span>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="3">3</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="下一页" class="digg_next">下一页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" title="末页" class="digg_end">末页</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--5-11装备流水记录-->
+		<div class="main_box" id="" style="display: none;">
+			<div class="main_title">
+				<h4>装备流水查询</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="success_box">
+					<p>你所查询的时间段内无流水记录</p>
+					<a href="javascript:void(0);" title="确认" class="succ_btn">确认</a>
+				</div>
+				<div class="evaluate_box">
+					<span>工具是否对你有帮助：</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" title="有" class="" ontouchend="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" title="没有" class="" ontouchend="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--5-11装备流水记录-->
+		<div class="main_box" id="equip_nodata" style="display: none;">
+			<div class="main_title">
+				<h4>装备流水查询</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#money_queryBox1');" class="main_return">返回</a>
+				<div class="success_box">
+					<p>你所查询的时间段内无流水记录</p>
+					<a href="javascript:nav01('#home_box');" title="确认" class="succ_btn">确认</a>
+				</div>
+				<div class="evaluate_box">
+					<span>工具是否对你有帮助：</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" onclick="record.evaluateLog(1,162,'','',this);" title="有" class="" ontouchend="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" onclick="record.evaluateLog(0,162,'','',this);" title="没有" class="" ontouchend="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--5-11金钱流水记录-->
+		<div class="main_box" id="money_nodata" style="display: none;">
+			<div class="main_title">
+				<h4>金钱流水查询</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#money_queryBox1');" class="main_return">返回</a>
+				<div class="success_box">
+					<p>你所查询的时间段内无流水记录</p>
+					<a href="javascript:nav01('#home_box');" title="确认" class="succ_btn">确认</a>
+				</div>
+				<div class="evaluate_box">
+					<span>工具是否对你有帮助：</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" onclick="record.evaluateLog(1,161,'','',this);" title="有" class="" ontouchend="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" onclick="record.evaluateLog(0,161,'','',this);" title="没有" class="" ontouchend="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--5-11点券流水记录-->
+		<div class="main_box" id="coupon_nodata" style="display: none;">
+			<div class="main_title">
+				<h4>点券流水查询</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#coupon_queryBox1');" class="main_return">返回</a>
+				<div class="success_box">
+					<p>你所查询的时间段内无流水记录</p>
+					<a href="javascript:nav01('#home_box');" title="确认" class="succ_btn">确认</a>
+				</div>
+				<div class="evaluate_box">
+					<span>工具是否对你有帮助：</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" onclick="record.evaluateLog(1,163,'','',this);" title="有" class="" ontouchend="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" onclick="record.evaluateLog(0,163,'','',this);" title="没有" class="" ontouchend="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--5-11不存在封号记录-->
+		<div class="main_box" id="ban_nodata" style="display: none;">
+			<div class="main_title">
+				<h4>封号查询</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#fhcx');" class="main_return">返回</a>
+				<div class="success_box">
+					<p>不存在封号记录</p>
+					<a href="javascript:nav01('#home_box');" title="确认" class="succ_btn">确认</a>
+				</div>
+				<div class="evaluate_box">
+					<span>工具是否对你有帮助：</span>
+					<div class="helpInner">
+						<a evaluate="1" href="javascript:void(0);" onclick="record.evaluateLog(1,160,'','',this);" title="有" class="" ontouchend="PTTSendClick('btn','resolved','有');">有</a>
+						<a evaluate="0" href="javascript:void(0);" onclick="record.evaluateLog(0,160,'','',this);" title="没有" class="" ontouchend="PTTSendClick('btn','unsolved','无');">无</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--5-17 流水查询加载中-->
+		<!--div class="mian_box" id="queryLoading" style="display: none;">
+			<div class="main_title">
+				<h4>点券流水查询</h4>
+			</div>
+			<div class="main_cont">
+				<em class="main_box_sub"></em>
+				<a href="javascript:nav01('#home_box');" class="main_return">返回</a>
+				<div class="con_loading">
+					<em class="icon_loading"></em>
+				</div>
+			</div>
+		</div-->
+	</div>
+</div>
+<div class="con_slide" style="display: none;">
+	<p>智能小悦</p>
+</div>
+<!--5-18 loading-->
+<div class="loading_layer" id="pop_loading" style="display: none;">
+	<em class="pop_loading"></em>
+</div>
+<!--5-17评价成功弹窗-->
+<div class="pop_pjcg" id="pop_pjcg" style="display: none;">
+	<div class="pop_pjcg_box">
+		<em></em>
+		<p>评价成功</p>
+	</div>
+	<a href="javascript:closeDialog()" title="确定" class="pop_pjcg_btn">确定</a>
+</div>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<!--时间
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>-->
+<!--<script src="./js/jquery-ui.js"></script>-->
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/foot.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+<!--<script type="text/javascript" src="./js/table_1591.js"></script>
+<script type="text/javascript" src="./js/table_1592.js"></script>
+<script type="text/javascript" src="./js/table_1576.js"></script>
+<script type="text/javascript" src="./js/table_1577.js"></script>
+<script type="text/javascript" src="./js/table_5672.js"></script>-->
+<!--<script type="text/javascript" src="./js/comm.js"></script>-->
+<!--<script type="text/javascript" src="./js/logic.js"></script>-->
+<!--<script type="text/javascript" src="./js/dnf_role_restore.js"></script>-->
+<!--<script type="text/javascript" src="./js/record.js"></script>-->
+
+<!--dnf验证码-->
+<!--script type="text/javascript" src="//dnf.qq.com/tools/RoleRestore/doact.js"></script-->
+<script>
+
+function evaluateLog(){
+
+	record.evaluateLog(1,133,'','',this);
+}
+			//登录
+milo.addEvent(g("dologin"), "click", function() {
+		need("biz.login-min",function(LoginManager){
+	LoginManager.init({
+		needReloadPage:true
+		});
+	LoginManager.login();
+		});
+		return false;
+});
+milo.addEvent(g("dologout"), "click", function() {
+		need("biz.login-min",function(LoginManager){
+	LoginManager.logout();
+		});
+		return false;
+});
+milo.ready(function() {
+		need("biz.login-min",function(LoginManager){
+	LoginManager.checkLogin(function(){
+		g("login_qq_span").innerHTML = LoginManager.getUserUin();//获取QQ号
+	});
+		});
+});
+
+//$(function(){
+//		dnf_logic.start();
+//		
+//		milo.ready(function() {
+//			need("biz.login-min",function(LoginManager){
+//				dnf_role_restore.init();
+//			});
+//		});
+		
+	//$("#datepicker" ).datepicker();
+	
+	//时间选择插件
+	//dnf_comm.datePicker($("#datepicker" ));
+	//dnf_comm.datePicker($("#datepicker1" ));
+
+	//限制日期选择
+	//$("#coupon_day1" ).datepicker({ minDate: -6, maxDate: 0 });
+	//$("#coupon_day2" ).datepicker({ minDate: -6, maxDate: 0 ,});
+	
+	//限制日期选择区间
+	//dnf_comm.dateRangePicker($( "#coupon_day1" ),$( "#coupon_day2" ));
+
+	
+//});
+
+
+</script>
+<script>
+		milo.addEvent(g("dologin"), "click", function() {
+			need("biz.login-min",function(LoginManager){
+			LoginManager.init({
+					needReloadPage:true
+				});
+				LoginManager.login();
+			});
+			return false;
+		});
+		milo.addEvent(g("dologout"), "click", function() {
+			need("biz.login-min",function(LoginManager){
+				LoginManager.logout();
+			});
+			return false;
+		});
+		milo.ready(function() {
+			need("biz.login-min",function(LoginManager){
+				LoginManager.checkLogin(function(){
+					g("login_qq_span").innerText= LoginManager.getUserUin();//获取QQ号
+				});
+			});
+		});
+</script>
+<script src="//pingjs.qq.com/tcss.ping.https.js"></script>
+<script>if (typeof (pgvMain) == 'function') { pgvMain(); }</script>
+</body>
+</html>

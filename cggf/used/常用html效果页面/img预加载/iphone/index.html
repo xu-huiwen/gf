@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<script>
+			 var screenState = 'portrait';
+    var defaultFontSize = 0;
+    (function(win, doc) {
+        function setDefaultFontSize() {
+            var d = window.document.createElement('div')
+            d.style.width = '1rem'
+            d.style.display = "none"
+            var head = window.document.getElementsByTagName('head')[0]
+            head.appendChild(d)
+            defaultFontSize = parseFloat(window.getComputedStyle(d, null).getPropertyValue('width'))
+        }
+
+        function setFont() {
+            var rem2px = 100;
+            if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+                screenState = 'portrait'
+            } else {
+                screenState = 'landscape'
+
+            }
+            var designWidth = screenState == 'portrait'?750:1334;
+            document.documentElement.style.fontSize = window.innerWidth / designWidth * rem2px / defaultFontSize * 100 + '%';
+            if (typeof hyrz != 'undefined') {
+                hyrz.resize()
+            }
+            setTimeout(function() {
+                setFont()
+            }, 500)
+        }
+
+        setDefaultFontSize()
+        setFont()
+        if (!win.addEventListener) return;
+        win.addEventListener('resize', setFont, false)
+    })(window, document)
+
+		</script>
+		<style>
+			/* load */
+.loader{position: absolute;width: 100%;height: 100%;background: #1e1e1e;left: 0;top: 0;right: 0;left: 0;z-index: 9999;font-size: .35rem;transform:translate3d(0,0,300px);-webkit-transform:translate3d(0,0,300px);}
+.unloaded .loader{display: block;}
+.loader-cont{width: 3.7rem;height: .8rem;position: absolute;top: 50%;left: 50%;transform: translate3d(-50%,-50%,0);-webkit-transform: translate3d(-50%,-50%,0);}
+.loader-cont p{line-height: .2rem;height: .5rem;text-align: center;color: #afafaf;}
+.schedule .loading2{position: absolute;left: -.27rem;top: .02rem;}
+.schedule .ending{height: .06rem;width: 100%;border-radius: .03rem;background: #464646;position: relative;z-index: 3;}
+.schedule .ending span{float: left;display: inline;position: relative;width: 20%;background: #6d312a;height: 100%;border-radius:2px;overflow: inherit !important;}
+		</style>
+	</head>
+	<body> <!--S 资源加载展示 -->
+  <div id="loader" class="loader">
+      <div class="loader-cont">
+        <p>LOADING...</p>
+        <div class="schedule">
+          <div class="ending">
+            <span class='starting'><i class="loading loading1"></i></span>
+          </div>
+          <i class="loading loading2"></i>
+        </div>
+      </div>
+  
+  </div>
+  <!--E 资源加载展示 -->
+  
+		 <img src="../../2017/20170906/img/homenavtext1.png" alt="" />
+  <img src="../../2017/3d旋转菜单/ossweb-img/ct.jpg" alt="" />
+  <img src="../../2017/3d旋转菜单/ossweb-img/sp.png" alt="" />
+  <img src="../../2017/3d旋转菜单/ossweb-img/share.png" alt="" />
+  <img src="../../2017/20170911（滚动条1）/ossweb-img/sp.png" alt="" />
+  
+		<!--<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>-->
+		<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+		<script src="loader.js"></script>
+		<script>
+			//图片预加载
+preloader.onLoad = function(){
+    preloader.disable();
+
+}
+preloader.start();
+		</script>
+	</body>
+</html>

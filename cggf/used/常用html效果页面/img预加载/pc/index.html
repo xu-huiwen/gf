@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			/* load */
+.loader{position: fixed; font-size:18px;width: 100%; height: 100%; background: #1e1e1e; left: 0; top: 0; right: 0; left: 0; z-index: 9999;}
+.unloaded .loader{display: block;}
+.loader-cont{width: 370px; height: 80px; position: absolute; top: 50%; left: 50%; margin: -40px 0 0 -225px;}
+.loader-cont p{line-height: 35px; height: 35px; text-align: center; color: #afafaf;}
+.schedule .loading2{position: absolute; left: -27px; top: 2px;}
+.schedule .ending{height: 4px; width: 100%; border-radius:2px; background: #464646; position: relative; z-index: 3;}
+.schedule .ending span{float: left;display: inline;position: relative;width: 20%;background: #6d312a;height: 100%;border-radius:2px;overflow: inherit !important;}
+.schedule .ending span i{position: absolute; right: -11px; top: -9px; -webkit-animation:xz 3s linear infinite;animation:xz 3s linear infinite;}
+		</style>
+	</head>
+	<body>
+		 <!--S 资源加载展示 -->
+  <div id="loader" class="loader">
+      <div class="loader-cont">
+        <p>LOADING...</p>
+        <div class="schedule">
+          <div class="ending">
+            <span class='starting'><i class="loading loading1"></i></span>
+          </div>
+          <i class="loading loading2"></i>
+        </div>
+      </div>
+  </div>
+  <!--E 资源加载展示 -->
+  <img src="../../2017/20170906/img/homenavtext1.png" alt="" />
+  <img src="../../2017/3d旋转菜单/ossweb-img/ct.jpg" alt="" />
+  <img src="../../2017/3d旋转菜单/ossweb-img/sp.png" alt="" />
+  <img src="../../2017/3d旋转菜单/ossweb-img/share.png" alt="" />
+  <img src="../../2017/20170911（滚动条1）/ossweb-img/sp.png" alt="" />
+  <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+  <script src="loader.js"></script>
+  <script>
+  	//图片预加载
+preloader.onLoad = function(){
+    preloader.disable();
+//  hyrz.init()
+}
+preloader.start();
+  </script>
+	</body>
+</html>

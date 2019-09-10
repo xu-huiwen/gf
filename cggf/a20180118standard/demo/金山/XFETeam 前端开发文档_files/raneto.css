@@ -1,0 +1,63 @@
+html, body { font-family: "Courier New", "Microsoft Yahei"; }
+.browser-tips { margin: 0 auto; padding: 80px 0 20px; width: 480px; text-align: center; display: block; }
+.browser-tips p { color: #333; font-size: 16px; }
+.browser-tips p.striking { font-size: 24px; font-weight: bold; }
+.browser-tips p.org { padding-top: 20px; color: #999; font-size: 11px; }
+.header { background: #2C323D; color: #ccc; }
+.header .container-fluid { padding-top: 20px; padding-bottom: 20px; }
+.header a { color: #ddd; }
+.header a:hover { color: #fff; text-decoration: none; }
+.header .logo { font-size: 20px; line-height: 34px; margin-left: 20px; }
+.header .search-form { margin-right: 20px; }
+.menu { margin: 40px 0 0 0; padding: 30px 0; list-style: none; background-color: #fff; }
+.menu .pages { margin: 0; padding: 0; list-style: none; }
+.menu li { line-height: 30px; padding: 0 20px; }
+.menu li.page {border-left: #fff solid 4px;}
+.menu li.page:hover { border-left: #ff5f3e solid 4px; background-color: #f8f8f8; }
+.menu li .cate-active { font-weight: bold; }
+.menu .category-title { margin: 25px 0 10px 0; font-size: 12px; cursor: pointer; text-transform: uppercase; }
+.menu a { /*display: inline-block;*/ color: #428bca; line-height: 20px; width: 170px; }
+.menu a:hover { color: #2a6496; text-decoration: none; }
+.menu li.active { border-left: #ff5f3e solid 4px; background-color: #f8f8f8; }
+.menu .active a { color: #2a6496; }
+.page-home .header .search-form { display: none; }
+.home-search { text-align: center; }
+.home-categories { margin: 0 10px; }
+.home-categories .panel-heading { font-size: 100%; font-weight: normal; margin: 0; }
+.home-categories .panel-heading, .home-categories .panel .page { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.content { color: #555; margin: 40px 20px; padding: 40px;  background-color: #fff;
+ -webkit-box-shadow: 0 1px 50px rgba(0, 0, 0, 0.1); box-shadow: 0 1px 50px rgba(0, 0, 0, 0.1); }
+.content .title { margin: 0 0 30px 0; padding:0 0 10px; border-bottom: #ccc dotted 1px; }
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 { color: #222; }
+.content h2 { font-size: 24px;}
+.content h3 { font-size: 20px;}
+.content h4 { font-size: 18px;}
+.content h5 { font-size: 16px;}
+.content h6 { font-size: 14px;}
+.content li { line-height: 24px;}
+.content p, .content ul, .content ol, .content pre, .content blockquote, .content table, .content iframe { margin-bottom: 1em; }
+.content img { display: block; max-width: 100%; height: auto; margin: 0 auto; background: #fff; padding: 1px; border: 1px solid #D6D6D6; border-radius: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.content code { background-color: #FFFDDC; color: #555; }
+.content pre { background: #FFFDDC; border: 0; }
+.content pre code { color: #657B83; }
+.content .hljs { background: none; }
+.content .page-meta { font-size: 85%; color: #999; margin-top: 50px; }
+.content .page-meta a { color: #999; border-bottom: 1px dotted #999; }
+.content .page-meta a:hover { color: #428BCA; text-decoration: none; }
+.footer .copyright { font-size: 85%; color: #999; margin: 0 20px 40px 0; }
+.page-excerpt .search-query { background: #FFFDDC; }
+.error { padding: 0 20px; }
+ @media only screen and (max-width: 767px) {
+ .home-search .form-group {
+margin-bottom: 0;
+}
+ #home-search {
+margin-bottom: 10px;
+}
+}
+code, kbd, pre, samp { font-family: "Courier New"; }
+input, button, select, textarea { font-family: "Courier New"; }
+.content code, .content pre { border: 1px solid #c9c9c9; background: #fffddc; border-radius: 0; }
+.content pre code { border: none; }
+.content code pre { border: none; }
+.form-control { border-radius: 0; }

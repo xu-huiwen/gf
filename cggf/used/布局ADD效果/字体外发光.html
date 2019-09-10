@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			    text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff;
+			    
+			    
+			    
+			    .slogan {animation: light 3s infinite;}
+			@keyframes light {
+				0%,40%,100% {opacity: 0;}
+				20% {opacity: 1;}
+			}
+			.slogan {-webkit-animation: light 3s infinite;}
+			@-webkit-keyframes light {
+				0%,40%,100% {opacity: 0;}
+				20% {opacity: 1;}
+			}
+		</style>
+		<script>
+			//字逐渐出现
+			var index=0;
+    var word=document.getElementById("w").innerHTML;
+    function type(){
+        document.getElementById("aa").innerText = word.substring(0,index++);
+    }
+    setInterval(type, 20);
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

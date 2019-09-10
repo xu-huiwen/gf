@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="Tencent-CP" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<!-- 设计：cp  | 重构：cp | 创建：2018/01/07 | 更新：| 团队博客：http://tgideas.qq.com/ -->
+<title>6月飞车幸运星</title>
+<script>
+function AutoPage(){ 
+	document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 640 + 'px';
+ } ;
+AutoPage();
+window.addEventListener('resize',AutoPage,false)  
+</script>
+<style>
+/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+body{-webkit-text-size-adjust:none; font-size: 0.24rem;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong{font-weight:normal;font-style:normal;}
+a {text-decoration:none;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db {display:block;text-indent:-999em;}
+body,html{background-color: #b3ffe5;}
+header,footer {width:100%;margin:0 auto;}
+footer {width: 100%;background-color: #8f8cff;height: 0.58rem;line-height: 0.58rem;color: #fff;text-align: center;font-size: 0.2rem;}
+.tit_sp{background: url(//game.gtimg.cn/images/speed/cp/a20180504luckym/ tit_sp.png) no-repeat 999em 999em; background-size: 7.07rem 3.83rem;}
+.btn_sp{background: url(//game.gtimg.cn/images/speed/cp/a20180504luckym/ btn_sp.png) no-repeat 999em 999em; background-size: 9.15rem 2.06rem;}
+
+/*header*/
+header{height: 9.7rem; background: url(//game.gtimg.cn/images/speed/cp/a20180504luckym/ hd.jpg) no-repeat; background-size: 100%;position: relative;}
+.logo{position: absolute;top: 0.18rem;left: .18rem;width: 1.09rem;height: .94rem;background: url(//game.gtimg.cn/images/speed/cp/a20180504luckym/ logo.png) no-repeat 0 0;background-size: 100%;}
+.video{position: absolute;top: 4.55rem;right: 0.6rem;width: .55rem;height: .8rem;background-position: -7.13rem -.67rem;}
+.act_time{padding-top: 6.75rem;font-size: 0.22rem;color: #6870ff;line-height: 0.5rem;text-align: center;}
+.h_btns{padding-top: 0.22rem; display: flex;flex-flow: row nowrap;justify-content: space-around;}
+.h_btns a{display: block;width: 2.58rem;height: 0.8rem;}
+.down{background-position: -0.01rem -0.01rem;}
+.entry{background-position: -2.71rem -0.02rem;}
+.test{display: block;margin: 0.2rem auto 0;width: 4.97rem;height: 1.15rem;background-position: 0 -0.87rem;}
+/*par1*/
+/*box1*/
+.main{background: #ececff;padding: 0 .12rem;}
+.par1{padding-top: .1rem;}
+.tit1{width: 6.4rem;height: .5rem;background-position:  0 0;}
+.par1_con{padding-top: .2rem;}
+.box1{margin-top: .2rem; padding-top: .2rem; width: 6.13rem;height: 5.3rem;background: url(//game.gtimg.cn/images/speed/cp/a20180504luckym/ box1.png) no-repeat 0 0;background-size: 100%; position: relative;}
+.start_icon{position: absolute;top: -0.2rem;right: -0.1rem;width: .64rem;height: .65rem;}
+.start_icon1{background-position: -.02rem -3.16rem;}
+.tit_item1,.tit_item2,.tit_item3{width: 2.26rem;height: .62rem;margin: 0 auto;background-position: -.05rem -1.75rem;}
+.box_con{padding-top: .25rem;}
+.box_l{float: left;width: 1.21rem;margin-left: .55rem;}
+.box_l img{width: 1.21rem;height: 2.74rem;}
+.flower_icon{position: absolute;top: -.3rem;left: -.23rem;width: .8rem;height: .6rem;padding-top: .2rem; background-position: -7.68rem -.67rem;font-size: .2rem;color: #ffffff;line-height: .22rem;text-align: center;}
+.box_l p{position: absolute;top: 2.1rem;left: 0;width: 100%;font-size: .2rem;color: #6870ff;line-height: .22rem;text-align: center;}
+.box_r{float: left;width: 3.45rem;margin-left: .55rem;display: flex;flex-flow: row wrap;justify-content: space-around;}
+.box_r li{width: 1.56rem;height: 1.17rem;margin-top: .15rem;position: relative;}
+.box_r li img{width: 1.56rem;height: 1.17rem;}
+.box_r p{position: absolute;left: 0;width: 100%;font-size: .2rem;color: #6870ff;line-height: .22rem;text-align: center;}
+.top1{top: .65rem;}
+.top2{top: .8rem;}
+.tips{padding-top: .2rem;font-size: .2rem;color: #ffffff;line-height: .24rem;text-align: center;}
+.btn_lq1{display: block;margin: .15rem auto 0;width: 1.77rem;height: .51rem;background-position: -5.37rem 0;}
+/*box1_1*/
+.start_icon2{background-position: -.73rem -3.16rem;}
+.tit_item2{background-position: -2.43rem -1.75rem;}
+/*box1_3*/
+.start_icon3{background-position: -1.49rem -3.16rem;}
+.tit_item3{background-position: -4.81rem -1.75rem;}
+/*box2*/
+.box2{margin-top: .2rem;padding-top: .3rem; width: 6.13rem;height: 8.2rem;background: url(//game.gtimg.cn/images/speed/cp/a20180504luckym/ box2.png) no-repeat 0 0;background-size: 100%;}
+.tit_item4{width: 2.86rem;height: .62rem;margin: 0 auto;background-position:  -.04rem -2.48rem;}
+.box2_con1{padding-top: .2rem;}
+.small_tit1{width: 1.73rem;height: .31rem;margin: 0 auto;background-position: -5.34rem -2.48rem;font-size: .24rem;color: #fc9bcc;line-height: .31rem;text-align: center;font-weight: bold;}
+.box2_rule{padding-top: .15rem;padding-left: .4rem;font-size: .2rem;color: #ffffff;line-height: .32rem;}
+.box2_rule span{color: #fffae1;font-weight: bold;}
+.add_star{font-size: 0;text-align: center;}
+.add_star span{font-size: .22rem;color: #fff3ac;line-height: .44rem;}
+.btn_addStar{display: inline-block;margin-left: .2rem;width: 1.38rem;height: .46rem;background-position: -5.36rem -.56rem;font-size: .22rem;color: #df76b4;line-height: .46rem;text-align: center;}
+.box_con2{padding-top: .3rem;}
+.box_con2 li{margin-left: .3rem;width: 5.45rem;margin-top: .2rem;}
+.box_con2 li:after{content: '';display: block;clear: both;}
+.box_con2 li span,.box_con2 li em{float: left;width: 3.3rem;font-size: .2rem;color: #ffffff;line-height: .44rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.box_con2 li em{width: .8rem;text-align: center;}
+.btn_lq2{float: left;width: 1.3rem;height: .44rem;background-position: -5.36rem -1.07rem;font-size: .2rem;color: #df76b4;line-height: .44rem;text-align: center;}
+/*par2*/
+.par2{padding-top: .25rem;}
+.tit2{width: 5.5rem;height: .48rem;margin: 0 auto;background-position:  0 -.55rem;}
+.box3{margin-top: .2rem;padding: .3rem .25rem 0; width: 5.62rem;height: 8.2rem;background: url(//game.gtimg.cn/images/speed/cp/a20180504luckym/ box3.png) no-repeat 0 0;background-size: 100%;}
+.box3_info{font-size: .2rem;color: #fff;line-height: .24rem;text-align: center;}
+.box3_con{padding-top: .35rem; width: 5.62rem; display: flex;flex-flow: row wrap;justify-content: space-around;}
+.box3_con li,.box3_con img{width: 1.79rem;height: 1.31rem;position: relative;}
+.box3_con li{margin-top: .15rem;}
+.jp_icon{position: absolute;width: .85rem;height: .62rem;top: 0;right: 0;background-position: -7.49rem -.01rem;}
+.xz_icon{position: absolute;width: .25rem;height: .26rem;bottom: 0;right: 0;background-position:  -7.2rem -.02rem;}
+.box3_con p{position: absolute;left: 0;width: 100%;font-size: .2rem;color: #fe719f;line-height: .22rem;text-align: center;}
+.box3_con .top1{top: .75rem;}
+.box3_con .top2{top: .9rem;}
+.d_btns,.k_btns{padding-top: .4rem;display: flex;flex-flow: row nowrap;justify-content: space-around;}
+.d_btns a,.k_btns a{display: block;width: 1.78rem;height: .52rem;background-position: -5.36rem -1.54rem;font-size: .22rem;color: #df76b4;line-height: .52rem;text-align: center;}
+/*par3*/
+.par3{padding-top: .25rem;}
+.tit3{width: 6rem;height: .5rem;margin: 0 auto;background-position:  0 -1.12rem;}
+.box4{margin-top: .2rem;padding: .3rem .25rem 0; width: 5.62rem;height: 3.8rem;background: url(//game.gtimg.cn/images/speed/cp/a20180504luckym/ box4.png) no-repeat 0 0;background-size: 100%;}
+.box4_con{padding-top: .4rem; width: 5.62rem; display: flex;flex-flow: row wrap;justify-content: space-around;}
+.box4_con li,.box4_con img{width: 1.83rem;height: 1.7rem;position: relative;}
+.box4_con .flower_icon{line-height: .4rem;}
+.k_btns a{color: #7e81ff;}
+.box5{margin-top: .2rem;padding-bottom: .5rem;padding-top: .3rem; width: 6.12rem;height: 6.1rem;background: url(//game.gtimg.cn/images/speed/cp/a20180504luckym/ box5.png) no-repeat 0 0;background-size: 100%;}
+.tit_item5{width: 2.26rem;height: .62rem;margin: 0 auto;background-position: -3rem -2.48rem;}
+.box5_con{padding-top: .2rem;}
+.box5_con li{margin-left: .35rem;font-size: 0;}
+.box5_con li p{display: inline-block;vertical-align: top; font-size: .22rem;color: #ffffff;line-height: .34rem;}
+.box5_con li span{font-weight: bold;}
+.rw2{position: absolute;top: -.73rem;right: 0;width: 1.94rem;height: 1.81rem;background: url(//game.gtimg.cn/images/speed/cp/a20180504luckym/ rw2.png) no-repeat 0 0;background-size: 100%;}
+.rw1{position: absolute;top: -.73rem;left: -.1rem;width: 2.06rem;height: 1.78rem;background: url(//game.gtimg.cn/images/speed/cp/a20180504luckym/ rw1.png) no-repeat 0 0;background-size: 100%;}
+
+/*视频弹窗*/
+.vd_box{width: 100%;height: 100%;position: relative;z-index: 888;display: none;}
+.video_player { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 888; background: #000; display: block; }
+.video_close {width:0.46rem;height: 0.46rem; display: block; font-size: 0.5rem; color: #ffffff; font-weight: bold; text-align: center; line-height: 0.46rem; position: fixed; right: 4%; top: 4%;z-index: 10555;}
+
+/*弹窗*/
+.pop{width: 5.44rem; position: relative;display: none; }
+.p_1,.p_2{width: 5.44rem; height: 0.44rem;}
+.p_1{background: #5f61c0; background-size: 5.44rem 0.44rem;}
+.p_2{background: #5f61c0; background-size: 5.44rem 0.44rem;}
+.pcon{width: 4.44rem; background: #5f61c0; background-size: 5.44rem 0.3rem; padding: 0 0.5rem;}
+.ptit{width: 100%; font-size: 0.38rem; color: #fffca1; font-weight: bold; text-align: center; text-shadow: 0 0 2px #404290;}
+.ptxt{width: 100%; text-align: center; font-size: 0.3rem; color: #fffdf2; padding: 0.2rem 0;}
+.pbtn{width: 1.77rem; display: block; height: 0.51rem; background-position: -7.23rem -1.53rem; margin: 0.2rem auto 0;}
+.pclosed{width: 0.42rem; height: 0.44rem; background-position: -8.73rem -.82rem; position: absolute; top: 0.14rem; right: 0.1rem;}
+
+.pmemo{width: 100%; font-size: 0.22rem; color: #ffffff; line-height: 0.28rem; text-align: center; padding: 0.1rem 0;}
+.ptb{width: 100%; margin: 0.1rem auto 0;}		
+.ptb td{text-align: center; padding: 0.1rem 0;border: 1px solid #8c8def;}
+.ptb thead td{font-size: 0.24rem; color: #ffe7a6; background-color: #9394ff;}
+.ptb tbody td{color: #fefefe;font-size: 0.2rem; background-color: #acadfd;}
+.ptb tfoot td{background-color: #9394ff; color: #ffffff;}
+.ptb tfoot td a{font-size: 0.2rem; color: #ffffff; padding: 0 0.1rem;}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<h1 class="hide">6月飞车幸运星</h1>
+		<a href="javascript:;" target="_blank" class="logo"></a>
+		<h3 class="hide">免费紫钻 永久A车已送达</h3>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="javascript:popVideo('.vd_box','b08215mu5ol');" class="video btn_sp pa">视频12134646</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<p class="act_time">活动时间：5月24日-6月30日</p>
+		<div class="h_btns">
+			<a href="javascript:;" class="down btn_sp db">下载游戏</a>
+			<a href="javascript:;" class="entry btn_sp db">进入官网</a>
+		</div>
+		<a href="javascript:;" class="test btn_sp db">测测我的幸运星</a>
+	</header>
+	<div class="main">
+        <!--par1-->
+        <div class="par1">
+        	<h2 class="tit1 tit_sp db">幸运星紫钻特权随心享</h2>
+        	<div class="par1_con">
+        		<div class="box1">
+        			<em class="start_icon start_icon1 tit_sp"></em>
+        			<h3 class="tit_item1 tit_sp db">金星礼包</h3>
+        			<div class="box_con c">
+        				<div class="box_l pr">
+        					<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ jx_dj1.png"  alt="" />
+        					<span class="flower_icon btn_sp">机会<br>获得</span>
+        					<p>飞车紫钻<br>（1个月）</p>
+        				</div>
+        				<ul class="box_r">
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ jx_dj2.png"/>
+        						<span class="flower_icon btn_sp">100% <br>获得</span>
+        						<p class="top1">A车-黑魂之翼<br>（永久/20天）</p>
+        					</li>
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ jx_dj3.png"/>
+        						<p class="top1">水芳漾晴套装 （30天）</p>
+        					</li>
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ jx_dj4.png"/>
+        						<p class="top2">进阶改装礼包</p>
+        					</li>
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ jx_dj5.png"/>
+        						<p class="top2">3000飞车点券</p>
+        					</li>
+        				</ul>
+        			</div>
+        			<p class="tips">小橘子tips:领取前请关闭紫钻自动续费功能,否则可能导致<br>奖励发放失败</p>
+        			<a href="javascript:;" class="btn_lq1 btn_sp db">立即领取</a>
+        		</div>
+        		<div class="box1">
+        			<em class="start_icon start_icon2 tit_sp"></em>
+        			<h3 class="tit_item2 tit_sp db">金星礼包</h3>
+        			<div class="box_con c">
+        				<div class="box_l pr">
+        					<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ yx_dj1.png"  alt="" />
+        					<span class="flower_icon btn_sp">机会<br>获得</span>
+        					<p>飞车紫钻<br>（15天）</p>
+        				</div>
+        				<ul class="box_r">
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ yx_dj2.png"/>
+        						<span class="flower_icon btn_sp">100% <br>获得</span>
+        						<p class="top1">A车-黑魂之翼<br>（15天）</p>
+        					</li>
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ yx_dj3.png"/>
+        						<p class="top1">尊贵/佳人缇香<br>套装（30天）</p>
+        					</li>
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ yx_dj4.png"/>
+        						<p class="top2">普通改装礼包</p>
+        					</li>
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ yx_dj5.png"/>
+        						<p class="top2">1000飞车点券</p>
+        					</li>
+        				</ul>
+        			</div>
+        			<p class="tips">小橘子tips:领取前请关闭紫钻自动续费功能,否则可能导致<br>奖励发放失败</p>
+        			<a href="javascript:;" class="btn_lq1 btn_sp db">立即领取</a>
+        		</div>
+        		<div class="box1">
+        			<em class="start_icon start_icon3 tit_sp"></em>
+        			<h3 class="tit_item3 tit_sp db">金星礼包</h3>
+        			<div class="box_con c">
+        				<div class="box_l pr">
+        					<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ tx_dj1.png"  alt="" />
+        					<span class="flower_icon btn_sp">机会<br>获得</span>
+        					<p>飞车紫钻<br>（7天）</p>
+        				</div>
+        				<ul class="box_r">
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ tx_dj2.png"/>
+        						<span class="flower_icon btn_sp">100% <br>获得</span>
+        						<p class="top1">A车-黑魂之翼 （7天）</p>
+        					</li>
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ tx_dj3.png"/>
+        						<p class="top1">天寂幻想羽翼 （15天）</p>
+        					</li>
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ tx_dj4.png"/>
+        						<p class="top2">菠萝糖</p>
+        					</li>
+        					<li>
+        						<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ tx_dj5.png"/>
+        						<p class="top2">500飞车点券</p>
+        					</li>
+        				</ul>
+        			</div>
+        			<p class="tips">小橘子tips:领取前请关闭紫钻自动续费功能,否则可能导致<br>奖励发放失败</p>
+        			<a href="javascript:;" class="btn_lq1 btn_sp db">立即领取</a>
+        		</div>
+        		<div class="box2 pr">
+        			<em class="rw1"></em>
+        			<h3 class="tit_item4 tit_sp db">升星计划</h3>
+        			<div class="box2_con1">
+        				<h4 class="small_tit1 tit_sp">升星规则说明</h4>
+        				<p class="box2_rule">
+        					1. 完成任务即可领取幸运星，消耗25颗幸运星即可完成一次<br>
+							铜星到银星或者银星到金星的身份升级；<span>本次活动中每位玩<br>
+							家只能领取铜星、银星、金星礼包中的1个哦！
+							</span><br>
+							2. 成功邀请玩家回归规则：2018年2月12日-2018年3月4日<br>
+							登录过游戏且在2018年3月5日后未登录游戏的玩家，打开您<br>
+							分享给他的专属链接并绑定大区，且完成一次登录并登出游<br>
+							戏即算作成功回归，每个玩家只能被成功邀请1次。当前已成<br>
+							功邀请玩家：X名
+        				</p>
+        				<div class="add_star">
+        					<span>我有X颗幸运星</span>
+        					<a href="javascript:;" class="btn_addStar btn_sp">我要升星</a>
+        				</div>
+        			</div>
+        			<ul class="box_con2">
+        				<li>
+        					<span>每天登录游戏</span>
+        					<em>3星</em>
+        					<a href="javascript:;" class="btn_lq2 btn_sp">立即领取</a>
+        				</li>
+        				<li>
+        					<span>每天在星光秀场送一朵免费鲜花</span>
+        					<em>3星</em>
+        					<a href="javascript:;" class="btn_lq2 btn_sp">立即领取</a>
+        				</li>
+        				<li>
+        					<span>每天完成一局竞速赛</span>
+        					<em>2星</em>
+        					<a href="javascript:;" class="btn_lq2 btn_sp">立即领取</a>
+        				</li>
+        				<li>
+        					<span>每天分享一次活动</span>
+        					<em>1星</em>
+        					<a href="javascript:;" class="btn_lq2 btn_sp">立即领取</a>
+        				</li>
+        				<li>
+        					<span>成功邀请5名玩家回归</span>
+        					<em>10星</em>
+        					<a href="javascript:;" class="btn_lq2 btn_sp">立即领取</a>
+        				</li>
+        			</ul>
+        		</div>
+        	
+        	</div>
+        </div>
+        <!--par2-->
+        <div class="par2">
+        	<h2 class="tit2 tit_sp db">登录极品任你选</h2>
+        	<div class="box3">
+        		<p class="box3_info">活动期间，金星玩家每天登录游戏后可在下方奖励中选择2个<br>奖励领取，单Q每种奖励限领取1次，每次只能选择1个极品奖励<br>和1个普通奖励，每天领取机会不累计。<br></p>
+        		<ul class="box3_con">
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj1.png" width="179" height="131" alt="" />
+        				<p class="top1">A车-浮越<br>（2天）</p>
+        				<em class="jp_icon btn_sp"></em>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj2.png" width="179" height="131" alt="" />
+        				<p class="top1">A车-黑风<br>（2天）</p>
+        				<em class="jp_icon btn_sp"></em>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj3.png" width="179" height="131" alt="" />
+        				<p class="top1">A车-科曼<br>（2天）</p>
+        				<em class="jp_icon btn_sp"></em>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj4.png" width="179" height="131" alt="" />
+        				<p class="top1">海影沉风套装<br>（3天）</p>
+        				<em class="jp_icon btn_sp"></em>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj5.png" width="179" height="131" alt="" />
+        				<p class="top1">简奢晚宴套装<br>（3天）</p>
+        				<em class="jp_icon btn_sp"></em>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj6.png" width="179" height="131" alt="" />
+        				<p class="top1">闪亮星星/闪耀星星<br>套装（3天）</p>
+        				<em class="jp_icon btn_sp"></em>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj7.png" width="179" height="131" alt="" />
+        				<p class="top2">500消费券</p>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj8.png" width="179" height="131" alt="" />
+        				<p class="top2">300点券</p>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj9.png" width="179" height="131" alt="" />
+        				<p class="top2">金丝篓</p>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj10.png" width="179" height="131" alt="" />
+        				<p class="top2">燃料系统+1</p>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj11.png" width="179" height="131" alt="" />
+        				<p class="top2">巧克力糖</p>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ dl_dj12.png" width="179" height="131" alt="" />
+        				<p class="top2">菠萝糖</p>
+        				<em class="xz_icon btn_sp"></em>
+        			</li>
+        			
+        		</ul>
+        		<div class="d_btns">
+        			<a href="javascript:;" class="jp_gift btn_sp">领取极品奖励</a>
+        			<a href="javascript:;" class="pt_gift btn_sp">领取普通奖励</a>
+        		</div>
+        	</div>
+        </div>
+        <!--par3-->
+        <div class="par3">
+        	
+        	<h2 class="tit3 tit_sp db">开通超会秒升金星</h2>
+        	<div class="box4">
+        		<p class="box3_info">不管你是什么幸运星，只要在本页面开通一次超级会员，马上<br>就可以享受超级会员 专属福利+秒升金星+专属礼包！</p>
+        		<ul class="box4_con">
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ kt_dj1.png" width="183" height="170" alt="" />
+        				<em class="flower_icon btn_sp">概率</em>
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ kt_dj2.png"alt="" />
+        			</li>
+        			<li>
+        				<img src="//game.gtimg.cn/images/speed/cp/a20180504luckym/ kt_dj3.png"alt="" />
+        			</li>
+        		</ul>
+        		<div class="k_btns">
+        			<a href="javascript:;" class="jp_gift btn_sp">领取极品奖励</a>
+        			<a href="javascript:;" class="pt_gift btn_sp">领取普通奖励</a>
+        		</div>
+        	</div>
+        	<div class="box5 pr">
+        		<em class="rw2"></em>
+        		<h3 class="tit_item5 tit_sp db">活动规则</h3>
+        		<ul class="box5_con">
+        			<li>
+        				<p>1、</p>
+        				<p>活动时间：2018年3月1日-2018年3月31日；</p>
+        			</li>
+        			<li>
+        				<p>2、</p>
+        				<p>幸运星紫钻特权随心享：<span>活动期间，符合身份的玩家<br> 可以领取对应身份的礼包（领取前请先关闭紫钻自动<br>续费功能，否则可能导致紫钻奖励发放失败），单Q<br>只可以领取其中1个礼包1次；</span></p>
+        			</li>
+        			<li>
+        				<p>3、</p>
+        				<p><span>升星计划：活动期间，非金星玩家也可以参与升星任<br> 务领取更高等级礼包；</span></p>
+        			</li>
+        			<li>
+        				<p>4、</p>
+        				<p>登录极品任你选：金星玩家每天登录游戏后可在下方<br>奖励中任选2个奖励领取，单Q每种奖励限领取1次，<br>每天领取机会不累计；</p>
+        			</li>
+        			<li>
+        				<p>5、</p>
+        				<p>开通超会秒升金星:在本页面开通1次超级会员，无论<br>玩家当前是什么幸运星都可以直升金星，并可以领取<br>超级会员专属礼包，单Q仅可领取1次；</p>
+        			</li>
+        			<li>
+        				<p>6、</p>
+        				<p><span>此活动的所有解释权归腾讯公司所有。</span></p>
+        			</li>
+        		</ul>
+        	</div>
+        </div>	
+	</div> 
+	<footer>腾讯公司保留在法律规定的范围内对上述规则进行解释的权利</footer>
+</div>
+<!--视频弹窗-->
+<div class="vd_box pr">
+	<div id="videoPlayer" class="video_player"></div>
+	<a href="javascript:closeVideo();"  class="video_close">&times;</a>
+</div>
+<!--绑定提示弹窗-->
+<div class="pop">
+	 <div class="p_1"></div>
+	 <div class="pcon">
+	 	  <h3 class="ptit">温馨提示</h3>
+	 	  <p class="ptxt">角色一经绑定将不能更改哦~</p>
+	 	  <a href="javascript:;" class="pbtn btn_sp"></a>
+	 </div>
+	 <div class="p_2"></div>
+	 <a href="javascript:;" class="pclosed db btn_sp" title="关闭">关闭</a>
+</div>
+<!--礼包弹窗-->
+<div class="pop">
+	 <div class="p_1"></div>
+	 <div class="pcon">
+	 	  <h3 class="ptit">温馨提示</h3>
+	 	  <p class="pmemo">虚拟道具奖品将在24小时内发到您的游戏仓库请耐心等待，谢谢您的理解与支持！</p>
+	 	  <table class="ptb">
+	 	  <thead>
+	 	  	  <tr>
+			    <td>获奖时间</td>
+			    <td>获奖大区</td>
+			    <td>所获礼品</td>
+			  </tr>
+	 	  </thead>
+	 	  <tbody>
+	 	  	  <tr>
+			    <td>2017.10.26</td>
+			    <td>电信区</td>
+			    <td>588点券</td>
+			  </tr>
+			  <tr>
+			    <td>2017.10.26</td>
+			    <td>电信区</td>
+			    <td>588点券</td>
+			  </tr>
+	 	  </tbody>
+	 	  <tfoot>
+	 	  	  <tr>
+		         <td colspan="3"><a href="javascript:;" class="prev">上一页</a><a href="javascript:;">1</a><a href="javascript:;" class="next">下一页</a>1/1 共1条</td>
+		      </tr>
+	 	  </tfoot>
+		</table>
+	 </div>
+	 <div class="p_2"></div>
+	 <a href="javascript:;" class="pclosed db btn_sp" title="关闭">关闭</a>
+</div>
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/login/loginmanagerv3.js" charset="gb2312"></script>
+<script src="http://ossweb-img.qq.com/images/js/mobile_build/milo.js"></script>
+<script src="http://imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2.js" charset="utf-8"></script>
+<script>
+//登录
+function login() {
+    parent.need("biz.login", function (LoginManager) {
+        LoginManager.login();
+    });
+
+  };
+function logout() {
+    parent.need("biz.login", function (LoginManager) {
+        LoginManager.logout();
+    });
+};
+    LoginManager.checkLogin(function () {
+    if ($E("#login_nickname_span")) {
+        LoginManager.getNickName(function (loginInfo) {
+            if (loginInfo.isLogin) {
+                $E("#login_nickname_span").innerHTML = loginInfo.nickName;
+            }
+        });
+    }
+
+});
+
+//弹窗+视频
+function gE(e) {
+		return document.querySelector(e)
+};
+
+function pop(e) {
+	if (!gE('#popmask')) {
+		gE(e).style.display = "block";
+	 	showpop(e);
+		hidePop(e);
+	};
+};
+function showpop(e){
+	var popH = gE(e).offsetHeight,
+			popW = gE(e).offsetWidth;
+	gE(e).style.cssText = "position:fixed;left:50%;display:block;top:50%;z-index:9999;" + "margin-left:-" + popW / 2 + "px;" + "margin-top:-" + popH / 2 + "px;"
+	var bgObj = document.createElement("div");
+	bgObj.setAttribute('id', 'popmask');
+	document.body.appendChild(bgObj);
+	var conH = document.body.scrollHeight,
+	viewH = document.documentElement.clientHeight;
+	if (conH > viewH) {
+		gE('#popmask').style.height = conH + "px";
+	} else {
+		gE('#popmask').style.height = viewH + "px";
+	}
+	
+};
+function hidePop(e) {
+	gE('#popmask').addEventListener('click', function () {
+		hidePopOk(e)
+	});
+};
+
+function hidePopOk(e) {
+	gE(e).style.display = "none";
+	var bgObj = gE("#popmask");
+	document.body.removeChild(bgObj);
+};
+
+function popVideo(e,vid) {
+	pop(e);
+	var video = new tvp.VideoInfo();
+    video.setVid(vid);
+    var player = new tvp.Player();
+    var videoURL = '';
+    player.create({
+        video: video,
+        modId: 'videoPlayer',
+        width: "100%",
+        height: "100%",
+        onfullscreen: function (f) { if (!f) $("#videoPlayer", ".video_close").hide() },
+        autoplay: true,
+        isHtml5UseAirPlay: true,
+        isHtml5UseFakeFullScreen: true
+    });
+    
+};
+//关闭视频
+function closeVideo(){
+	hidePopOk('.vd_box');
+	$('.video_player').html('');
+	return false;
+};	
+</script>
+<script src="http://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+ siteType:"a20180504luckym", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName:"5月飞车幸运星", //必填项:页面中文名
+ osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

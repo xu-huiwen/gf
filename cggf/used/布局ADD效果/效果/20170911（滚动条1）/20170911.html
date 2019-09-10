@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+		    /* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:before,q:after{content:'';}
+fieldset,img,abbr,acronym{border:0;}
+
+/*页面样式*/
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.c {zoom:1;}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;text-align:justify;background-color: #1c2b4f;}
+a {text-decoration:none;overflow:hidden;}
+a:hover {text-decoration:underline;}
+.wrap,.wrap1,#footer_ied {min-width:1000px;width:100%;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?'1000px':'');}
+.wrap{background:url(ossweb-img/rp1.jpg) no-repeat 50% 0;}
+.wrap1{background:url(ossweb-img/rp2.jpg) no-repeat 50% 1215px;}
+.container {width:1000px;margin:0 auto;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.db{display:block;text-indent:-999em;}
+.content .last{margin-right: 0;}
+.content img{display: block;}
+.sp{background: url(ossweb-img/sp.png) no-repeat;}
+
+/*滚动条样式*/
+        .scroll {width:897px;height:748px;overflow:auto;}
+        .scroll_cn{width: 897px;}
+        /*滚动条样式*/   
+        .zUIpanelScrollBox,.zUIpanelScrollBar{width:15px;top:0px;right:2px;}
+        .zUIpanelScrollBox{ background:#150706;opacity:0.5;filter:alpha(opacity=10);}
+        .zUIpanelScrollBar{opacity:0.8; filter:alpha(opacity=80);}
+        .barTop,.barBot{width: 90%;height: 50%;margin:0 auto;background-color: #39477b;}
+        .barTop{background-position: left top;}
+        .barBot{background-position: left bottom;}
+        
+        
+        
+        /*问卷*/
+        .wj_tit{color: #ffd380;font-size: 18px;line-height: 26px;}
+        .wj_tit1{padding-top: 10px;}
+        .wj_txt{color: #c59e53;font-size: 16px;line-height: 18px;padding: 16px 0 14px;}
+        .wj_cn{color: #a4b7ff;font-size: 14px;line-height: 26px;}
+            .cn_xx{display: inline-block;width: 112px;height: 26px;padding-left: 25px;background-position: -514px -546px;cursor: pointer;}
+            .cn_xx.on{background-position: -514px -575px;}
+        .wj_cn2{padding-top: 8px;}
+            .wj_cn2 .cn_xx{width: 204px;}
+        
+        .wj_cn3{color: #a4b7ff;font-size: 14px;line-height: 30px;padding: 6px 0;}
+            .cn_xx1{display: inline-block;width: 389px;height: 30px;padding-left: 25px;background-position: -514px -544px;cursor: pointer;}
+                .cn_xx2{width: 342px;}
+                .cn_xx1.on{background-position: -514px -573px;}
+        .wj_cn4 .cn_xx1{width: 120px;}
+        .wj_cn5 .cn_xx1{width: 540px;}  
+        .wj_cn6 .cn_xx{width: 84px;}
+        .wj_cn7 .cn_xx{width: 120px;}
+        .wj_tit6{padding: 10px 0 3px;}
+        .texa_t1{width: 802px;background-color: #3d4b82;border: 1px solid #131829;border-radius: 10px;margin-top: 9px;color: #1b2137;font-size: 16px;padding: 20px;height: 22px;line-height: 22px;font-family: '\5FAE\8F6F\96C5\9ED1';}
+        .texa_t2{height: 116px;padding: 10px 20px;}
+        .pop_b_box{width: 844px;padding-top: 20px;}
+        .btn_ljtj{display: block;width: 177px;height: 66px;background-position: 0 -668px;margin: 0 auto;}
+        .btn_close{width: 51px;height: 51px;background-position: -9px -610px;right: -20px;top: 0;}
+		</style>
+	</head>
+	<body>
+	    <div class="scroll">
+            <div class="scroll_cn">
+                <!--第一题 基本资料-->
+                <p class="wj_tit">1.请填写您的基本资料：</p>
+                <p class="wj_txt">年龄（单选）</p>
+                <p class="wj_cn">
+                    <span class="cn_xx sp">A．12岁及以下</span>
+                    <span class="cn_xx sp">B．13岁~15岁</span>
+                    <span class="cn_xx sp">C．16岁~18岁</span>
+                    <span class="cn_xx sp">D．19岁~22岁</span><br />
+                    <span class="cn_xx sp">E．23岁~25岁</span>
+                    <span class="cn_xx sp">F．26岁~30岁</span>
+                    <span class="cn_xx sp">G．31岁及以上</span>
+                </p>
+                <p class="wj_txt">性别（单选）</p>
+                <p class="wj_cn">
+                    <span class="cn_xx sp">A．男</span><br />
+                    <span class="cn_xx sp">B．女</span>
+                </p>
+                <p class="wj_txt">职业（单选）</p>
+                <p class="wj_cn">
+                    <span class="cn_xx sp">A．学生</span>
+                    <span class="cn_xx sp">B．上班族 </span>
+                    <span class="cn_xx sp">B．自由职业者 </span>
+                    <span class="cn_xx sp">D．其他</span>
+                </p>
+                <!--第二题-->
+                <p class="wj_tit wj_tit1">2.请选择您的网络环境 :（单选：请根据您的实际网络进行选择，如若通过筛选，<br />&emsp;我们将为您激活您选择的网络大区）</p>
+                <p class="wj_cn wj_cn2">
+                    <span class="cn_xx sp">A．电信（对应极速电信服） </span>
+                    <span class="cn_xx sp">B．网通（对应极速网通服） </span>
+                    <span class="cn_xx sp">C．其他（对应极速电信服）</span>
+                </p>
+                <!--第三题-->
+                <p class="wj_tit wj_tit1">3.请选择您最近一年内正在玩的单机/主机游戏类型：（不定项，最多两项）</p>
+                <p class="wj_cn3 check3">
+                    <span class="cn_xx1 cn_xx2 sp">A．角色扮演类（如辐射、仙剑、最终幻想等） </span>
+                    <span class="cn_xx1 sp">B．实时策略类（如星际争霸、魔兽争霸、帝国时代等） </span><br />
+                    <span class="cn_xx1 cn_xx2 sp">C．射击类（如使命召唤、生化奇兵、星战前线等）</span>
+                    <span class="cn_xx1 sp">D．体育类（如实况足球、NBA2K、FIFA系列等）</span><br />
+                    <span class="cn_xx1 cn_xx2 sp">E．竞速类（如极品飞车系列、尘埃系列、F1系列等） </span>
+                    <span class="cn_xx1 sp">F.  动作冒险类（如鬼泣、生化危机、刺客信条、古墓丽影等） </span><br />
+                    <span class="cn_xx1 sp">G．都没有在玩</span>
+                </p>
+                <!--第四题-->
+                <p class="wj_tit wj_tit1">4.以下竞速类单机/主机游戏中哪些是您正在玩或曾经玩过的：（不定项，最多两项）</p>
+                <p class="wj_cn3 wj_cn4 check4">
+                    <span class="cn_xx1 cn_xx2 sp">A．尘埃系列</span>
+                    <span class="cn_xx1 sp">B．F1系列</span>
+                    <span class="cn_xx1 cn_xx2 sp">C．赛车计划</span>
+                    <span class="cn_xx1 sp">D．极速骑行 </span>
+                    <span class="cn_xx1 cn_xx2 sp">E．侠盗猎车手GTA</span><br />
+                    <span class="cn_xx1 sp">F．极品飞车系列</span>
+                    <span class="cn_xx1 sp">G．无限驾驶</span>
+                    <span class="cn_xx1 sp">H．山脊赛车</span>
+                    <span class="cn_xx1 sp">I．都没有玩过</span>
+                </p>
+                <!--第五题-->
+                <p class="wj_tit wj_tit1">5.请选择您最近一年内正在玩的网络游戏类型：（不定项，最多两项）</p>
+                <p class="wj_cn5 wj_cn3 check5">
+                    <span class="cn_xx1 sp">A．动作类网游（如地下城与勇士、龙之谷等）  </span><br />
+                    <span class="cn_xx1 sp">B．音乐舞蹈类网游（如QQ炫舞、touch、劲舞团等）</span><br />
+                    <span class="cn_xx1 sp">C．赛车竞速类网游（如QQ飞车、跑跑卡丁车、赛车联盟、疯狂赛车、飙车世界等） </span><br />
+                    <span class="cn_xx1 sp">D．休闲平台类网游（如QQ游戏、联众等）</span><br />
+                    <span class="cn_xx1 sp">E．射击类网游（如穿越火线、CS Online、逆战、使命召唤OL等）</span><br />
+                    <span class="cn_xx1 sp">F．即时战略类网游（如 DOTA、英雄联盟LOL等） </span><br />
+                    <span class="cn_xx1 sp">G．角色扮演类网游（如魔兽世界、天龙八部、梦幻西游、斗战神、剑灵、寻仙等）</span><br />
+                    <span class="cn_xx1 sp">H．都没有玩过</span>
+                </p>
+                <!--第六题-->
+                <p class="wj_tit wj_tit6">6.您一般玩游戏的地点是： （单选）</p>
+                <p class="wj_cn wj_cn6">
+                    <span class="cn_xx sp">A．网吧</span>
+                    <span class="cn_xx sp">B．学校</span>
+                    <span class="cn_xx sp">C．公司</span>
+                    <span class="cn_xx sp">D．家里</span>
+                    <span class="cn_xx sp">E．其他</span>
+                </p>
+                <!--第七题-->
+                <p class="wj_tit wj_tit6">7.您每周玩游戏的时间长度大概是 :（单选）</p>
+                <p class="wj_cn wj_cn7">
+                    <span class="cn_xx sp">A．每周1-2天</span>
+                    <span class="cn_xx sp">B．每周3-4天 </span>
+                    <span class="cn_xx sp">C．每周5-6天</span>
+                    <span class="cn_xx sp">D．每周7天</span>
+                </p>
+                <!--第八题-->
+                <p class="wj_tit wj_tit6">8.是否愿意参加官方组织的玩家座谈会或游戏测试 :（单选）</p>
+                <p class="wj_cn wj_cn7">
+                    <span class="cn_xx sp">A．愿意</span><br />
+                    <span class="cn_xx sp">B．不愿意 </span>
+                </p>
+                <!--第九题-->
+                <p class="wj_tit wj_tit6">9.您最希望在游戏内获得的赛车是哪一款，请注明品牌和型号：（选填）</p>
+                <textarea  rows="2" cols="2" class="texa_t1"></textarea>
+                <!--第十题-->
+                <p class="wj_tit wj_tit6">10.您对极品飞车Online有何意见或者建议 :（选填）</p>
+                <textarea  rows="7" cols="3" class="texa_t1 texa_t2"></textarea>
+                <!--按钮-->
+                <div class="pop_b_box">
+                    <a href="javascript:;" class="btn_ljtj sp db">立即提交</a>
+                </div>
+            </div>
+        </div>
+        <script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+        <script src="jscroll.js"></script>
+        <script>
+            //滚动条
+            $('.scroll').panel();
+            
+            //单选
+    $('.cn_xx').click(function(){
+        $(this).addClass('on').siblings('.on').removeClass('on');
+    });
+            
+            //多选
+    function check(ck_cn){
+        $(ck_cn).find(' span').each(function(){
+            $(this).click(function(){
+                if(!$(this).hasClass('on')){
+                    if($(ck_cn+' .on').length<=1){                    //空格不能删掉
+                        $(this).addClass('on');
+                    }else if($(ck_cn+' .on').length>=1){             //空格不能删掉
+                        alert('最多只能选择两项！');
+                    }
+                }else {
+                    $(this).removeClass('on')
+                }
+                console.log($(".check3 .on").length)
+            })
+        })
+    }
+    check('.check3');
+    check('.check4');
+    check('.check5');
+        </script>
+        
+	</body>
+</html>

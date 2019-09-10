@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP"/>
+    <meta name="Copyright" content="Tencent"/>
+    <meta name="Description" content="腾讯游戏《天天酷跑》轻松好玩、简单时尚。《天天酷跑》时尚Q版角色与酷炫道具的完美结合！滑行玩法让跑酷与众不同！"/>
+    <meta name="Keywords" content="天天酷跑，天天酷跑官网，天天酷跑游戏，天天酷跑官方，酷跑，天天酷跑手机游戏，天天酷跑手机版"/>
+    <!-- 设计：cp  | 重构：cp | 创建：2019/3/14-->
+    <title>测一测你的真性情</title>
+    <script>
+        function AutoPage() {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 750 + 'px';
+        };
+        AutoPage();
+        window.addEventListener('resize', AutoPage, false)
+    </script>
+    <link rel="stylesheet" type="text/css" href="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/comm.css"/>
+</head>
+<body>
+<!--竖屏提示-->
+<div class="w_pop">
+    <div class="w_pop_img"></div>
+    <p class="w_tips">为了更好的体验，请将手机/平板竖起</p>
+</div>
+<!--内容-->
+<div class="swiper-container" id="cn_wrap">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide bg">
+            <div class="cn_box">
+                <!--装饰-->
+                <div class="zs_box">
+                    <em class="q_icon5"></em>
+                    <em class="q_icon2"></em>
+                    <em class="q_icon3"></em>
+                    <em class="q_icon4"></em>
+                    <em class="q_icon6"></em>
+                </div>
+                <h1 class="hide">测一测你的真性情</h1>
+                <em class="pao_logo sp db">天天酷跑</em>
+                <!--QQ专属ICON-->
+                <em class="qq_logo sp db">QQ专属</em>
+                <!--微信专属ICON-->
+                <em class="wx_logo sp db" style="display: none;">微信专属</em>
+                <!--内容-->
+                <div class="box3">
+                    <p class="name">Hi：<span id="userName"></span></p>
+                    <p class="txt3">我在<span>【你の真性情】</span>测试中<br/><span>免费赢取了</span></p>
+                    <p class="txt4">钻石*1888！</p>
+                    <div class="zs_box1">
+                        <em class="light1"></em>
+                        <em class="star1"></em>
+                        <img src="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/zs_img1.png" alt=""/>
+                    </div>
+                    <p class="txt5">你也快来参加吧！<br/><strong>做测试，赢钻石</strong><br/>还有更多新版本玩法等你哦~</p>
+                </div>
+                <p class="go_box1">
+                    <a href="javascript:;" class="btn_go sp" ontouchend="PTTSendClick('btn','test','立即测试');">
+                        立即测试<em class="sp"></em><i class="i1 sp"></i><i class="i2 sp"></i>
+                    </a>
+                </p>
+                <a href="javascript:;" class="next_icon sp test1" ontouchend="PTTSendClick('btn','test1','测试');"></a>
+            </div>
+        </div>
+        <div class="swiper-slide bg">
+            <div class="cn_box">
+                <div class="zs_box">
+                    <em class="q_icon1"></em>
+                    <em class="q_icon2"></em>
+                    <em class="q_icon3"></em>
+                    <em class="q_icon4"></em>
+                </div>
+                <div class="rw_box">
+                    <em class="rw1"></em>
+                    <em class="rw2"></em>
+                    <em class="rw3"></em>
+                </div>
+                <!--第一题-->
+                <div class="question_box question1">
+                    <p class="pre_num">1/3</p>
+                    <h2 class="question_tit sp"><em class="sp db que_tit1">1</em>很饿的时候，唯一的泡面被喵星人打翻，你会？</h2>
+                    <div class="que_cn" id="question1">
+                        <a href="javascript:;" class="sp" ontouchend="PTTSendClick('btn','ans1','回答');"><em
+                                class="que_icon sp"></em>善待自己，认真去做饭</a>
+                        <a href="javascript:;" class="sp" ontouchend="PTTSendClick('btn','ans2','回答');"><em
+                                class="que_icon sp"></em>保持微笑，晚上炖喵汤</a>
+                        <a href="javascript:;" class="sp" ontouchend="PTTSendClick('btn','ans3','回答');"><em
+                                class="que_icon sp"></em>捶胸顿足，万念俱灰</a>
+                    </div>
+                    <p class="tips"><em class="sp"></em>选好答案，将自动进入下一题哦~</p>
+                </div>
+                <!--第二题-->
+                <div class="question_box question2" style="display: none;">
+                    <p class="pre_num">2/3</p>
+                    <h2 class="question_tit sp"><em class="sp db que_tit2">2</em>假期任务，你通常怎么完成？</h2>
+                    <div class="que_cn" id="question2">
+                        <a href="javascript:;" class="sp" ontouchend="PTTSendClick('btn','ans4','回答');"><em
+                                class="que_icon sp"></em>制定计划，自律推进</a>
+                        <a href="javascript:;" class="sp" ontouchend="PTTSendClick('btn','ans5','回答');"><em
+                                class="que_icon sp"></em>看心情，想起来就做</a>
+                        <a href="javascript:;" class="sp" ontouchend="PTTSendClick('btn','ans6','回答');"><em
+                                class="que_icon sp"></em>最后一天，挑灯夜战</a>
+                    </div>
+                    <p class="tips"><em class="sp"></em>选好答案，将自动进入下一题哦~</p>
+                </div>
+                <!--第三题-->
+                <div class="question_box c question3" style="display: none;">
+                    <p class="pre_num">3/3</p>
+                    <h2 class="question_tit sp"><em class="sp db que_tit3">3</em>朋友要去约会，穿了件超难看的衣服，你会？</h2>
+                    <div class="que_cn" id="question3">
+                        <a href="javascript:;" class="sp" ontouchend="PTTSendClick('btn','ans7','回答');"><em
+                                class="que_icon sp"></em>委婉指出，并给予专业意见</a>
+                        <a href="javascript:;" class="sp" ontouchend="PTTSendClick('btn','ans8','回答');"><em
+                                class="que_icon sp"></em>怕伤害对方默不作声</a>
+                        <a href="javascript:;" class="sp" ontouchend="PTTSendClick('btn','ans9','回答');"><em
+                                class="que_icon sp"></em>疯狂嘲讽，逮到机会绝不辜负</a>
+                    </div>
+                    <p class="tips"><em class="sp"></em>最后一题，选好答案，谜底揭晓！</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide bg">
+            <div class="cn_box">
+                <div class="zs_box">
+                    <em class="q_icon1"></em>
+                    <em class="q_icon2"></em>
+                    <em class="q_icon3"></em>
+                    <em class="q_icon4"></em>
+                </div>
+                <div class="res_box">
+                    <em class="r_icon sp"></em>
+                    <p class="result_tit">性格关键词：<span id="q1_tit"></span><span id="q2_tit"></span><span
+                            id="q3_tit"></span></p>
+                    <div class="txt_box">
+                        <p class="txt1" id="q1_info"></p>
+                        <p class="txt1" id="q2_info"></p>
+                        <p class="txt1" id="q3_info"></p>
+                    </div>
+                </div>
+                <p class="txt2">有点不准？<a href="javascript:;" class="btn_again"
+                                        ontouchend="PTTSendClick('btn','again','再测一次');">再测一次</a></p>
+                <div class="gift_box c">
+                    <div class="tx_box">
+                        <em class="tx_icon"></em>
+                        <img src="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/pic_tx.png" alt=""/>
+                    </div>
+                    <div class="gift_box1">
+                        <em class="gift_light"></em>
+                        <em class="g_star"></em>
+                        <a href="javascript:;" class="btn_zs" ontouchend="PTTSendClick('btn','get1','领取钻石');">
+                            <img src="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/zs_img.png" alt=""/>
+                            <em class="sp"></em><i class="i1 sp"></i><i class="i2 sp"></i>
+                        </a>
+                    </div>
+                    <!--寄语-->
+                    <p class="send">人生路万条，拼搏第一条！</p>
+                </div>
+                <div class="btns c">
+                    <a href="javascript:;" id="shareBtn" class="btn_share sp"
+                       ontouchend="PTTSendClick('btn','share','分享好友');">分享好友</a>
+                    <a href="javascript:;" id="shareRawardBtn" class="btn_get sp"
+                       ontouchend="PTTSendClick('btn','get2','立领1888');">立领1888<em class="sp"></em></a>
+                </div>
+                <p class="tips"><em class="sp"></em>成功分享好友，立领1888钻哦！</p>
+                <a href="javascript:cn_wrap.slideTo(3, 500, false);" class="page_next"
+                   ontouchend="PTTSendClick('btn','next4','下一页');"><em class="next_icon sp"></em></a>
+            </div>
+        </div>
+        <div class="swiper-slide bg">
+            <div class="cn_box">
+                <div class="zs_box">
+                    <em class="q_icon1"></em>
+                    <em class="q_icon2"></em>
+                    <em class="q_icon3"></em>
+                    <em class="q_icon4"></em>
+                </div>
+                <div class="box1">
+                    <h2 class="hide">更多好戏 重磅来袭</h2>
+                    <div class="more_cn">
+                        <a href="javascript:;" class="more_link">
+                            <img src="//game.gtimg.cn/images/pao/cp/a20190314versionmzr/more_img.png" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="box2">
+                    <h2 class="hide">共享精彩 壕礼相送</h2>
+                    <p class="b2_txt">活动期间，登录游戏立领“尝鲜礼包”哦~</p>
+                    <ul class="gift_list c">
+                        <li><img src="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/pic_dj1.png" alt="钻石"/>
+                            <p>钻石*28</p></li>
+                        <li><img src="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/pic_dj2.png" alt="积分"/>
+                            <p>积分*888</p></li>
+                        <li><img src="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/pic_dj3.png" alt="青丘冰狐"/>
+                            <p style="top: 1.16rem;">青丘冰狐<br/>满级体验1天</p></li>
+                    </ul>
+                    <a href="javascript:;" id="rawardBtn" class="btn_get1 sp"
+                       ontouchend="PTTSendClick('btn','lq','立即领取');">立即领取</a>
+                </div>
+                <p class="rule_box"><a href="javascript:pop('#pop_rule');"
+                                       ontouchend="PTTSendClick('btn','rule2','活动规则');">&lt;活动规则&gt;</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------登录弹窗 调用 pop("#pop1")----->
+<div class="pop pop1" id="pop_login">
+    <a href="javascript:hidePopOk('#pop_login');" class="pop_close sp db">关闭</a>
+    <h3 class="pop_tit">请选择登录方式</h3>
+    <div class="login_box c">
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','qq','QQ登录');" onclick="loginByQQ();"><img
+                src="//game.gtimg.cn/images/pao/cp/a20190314versionmzr/login_qq.png" alt="QQ登录"/>
+            <p>QQ登录</p></a>
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','wx','微信登录');" onclick="loginByWx();"><img
+                src="//game.gtimg.cn/images/pao/cp/a20190314versionmzr/login_wx.png" alt="微信登录"/>
+            <p>微信登录</p></a>
+    </div>
+</div>
+<!------------分享弹窗------------>
+<!--手Q分享   pop("#share_qq")-->
+<div class="pop pop2" id="share_qq">
+    <a href="javascript:hidePopOk('#share_qq');" class="pop_close sp db">关闭</a>
+    <div class="login_box c">
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','shareqq1','分享给QQ好友');"><img
+                src="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/share_qq1.png" alt="分享给QQ好友"/>
+            <p>分享给QQ好友</p></a>
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','shareqq2','分享到QQ空间');"><img
+                src="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/share_qq2.png" alt="分享到QQ空间"/>
+            <p>分享到QQ空间</p></a>
+    </div>
+</div>
+<!--微信分享   pop("#share_wx")-->
+<div class="pop pop2" id="share_wx">
+    <a href="javascript:hidePopOk('#share_wx');" class="pop_close sp db">关闭</a>
+    <div class="login_box c">
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','sharewx1','分享给微信好友');" onclick="loginByQQ();"><img
+                src="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/share_wx1.png" alt="分享给微信好友"/>
+            <p>分享给微信好友</p></a>
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','sharewx2','分享到微信朋友圈');" onclick="loginByWx();"><img
+                src="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/share_wx2.png" alt="分享到微信朋友圈"/>
+            <p>分享到微信朋友圈</p></a>
+    </div>
+</div>
+<!--浮层提示分享    pop("#share_tips")-->
+<div class="pop pop3" id="share_tips">
+    <p class="share_img"></p>
+</div>
+<!--通用提示弹窗     pop("#pop")-->
+<div class="pop pop2" id="pop">
+    <a href="javascript:hidePopOk('#pop');" class="pop_close sp db">关闭</a>
+    <p class="pop_txt">提示文案提示文案提示文案提示文案提示文案提示文案提示文案</p>
+</div>
+<!--活动规则-->
+<!--  pop('#pop_rule')-->
+<div class="pop pop4" id="pop_rule">
+    <a href="javascript:hidePopOk('#pop_rule');" class="pop_close sp db">关闭</a>
+    <dl class="rule_cn">
+        <dt>活动规则：</dt>
+        <dd class="c"><em>1、</em>
+            <p>活动时间：2019年3月29日至4月12日；</p></dd>
+        <dd class="c"><em>2、</em>
+            <p>活动期间，玩家参与测试并分享好友，即可获得钻石*1888；</p></dd>
+        <dd class="c"><em>3、</em>
+            <p>活动期间，玩家登录游戏，即可领取“尝鲜礼包”，单用户限领1次；</p></dd>
+        <dd class="c"><em>4、</em>
+            <p>本次活动道具奖励，将以邮件方式发放至玩家游戏邮箱，敬请关注。</p></dd>
+    </dl>
+</div>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script>
+<script type="text/javascript" src="//game.gtimg.cn/images/pao/cp/a20190314versionmkr/orienter.js"></script>
+<script type="text/javascript">
+    //页面切屏效果
+    var cn_wrap = new Swiper('#cn_wrap', {
+        direction: 'vertical',
+        slideActiveClass: 'cn_active',
+        onSlideChangeStart: function (swiper) {
+        	if(swiper.realIndex == 1){
+        		cn_wrap.lockSwipeToPrev();
+        		cn_wrap.lockSwipeToNext();
+        	}else if(swiper.realIndex == 2){
+        		 cn_wrap.lockSwipeToPrev();
+        	}else{
+        		 cn_wrap.unlockSwipes();
+        	}
+        },
+        onSlideChangeEnd: function (swiper) {
+            //统计代码
+            PTTSendClick('page', 'page' + (swiper.activeIndex - 1) + '_to_' + 'page' + swiper.activeIndex, '翻屏');
+        }
+    });
+    //更多好戏 轮播
+    var moreCn = new Swiper('#more_cn', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 10,
+        touchRatio: 0.4
+    });
+    //开启测试
+    $('.btn_go,.test1').click(function () {
+        cn_wrap.slideNext();
+    });
+    //答题
+    var answer1, answer2, answer3;
+    var questionA1 = [
+        ["乐观", "你认真、自信、感情丰富，是一个拥有向阳体质的乐观宝宝。"],
+        ["热情", "你热情、活力，富有感染力。与你相处是幸福的，总能发现生活中的乐趣与欢乐。"],
+        ["纯真", "内心单纯的你，可爱、善良，富有同情心。所有情绪都写在脸上，宛如孩童。"]
+    ];
+    var questionA2 = [
+        ["独立", "你也喜欢独立思考，冷静沉着，拥有较强的自律性。"],
+        ["洒脱", "偶尔也对生活抱有随性而且潇洒的态度。"],
+        ["挑战", "你积极上进、渴望挑战自我。并拥有极强的使命感，和一颗力争上游的心。"]
+    ];
+    var questionA3 = [
+        ["坦荡", "与为人坦荡的你相处是幸运的，常常能发现平凡中的小确幸，生活中的小美好！"],
+        ["细腻", "你还拥有一颗细腻柔软的心，关注他人的感受与情绪。可是宝宝，你也要更爱自己一些哦~"],
+        ["风趣", "风趣、拥有非凡活力的你，非常有朋友缘，表面上大大咧咧，内心可是很细腻哦~"]
+    ];
+    //答案选择
+    //第一题
+    $('#question1 a').click(function () {
+        $(this).addClass('curr').siblings('.curr').removeClass("curr");
+        answer1 = $(this).index();
+        setTimeout(function () {
+            $('.question1').hide();
+            $('.question2').show();
+        }, 400);
+        $('#q1_tit').html(questionA1[answer1][0]);
+        $('#q1_info').html(questionA1[answer1][1]);
+    });
+    //第二题
+    $('#question2 a').click(function () {
+        $(this).addClass('curr').siblings('.curr').removeClass("curr");
+        answer2 = $(this).index();
+        setTimeout(function () {
+            $('.question2').hide();
+            $('.question3').show();
+        }, 400);
+        $('#q2_tit').html(questionA2[answer2][0]);
+        $('#q2_info').html(questionA2[answer2][1]);
+    });
+    //第三题
+    $('#question3 a').click(function () {
+        $(this).addClass('curr').siblings('.curr').removeClass("curr");
+        answer3 = $(this).index();
+        setTimeout(function () {
+        cn_wrap.unlockSwipes();
+		cn_wrap.slideTo(2);
+        }, 400);
+        $('#q3_tit').html(questionA3[answer3][0]);
+        $('#q3_info').html(questionA3[answer3][1]);
+    });
+    //在测试一次
+    $('.btn_again').click(function () {
+        $('.question1').show();
+        $('.question2,.question3').hide();
+        $('.que_cn a').removeClass("curr");
+        cn_wrap.unlockSwipes();
+		cn_wrap.slideTo(1);
+    });
+    //重力感应效果
+    var o = new Orienter();
+    o.onOrient = function (obj) {
+        var gamma = parseInt(obj.g / 4);
+        var beta = parseInt(obj.b / 6);
+        $('.zs1,zs5,.rw1').css('transform', 'translate3d(' + -gamma + 'px,' + beta + 'px,0)');
+        $('.zs2,.zs3,.rw2').css('transform', 'translate3d(' + gamma + 'px,' + -beta + 'px,0)');
+        $('.zs4,.zs6,.rw3').css('transform', 'translate3d(' + gamma + 'px,' + beta + 'px,0)');
+        $('.zs3').css('transform', 'translate3d(' + -gamma + 'px,' + -beta + 'px,0)');
+    }
+    o.init()
+
+    //弹窗
+    function gE(e) {
+        return document.querySelector(e)
+    }
+
+    function pop(e) {
+        if (!gE('#pop-mask')) {
+            gE(e).style.display = "block";
+            var popH = gE(e).offsetHeight,
+                popW = gE(e).offsetWidth;
+            gE(e).style.cssText = "position:fixed;left:50%;display:block;top:50%;z-index:999;" + "margin-left:-" + popW / 2 + "px;" + "margin-top:-" + popH / 2 + "px;"
+            var bgObj = document.createElement("div");
+            bgObj.setAttribute('id', 'pop-mask');
+            document.body.appendChild(bgObj);
+            var conH = document.body.scrollHeight,
+                viewH = document.documentElement.clientHeight;
+            if (conH > viewH) {
+                gE('#pop-mask').style.height = conH + "px";
+            } else {
+                gE('#pop-mask').style.height = viewH + "px";
+            }
+        }
+    }
+
+    function hidePop(e) {
+        gE('#pop-mask').addEventListener('click', function () {
+            gE(e).style.display = "none";
+            var bgObj = gE("#pop-mask");
+            document.body.removeChild(bgObj);
+        });
+    }
+
+    function hidePopOk(e) {
+        gE(e).style.display = "none";
+        var bgObj = gE("#pop-mask");
+        document.body.removeChild(bgObj);
+    }
+
+    //触碰关闭分享浮层
+    $('.pop3').on('click', function () {
+        $('.pop3').hide();
+        $('#pop-mask').remove();
+    });
+</script>
+<script type="text/javascript" src="//ulink.qq.com/ulinksdk/dist/js/ulink.1.0.6.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+<!--统计-->
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType: "a20190314versionmkr", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
+        pageName: "客态", //必填项:页面中文名
+        project: "other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;默认other;
+        osact: 0 //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    };
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

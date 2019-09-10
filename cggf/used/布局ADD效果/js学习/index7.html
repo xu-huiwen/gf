@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//判断手机是流量还是WIFI
+var connection = navigator.connection||navigator.mozConnection||navigator.webkitConnection||{tyep:'unknown'};
+var type_text = ['unknown','ethernet','wifi','2g','3g','4g','none'];
+console.log(connection.type)
+if(connection.type == "wifi"){
+	alert(1111)
+}else{
+	alert(22222)
+}
+		</script>
+	</body>
+</html>

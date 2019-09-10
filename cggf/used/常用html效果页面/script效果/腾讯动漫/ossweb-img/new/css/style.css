@@ -1,0 +1,373 @@
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+ol,ul,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:before,q:after{content:'';}
+fieldset,img,abbr,acronym{border:none;}
+/* footer */
+#footer_ied{text-align:center;line-height:19px;color:#636262;}
+.wrap_ied{ margin:0 auto;padding:30px;width:940px;}
+.wrap_ied a{color:#636262;}
+#footer_ied .e{font-size:10px;}
+
+:focus{outline: none;}
+/* basic */
+.c:before,.c:after{content:"";display:table;}
+.c:after{clear:both;}
+.c{zoom:1;}
+body,html,.wrap_content{overflow: hidden;}
+body {font-family:"\5FAE\8F6F\96C5\9ED1";font-size: 12px;background-color: #ffffff;}
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+:focus{outline: none;}
+body,html,.zw_pop,.wrap,.wrap_top,.wrap_content,#footer_ied{width:100%;min-width:1000px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?'1000px':'');}
+.container {width:1000px;margin:0 auto;height: 100%;}
+.wrap{position: relative;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db {display:block;text-indent:-999em;}
+
+.wrap_ul{position: relative;z-index: 2;}
+.wrap_li{overflow: hidden;position: relative;}
+
+/*提示按钮*/
+.jz_tipsa li em,
+.jz_lr_l,
+.jz_lr_r,
+.btn_yd,
+.btn_buy,
+.btn_cj,
+.dm_tit,
+.sy_tit,
+.sy_ulb li p em,
+.hz_tx_yd,
+.h4_tit .left,
+.h4_tit .right,
+.video_ula .ul_titb em,
+.tipsBtn,
+.zw_tit,
+.zwClose,
+.Gallary_tit,
+.Gallary_prev,
+.Gallary_next,
+.Gallary_pop .GallaryClose,
+.video_pop .videoClose,
+.nav_box .nav_ul_left li em,
+.phone_input .phone_true,
+.b_btn a:hover{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/sp.png) no-repeat 0 0;}
+
+a.mask,.mask{position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/g_mask.png) repeat 0 0;display: block;}
+a.mask:hover{background: url(about:blank);}
+a.mask .play_btn{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/play_btn.png) no-repeat 0 0;width: 50px;height: 50px;display: block;position: absolute;left: 50%;top: 50%;margin-top: -25px;margin-left: -25px;}
+a.mask:hover .play_btn{background-position: -50px 0;}
+
+.tipsBtn{cursor: pointer; background-position: -276px -166px;width: 57px;height: 61px;position: absolute;left: 50%;margin-left: -29px;bottom: 20px;display: block;z-index: 10;}
+
+/*底部*/
+#footer_ied{position: absolute;z-index: 1000;bottom: -90px;text-align:center; line-height:20px; background-position:top; color: #6a6a6a;background-color: #0e0e0e;}
+#footer_ied .wrap_ied{padding: 15px;}
+#footer_ied .copyright{ position:relative; z-index:3; padding-top:10px; line-height:26px; }
+#footer_ied .copyright span a,#footer .copyright span a:hover{ margin:0 5px;}
+#theme_foot{ position:absolute; z-index:1; left:50%; width:980px; margin-left:-490px;}
+#footer_ied .notice{ display:none;}
+#footer_ied a{ color: #6a6a6a;}
+
+
+/*头部*/
+.wrap_top{background-color: #ffffff;height: 110px;border-bottom: 2px solid #fd8d52;position: relative;z-index: 10;}
+	.wrap_top .logo{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/logo.png) no-repeat 0 0;width: 210px;height: 65px;position: absolute;left: 3px;top: 25px;display: block;}
+	.wrap_top .nav_ul{height: 110px;position: absolute;right: 0;top: 0;}
+	.wrap_top .nav_ul li{width: 200px;height: 75px;float: left;text-align: center;font-size: 12px;padding-top: 35px;color: #adadad;}
+	.wrap_top .nav_ul li span{width: 200px;height: 75px;display: block;text-align: right;}
+	.wrap_top .nav_ul li span .nav_alink{display: inline-block;*display: inline;*zoom: 1;color: #adadad;text-align: center;padding-bottom: 40px;}
+	.wrap_top .nav_ul li span .nav_alink em{font-size: 24px;color: #000000;}
+	.wrap_top .nav_ul li span .nav_alink:hover{text-decoration: none;}
+	.wrap_top .nav_ul li span .nav_alink:hover em,.wrap_top .nav_ul li.on span .nav_alink em{color: #ff7e00;}
+
+/*page 1*/
+.wrap_bg{width: 100%;}
+.wrap_bg0{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/bg_0.jpg) no-repeat 50% 0;height: 200px;}
+.wrap_bg1{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/bg_1.jpg) no-repeat 50% 0;height: 200px;}
+.wrap_bg2{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/bg_2.jpg) no-repeat 50% 0;height: 200px;}
+.wrap_bg3{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/bg_3.jpg) no-repeat 50% 0;height: 200px;}
+.wrap_bg4{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/bg_4.jpg) no-repeat 50% 0;height: 91px;}
+
+.flash{width: 714px;height: 528px;position: absolute;left: 50%;margin-left: -357px;top: 50%;margin-top: -320px;z-index: 10;}
+
+
+/*page 2*/
+.pageBg{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/bg_5.jpg) no-repeat 50% 0;}
+.videoBox{width: 1000px;height: 554px;top: 50%;margin-top: -277px;}
+.text_a{width: 1000px;line-height: 28px;color: #686868;font-size: 16px;}
+.video_ula{width: 1000px;position: relative;margin-top: 20px;height: 449px;}
+.video_ula li{font-size: 0;cursor: pointer;}
+.video_ula .li_a{width: 661px;position: absolute;left: 0;top: 0;}
+.video_ula .li_b{width: 330px;position: absolute;right: 0;top: 0;}
+.video_ula .li_c{width: 330px;position: absolute;right: 0;bottom: 0;}
+
+.video_ula .ul_tita{background-color: #2c2c2c;text-align: center;width: 100%;line-height: 46px;color: #ffc14c;font-size: 20px;}
+.video_ula .ul_titb{width: 100%;line-height: 38px;color: #686868;background-color: #f0f0f0;font-size: 14px;text-align: center;}
+.video_ula .ul_titb em{background-position: -309px -43px; width: 7px;height: 7px;display: inline-block;*display: inline;*zoom: 1;margin-right: 6px;vertical-align: 1px;}
+
+/*page 3*/
+.jz_box{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/j_bg.png) no-repeat 16px 0;width: 1000px;height: 560px;top: 50%;margin-top: -280px;}
+.jz_h3{width: 590px;line-height: 35px;font-size: 26px;font-weight: 700;color: #000000;position: absolute;left: 409px;top: 38px;}
+.jz_h4{width: 112px;height: 36px;text-align: center;line-height: 36px;color: #ffffff;font-size: 20px;position: absolute;left: 409px;top: 125px;}
+.jz_lr_m{width: 533px;height: 143px;position: absolute;left: 438px;top: 182px;overflow: hidden;}
+.jz_lr_view{width: 1599px;height: 143px;position: absolute;left: 0;top: 0;}
+.jz_lr_view img{width: 533px;height: 143px;float: left;}
+
+.jz_lr_l{background-position: -276px -117px;width: 24px;height: 48px;display: block;position: absolute;left: 409px;top: 231px;display: none;}
+.jz_lr_r{background-position: -301px -117px;width: 24px;height: 48px;display: block;position: absolute;right: 0;top: 231px;}
+
+
+.jz_tipsa{width: 1065px;line-height: 24px;position: absolute;top: 500px;left: 0;}
+.jz_tipsa li{float: left;line-height: 24px;width: 290px;margin-right: 65px;font-size: 14px;color: #686868;}
+.jz_tipsa li em{background-position: -309px -43px;width: 7px;height: 7px;float: left;margin-top: 8px;margin-right: 5px;}
+.jz_tipsa li span{float: left;line-height: 24px;}
+
+.jz_tipsb{width: 400px;line-height: 24px;font-size: 14px;color: #686868;position: absolute;top: 450px;left: 0;}
+.jz_tipsc{width: 533px;position: absolute;right: 28px;top: 335px;line-height: 24px;font-size: 14px;color: #686868;}
+
+.btn_yd,.btn_buy,.btn_cj{width: 290px;top: 409px;padding-top: 23px;height: 57px;display: block;background-position: 0 -684px;position: absolute;color: #ffffff;font-size: 24px;text-align: center;}
+.btn_yd:hover,.btn_buy:hover,.btn_cj:hover{text-decoration: none;background-position: 0 -765px;}
+
+.btn_yd{left: 0;padding-top: 13px;height: 67px;}
+.btn_yd em{font-size: 16px;display: block;}
+
+.btn_buy{left: 355px;}
+
+.btn_cj{right: 0;}
+
+.btn_yd.on{padding-top: 23px;height: 57px;}
+.btn_yd.on em{display: none;}
+
+.btns_qq{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/qq_icon.png) no-repeat 0 0;width: 52px;height: 92px;display: block;position: absolute;top: 400px;right: -52px;}
+
+
+
+/*page 4*/
+.dm_box{width: 728px;left: 136px;top: 50%;height: 550px;margin-top: -275px;}
+.dm_tit{width: 275px;height: 72px;position: absolute;left: 226px;top: 0;}
+.dm_l,.dm_r{font-size: 22px;font-weight: 700;height: 24px;line-height: 30px;width: 157px;padding: 0 82px;text-align: center;position: absolute;top: 100px;}
+.dm_l{left: 0;}
+.dm_r{right: 0;}
+
+.dm_l .em_l,.dm_r .em_l,.dm_l .em_r,.dm_r .em_r{width: 82px;height: 0;border-top: 2px solid #000000;display: block;position: absolute;top: 14px;}
+.dm_l .em_l,.dm_r .em_l{left: 0;}
+.dm_l .em_r,.dm_r .em_r{right: 0;}
+
+.dm_ula,.dm_ulb{width: 321px;position: absolute;top: 150px;left: 0;}
+.dm_ulb{left:407px;}
+.dm_ula li{float: left;width: 321px;height: 118px;background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/dm_bg.png) no-repeat 0 0;margin-bottom: 13px;}
+.dm_ula li a{width: 100%;height: 100%;display: block;position: relative;}
+.dm_ula li a:hover{text-decoration: none;}
+.dm_ula li a .dm_text_a{position: absolute;left: 17px;top: 30px;font-weight: 700;color: #0b0b0b;}
+.dm_ula li a .dm_text_a strong{font-size: 30px;font-weight: 700;}
+.dm_ula li a .dm_text_b{width: 230px;height: 24px;line-height: 24px;position: absolute;right: 11px;bottom: 2px;text-align: center;font-size: 14px;color: #ffffff;}
+.dm_ula li a img{display: block;position: absolute;right: 11px;bottom: 2px;}
+.dm_ula li a span.mask{position: absolute;left: 80px;top: 10px;width: 230px;height: 106px;background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/g_maskb.png) repeat 0 0;display: block;}
+.dm_ula li a:hover span.mask{background: url(about:blank);}
+.dm_ula li a span.mask .play_btn{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/play_btn.png) no-repeat 0 0;width: 50px;height: 50px;display: block;position: absolute;left: 50%;top: 50%;margin-top: -25px;margin-left: -25px;}
+.dm_ula li a:hover span.mask .play_btn{background-position: -50px 0;}
+
+
+
+.dm_girla{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/girl_dma.png) no-repeat 0 0;width: 541px;height: 836px;position: absolute;left: 688px;top: -33px;}
+
+
+/*page 5*/
+.sy_box{width: 783px;height: 570px;left: 108px;top: 50%;margin-top: -285px;}
+.sy_tit{background-position: 0 -73px;width: 275px;height: 72px;position: absolute;left: 226px;top: 0;}
+
+.sy_ula{height: 197px;width: 703px;position: absolute;left: 73px;top: 100px;}
+.sy_ula li{width: 146px;height: 197px;float: left;margin-right: 82px;display: inline;position: relative;}
+.sy_ula li img{display: block;}
+.sy_ula li p{text-align: center;line-height: 32px;font-size: 16px;color: #444444;width: 100%;}
+.sy_ula li em{width: 40px;height: 40px;text-align: center;line-height: 40px;font-size: 14px;font-weight: 700;color: #ffffff;position: absolute;left: 2px;top: 5px;}
+.sy_ula li.first{width: 165px;margin-top: -10px;}
+.sy_ula li.first em{left: 8px;top: 5px;}
+.sy_ula li .masksa{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/s_p_1_h.png) no-repeat 0 0;width: 155px;height: 155px;display: block;position: absolute;left: 5px;top: 5px;}
+.sy_ula li .masksb{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/s_p_2_3_h.png) no-repeat 0 0;width: 136px;height: 136px;display: block;position: absolute;left: 5px;top: 5px;}
+.sy_ula li .masksa:hover,.sy_ula li .masksb:hover{background: url(about:blank);}
+
+.sy_ulb{width: 783px;height: 280px;position: absolute;left: 0;bottom: 0;}
+.sy_ulb li{float: left;width: 245px;height: 280px;margin-right: 16px;display: inline;position: relative;}
+.sy_ulb li img{display: block;}
+.sy_ulb li p{width: 100%;line-height: 30px;text-align: center;color: #686868;font-size: 13px;}
+.sy_ulb li p em{background-position: -309px -43px;width: 7px;height: 7px;display: inline-block;*display: inline;*zoom: 1;vertical-align: 1px;}
+.sy_ulb li .mask{height: 250px;cursor: default;}
+.dm_girlb{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/girl_dmb.png) no-repeat 0 0;width: 574px;height: 815px;position: absolute;left: 776px;top: -100px;}
+
+/*page 6*/
+.zw_box{width: 820px;height: 570px;top: 50%;margin-top: -290px;}
+.dm_girlc{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/girl_dmc.png) no-repeat 0 0;width: 574px;height: 787px;position: absolute;left: 855px;top: -45px;}
+.zw_tit{background-position: 0 -219px;width: 275px;height: 72px;position: absolute;left: 272px;top: 0;}
+.zw_ul{width: 820px;position: absolute;left: 0;top: 92px;}
+.zw_ul li{float: left;width: 151px;height: 116px;margin-right: 12px;margin-bottom: 12px;}
+.zw_ul li a{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/zw_bg.png) no-repeat 0 0;width: 145px;height: 110px;padding: 3px;display: block;position: relative;}
+.zw_ul li span{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/zw_tips.png) no-repeat 0 0;display: block;width: 100%;height: 100%;}
+.zw_ul li img{display: block;}
+.zw_ul li p{width: 100%;height: 21px;line-height: 21px;text-align: center;font-size: 16px;color: #686868;}
+.zw_ul li a .mask{width: 145px;height: 89px;left: 3px;top: 3px;border-radius: 5px 5px 0 0;}
+.zw_ul li a:hover{text-decoration: none;}
+.zw_ul li a:hover .mask{background: url(about:blank);}
+/*page 7*/
+.hz_box{width: 1000px;height: 580px;top: 50%;margin-top: -290px;}
+.hz_tx_show{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/ah_tx.png) no-repeat 0 0;width: 400px;height: 448px;position: absolute;left: 0;top: 0;}
+.hz_tx_yd{width: 400px;height: 114px;background-position: 0 -292px;position: absolute;left: 0;bottom: 0;display: block;text-align: center;font-size: 34px;color: #ffffff;line-height: 134px;}
+.hz_tx_yd:hover{text-decoration: none;background-position: 0 -488px;}
+.hz_l{width: 312px;padding: 0 120px;text-align: center;font-size: 22px;font-weight: 700;color: #686868;line-height: 24px;position: absolute;top: 0;right: 0;}
+.hz_l .em_l,.hz_l .em_r{width: 120px;height: 0;border-top: 2px solid #000000;display: block;position: absolute;top: 11px;}
+.hz_l .em_l{left: 0;}
+.hz_l .em_r{right: 0;}
+.hz_logo{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/hz_logo.png) no-repeat 0 0;width: 275px;height: 43px;position: absolute;left: 582px;top: 44px;}
+.hz_text{width: 552px;position: absolute;right: 0;top: 100px;line-height: 28px;color: #686868;font-size: 16px;}
+.hz_text strong{font-size: 18px;font-weight: 700;}
+.video_js{cursor: pointer;background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/ah_video.png) no-repeat 0 0;width: 341px;height: 215px;position: absolute;left: 448px;bottom: 0;}
+.video_js p{width: 100%;height: 30px;font-size: 16px;text-align: center;line-height: 30px;color: #ffc14c;position: absolute;left: 2px;bottom: 2px;}
+
+.js_ewm{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/ah_ewm.png) no-repeat 0 0;width: 185px;height: 215px;position: absolute;right: 0;bottom: 0;}
+.js_ewm p{width: 100%;height: 30px;font-size: 16px;text-align: center;line-height: 30px;color: #ffc14c;position: absolute;left: 2px;bottom: 2px;}
+
+/*page 8*/
+.Gallary_box{width: 1000px;height: 570px;top: 50%;margin-top: -290px;}
+.dm_girld{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/girl_dmd.png) no-repeat 0 0;width: 275px;height: 447px;position: absolute;left: 1055px;top: 166px;}
+.Gallary_tit{background-position: 0 -146px;width: 275px;height: 72px;display: block;position: absolute;left: 362px;top: 0;}
+.Gallary_lr{width: 1000px;height: 480px;position: absolute;top: 95px;left: 0;}
+.Gallary_move{border: 5px solid #ffc14c;width: 965px;height: 496px;position: absolute;left: 12px;top: 0;overflow: hidden;}
+.Gallary_ulbox{position: absolute;left: 0;top: 0;height: 496px;}
+.Gallary_ul{width: 965px;height: 496px;float: left;}
+.Gallary_ul li{width: 193px;height: 124px;float: left;position: relative;cursor: pointer;}
+.Gallary_ul li img{display: block;}
+.Gallary_prev{background-position: -276px -117px;width: 24px;height: 48px;display: block;position: absolute;left: -30px;top: 261px;}
+.Gallary_next{background-position: -301px -117px;width: 24px;height: 48px;display: block;position: absolute;right: -30px;top: 261px;}
+/*page 9*/
+.infor_box{width: 1000px;height: 500px;top: 20px}
+.news_box{width: 390px;position: absolute;left: 0;top: 0;height: 500px;border-top: 3px solid #ffa700;border-radius: 10px 10px 0 0;}
+.pl_box{width: 594px;position: absolute;right: 0;top: 0;height: 500px;border-top: 3px solid #ffa700;border-radius: 10px 10px 0 0;}
+.box_innera,.box_innerb{height: 498px;border: 1px solid #d7d7d7;border-radius: 10px 10px 0 0;}
+.box_innera{width: 390px;}
+.box_innerb{width: 594px;}
+.h4_tit{padding: 0 18px;background-color: #ffa700;line-height: 34px;height: 34px;position: absolute;left: 0;top: 8px;font-size: 17px;color: #ffffff;}
+.h4_tit .left{background-position: -276px 0;width: 11px;height: 42px;position: absolute;left: 0;top: -8px;display: block;}
+.h4_tit .right{background-position: -288px -8px;width: 18px;height: 34px;position: absolute;right: -18px;top: 0;display: block;}
+
+.news_list{width: 356px;height: 384px;position: absolute;left: 17px;top: 60px;border-bottom: 1px solid #d7d7d7;overflow: hidden;}
+.news_list li{width: 356px;height: 34px;float: left;border-bottom: 1px dashed #d7d7d7;}
+.news_list li a{width: 356px;height: 34px;line-height: 34px;color: #333333;font-size: 14px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;display: block;}
+.news_list li.last_child{border-bottom: none;}
+.ul_list_c{width: 356px;height: 20px;position: absolute;left: 17px;bottom: 20px;text-align: center;}
+.ul_list_c a{background-color: #6ac2ff;color: #ffffff;padding: 0 8px;border-radius: 3px;height: 20px;line-height: 20px;display: inline-block;
+*display: inline;
+*zoom: 1;}
+.wb_pl{width: 560px;position: absolute;left: 17px;top: 60px;height: 454px;}
+
+.footer_logo{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/logo_box.png) no-repeat 50% 0;width: 100%;height: 149px;position: absolute;left: 0;bottom: 90px;}
+	.footer_logo a{display: block;position: absolute;}
+	.footer_logo .logoLink1{width: 119px;height: 69px;left: 65px;top: 48px;background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/logo_1.png) no-repeat 0 0;}
+	.footer_logo .logoLink2{width: 77px;height: 86px;left: 207px;top: 32px;background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/logo_2.png) no-repeat 0 0;}
+	.footer_logo .logoLink3{width: 124px;height: 69px;left: 313px;top: 49px;background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/logo_3.png) no-repeat 0 0;}
+	.footer_logo .logoLink4{width: 60px;height: 82px;left: 467px;top: 36px;background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/logo_4.png) no-repeat 0 0;}
+	.footer_logo .logoLink5{width: 86px;height: 64px;left: 565px;top: 54px;background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/logo_5.png) no-repeat 0 0;}
+	.footer_logo .logoLink6{width: 130px;height: 61px;left: 677px;top: 57px;background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/logo_6.png) no-repeat 0 0;}
+	.footer_logo .logoLink7{width: 111px;height: 82px;left: 823px;top: 35px;background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/logo_7.png) no-repeat 0 0;}
+
+/*弹窗视频*/
+.video_pop{border: 5px solid #ffb221;width: 800px;height: 450px;background-color: #000000;position: relative;display: none;}
+.video_pop .videoClose,.Gallary_pop .GallaryClose{position: absolute;right: -67px;top: -5px;background-position: -276px -54px; display: block;width: 62px;height: 62px;}
+
+/*Gallary弹窗*/
+.Gallary_pop{border: 5px solid #ffb221;width: 928px;height: 565px;background-color: #000000;position: relative;display: none;}
+
+/*宅舞弹窗*/
+.zw_pop{width: 100%;height: 100%; position: absolute;left: -999em;top: 0;z-index: 100;background-color: #ffffff;}
+.zwClose{background-position: -276px -54px;width: 62px;height: 62px;display: block;position: absolute;right: 0;top: 0;}
+.zw_warp{width: 100%;height: 100%;font-size: 0;position: absolute;left: 0;bottom: 0;}
+.zw_box_l{width: 66%;height: 100%;float: left;}
+.zw_box_l img{width: auto;height: 100%;position: relative;}
+.zw_box_r{width: 34%;height: 100%;display: inline-block;position: relative;background-color: #ffffff;float: left;}
+.show_tips{width: 100%;position: absolute;left: 0;top: 0;right: 0;bottom: 0;}
+.show_tips .show_wrap{width: 80%;height: 80%;top: 12%;position: absolute;left: 10%;}
+.show_tips .zw_video{width: 100%;height: auto;display: block;cursor: pointer;position: relative;}
+.show_tips .zw_video img{width: 100%;height: 100%;display: block;}
+.show_tips .show_infor{margin-top: 10%;}
+.show_tips .show_name{width: 100%;height: 84px;font-size: 34px;color: #0b0b0b; line-height: 84px;border-top:4px solid #ffc14c;border-bottom: 4px solid #ffc14c; }
+.show_tips .show_other{width: 100%;margin-top: 14px;}
+.show_tips .show_other li{float: left;width: 100%;font-size: 22px;color: #0b0b0b;}
+.show_tips .show_other li em{width: 40%;float: left;line-height: 36px;font-size: 22px;font-weight: 700; display: block;overflow: hidden;}
+.show_tips .show_other li span{width: 60%;float: left;line-height: 36px;}
+.show_tips .show_infor img{width: 100%;height: auto;display: block;margin-top: 15px;}
+
+
+
+
+/*导航*/
+.nav_box{width: 140px;padding-top: 80px;position: absolute;left: -220px;top: 50%;margin-top: -280px;z-index: 80;padding-left: 10px;}
+.nav_box .qq_logo{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/nav_qer.png) no-repeat 0 0;width: 73px;height: 67px;display: block;position: absolute;left: 15px;top: 10px;}
+.nav_box .nav_ul_left{width: 140px;}
+.nav_box .nav_ul_left li{width: 140px;height: 52px;position: relative;}
+.nav_box .nav_ul_left li a{width: 100%;height: 50%;line-height: 52px;font-size: 16px;color: #181818;}
+.nav_box .nav_ul_left li.new a em{background-position: -276px -43px;}
+.nav_box .nav_ul_left li a:hover,.nav_box .nav_ul_left li.on a{text-decoration: none;color: #ff5b13;font-weight: 700;}
+.nav_box .nav_ul_left li a em{background-position: -287px -43px;width: 10px;height: 10px;display: inline-block;*display: inline;*zoom: 1;vertical-align: 1px;margin-left: 10px;}
+.nav_box .nav_ul_left li a:hover em,.nav_box .nav_ul_left li.on a em{background-position: -298px -43px;}
+
+
+.nav_lia,.nav_lib{width: 100px;position: absolute;left: 50%;margin-left: 205px;top: 110px;z-index: 70;display: none;}
+.nav_lia li,.nav_lib li{width: 100px;height: 38px;}
+.nav_lia li a,.nav_lib li a{background-color: #fe7e3b;color: #ffffff;font-size: 16px;width: 100px;height: 38px;line-height: 38px;display: block;text-align: center;}
+.nav_lia li a:hover,.nav_lib li a:hover{text-decoration: none;background-color: #ff9862;}
+.nav_lib{margin-left: 406px;}
+
+/*抽奖弹窗*/
+.flash_cj{width: 600px;padding: 28px 50px;border: 2px solid #ffb221;background-color: #ffffff; display: none;}
+.flash_cj .zwClose{right: -62px;top: -2px;}
+.flash_cj .swfcontent{width: 413px;height: 413px;margin: 0 auto;}
+.flash_cj .cj_text{width: 600px;line-height: 28px;font-size: 16px;color: #686868;margin-top: 30px;}
+.flash_cj .cj_text em{color: #ffa800;}
+/*输入电话弹窗*/
+.phone_input{width: 600px;padding: 32px 66px; border: 2px solid #ffb221;position: relative;background-color: #ffffff;display: none;}
+.phone_input .zwClose{right: -64px;top: -2px;}
+.phone_input .phone_text{width: 100%;font-size: 20px;color: #686868;line-height: 30px;}
+.phone_input .input{margin-top: 24px;width: 420px;}
+.phone_input .input label{float: left;width: 90px;line-height: 34px;font-size: 16px;color: #686868;margin-bottom: 10px;text-align: right;}
+.phone_input .input input{float: left;border: 1px solid #c0c0c0;height: 18px;width: 278px;padding: 7px 9px;margin-bottom: 10px;color: #333;font-size: 16px;vertical-align: top;}
+.phone_input .phone_true,.prise_input .prise_true{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/phone_btns.png) no-repeat 0 0; width: 190px;height: 60px;text-align: center;line-height: 60px;font-size: 24px;color: #ffffff;display: block;margin: 36px auto 0;}
+
+/*中奖弹窗*/
+.prise_input{padding: 30px 60px;width: 580px;border: 2px solid #ffb221;background-color: #ffffff;display: none;}
+.prise_input .zwClose{right: -64px;top: -2px;}
+.prise_input .prise_text{font-size: 20px;color: #686868;width: 580px;line-height: 30px;}
+.prise_input .prise_text em{color: #ffa800;}
+.prise_input .prise_tips{width: 580px;color: #686868;line-height: 20px;font-size: 16px;margin-top: 32px;margin-bottom: 15px;}
+.prise_input .prise_tips em{color: #ffa800;}
+
+.prise_input .prise_table{width: 580px;border: 1px solid #c0c0c0;}
+.prise_input .prise_table td{height: 38px;overflow: hidden;vertical-align: middle;color: #686868;font-size: 16px;border: 1px solid #c0c0c0;}
+.prise_input .prise_table td input{width: 379px;height: 37px;padding: 0 12px; border: none;color: #333;font-size: 16px;}
+.prise_input .prise_table .hidetd td{display: none;}
+
+/*.prise_input .prise_table.on td{display: none;}*/
+.prise_input .prise_table.on td{display: none;}
+.prise_input .prise_table.on .hidetd td{display: table-cell;}
+
+.prise_input .prise_table td.padding-right{padding-right: 40px;text-align: right;width: 134px;}
+
+.prise_input .prise_true{margin-top: 38px;}
+.phone_input .info_result{font-size: 20px; text-align: center;}
+
+/*底部导航*/
+.b_navs{width: 146px;height: 266px;position: absolute;right: -146px;bottom: 0;z-index: 1000;}
+.b_warp{width: 95px;height: 142px;position: absolute;left: 25px;bottom: 0;}
+.b_warp .span0{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/move_a.png) no-repeat 0 0;width: 95px;height: 142px;position: absolute;left: 0;bottom: 0;z-index: 5;display: none;}
+.b_warp .span1{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/move_b.png) no-repeat 0 0;width: 95px;height: 142px;position: absolute;left: 0;bottom: 0;z-index: 6;display: none;}
+.b_warp .span2{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/move_c.png) no-repeat 0 0;width: 95px;height: 142px;position: absolute;left: 0;bottom: 0;z-index: 7;display: none;}
+
+.b_btn{background: url(http://game.gtimg.cn/images/game/act/a20160415xmjtest/new/img/b_btns.png) no-repeat 0 0;width: 146px;height: 115px;position: absolute;left: 0;top: 0;display: none;}
+.b_btn a{width: 126px;height: 40px;display: block;text-align: center;line-height: 40px;color: #ffffff;font-size: 16px;position: absolute;left: 10px;top: 8px;}
+.b_btn a:hover{background-position: 0 -846px;text-decoration: none;}
+.b_btn .b_btn2{top: 54px;}

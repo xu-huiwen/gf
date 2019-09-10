@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="gbk">
+	<title>Document</title>
+</head>
+<style>
+/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+body{font-family:"\5FAE\8F6F\96C5\9ED1",Helvetica;-webkit-text-size-adjust:none;font-size:12px;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong{font-weight:normal;font-style:normal;}
+a {text-decoration:none;}
+.hide {display:none;}
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db{display:block;text-indent:-999em;}
+body,html{background-color: #c48a5e;width: 100%;height: 100%;overflow: hidden;}
+
+.wrap{position:relative; width:100%; overflow: hidden;}
+.slide{position: absolute;top: 0;left: 0;height: 100%;}
+.slide li{float: left;width: 320px;height: 100%;}
+.slide li:nth-child(1){background-color: #06eff8;}
+.slide li:nth-child(2){background-color: #06f822;}
+.slide li:nth-child(3){background-color: #061df8;}
+.slide li:nth-child(4){background-color: #f806f5;}
+.box_icon{position: fixed;left: 0;bottom: 10px;z-index: 999;}
+.slide_icon{width: 100%;text-align: center;}
+.slide_icon li{display: inline-block;width: 10px;height: 10px;border-radius: 10px;background-color: #000;}
+.slide_icon li.on{background-color: #fff;}
+
+.progress{position: fixed;bottom: 100px;width: 320px;height: 20px;border: 2px solid #34538B;}
+.bar{width: 0;height: 100%;background-color: rgba(0,0,0,0.7)}
+.put{position: absolute;width: 100%;}
+.prev{float: left;}
+.next{float: right;}
+</style>
+<body>
+<div class="wrap">
+	<ul class="slide">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>	
+	<div class="put">
+		<a href="javascript:;" class="prev">prev</a>
+		<a href="javascript:;" class="next">next</a>
+	</div>
+	
+</div>
+<div class="box_icon">	
+	<ul class="slide_icon c">
+		<li class="li_1 on"></li>
+		<li class="li_2"></li>
+		<li class="li_2"></li>
+		<li class="li_2"></li>
+	</ul>
+</div>
+
+<div class="progress">
+	<div class="bar"></div>
+</div>
+<script type="text/javascript" src="http://ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
+<script>
+var winw=$(window).width(),
+	winh=$(window).height(),
+	scale=winw/320;
+autoScale(scale);
+$(window).resize(function(){
+	winw=$(window).width();
+	winh=$(window).height();
+	scale=winw/320;
+	autoScale(scale);
+});
+function autoScale(is){
+	$('.slide').css({
+		'width':320*$('.slide li').length
+	});
+	$('.wrap').css({
+		'width':'320px',
+		'height':'568px',
+		'overflow':'hidden',
+		'-webkit-transform':'scale('+is+')',
+		'transform':'scale('+is+')',
+		'-webkit-transform-origin':'0px 0px 0px',
+		'transform-origin':'0px 0px 0px'
+	});
+	$('.slide_icon,.progress').css({
+		'width':'320px',
+		'-webkit-transform':'scale('+is+')',
+		'transform':'scale('+is+')',
+		'-webkit-transform-origin':'0px bottom 0px',
+		'transform-origin':'0px bottom 0px'
+	});
+	$('html,body').css({
+		'overflow':'hidden',
+		'height':winh
+	});
+}	
+// 
+var $slideLi=$('.slide li');
+var arryWay=[];
+var n=0;
+var w=100/$slideLi.length;
+$slideLi.on({
+	'swipeLeft':function(){
+		forward()
+		return false;
+	},
+	'swipeRight':function(){
+		backward()
+		return false;
+	}
+});
+$('.prev').on('click',function(){
+	backward();
+	return false;
+});
+$('.next').on('click',function(){
+	forward();
+	return false;
+});
+function forward(){
+	n++;
+	w+=(100/$slideLi.length);
+	if(w>100){
+		w=100
+	};
+	if(n>$slideLi.length-1){
+		n=$slideLi.length-1
+	};
+	SetSlideDOEM('.slide','.slide_icon li',n);
+	 SetBar(arryWay[n]);
+};
+
+function backward(){
+	n--;
+	w-=(100/$slideLi.length);
+	if(w<25){
+		w=25
+	};
+	if(n<0){
+		n=0
+	};
+	SetSlideDOEM('.slide','.slide_icon li',n);
+	 SetBar(arryWay[n]);
+};
+
+
+function SetSlideDOEM(pic,nav,n){
+	$(pic).css({
+		'-webkit-transition':'left 0.5s',
+		'transition':'left 0.5s',
+		'left':-n*320+'px'
+	});
+	$(nav).eq(n).addClass('on').siblings().removeClass('on');
+};
+
+function SetBar(w){
+	$('.bar').css({
+		'-webkit-transition':'width 0.5s',
+		'transition':'width 0.5s',
+		'width':w+'%'
+	});
+};SetBar(w);
+
+
+$('.slide_icon li').each(function(i){
+	arryWay.push((i+1)*w)
+	$(this).on('click',function(){
+		n=i;
+		SetSlideDOEM('.slide','.slide_icon li',i);
+		SetBar(arryWay[n]);
+		return false;
+	});
+});
+
+
+
+
+var startPos = 0,endPos = 0,isScrolling = 0;
+document.addEventListener('touchstart',function(event){
+    var touch = event.targetTouches[0]; //touches数组对象获得屏幕上所有的touch，取第一个touch
+    startPos = {x:touch.pageX,y:touch.pageY,time:+new Date}; //取第一个touch的坐标值
+    isScrolling = 0; //这个参数判断是垂直滚动还是水平滚动
+}, false);
+
+//解绑事件 web前端开发
+document.addEventListener('touchend',function(event){
+    document.removeEventListener('touchmove',this,false);
+    document.removeEventListener('touchend',this,false);
+}, false);
+
+document.addEventListener('touchmove',function(event){
+    //当屏幕有多个touch或者页面被缩放过，就不执行move操作
+    if(event.targetTouches.length > 1 || event.scale && event.scale !== 1) return;
+    var touch = event.targetTouches[0];
+    endPos = {x:touch.pageX - startPos.x,y:touch.pageY - startPos.y};
+    isScrolling = Math.abs(endPos.x) < Math.abs(endPos.y) ? 1:0; //isScrolling为1时，表示纵向滑动，0为横向滑动
+    if(isScrolling === 0){
+        event.preventDefault(); //阻止触摸事件的默认行为，即阻止滚屏
+    };
+}, false);
+</script>
+</body>
+</html>

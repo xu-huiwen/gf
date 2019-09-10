@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-CP" />
+<meta name="description" content="腾讯首款大战争策略手游。作为在战火纷飞的泽比拉大陆诞生的领主，您将招募强大的英雄，建设富饶的领地，组建所向披靡的军队，征服敌人的城池，扩张国家的疆土！战争的机器已经在咆哮，期待您的加入！" />
+<meta name="keywords" content="我的王朝 我的王朝官网 我的王朝攻略 我的王朝下载 战争策略 策略 国家战争 养成 国王 手游 移动游戏 slg  权谋 霸业 建设 排兵布阵 英雄  调兵遣将 联盟社交 英雄搭配 兵种相克" />
+<!-- 设计：cp  | 重构：cp | 创建：2017/05/26  -->
+<title>我的王朝官方网站-腾讯游戏</title>
+<link rel="stylesheet" href="css/comm.css" />
+<link rel="stylesheet" href="css/animate.css" />
+<script type="text/javascript">
+(function(){var a=navigator.userAgent;if(-1!=a.indexOf("iPhone")||-1!=a.indexOf("iPad")||-1!=a.indexOf("iPod")||-1!=a.indexOf("Android")){var a=document.referrer,b={"baidu.com":"seo_baidu","sogou.com":"seo_sogou","sm.cn":"seo_sm","so.com":"seo_360","bing.com":"seo_bing","google.com":"seo_google"},c;for(c in b)if(-1!=a.indexOf(c)){a=b[c];if(window.sessionStorage)sessionStorage.setItem("channel",a);else{var d=d||0,b="";0!=d&&(b=new Date,b.setTime(b.getTime()+1E3*d),b="; expires="+b.toGMTString());document.cookie="channel="+escape(a)+b+"; path=/"}break}self.location="/m/"}})();
+</script>
+</head>
+<body>
+<div class="top">
+	<div class="container pr c">
+		<i class="icon"></i>
+		<div class="intro">
+			<em class="intro-tit">我的王朝</em>
+			<span class="intro-ft">腾讯首款国家战争策略手游</span>
+			<a href="javascript:;" class="intro-btn sp">游戏介绍</a>
+			<div class="intro-fc">
+				腾讯首款大战争策略手游。作为在战火纷飞的泽比拉大陆诞生
+				的领主，您将招募强大的英雄，建设富饶的领地，组建所向披
+				靡的军队，征服敌人的城池，扩张国家的疆土！战争的机器已
+				经在咆哮，期待您的加入！
+			</div>
+		</div>
+		<div class="nav pr c">
+			<a href="main.shtml" onclick="PTTSendClick('nav','home','官网首页');">官网首页
+				<em class="eng">HOME</em>
+				<i class="line"></i>
+			</a>
+			<a href="list.shtml" onclick="PTTSendClick('nav','news-center','新闻中心');">新闻中心
+				<em class="eng">NEWS</em>
+				<i class="line"></i>
+			</a>
+			<a href="javascript:;" onclick="PTTSendClick('nav','game-raiders','游戏攻略');">游戏攻略
+				<em class="eng">STRATEGY</em>
+				<i class="line"></i>
+			</a>
+			<a href="http://bbs.g.qq.com/forum.php?mod=forumdisplay&fid=57598&ADTAG=game.web.wdwc" class="color" onclick="PTTSendClick('nav','home-forum','官网论坛');" target="_blank">官网论坛
+				<em class="eng">FORUM</em>
+				<i class="line"></i>
+			</a>
+			<a href="javascript:;" class="color" onclick="PTTSendClick('nav','gift-exchange','礼包兑换');">礼包兑换
+				<em class="eng">GIFTS</em>
+				<i class="line"></i>
+			</a>
+			<i class="line pa"></i>
+		</div>
+		<ul class="plat c">
+			<li><a href="javascript:;" class="wx sp" onclick="PTTSendClick('nav','wechat','微信公众号');"></a></li>
+			<li><a href="javascript:;" class="tribe sp" onclick="PTTSendClick('nav','tribe','兴趣部落');"></a></li>
+		</ul>
+		<div class="ewm-fc wx-fc c">
+			<img src="ossweb-img/wx-ewm.jpg" width="130" height="130" class="ewm-img"/>
+			<div class="ewm-sm">
+				<p class="gz-sm">如何关注 我的王朝 公众帐号</p>
+				<div class="method">
+					<p>A 微信扫描二维码</p>
+					<p>B 微信搜索公众号 <span class="green">我的王朝</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="ewm-fc bl-fc c">
+			<img src="ossweb-img/bl-ewm.jpg" width="130" height="130" class="ewm-img"/>
+			<div class="ewm-sm">
+				<p class="gz-sm">如何关注 我的王朝 兴趣部落</p>
+				<div class="method">
+					<p>A 单击部落图标进入兴趣部落</p>
+					<p>B 手Q扫描二维码</p>
+					<p>C 手Q搜索兴趣部落 我的王朝</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrap mx" name="box1">
+	<div class="container">
+	    <div class="head">
+	    <div class="head1 pr">
+	    	 <h1 class="hide">我的王朝</h1>
+	    	 <a href="javascript:TGDialogS('show');" class="video pa">
+	    	 	<i class="v-icon pa sp"></i>
+	    	 </a>
+	    	 <a href="javascript:;" class="king-logo pa db" title="我的王朝" onclick="PTTSendClick('link','logo','我的王朝');">我的王朝</a>
+	    </div>
+	    </div>
+	</div>
+</div>
+<div class="wrap1 mx" name="box2">
+	<div class="container">
+		<div class="ads-box c">
+			<div class="ads" id="slides">
+				<div class="slides_container">
+					<a class="slides-item" href="javascript:;">
+						<img src="ossweb-img/ad.jpg" width="676" height="182"/>
+					</a>
+					<a class="slides-item" href="javascript:;">
+						<img src="ossweb-img/ad.jpg" width="676" height="182"/>
+					</a>
+					<a class="slides-item" href="javascript:;">
+						<img src="ossweb-img/ad.jpg" width="676" height="182"/>
+					</a>
+				</div>
+				<ul class="pagination c">
+                	<li class="sp"><a href="javascript:;" ></a></li>
+               		<li class="sp"><a href="javascript:;"></a></li>
+               		<li class="sp"><a href="javascript:;"></a></li>
+                </ul>
+
+			</div>
+			<a href="http://bbs.g.qq.com/forum.php?mod=forumdisplay&fid=57598&ADTAG=game.web.wdwc" class="gamer sp" onclick="PTTSendClick('link','gamer','玩家社区');" target="_blank"></a>
+		</div>
+		<div class="inform">
+			<p class="info-tit">
+				游戏资讯
+				<span class="info-eng">GAME INFORMATION</span>
+			</p>
+			<div class="info-nav c">
+				<a href="javascript:;" class="of" onclick="PTTSendClick('btn','news','新闻公告');">新闻公告</a>
+				<a href="javascript:;" onclick="PTTSendClick('btn','hot-act','热门活动');">热门活动</a>
+				<a href="javascript:;" onclick="PTTSendClick('btn','data','攻略资料');">攻略资料</a>
+			</div>
+			<ul class="info-list c" style="display: block;">
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">111一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+			</ul>
+			<ul class="info-list c">
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">222一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+			</ul>
+			<ul class="info-list c">
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">333一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+				<li>
+					<span class="act">[活动]</span>
+					<a href="javascript:;" class="link" target="_blank">一起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程起踏上新的征程!</a>
+					<span class="time">5/16</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--wrap2-->
+<div class="wrap2 mx" name="box3">
+<div class="wrap2-1">
+	<div class="container pr">
+		<span class="word1 db pa">王朝崛起</span>
+	</div>
+</div>
+</div>
+<!--wrap3-->
+<div class="wrap3 mx" name="box4">
+<div class="wrap3-1">
+<div class="wrap3-2">
+	<div class="container pr">
+		<span class="word2 db pa">攻城掠地</span>
+	</div>
+</div>	
+</div>
+</div>
+<!--wrap4-->
+<div class="wrap4 mx" name="box5">
+	<div class="rp4-wd pr">
+		<ul class="sfq-box pr c">
+			<li class="active">
+				<a href="javascript:;" class="n1">
+					<img src="ossweb-img/sfq-nav1.jpg" width="212" height="696" class="mo-img"/>
+					<img src="ossweb-img/n1.png" width="279" height="696" class="lg-img" />
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="n2">
+					<img src="ossweb-img/sfq-nav2.jpg" width="212" height="696" class="mo-img"/>
+					<img src="ossweb-img/n2.png" width="286" height="696" class="lg-img" />
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="n3">
+					<img src="ossweb-img/sfq-nav3.jpg" width="212" height="696" class="mo-img"/>
+					<img src="ossweb-img/n3.png" width="331" height="696" class="lg-img" />		
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="n4">
+					<img src="ossweb-img/sfq-nav4.jpg" width="212" height="696" class="mo-img"/>
+					<img src="ossweb-img/n4.png" width="324" height="696" class="lg-img" />
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;"class="n5">
+					<img src="ossweb-img/sfq-nav5.jpg" width="212" height="696" class="mo-img"/>
+					<img src="ossweb-img/n5.png" width="292" height="696" class="lg-img" />
+				</a>
+			</li>
+		</ul>
+		<div class="evtCon">
+			<div class="evt" style="display:block;">
+				<img src="ossweb-img/sfq-con1.jpg" width="458" height="696"/>
+			</div>
+			<div class="evt">
+				<img src="ossweb-img/sfq-con2.jpg" width="458" height="696"/>
+			</div>
+			<div class="evt">
+				<img src="ossweb-img/sfq-con3.jpg" width="458" height="696"/>
+			</div>
+			<div class="evt">
+				<img src="ossweb-img/sfq-con4.jpg" width="458" height="696"/>
+			</div>
+			<div class="evt">
+				<img src="ossweb-img/sfq-con5.jpg" width="458" height="696"/>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!--左侧导航-->
+<div class="fixed-a">
+	<div class="banner">
+		<a href="#box1" class="sp ob1"></a>
+		<a href="#box2" class="sp"></a>
+		<a href="#box3" class="sp"></a>
+		<a href="#box4" class="sp"></a>
+		<a href="#box5" class="sp"></a>
+	</div>
+</div>
+<!--底部-->
+<div class="foot">
+	<div class="container">
+		<ul class="foot-list c">
+			<li>
+				<a href="javascript:alert('敬请期待！');" >
+					<i class="down-icon sp"></i>
+					<em class="foot-sm">游戏下载</em>
+					<span class="foot-dt">游戏最新版本下载</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:TGDialogS('ewm-pop');" >
+					<i class="wx-icon sp"></i>
+					<em class="foot-sm">官方微信</em>
+					<span class="foot-dt">收听官方微信，获得第一手<br />游戏资讯</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:alert('敬请期待！');" >
+					<i class="fw-icon sp"></i>
+					<em class="foot-sm">兴趣部落</em>
+					<span class="foot-dt">关注兴趣部落，获得最新<br />游戏资讯</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:alert('敬请期待！');" >
+					<i class="kf-icon sp"></i>
+					<em class="foot-sm">联系客服</em>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="copy-right c">
+	<a href="javascript:;" class="tct-logo"></a>
+	<div class="copy-sm">
+		<div class="copy-lk">
+			<a href="http://ieg.tencent.com/" target="_blank">关于腾讯游戏</a>|
+			<a href="http://game.qq.com/contract.shtml" target="_blank">服务条款</a>|
+			<a href="http://adver.qq.com/" target="_blank">广告服务</a>|
+			<a href="http://game.qq.com/hr/" target="_blank">腾讯游戏招聘</a>|
+			<a href="http://kf.qq.com/" target="_blank">腾讯游戏客服</a>|
+			<a href="http://game.qq.com/brand/bd/" target="_blank">商务合作</a>|
+			<a href="http://www.qq.com/map/" target="_blank">网站导航</a>
+		</div>
+		<p class="copy-ft">COPYRIGHT &copy 1998 – 2017 TENCENT. ALL RIGHTS RESERVED</p>
+		<p class="copy-lk">
+			<a  href="https://www.tencent.com/zh-cn/statement.html?/law/copyright.htm" target="_blank">腾讯公司 版权所有</a>
+		</p>
+	</div>
+</div>
+<!--右侧导航-->
+<div class="fixed-b">
+	<div class="ewm-box">
+		<img src="ossweb-img/ewm.jpg" alt="二维码" width="151" height="151" class="ewm"/>
+		<span class="ewm-tip">扫描二维码下载</span>
+		<a href="javascript:;" class="ios-down sp pr" onclick="PTTSendClick('btn','ios-down','苹果下载');">
+			<i class="ios-icon sp pa"></i>
+			App Store<br />下载
+		</a>
+	<a href="javascript:;" class="and-down sp pr" onclick="PTTSendClick('btn','and-down','安卓下载');">
+		<i class="and-icon sp pa"></i>
+			Android<br />下载
+	</a>
+	</div>	
+</div>
+<!-- 视频弹窗-->
+<div class="dialog" id="show">
+    <div class="video-show pr">
+    	<div id="videoCon"></div>
+		<a class="pa" href="javascript:showDialog.hide()" title="关闭">关闭</a>
+    </div>
+</div>
+<!--二维码弹窗-->
+<div class="dialog" id="ewm-pop">
+	<div class="ewm-pop c pr" >
+		<img src="ossweb-img/wx-ewm.jpg" width="130" height="130" class="ewm-img"/>
+		<div class="ewm-sm">
+			<p class="gz-sm">如何关注 我的王朝 公众帐号</p>
+			<div class="method">
+				<p>A 微信扫描二维码</p>
+				<p>B 微信搜索公众号 <span class="green">我的王朝</span></p>
+			</div>
+		</div>
+		<a class="ewm-close pa" href="javascript:showDialog.hide()" title="关闭">×</a>
+	</div>
+</div>
+<script src="http://ossweb-img.qq.com/images/js/title.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="http://qzs.qq.com/tencentvideo_v1/js/tvp/tvp.player.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://ossweb-img.qq.com/images/js/milo/milo.js"></script>
+<script src="js/slides.js"></script>
+<script src="js/index.js"></script>
+<script src="js/comm.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+ siteType:"os", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"main", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName:"首页", //必填项:页面中文名
+ osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

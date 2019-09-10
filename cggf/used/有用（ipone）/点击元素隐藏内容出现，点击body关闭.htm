@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="重聚法兰！传说中的勇者。SE官方经典回合手游。" />
+<meta name="Keywords" content="魔力宝贝手游,魔力宝贝手游官网,魔力宝贝,魔力宝贝官网,腾讯魔力宝贝,魔力宝贝腾讯版,魔力宝贝官方网站,魔力宝贝官方,腾讯魔力宝贝手游官网,魔力宝贝手游腾讯,魔力宝贝手游单机版,腾讯魔力宝贝手游版,魔力宝贝单机版,魔力宝贝怀旧版,魔力宝贝怀旧官网,明星邀请赛" />
+<!-- 设计：cp  | 重构：cp | 创建：2018/12/06 | 更新：| 团队博客：//tgideas.qq.com/ -->
+<title>《魔力宝贝》手游第二届明星邀请赛—腾讯游戏</title>
+<script type="text/javascript" src="//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
+<script>
+function AutoPage(){ 
+	document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 750 + 'px';
+ } ;
+AutoPage();
+window.addEventListener('resize',AutoPage,false)  
+</script>
+<style>
+/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+body{-webkit-text-size-adjust:none; font-size: 0.26rem;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong,b{font-weight:normal;font-style:normal;}
+a {text-decoration:none;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db {display:block;text-indent:-999em;}
+body,html{background-color: #100d0c;}
+header,footer {width:100%;margin:0 auto;}
+footer{color:#606060;background-color:#100d0c;padding:0.2rem 0;font-size:0.2rem;text-align:center;}
+.sp{background: url(//game.gtimg.cn/images/moli/cp/a20181206votem/sp.png) no-repeat;background-size: 7.1rem auto;}
+.listflex {width: 100%;display: flex;display: -webkit-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;justify-content: space-between;-webkit-justify-content: space-between;}
+.listflex1 {width: 100%;display: flex;display: -webkit-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;}
+ /* 横屏提示 */
+.w_pop{position:fixed;left:0;top:0;width: 100%;height: 100%; background-color: #102349; z-index:9999;display: none;}
+.w_pop_img{width:1.8rem;height:2.73rem;background: url(//game.gtimg.cn/images/hdl/cp/a20181025choice/hengping.png) no-repeat center center;background-size: 1.5rem 2.27rem;position: absolute;left: 50%;margin-left:-0.9rem;top: 50%;margin-top: -1.56rem;animation:  rotateA 1.5s ease infinite alternate;}
+	@keyframes rotateA{
+        0%{transform: rotate(-90deg);}
+        30%{transform: rotate(-90deg);}
+        70%{transform: rotate(0);}
+        100%{transform: rotate(0);}
+    }
+.w_tips{width:100%;height:1.0rem;font-size: 0.18rem;color: #FFFFFF;text-align: center;position: absolute;left:0;top:50%;margin-top: 1.2rem;}
+/*@media screen and (orientation:landscape) {.w_pop{display:block}}*/
+
+
+.wrap{background: url(//game.gtimg.cn/images/moli/cp/a20181206votem/bg.jpg) no-repeat;background-size: 100% auto;background-color: #f2f2f2;padding-bottom: 0.55rem;}
+/*main*/
+header{height: 6.06rem;padding-top: 4.85rem;}
+.btn_team{background-position: 0 0;width: 2.84rem;height: 0.96rem;display: block;color: #3d3d3d;font-size: 0.4rem;text-align: center;line-height: 0.96rem;font-weight: bold;margin-left: 0.41rem;}
+.btn_jl{margin-top: 3.6rem;}
+.login{padding-top: 0.4rem;width: 3.18rem;color: #467df2;font-size: 0.24rem;text-align: center;line-height: 0.28rem;font-weight: bold;}
+.login a{color: #2e4bff;}	
+.btn_rule{color: #2e4bff;font-size: 0.24rem;text-decoration: underline;font-weight: bold;width: 3.18rem;text-align: center;display: block;line-height: 0.3rem;padding-top: 0.2rem;}	
+.nav a{background-position: -0.71rem -1.90rem;width: 1.87rem;height: 1.56rem;display: block;position: relative;color: #fde138;font-size: 0.32rem;font-weight: bold;text-align: center;line-height: 1.8rem;float: left;}
+.nav a.on{background-position: -3.02rem -1.90rem;color: #fff;}
+.news{background-position: 0 -3.54rem;width: 7rem;height: 0.5rem;text-align: center;line-height: 0.5rem;color: #0b51dc;font-size: 0.22rem;display: block;margin: 0.4rem auto 0;}
+.par1{padding-top: 0.3rem;position: relative;}
+.tit{background-position: 0 -1.15rem;width: 7.03rem;height: 0.66rem;display: block;margin: 0 auto;color: #467df2;font-size: 0.3rem;text-align: center;line-height: 0.66rem;font-weight: bold;font-style: italic}
+.list_flow{width: 7.1rem;margin: 0.48rem auto 0;position: relative;z-index: 9;}
+.list_flow li{width: 1.73rem;}
+.list_flow li:first-child{margin:0 0.91rem 0 1.31rem;}
+.list_flow li:nth-of-type(2){margin-right: 1.32rem;}
+.list_flow li span{background-position: -4.94rem -0.61rem;width: 1.73rem;height: 0.41rem;display: block;text-align: center;line-height: 0.41rem;color: #467df2;font-size: 0.2rem;}
+.list_flow li p{background: url(//game.gtimg.cn/images/moli/cp/a20181206votem/flow_bg.png) no-repeat;width: 1.14rem;height: 1.26rem;display: block;margin: 0 auto;color: #fff;font-size: 0.24rem;text-align: center;line-height: 1.26rem;font-weight: bold;background-size: 100% 100%;}
+.bar{position: absolute;top: 2.1rem;left: 0.2rem;width: 7.18rem;height: 0.78rem;}
+.l_f{margin-top: -1rem;}
+
+.par2{padding-top: 0.60rem;}
+.tit_ct{color: #0b51dc;font-size: 0.22rem;text-align: center;line-height: 0.3rem;padding-top: 0.1rem;}
+.tit_ct em{font-weight: bold;}
+.toup{width: 5.98rem;margin: 0.1rem auto 0;}
+.toup em{color: #0b51dc;font-size: 0.22rem;text-align: center;line-height: 0.56rem;font-weight: bold;}
+.btn_lq,.btn_jl{background-position: -3.65rem -4.13rem;width: 1.91rem;height: 0.60rem;display: block;color: #3d3d3d;font-size: 0.22rem;font-weight: bold;text-align: center;line-height: 0.60rem;margin-left: 0.2rem;}
+.btn_hq{width: 2.1rem;height: 0.4rem;display: block;margin: 0.1rem auto 0;color: #ff3131;font-size: 0.24rem;font-weight: bold;line-height: 0.6rem;text-align: center;display: block;text-decoration: underline;}
+.rank{width: 7rem;margin: 0.3rem auto 0;}
+.rank_l,.rank_r{width: 2.67rem;background-color: #f8fdfe;height: 0.48rem;color: #0b51dc;font-size: 0.24rem;line-height: 0.48rem;border: 0.03rem solid #0b51dc;box-shadow: 0 1px 0 #9ab6ed;margin-bottom: 0.13rem;position: relative;}
+.rank_l .paih{width: 1.33rem;}
+.rank_l .paih a{color: #0b51dc;display: block;text-align: center;position: relative;}
+.rank_l .paih.on{background-color: #467df2;}
+.rank_l .paih.on a{color: #fff;}
+.daq{border: 1px solid #0b51dc;background-color: #fff;width: 1.32rem;position: relative;left: 0;top: 0.02rem;display: none;}
+.daq li{text-align: center;}
+.daq_ct{border: 1px solid #0b51dc;background-color: #fff;position: absolute;top: -0.55rem;right: -1.6rem;width: 1.8rem;text-align: center;overflow: auto;height: 2.4rem;display: none;color: #0b51dc;font-size: 0.18rem;z-index: 9;}
+.daq_ct li{overflow: hidden;width: 1.8rem;text-overflow: ellipsis;white-space: nowrap;}
+.daq li.on,.daq_ct li.on{background-color: #467df2;color: #fff;}
+.daq li.on .daq_ct{display: block;}
+::-webkit-scrollbar-track-piece{background:none;}
+::-webkit-scrollbar{width:1px;}
+::-webkit-scrollbar-thumb{background:#0b51dc;border-radius: 10px}
+.rank_r input{border: none;width: 1.9rem;padding-left: 0.1rem;color: #0b51dc;}
+.rank_r a{width: 0.58rem;height: 0.48rem;display: block;background-color: #0b51dc}
+.rank_r a b{background-position: -3.04rem -0.62rem;width: 0.33rem;height: 0.33rem;display: block;margin: 0.07rem auto 0;}
+::-webkit-input-placeholder{color: #0b51dc;}    /* 使用webkit内核的浏览器 */
+:-moz-placeholder{color: #0b51dc;}                  /* Firefox版本4-18 */
+::-moz-placeholder{color: #0b51dc;}                  /* Firefox版本19+ */
+:-ms-input-placeholder{color: #0b51dc;}           /* IE浏览器 */
+.team{background: url(//game.gtimg.cn/images/moli/cp/a20181206votem/team_bg.png) no-repeat;width: 6.92rem;height: 6.86rem;margin: 0.23rem auto 0;background-size: 100% 100%;padding: 0.42rem 0.15rem;overflow: hidden;}
+.list_team{height: 6.82rem;overflow: hidden;width: 6.92rem;}
+.list_team li{background: url(//game.gtimg.cn/images/moli/cp/a20181206votem/team_bg1.png) no-repeat;width: 2.99rem;height: 1.5rem;display: block;background-size: 100% 100%;padding: 0.35rem 0.22rem;margin-bottom: 0.1rem;}
+.list_team li img{width: 1.54rem;height: 1.54rem;display: block;float: left;}
+.list_team li div{width: 1.4rem;float: right;color: #ffffff;font-size: 0.22rem;line-height: 0.32rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.list_team li div p{color: #ffffff;font-size: 0.26rem;font-weight: bold;line-height: 0.35rem;padding-left: 0.15rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width: 1.4rem;}
+.list_team li div span,.list_team li div em{padding-left: 0.15rem;display: block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width: 1.4rem;}
+.list_team li div em b{color: #fce54d;font-size: 0.24rem;}
+.btn_xuan{background-position: -3.52rem -.58rem;width: 1.31rem;height: 0.47rem;color: #3d3d3d;font-size: 0.24rem;text-align: center;line-height: 0.47rem;font-weight: bold;display: block;margin: 0.05rem auto 0;}
+.page{background-position: -2.95rem 0;width: 2.23rem;height: 0.53rem;margin: 0.45rem auto 0;color: #fdfdfd;font-size: 0.24rem;line-height: 0.53rem;text-align: center;padding: 0 0.3rem;}
+.page a{width: 1.05rem;display: block;color: #fdfdfd;}
+.main{position: relative;}
+.btn_zd,.btn_bm{background: url(//game.gtimg.cn/images/moli/cp/a20181206votem/btn.png) no-repeat;width: 1.3rem;height: 1rem;display:block;background-size: 100% 100%;color: #4e371e;font-size: 0.3rem;text-align: center;line-height: 0.36rem;font-weight: bold;text-shadow: 0 0 0.1rem #d8d41b;padding-top: 0.3rem;
+          position: fixed;top: 1rem;right: 0.1rem;z-index: 9;}
+          
+.list_chioce li{width: 1.36rem;float: left;}
+.list_chioce li em{background-position: -4.57rem -5.46rem;width: 0.51rem;height: 0.51rem;display: block;float: left;}
+.list_chioce li.on em{background-position: -5.14rem -5.45rem;}
+.list_chioce li span{color: #0b51dc;font-size: 0.26rem;float: left;line-height: 0.51rem;}
+
+.par3{padding-top: 0.62rem;}
+.tit_cts{padding-top: 0.32rem;color: #0b51dc;text-align: center;font-size: 0.24rem;line-height: 0.4rem;}
+.tit_cts em{font-weight: bold;font-size: 0.26rem;}
+.list_prop{width: 4.66rem;margin: 0.2rem auto 0;}
+.list_prop li{width: 2rem;}
+.list_prop li img{width: 1.93rem;height: 1.93rem;display: block;margin: 0 auto;}
+.list_prop li span{color: #0b51dc;font-size: 0.24rem;text-align: center;width: 100%;display: block;}
+.par3 .btn_lq{margin: 0.35rem auto 0;}
+
+#pop-mask{position:absolute;left:0;top:0;width:100%;background:rgba(0,0,0,0.7);z-index: 9;}
+.pop{margin: 0 auto;position: relative;display: none;background: url(//game.gtimg.cn/images/moli/cp/a20181206votem/pop1.png) no-repeat;background-size: 100% 100%;height: 5.81rem;width: 6.41rem;padding: 0.5rem 0.25rem;}
+.pop_close{top: 0.1rem;right: 0.1rem;display: block;position: absolute;width: 0.23rem;height: 0.22rem;background-position: -5.64rem -1.91rem;}
+.pop h3,.pops h3,.popw h3,.pop24 h3,.popa h3{color: #fff;font-size: 0.34rem;text-align: center;line-height: 0.4rem;font-weight: bold;}
+.list_rule{padding-top: 0.3rem;color: #fff;font-size: 0.22rem;line-height: 0.3rem;}
+.list_rule li{margin-bottom: 0.1rem;}
+.list_rule li em{width: 0.2rem;float: left;}
+.list_rule li span{width: 6.02rem;float: left;padding-left: 0.15rem;}
+.list_rule li b{color: #ffdf06;font-weight: bold;}
+.btn_qd{background-position: -3.66rem -4.13rem;width: 1.9rem;height: 0.6rem;display: block;margin: 0.3rem auto 0;color: #3d3d3d;font-size: 0.3rem;text-align: center;line-height: 0.6rem;font-weight: bold;}
+
+.pops{margin: 0 auto;position: relative;display: none;background: url(//game.gtimg.cn/images/moli/cp/a20181206votem/pop2.png) no-repeat;background-size: 100% 100%;height: 2.25rem;width: 3.99rem;padding: 0.3rem 0.25rem;}
+.pop_ct{color: #fff;font-size: 0.26rem;text-align: center;line-height: 0.36rem;padding-top: 0.2rem;}
+.pops h3,.pop9 p{padding-top: 0.3rem;}
+.area{width: 4rem;margin: 0.33rem auto 0;}
+.area a{background-position: -3.66rem -4.13rem;width: 1.9rem;height: 0.6rem;display: block;color: #3d3d3d;font-size: 0.3rem;text-align: center;line-height: 0.6rem;font-weight: bold;}
+.list_yqm{color: #fff;font-size: 0.3rem;text-align: center;line-height: 0.4rem;font-weight: bold;}
+.list_yqm li em{font-weight: bold;}
+.pops p{color: #fff;font-size: 0.3rem;text-align: center;line-height: 0.4rem;font-weight: bold;}
+.txt{border: 0.02rem solid #fff;width: 3.56rem;height: 0.55rem;background-color: #3372ef;margin: 0.2rem auto 0;display: block;border-radius: 3px;color: #3d3d3d;font-size: 0.32rem;line-height: 0.55rem;}
+.pop7 p{font-size: 0.26rem;}
+.pop7 span{color: #ffffff;font-size: 0.24rem;text-align: center;line-height: 0.4rem;display: block;}
+.pop7 input{width: 2rem;display: inline-block;height: 0.4rem;line-height: 0.4rem;font-size: 0.24rem;}
+.btn{width: 2.6rem;margin: 0.33rem auto 0;}
+.btn a{width: 1.03rem;height: 1.03rem;display: block;text-indent: -999em;}
+.qq{background-position: 0 -4.82rem;}
+.wx{background-position: -1.27rem -4.82rem;}
+
+.popw{margin: 0 auto;position: relative;display: none;background: url(//game.gtimg.cn/images/moli/cp/a20181206votem/pop3.png) no-repeat;background-size: 100% 100%;height: 4.31rem;width: 3.42rem;padding: 0.3rem 0.4rem;}
+.list-js{margin-top: 0.34rem;}
+.list-js li{margin-bottom: 0.18rem;}
+      .list-js li p{color: #fff;font-size: 0.26rem;width: 0.9rem;float: left;line-height: 0.49rem;text-align: left;height: 0.49rem;font-weight: bold;}
+      .list-js li select{width: 2.52rem;height: 0.52rem;color: #ffffff;background-position: -2.45rem -4.82rem;display: block; appearance:none;-moz-appearance:none;-webkit-appearance:none;border: none;font-size: 0.24rem;line-height: 0.41rem;padding-left:0.14rem;float: left;}
+
+.pope{margin: 0 auto;position: relative;display: none;background: url(//game.gtimg.cn/images/moli/cp/a20181206votem/pop4.png) no-repeat;background-size: 100% 100%;height: 0.89rem;width: 4.3rem;color: #ffffff;font-size: 0.3rem;text-align: center;line-height: 0.89rem;font-weight: bold;}
+.pop21{height: 3rem;}
+.pop22{height: 4rem;}
+.pop24{height: 4rem!important;width: 5rem!important;}
+.pop25{height: 6.5rem;}
+.stab{height: 2.6rem;overflow: scroll;}
+.pop23 .stab{height: 2rem;overflow: scroll;}
+.tab{color: #ffffff;font-size: 0.24rem;margin-top: 0.2rem;}
+.tab tr th{color: #fff;font-size: 0.34rem;font-weight: bold;padding: 0 0.2rem;}
+.tab tr td{padding: 0.1rem 0.09rem;position: relative;text-align: center;font-size: 0.24rem;}
+.btn_ty{background-position: -6.08rem -1.85rem;width: 0.91rem;height: 0.34rem;color: #3d3d3d;font-size: 0.22rem;text-align: center;font-weight: bold;line-height: 0.34rem;display: block;}
+.btn_tys{background-position:-5.52rem -2.30rem;width: 1.11rem;height: 0.32rem;color: #3d3d3d;font-size: 0.22rem;text-align: center;font-weight: bold;line-height: 0.32rem;display: block;}
+.areas{width: 6.3rem;margin: 0.33rem auto 0;}
+.areas a{background-position: -3.66rem -4.13rem;width: 1.9rem;height: 0.6rem;display: block;color: #3d3d3d;font-size: 0.3rem;text-align: center;line-height: 0.6rem;font-weight: bold;position: relative;}
+.areas a em{width: 0.3rem;height: 0.3rem;border-radius: 50%;background-color: #eb3000;color: #fff;font-size: 0.2rem;text-align: center;line-height: 0.3rem;position: absolute;top: -0.1rem;right: 0.2rem;}
+.tab tr td em{background-position: -5.58rem -2.73rem;width: 0.56rem;height: 0.44rem;display: block;color: #fff;text-align: center;line-height: 0.44rem;position: absolute;top: -0.2rem;left: 0rem;z-index: 9;}
+
+.popa{margin: 0 auto;position: relative;display: none;background: url(//game.gtimg.cn/images/moli/cp/a20181206votem/pop5.png) no-repeat;background-size: 100% 100%;height: 2.86rem;width: 4.79rem;padding: 0.4rem 0.5rem;}
+.pop26{width: 4.3rem;}
+.pop26 .btn_lj{color: #fff000;font-size: 0.2rem;text-decoration: underline;display: block;margin: 0.4rem auto;width: 3.4rem;}
+.pop28 .tab{width: 4.4rem;}
+
+</style>
+</head>
+<body>
+<div class="w_pop">
+    <div class="w_pop_img"></div>
+    <p class="w_tips">为了更好的体验，请将手机/平板竖起</p>
+</div>
+<div class="wrap" id="box0">
+	<header>
+		 <h1 class="hide">明星邀请赛</h1>
+         <a href="javascript:TeamWindow();" id="RvstBtn" class="btn_team sp" title="我要报名" onclick="PTTSendClick('btn','apply_btn','我要报名');">我要报名</a>
+		 <a href="javascript:myownSucTeam();" class="btn_team sp" id="myTeamBtn" title="我的战队" onclick="PTTSendClick('btn','apply_btn1','我的战队');" style="display: none;">我的战队</a>
+		 <div class="login">
+		    <p  id="unlogin">你好，请<a  href="javascript:pop('.pop11');" style="cursor: pointer;">[登录]</a></p>
+		    <div id="logined" style="display: none;">
+		        <span>欢迎您，</span>
+		        <span id="login_qq_span"></span>
+		    </div>
+		</div>
+		<a href="javascript:seeAllTeamApply();" id="allTeamAppBtn" class="btn_jl sp"  ontouchend="PTTSendClick('btn','jl','我的申请记录');">我的申请记录</a>
+	</header>
+	<div class="main">
+        <div class="nav c">
+           <a class="on sp" href="#box1" ontouchend="PTTSendClick('btn','nav1','赛事流程');">赛事流程</a>
+           <a class="sp" href="#box2" ontouchend="PTTSendClick('btn','nav2','赛事流程');">投票报名</a>
+           <a class="sp" href="page01.htm" ontouchend="PTTSendClick('btn','nav3','规则详情');">规则详情</a>
+           <a class="sp" href="//moli.qq.com/" ontouchend="PTTSendClick('btn','nav4','进入官网');">进入官网</a>
+        </div> 
+        <a href="javascript:;" class="news sp" title="最新公告" target="_blank" ontouchend="PTTSendClick('link','ad_bg','最新公告');">最新公告</a>
+	    <div class="par1" id="box1">
+	    	<h2 class="sp tit">赛事流程</h2>
+	    	<img src="//game.gtimg.cn/images/moli/cp/a20181206votem/bar_bg.png" class="bar"/>
+	    	<ul class="list_flow listflex">
+	    		<li><span class="sp">x月x日-x月x日</span><p>初赛</p></li>
+	    		<li><span class="sp">x月x日-x月x日</span><p>复赛</p></li>
+	    		<li class="l_f"><p>报名</p><span class="sp">x月x日-x月x日</span></li>
+	    		<li class="l_f"><p>半决赛</p><span class="sp">x月x日-x月x日</span></li>
+	    		<li class="l_f"><p>决赛</p><span class="sp">x月x日-x月x日</span></li>
+	    	</ul>
+	    </div>
+	    <div class="par3">
+	    	<h2 class="sp tit">投票奖励</h2>
+	    	<p class="tit_cts">为喜欢的战队投票，投票成功后可获得一次领取礼包的机会哦！<br/>我还有<em id="IownGiftNum">0</em>次领取礼包的机会</p>
+	    	<ul class="list_prop listflex">
+	    		<li><img src="//game.gtimg.cn/images/moli/cp/a20181206votem/prop_pic1.png"/><span>金币x1000</span></li>
+	    		<li><img src="//game.gtimg.cn/images/moli/cp/a20181206votem/prop_pic2.png"/><span>特制宠物经验药x1</span></li>
+	    	</ul>
+	    	<a class="btn_lq sp" href="javascript:everyDaygift();" ontouchend="PTTSendClick('btn','lq1','点击领取');">点击领取</a>
+	    </div>
+	    <div class="par2" id="box2">
+	    	<div class="box">
+	    		<h2 class="sp tit">战队排名</h2>
+	    		<div class="rank listflex">
+	    			<div class="rank_l c">
+	    				<div class="paih on fl pains"><a href="javascript:getAllPartion(1);" title="人气排序" ontouchend="PTTSendClick('btn','peo_ranking','人气排序');" class="rq">人气排序</a></div>
+						<div class="paih fr se">
+							<a href="javascript:;">大区排序</a>
+							<ul class="daq">
+								<li class="on">
+									<span>微信</span>
+								    <ul class="pa daq_ct">
+								      	<li value="1001" class="on">微信1区—白羊座</li>
+                                        <li value="1002">微信2区—金牛座</li>
+                                        <li value="1003">微信3区—双子座</li>
+                                        <li value="1004">微信4区—巨蟹座</li>
+                                        <li value="1005">微信5区—狮子座</li>
+                                        <li value="1006">微信6区—处女座</li>
+                                        <li value="1007">微信7区—天秤座</li>
+                                        <li value="1008">微信8区—天蝎座</li>
+                                        <li value="1009">微信9区—射手座</li>
+                                        <li value="1010">微信10区—摩羯座</li>
+                                        <li value="1011">微信11区—水瓶座</li>
+                                        <li value="1012">微信12区—双鱼座</li>
+                                        <li value="1013">微信13区—大熊座</li>
+                                        <li value="1014">微信14区—小熊座</li>
+                                        <li value="1015">微信15区—仙女座</li>
+                                        <li value="1016">微信16区—天鹰座</li>
+                                        <li value="1017">微信17区—天坛座</li>
+                                        <li value="1018">微信18区—仙后座</li>
+                                        <li value="1019">微信19区—仙王座</li>
+                                        <li value="1020">微信20区—牧夫座</li>
+                                        <li value="1021">微信21区—雕具座</li>
+                                        <li value="1022">微信22区—鹿豹座</li>
+                                        <li value="1023">微信23区—猎犬座</li>
+                                        <li value="1024">微信24区—鲸鱼座</li>
+                                        <li value="1025">微信25区—圆规座</li>
+                                        <li value="1026">微信26区—天鸽座</li>
+                                        <li value="1027">微信27区—天鹅座</li>
+                                        <li value="1028">微信28区—人马座</li>
+                                        <li value="1029">微信29区—海豚座</li>
+                                        <li value="1030">微信30区—剑鱼座</li>
+                                        <li value="1031">微信31区—天龙座</li>
+                                        <li value="1032">微信32区—小马座</li>
+                                        <li value="1033">微信33区—波江座</li>
+                                        <li value="1034">微信34区—天炉座</li>
+                                        <li value="1035">微信35区—武仙座</li>
+                                        <li value="1036">微信36区—时钟座</li>
+                                        <li value="1037">微信37区—长蛇座</li>
+                                        <li value="1038">微信38区—天鹤座</li>
+                                        <li value="1039">微信39区—蝎虎座</li>
+                                        <li value="1040">微信40区—天兔座</li>
+                                        <li value="1041">微信41区—天猫座</li>
+                                        <li value="1042">微信42区—天琴座</li>
+                                        <li value="1043">微信43区—麒麟座</li>
+                                        <li value="1044">微信44区—矩尺座</li>
+                                        <li value="1045">微信45区—蛇夫座</li>
+                                        <li value="1046">微信46区—猎户座</li>
+                                        <li value="1047">微信47区—飞马座</li>
+                                        <li value="1048">微信48区—英仙座</li>
+                                        <li value="1049">微信49区—凤凰座</li>
+                                        <li value="1050">微信50区—罗盘座</li>
+                                        <li value="1051">微信51区—孔雀座</li>
+                                        <li value="1052">微信52区—室女座</li>
+                                        <li value="1053">微信53区—飞鱼座</li>
+                                        <li value="1054">微信54区—雅典娜</li>
+                                        <li value="1055">微信55区—阿波罗</li>
+                                        <li value="1056">微信56区—波塞冬</li>
+                                        <li value="1057">微信57区—维纳斯</li>
+                                        <li value="1058">微信58区—芙蕾雅</li>
+                                        <li value="1059">微信59区—索奇亚</li>
+                                        <li value="1060">微信60区—莎莲娜</li>
+                                        <li value="1061">微信61区—哈贝鲁</li>
+                                        <li value="1062">微信62区—伊尔村</li>
+                                        <li value="1063">微信63区—奇利村</li>
+                                        <li value="1064">微信64区—法兰城</li>
+                                        <li value="1065">微信65区—维诺亚</li>
+                                        <li value="1066">微信66区—大圣堂</li>
+                                        <li value="1067">微信67区—艾梅斯</li>
+                                        <li value="1068">微信68区—菲妮雅</li>
+                                        <li value="1069">微信69区—大地鼠</li>
+                                        <li value="1070">微信70区—噩梦鼠</li>
+                                        <li value="1071">微信71区—火焰鼠</li>
+                                        <li value="1072">微信72区—水蓝鼠</li>
+                                        <li value="1073">微信73区—小恶魔</li>
+                                        <li value="1074">微信74区—丘比特</li>
+                                        <li value="1075">微信75区—石像怪</li>
+							        </ul>
+								</li>
+								<li>
+									<span>手Q</span>
+									<ul class="pa daq_ct">
+										<li class="on" value="2001">QQ1区—青青校园</li>
+                                        <li value="2002">QQ2区—魔女之家</li>
+                                        <li value="2003">QQ3区—阿斯提亚</li>
+                                        <li value="2004">QQ4区—亚留特村</li>
+                                        <li value="2005">QQ5区—召唤之间</li>
+                                        <li value="2006">QQ6区—流星山丘</li>
+                                        <li value="2007">QQ7区—叹息森林</li>
+                                        <li value="2008">QQ8区—阿巴尼斯</li>
+                                        <li value="2009">QQ9区—杰诺瓦镇</li>
+                                        <li value="2010">QQ10区—圣拉鲁卡</li>
+                                        <li value="2011">QQ11区—李贝留斯</li>
+                                        <li value="2012">QQ12区—阿尔杰斯</li>
+                                        <li value="2013">QQ13区—法尼提斯</li>
+                                        <li value="2014">QQ14区—芙蕾雅特</li>
+                                        <li value="2015">QQ15区—法尔卡特</li>
+                                        <li value="2016">QQ16区—迪欧梅雅</li>
+                                        <li value="2017">QQ17区—艾奥其亚</li>
+                                        <li value="2018">QQ18区—欧鲁尼斯</li>
+                                        <li value="2019">QQ19区—艾雷诺亚</li>
+                                        <li value="2020">QQ20区—阿鲁巴斯</li>
+                                        <li value="2021">QQ21区—帕鲁凯斯</li>
+                                        <li value="2022">QQ22区—霞之洞窟</li>
+                                        <li value="2023">QQ23区—风之洞窟</li>
+                                        <li value="2024">QQ24区—狮子之穴</li>
+                                        <li value="2025">QQ25区—沙漠之祠</li>
+                                        <li value="2026">QQ26区—沙尘之洞</li>
+                                        <li value="2027">QQ27区—里谢里雅</li>
+                                        <li value="2028">QQ28区—地下迷宫</li>
+                                        <li value="2029">QQ29区—毁灭之村</li>
+                                        <li value="2030">QQ30区—净身圣坛</li>
+                                        <li value="2031">QQ31区—极地白熊</li>
+                                        <li value="2032">QQ32区—赤目黑熊</li>
+                                        <li value="2033">QQ33区—地狱猎犬</li>
+                                        <li value="2034">QQ34区—天使蝙蝠</li>
+                                        <li value="2035">QQ35区—地狱妖犬</li>
+                                        <li value="2036">QQ36区—水蓝鸟魔</li>
+                                        <li value="2037">QQ37区—迷你蝙蝠</li>
+                                        <li value="2038">QQ38区—黑暗鸟人</li>
+                                        <li value="2039">QQ39区—水果蝙蝠</li>
+                                        <li value="2040">QQ40区—恶魔蝙蝠</li>
+								    </ul>
+								</li>
+							</ul>
+						</div>
+						<!--<a href="javascript:void(0);" class="se fr">
+							<select onchange="getAllPartion(2)">
+                            	<option value="0">大区排序</option>
+                                <option value="1">微信</option>
+                                <option value="2">手Q</option>
+                            </select>
+						</a>-->
+	    			</div>
+	    			<div class="rank_r listflex"><input id="seachTeamcode" placeholder='请输入队伍编码'/><a href="javascript:getAllPartion(3);" ontouchend="PTTSendClick('btn','sc','搜索');"><b class="sp"></b></a></div>
+	    		</div>
+	    		<p class="tit_ct">快来助他们一臂之力吧，为你心中的人气战队投票吧！</p>
+	    		<p class="toup listflex1"><em>我还有<span id="IownTicketNum">0</span>次投票机会</em><a class="btn_lq sp" href="javascript:getGameVoteNum();" ontouchend="PTTSendClick('btn','lq2','点击领取');">领取投票机会</a></p>
+	    		<a class="btn_hq" href="javascript:pop('.pop25');" ontouchend="PTTSendClick('btn','hq','如何获取投票机会');">如何获取投票机会</a>
+	    		<div class="team" id="showAllProdInfo">
+    				<!--<ul class="list_team listflex">
+    					<li class="c">
+    						<img src="//game.gtimg.cn/images/moli/cp/a20181206votem/team_pic.png" />
+    						<div >
+    							<p>队伍名称</p>
+    							<span>xxxxx区</span>
+    							<em><b>666666</b>票</em>
+    							<a class="btn_xuan sp" href="javascript:;" ontouchend="PTTSendClick('btn','xuan1','选TA');">选TA</a>
+    						</div>
+    					</li>
+    				</ul>-->
+    			</div>
+    			<div class="page listflex sp">
+    				<a href="javascript:aaupPage();" ontouchend="PTTSendClick('btn','pre1','上一页');">上一页</a>
+    				<a href="javascript:aadownPage();" ontouchend="PTTSendClick('btn','next1','下一页');">下一页</a>
+    			</div>
+	    	</div>
+	    </div>
+	</div>
+</div>
+<a class="btn_bm" href="#box0" ontouchend="PTTSendClick('btn','bm','报名');">我要<br />报名</a>
+<a class="btn_zd" href="javascript:;" style="display: none;" ontouchend="PTTSendClick('btn','zd','战队');">我要<br />战队</a>
+
+<!--报名有资格11-->
+<div class="pops pr pop11">  
+	<h3>请选择你的登录方式</h3>
+	<div class="btn listflex">
+		<a href="javascript:void(0);" id="wxlogin" class="sp wx" ontouchend="PTTSendClick('btn','wx','微信');">微信</a>
+		<a href="javascript:void(0);" id="qqlogin" class="sp qq" ontouchend="PTTSendClick('btn','QQ','QQ');">QQ</a>
+	</div>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop11')"  ontouchend="PTTSendClick('btn','close11','关闭');">关闭</a>
+</div>
+<!--绑定角色12-->
+<div class="popw pr pop12">  
+	<h3>请绑定您的角色</h3>
+	<ul class="list-js">
+		<li class="c">
+			<p>平台</p>
+			<select class="sp" id="channelContentId"></select>
+		</li>
+		<li class="c">
+			<p>系统</p>
+			<select class="sp" id="systemContentId"></select>
+		</li>
+		<li class="c">
+			<p>大区</p>
+			<select class="sp" id="areaContentId"></select>
+		</li>
+		<li class="c">
+			<p>角色</p>
+			<select class="sp" id="roleContentId"></select>
+		</li>
+	</ul>
+	<a class="btn_qd sp" href="javascript:void(0);" id="doSubmit" ontouchend="PTTSendClick('btn','qd6','确定');">确定</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop12')"  ontouchend="PTTSendClick('btn','close12','关闭');">关闭</a>
+</div>
+<!--报名有资格10-->
+<div class="pops pr pop10">  
+	<h3>欢迎法兰城的勇者~</h3>
+	<div class="area listflex">
+		<a href="javascript:hidePopOk('.pop10');pop('.pop8');" class="sp" ontouchend="PTTSendClick('btn','cj','创建战队');">创建战队</a>
+		<a href="javascript:hidePopOk('.pop10');pop('.pop6');" class="sp" ontouchend="PTTSendClick('btn','join','加入战队');">加入战队</a>
+	</div>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop10')"  ontouchend="PTTSendClick('btn','close10','关闭');">关闭</a>
+</div>
+
+<!--创建战队8-->
+<div class="pops pr pop8">  
+	<p>为自己的战队起个名字吧！</p>
+	<input type="text" id="myTeamName" class="txt"/>
+	<a class="btn_qd sp" href="javascript:createTeam();" ontouchend="PTTSendClick('btn','qd4','确定');">确定</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop8')"  ontouchend="PTTSendClick('btn','close8','关闭');">关闭</a>
+</div>
+<!--邀请码无效6-->
+<div class="pops pr pop6">  
+	<p>请输入战队邀请码搜索</p>
+	<input type="text" id="seachTeamCode" class="txt"/>
+	<a class="btn_qd sp" href="javascript:seachTeam();" ontouchend="PTTSendClick('btn','sc2','搜索');">搜索</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop6')"  ontouchend="PTTSendClick('btn','close6','关闭');">关闭</a>
+</div>
+<!--邀请码有效码4-->
+<div class="pops pr pop4">  
+	<ul class="list_yqm">
+		<li>战队名称：<em id="seachResName"></em></li>
+		<li>战队ID：<em id="seachResCode"></em></li>
+	</ul>
+	<a class="btn_qd sp" href="javascript:joinTeam();" ontouchend="PTTSendClick('btn','jr','申请加入');">申请加入</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop4')"  ontouchend="PTTSendClick('btn','close4','关闭');">关闭</a>
+</div>
+
+<!--邀请码无效5-->
+<div class="pops pr pop5">  
+	<h3>该战队不存在</h3>
+	<div class="area listflex">
+		<a href="javascript:hidePopOk('.pop5');" class="sp" ontouchend="PTTSendClick('btn','qd3','确定');">确定</a>
+		<a href="javascript:hidePopOk('.pop5');pop('.pop6');" class="sp" ontouchend="PTTSendClick('btn','sq2','重新申请');">重新申请</a>
+	</div>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop5')"  ontouchend="PTTSendClick('btn','close5','关闭');">关闭</a>
+</div>
+
+<!--报名无资格9-->
+<div class="pops pr pop9">  
+	<p>抱歉，游戏等级≥60的玩家<br />才可以报名哦</p>
+	<a class="btn_qd sp" href="javascript:hidePopOk('.pop9');" ontouchend="PTTSendClick('btn','qd5','确定');">确定</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop9')"  ontouchend="PTTSendClick('btn','close9','关闭');">关闭</a>
+</div>
+
+<!--创建战队成功7-->
+<div class="pops pr pop7">  
+	<p>恭喜您，战队创建成功，<br />快去复制邀请码，邀请小伙伴吧~</p>
+	<span>邀请码：<input type="text" readonly="true" id="createTeamCode" style="color:white;" class="txt"/></span>
+	<a class="btn_qd sp" href="javascript:void(0);" id="copyCode" data-clipboard-action="copy" data-clipboard-target="#createTeamCode" ontouchend="PTTSendClick('btn','sc3','搜索');">复制</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop7')"  ontouchend="PTTSendClick('btn','close7','关闭');">关闭</a>
+</div>
+<!--申请成功2-->
+<div class="pops pr pop2">  
+	<h3>申请成功</h3>
+	<p class="pop_ct">等待队长审批吧~</p>
+	<a class="btn_qd sp" href="javascript:hidePopOk('.pop2');" ontouchend="PTTSendClick('btn','qd1','确定');">确定</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop2')"  ontouchend="PTTSendClick('btn','close2','关闭');">关闭</a>
+</div>
+
+<!--队长玩家22-->
+<div class="pop pr pop22">  
+	<h3><span id="LeaderTeamName"></span>战队</h3>
+	<div class="stab">
+    	<table class="tab">
+    		<input type="text" id="createTeamCode1" value="" style="display:none;" />
+        	<thead id="LeaderTeamL"></thead>
+            <tbody id="LeaderTeamP"></tbody>
+			<!--<tr>
+				<td>角色名称角色名称<em class="sp">队长</em></td>
+				<td>Lv.68</td>
+				<td>弓箭手</td>
+			</tr>
+			<tr>
+				<td>角色名称角色名称</td>
+				<td>Lv.68</td>
+				<td>弓箭手</td>
+				<td><a class="sp btn_tys" href="javascript:;" ontouchend="PTTSendClick('btn','tc1','踢出队伍');">踢出队伍</a></td>
+			</tr>-->
+		</table>
+	</div>
+	<div class="areas listflex">
+		<a href="javascript:void(0);" class="sp" id="copyCode1" data-clipboard-action="copy" data-clipboard-target="#createTeamCode1" ontouchend="PTTSendClick('btn','copy','复制邀请码');">复制邀请码</a>
+		<a href="javascript:disbandTeam();" class="sp" ontouchend="PTTSendClick('btn','js','解散战队');">解散战队</a>
+		<a href="javascript:seeMyTeamApply();" class="sp" ontouchend="PTTSendClick('btn','sq','申请列表');">申请列表</a>
+	</div>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop22')"  ontouchend="PTTSendClick('btn','close22','关闭');">关闭</a>
+</div>
+
+<!--申请通过24-->
+<div class="popa pr pop24"> 
+	<h3><span id="LeaderTeamName2"></span>战队</h3>
+	<div class="stab">
+    	<input type="text" id="createTeamCode2" value="" style="display:none;" />
+		<table class="tab">
+        	<thead id="playerTeamL"></thead>
+            <tbody id="playerTeamP"></tbody>
+			<!--<tr>
+				<td>角色名称角色名称<em class="sp">队长</em></td>
+				<td>68级</td>
+				<td>弓箭手</td>
+				<td><a class="sp btn_ty" href="javascript:;" ontouchend="PTTSendClick('btn','lk1','离开');">离开</a></td>
+			</tr>
+			<tr>
+				<td>角色名称角色名称</td>
+				<td>68级</td>
+				<td>弓箭手</td>
+				<td><a class="sp btn_ty" href="javascript:;" ontouchend="PTTSendClick('btn','lk2','离开');">离开</a></td>
+			</tr>-->
+		</table>
+	</div>
+	<a class="btn_qd sp" href="javascript:void(0);" id="copyCode2"  data-clipboard-action="copy" data-clipboard-target="#createTeamCode2" ontouchend="PTTSendClick('btn','copy1','复制邀请码');">复制邀请码</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop24')"  ontouchend="PTTSendClick('btn','close24','关闭');">关闭</a>
+</div>
+
+<!--申请玩家21-->
+<div class="pop pr pop21">  
+	<h3><span id="LeaderTeamName1"></span>战队</h3>
+	<div class="stab">
+		<table class="tab">
+        	<thead id="userApplyCon"></thead>
+            <tbody id="userApplyCon1"></tbody>
+			<!--<tr>
+				<td>角色名称角色名称</td>
+				<td>Lv.68</td>
+				<td>弓箭手</td>
+				<td><a class="sp btn_ty" href="javascript:;" ontouchend="PTTSendClick('btn','ty1','同意');">同意</a></td>
+				<td><a class="sp btn_ty" href="javascript:;" ontouchend="PTTSendClick('btn','jj1','拒绝');">拒绝</a></td>
+			</tr>-->
+		</table>
+	</div>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop21')"  ontouchend="PTTSendClick('btn','close21','关闭');">关闭</a>
+</div>
+
+<!--离开战队19-->
+<div class="pops pr pop19">  
+	<h3>确定要离开战队吗？</h3>
+	<div class="area listflex">
+		<a href="javascript:hidePopOk('.pop19');" class="sp" ontouchend="PTTSendClick('btn','qx4','取消');">取消</a>
+		<a href="javascript:surequitTeam();" class="sp" ontouchend="PTTSendClick('btn','qd11','确定');">确定</a>
+	</div>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop19')"  ontouchend="PTTSendClick('btn','close19','关闭');">关闭</a>
+</div>
+<!--提出15-->
+<div class="pops pr pop15">  
+	<h3>确定将其踢出队伍吗？</h3>
+	<div class="area listflex">
+		<a href="javascript:hidePopOk('.pop15');" class="sp" ontouchend="PTTSendClick('btn','qx1','取消');">取消</a>
+		<a href="javascript:surecleanUser();" class="sp" ontouchend="PTTSendClick('btn','qd8','确定');">确定</a>
+	</div>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop15')"  ontouchend="PTTSendClick('btn','close15','关闭');">关闭</a>
+</div>
+
+<!--申请未通过23-->
+<div class="popa pr pop23"> 
+	<div class="stab">
+		<table class="tab" id="applyRecCon">
+			<!--<tr>
+				<th>战队名称</th>
+				<th>审批状态</th>
+			</tr>
+			<tr>
+				<td>xxx战队</td>
+				<td>待审批</td>
+				<td></td>
+			</tr>-->
+		</table>
+	</div>
+	<a class="btn_qd sp" href="javascript:hidePopOk('.pop23');TeamWindow();" ontouchend="PTTSendClick('btn','cjs','自己创建');">继续报名</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop23')"  ontouchend="PTTSendClick('btn','close23','关闭');">关闭</a>
+</div>
+
+<div class="popa pr pop28">  
+	<h3><span id="seeProdTeamName"></span>战队</h3>
+	<div class="stab">
+		<table class="tab">
+        	<thead id="seeProdLeaderInfo"></thead>
+            <tbody id="seeProdplayerInfo"></tbody>
+			<!--<tr>
+				<td>角色名称角色名称<em class="sp">队长</em></td>
+				<td>Lv.68</td>
+				<td>弓箭手</td>
+			</tr>
+			<tr>
+				<td>角色名称角色名称</td>
+				<td>Lv.68</td>
+				<td>弓箭手</td>
+			</tr>-->
+		</table>
+	</div>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop28')"  ontouchend="PTTSendClick('btn','close28','关闭');">关闭</a>
+</div>
+<!--复制18-->
+<div class="pope pr pop27">  
+	<p>投票成功，感谢你的支持！~</p>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop27')"  ontouchend="PTTSendClick('btn','close27','关闭');">关闭</a>
+</div>
+<!--解散17-->
+<div class="pops pr pop17">  
+	<h3>确定要解散战队吗？</h3>
+	<div class="area listflex">
+		<a href="javascript:hidePopOk('.pop17');" class="sp" ontouchend="PTTSendClick('btn','qx3','取消');">取消</a>
+		<a href="javascript:suredisbandTeam();" class="sp" ontouchend="PTTSendClick('btn','qd10','确定');">确定</a>
+	</div>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop17')"  ontouchend="PTTSendClick('btn','close17','关闭');">关闭</a>
+</div>
+
+<!--复制18-->
+<div class="pope pr pop13">  
+	<p>复制成功</p>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop18')"  ontouchend="PTTSendClick('btn','close18','关闭');">关闭</a>
+</div>
+<!--活动规则1-->
+<div class="pop pr pop1">  
+	<h3>第二届明星邀请赛报名规则</h3>
+	<ul class="list_rule">
+		<li class="c"><em>1、</em><span>第二届明星邀请赛报名时间：2018年x月x日—2018年x月x日，公布投票结果时间为2018年x月x日</span></li>
+		<li class="c"><em>2、</em><span>玩家以战队为单位在官网预约报名参赛，比赛只对当前等级≥60级以上玩家开放；</span></li>
+		<li class="c"><em>3、</em><span>比赛队伍由玩家投票选出，各赛区票数排前x位的队伍可获得参赛资格，并获得惊喜奖励；</span></li>
+		<li class="c"><em>4、</em><span>活动期间，用户进入活动页面为自己喜欢的战队投票，每人仅一次投票机会，投票需扣除一定的游戏内道具；</span></li>
+		<li class="c"><em>5、</em><span>法律允许范围内，活动解释权归《魔力宝贝手机版》所有。</span></li>
+	</ul>
+	<a class="btn_qd sp" href="javascript:hidePopOk('.pop1');" ontouchend="PTTSendClick('btn','know','我已了解');">我已了解</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop1')"  ontouchend="PTTSendClick('btn','close1','关闭');">关闭</a>
+</div>
+
+<!--满员3-->
+<div class="pops pr pop3">  
+	<h3>该战队已满员</h3>
+	<div class="area listflex">
+		<a href="javascript:;" class="sp" ontouchend="PTTSendClick('btn','qd2','确定');">确定</a>
+		<a href="javascript:;" class="sp" ontouchend="PTTSendClick('btn','sq1','重新申请');">重新申请</a>
+	</div>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop3')"  ontouchend="PTTSendClick('btn','close3','关闭');">关闭</a>
+</div>
+
+<!--投票13-->
+<div class="pope pr pop13">  
+	<p>你已经投过票啦</p>
+	<p style="display: none;">投票成功，感谢你的支持！</p>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop13')"  ontouchend="PTTSendClick('btn','close13','关闭');">关闭</a>
+</div>
+<!--同意14-->
+<div class="pops pr pop14">  
+	<h3>该玩家已加入其他战队</h3>
+	<a class="btn_qd sp" href="javascript:;" ontouchend="PTTSendClick('btn','qd7','确定');">确定</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop14')"  ontouchend="PTTSendClick('btn','close14','关闭');">关闭</a>
+</div>
+
+<!--关于投票资格-->
+<div class="pop pr pop25" >  
+	<h3>关于投票资格</h3>
+	<ul class="list_rule">
+		<li class="c"><em>1、</em><span>根据玩家投票数，在已成功报名的战队中选出参赛队伍；</span></li>
+		<li class="c"><em>2、</em><span>活动期间，游戏级数≥35级的玩家在<b>每日登录游戏</b>后，可获得一次投票机会（每日登录可获得投票机会的上限为一次）；</span></li>
+		<li class="c"><em>3、</em><span>活动期间，<b>完成活跃任务</b>可概率获得投票机会，活跃任务分别是：①完成学院任务3次，②真中的研究30次，③讨伐地狱践踏者1次，④大总管彼得斯1次（每日每个任务完成后可获得投票机会的上限为一次）；</span></li>
+		<li class="c"><em>4、</em><span>活动期间，<b>转发分享页面</b>可获得一次投票机会（活动期间分享后可获得投票机会的上限为一次）。</span></li>
+		<li class="c"><em>5、</em><span>玩家可以通过每日任务获取投票机会（投票机会每日清空）；</span></li>
+		<li class="c"><em>6、</em><span>每次投票成功后，玩家可以对应获得一次领奖投票礼包的机会；</span></li>
+		<li class="c"><em>7、</em><span>领取投票礼包的机会每日不累计（当天投票获得的机会当天使用，<br />不使用隔日会被清空）。</span></li>
+	</ul>
+	<a class="btn_qd sp" href="javascript:hidePopOk('.pop25');" ontouchend="PTTSendClick('btn','know','我已了解');">我已了解</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop25')"  ontouchend="PTTSendClick('btn','close25','关闭');">关闭</a>
+</div>
+<!--没有绑定26-->
+<div class="pops pr pop26">  
+	<h3>很可惜，暂无投票机会哦！</h3>
+	<a href="javascript:hidePopOk('.pop26');pop('.pop25');" class="btn_lj">点击了解如何获得更多投票机会</a>
+	<a class="pop_close db sp" href="javascript:hidePopOk('.pop26')"  ontouchend="PTTSendClick('btn','close26','关闭');">关闭</a>
+</div>
+
+<script src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script src="//moli.qq.com/cp/a20181206votem/js/clipboard.min.js"></script>
+<script src="//moli.qq.com/cp/a20181206votem/js/index.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+<!--<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>-->
+<script>
+/* TGMobileShare({
+ shareTitle:'《魔力宝贝》手游第二届明星邀请赛—腾讯游戏', //不设置或设置为空时，页面有title，则调取title
+ shareDesc:'明星战队由你Pick，最强勇者实力对决。', //不设置或设置为空时，页面有Description，则调取Description
+ shareImgUrl:'https://game.gtimg.cn/images/moli/cp/a20181206votem/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+ shareLink:'', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+ actName:'a20181206votem' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+ });*/
+</script>
+<script>
+var updateOrientation = function(){
+		var orientation = window.orientation;
+		switch(orientation){
+			case 90:
+			case -90:
+				$('.w_pop').show(); //这里是横屏
+			break;
+			default:
+				$('.w_pop').hide(); //这里是竖屏
+			break;
+		}
+	}
+	window.addEventListener("orientationchange", updateOrientation, false);
+
+
+$(".nav a").click(function(){
+	$(this).addClass('on').siblings('a').removeClass('on');
+})
+
+$(".rank_l .paih").click(function(){
+	$(this).addClass('on').siblings('.paih').removeClass('on');
+	if($(this).hasClass('se')){
+		 $(".daq").css({"display":"block"})
+	    $('.pains').removeClass('on');
+	}else{
+	    $(".daq").css({"display":"none"})
+	}
+})
+
+$(document).on("click",".daq_ct li",function(event){
+	selectareaid = $(this).attr("value");
+	getAllPartion(2);
+	if ($(".daq").is(":hidden")) {
+        $(".daq").show()
+    } else {
+        $(".daq").hide();
+    }
+    event.stopPropagation();
+})
+$(document).on("click",".se",function(event){
+	if ($(".daq").is(":hidden")) {
+        $(".daq").show()
+    } else {
+        $(".daq").hide();
+    }
+    event.stopPropagation();
+})
+$('.wrap').click(function() {
+    if (!$(".daq").is(":hidden")) {
+        $(".daq").hide();
+    }
+});
+
+$(".list_chioce li,.daq li").click(function(){
+	$(this).addClass('on').siblings('li').removeClass('on');
+})
+$(".list_team li img").click(function(){
+	pop('.pop28')
+})
+
+$(window).bind('load scroll', function (){
+	sTop = $(window).scrollTop();
+	if(sTop>$('header').height()){
+		$('.btn_bm').css('display','block')
+	}else{
+		$('.btn_bm').css('display','none')
+	}
+});
+//弹窗
+function gE(e) {
+	return document.querySelector(e)
+}
+function pop(e) {
+	if (!gE('#pop-mask')) {
+		gE(e).style.display = "block";
+		var popH = gE(e).offsetHeight,
+			popW = gE(e).offsetWidth;
+		gE(e).style.cssText = "position:fixed;left:50%;display:block;top:50%;z-index:999;"+"margin-left:-"+popW/2+"px;"+"margin-top:-"+popH/2+"px;"
+		var bgObj = document.createElement("div");
+		bgObj.setAttribute('id', 'pop-mask');
+		document.body.appendChild(bgObj);
+		var conH = document.body.scrollHeight,
+			viewH = document.documentElement.clientHeight;
+		if (conH > viewH) {
+			gE('#pop-mask').style.height = conH + "px";
+		} else {
+			gE('#pop-mask').style.height = viewH + "px";
+		}
+		hidePop(e);
+	}
+}
+function hidePop(e) {
+	gE('.pop_close').addEventListener('click', function() {
+		gE(e).style.display = "none";
+		var bgObj = gE("#pop-mask");
+		document.body.removeChild(bgObj);
+	});
+}
+function hidePopOk(e) {
+	gE(e).style.display = "none";
+	var bgObj = gE("#pop-mask");
+	document.body.removeChild(bgObj);
+}
+
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性 
+    siteType:"a20181206votem", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+    pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
+    pageName:"首页", //必填项:页面中文名 
+    project:"other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;默认other;
+    osact:0 //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+};
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

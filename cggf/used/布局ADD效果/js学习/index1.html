@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>数组取最小值,数组取最大值</title>
+		<style>
+			.c:before,.c:after {content:"";display:table;}
+			.c:after {clear:both;}
+			.c {zoom:1;}
+			.bg1 li{float:left;display:inline;width: 200px;height: 200px;background: #000;margin-bottom: 20px;color: #FFFFFF;font-size: 50px;text-align: center;line-height: 200px;margin-right: 20px;}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<ul class="bg1 c">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<script>
+			window.onload = function () {
+//				数组取最小值
+				function minArry(a){
+					return Math.min.apply(null,a)		
+				}
+				var arr1=[-1,5,9,46,3,7,656,897,52,0,145]
+				var minnum=minArry(arr1)
+				console.log(minnum)
+				var bg2=document.getElementsByTagName("li")
+				//通过name属性（getElementsByName）
+				console.log(bg2)
+				var i;
+				for (i = 0; i < bg2.length; i++) {
+				    bg2[i].innerHTML = ""+minnum;
+				}
+				
+//				数组取最大值
+//				function maxArry(a){
+//					return Math.max.apply(null,a)		
+//				}
+//				var maxnum=maxArry(arr1)
+//				var bg2=document.getElementsByTagName("li")
+//				//通过name属性（getElementsByName）
+//				console.log(bg2)
+//				var i;
+//				for (i = 0; i < bg2.length; i++) {
+//				    bg2[i].innerHTML = ""+maxnum;
+//				}
+			}
+		</script>
+	</body>
+</html>

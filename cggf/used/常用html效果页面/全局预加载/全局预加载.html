@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:before,q:after{content:'';}
+fieldset,img,abbr,acronym{border:0;}
+
+/*页面样式*/
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.c {zoom:1;}
+html{overflow-x: hidden;}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;text-align:justify;overflow-x: hidden;}
+a {text-decoration:none;overflow:hidden;}
+a:hover {text-decoration:none;}
+.wrap,#footer_ied {width:100%; min-width:1000px; _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?'1000px':'');}
+.wrap{background:url(ossweb-img/pc/rp1.jpg) no-repeat 50% 0;min-width:1000px;}
+.container {width:1000px;margin:0 auto;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.db{display:block;text-indent:-999em;}
+
+a {color: #333;}
+
+body {font-family: "Microsoft YaHei", SimSun, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;}
+
+html,body {width: 100%;height: 100%;/*background: #14375d;*/min-width: 1280px;}
+.page {width: 100%;height: 100%;position: relative;overflow: hidden;margin: 0 auto;max-height: 1080px;max-width: 1920px;}
+.star {width: 1920px;height: 1080px;position: absolute;left: 50%;top: 50%;margin-left: -960px;margin-top: -540px;}
+.bg {width: 100%;height: 100%;position: absolute;left: 0;top: 0;background-color: #000;display: none;opacity: 0;transition: all .4s;}
+.bg.show {opacity: 1;}
+.bg_main {position: absolute;left: 50%;top: 50%;margin-left: -1374px;margin-top: -1102px;width: 2748px;height: 2204px;background: url(ossweb-img/x2.jpg) center center no-repeat;animation: bg-animation 360s linear infinite;}
+.bg_cover {width: 100%;height: 850px;background: url(ossweb-img/cover_151e4b6.png) center center no-repeat;position: absolute;left: 0;bottom: 0;}
+.preload_line {display: block;width: 0;height: 247px;position: absolute;left: 50%;top: 50%;margin-left: -960px;margin-top: -123px;background: url(ossweb-img/preload-img_5f8b528.png) left center no-repeat;animation: preload-line 2s ease-in-out infinite;}
+.preload_line.opacity {animation: none;width: 1920px;opacity: .12;filter: alpha(opacity=12);}
+.preload_percent {width: 226px;height: 247px;color: #fff;font-size: 14px;line-height: 247px;text-align: center;position: absolute;left: 50%;top: 50%;margin-left: -113px;margin-top: -123px;}
+.preload {width: 100%;height: 100%;position: absolute;left: 0;top: 0;background: #14375d;}
+@keyframes preload-line {0% {width: 0;}60% {width: 1920px;opacity: 1;}100% {width: 1920px;opacity: 0;}}
+@keyframes bg-animation {from {transform: rotate(0deg)}to {transform: rotate(-360deg)}}
+</style>
+
+	</head>
+	<body>
+		<!--wrap-->
+	     <div class="page">
+	     	<!--loading-->
+            <div class="preload">
+                <i class="preload_line opacity"></i>
+                <i class="preload_line"></i>
+                <p class="preload_percent">LOADING <span>0</span>%</p>
+            </div>
+            <!--内容-->
+            <div class="bg">
+                <div class="bg_main"></div>
+                <canvas class="star"></canvas>
+                <div class="bg_cover"></div>
+            </div>
+        </div>
+        <script>
+            var rateNum = document.querySelector('.preload_percent span'),
+                imgPath = "ossweb-img/",
+                sourceArr = ['b1.png', 'b2.png', 'b3.png', 'b4.png', 'b5.png', 'b6.png', 'b7.png', 'b8.png', 'b9.png', 'b10.png', 'x2.jpg', 'cover_151e4b6.png', 'preload-img_5f8b528.png'];
+            for (var i = 0; i < sourceArr.length; i++) {
+                sourceArr[i] = imgPath + sourceArr[i] ;
+            };
+            var loadImage = function(path, callback) {
+                var img = new Image();
+                img.onload = function() {
+                    img.onload = null;
+                    callback(path);
+                }
+                img.src = path;
+            }
+            var imgLoader = function(imgs, callback) {
+                var len = imgs.length,
+                    i = 0;
+                while (imgs.length) {
+                    loadImage(imgs.shift(), function(path) {
+                        callback(path, ++i, len);
+                    });
+                }
+            }
+            imgLoader(sourceArr, function(path, curNum, total) {
+                var percent = curNum / total
+                rateNum.innerHTML = Math.floor(percent * 100);
+                if (percent == 1) {
+                    setTimeout(showPage, 500);
+                }
+            });
+            var showPage = function() {
+                document.querySelector('.preload_percent').innerHTML = "加载完成"
+                document.querySelector('.preload').style.display = 'none';
+                document.querySelector('.bg').style.display = 'block';
+                document.querySelector('.bg').style.opacity = '1';
+            }
+        </script>
+	</body>
+</html>

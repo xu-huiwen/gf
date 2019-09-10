@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>判断QQ,判断微信</title>
+	</head>
+	<body>
+		<script>
+			//判断QQ
+			function isQQ() {
+				var sUserAgent = navigator.userAgent;
+				var REGEXP_IOS_QQ = new RegExp("(iPad|iPhone|iPod).*? (IPad)?QQ\\/([\\d\\.]+)");
+				var REGEXP_ANDROID_QQ = new RegExp("\\bV1_AND_SQI?_([\\d\\.]+)(.*? QQ\\/([\\d\\.]+))?", "ig");
+				var isIphoneOs_QQ = REGEXP_IOS_QQ.test(sUserAgent);
+				var isAndroid_QQ = REGEXP_ANDROID_QQ.test(sUserAgent);
+				if (isIphoneOs_QQ || isAndroid_QQ) {
+					return "是QQ";
+				} else {
+					return "不是QQ";
+				}
+			}
+			var qq=isQQ();
+			alert(qq)
+			
+			//判断微信
+			function isWX() {
+				var ua = window.navigator.userAgent.toLowerCase();
+		   		return ua.match(/MicroMessenger/i) == 'micromessenger' ? "是微信" : "不是微信";
+			}
+			var wx=isWX();
+			alert(wx)
+		</script>
+	</body>
+</html>

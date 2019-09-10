@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>数组内有序排序</title>
+		<style>
+			.c:before,.c:after {content:"";display:table;}
+			.c:after {clear:both;}
+			.c {zoom:1;}
+			.list li{float:left;display:inline;width: 200px;height: 200px;background: #000;margin-bottom: 20px;color: #FFFFFF;font-size: 50px;text-align: center;line-height: 200px;margin-right: 20px;}
+		</style>
+	</head>
+	<body>
+		<ul class='list c'>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<script>
+			//数组内有序排序  从小到大
+			function sortArry(a){
+				return a.sort(function(x,y){
+					return x - y
+				});
+			}
+			var arr1=[-1,5,9,46,3,7,656,897,52,0,145]
+			var arr2=sortArry(arr1)
+//			console.log(arr2)
+			
+			从大到小
+			 var arr3 = arr1.sort(function (a, b) {
+		        return a < b ? 1 : a === b ? 0 : -1;
+		    });
+			var maxLevel = arr3[0];
+			console.log(arr3)
+			
+			
+			// 数组去重
+//			function removeArryRepeat(array){ 
+//				if(array.constructor !== Array) return;
+//				var r = []; 
+//				for(var i = 0, l = array.length; i < l; i++) { 
+//			 		for(var j = i + 1; j < l; j++) 
+//			  			if (array[i] === array[j]) j = ++i; 
+//					 r.push(array[i]); 
+//		 		} 
+//				return r; 
+//			}
+//			var arr3=[-1,5,9,0,3,7,656,5,52,0,145];
+//			var arr4=removeArryRepeat(arr3);
+//			console.log(arr4);
+		</script>
+	</body>
+</html>

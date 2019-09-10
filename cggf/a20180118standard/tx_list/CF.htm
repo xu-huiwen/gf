@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-TGideas">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<title>重构规范</title>
+<link href="../css/comm.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="hide">重构规范</h1>
+<div class="topbox">
+     <div class="container c">
+     	  <a href="javascript:;" class="logo db" title="西安奇境文化传播有限公司"><img src="../images/logo.jpg" alt="" /></a>
+     	  <ul class="toplist c">
+     	  	  <li><a href="../index.htm" title="腾讯">腾讯</a></li>
+     	  	  <li><a href="../畅游.htm" title="畅游">畅游</a></li>
+     	  	  <li><a href="../金山.htm" title="金山">金山</a></li>
+     	  	  <li><a href="../effect.htm" title="效果">效果</a></li>
+     	  	  <li><a href="../study.htm" title="学习内容">学习内容</a></li>
+     	  </ul>
+     </div>
+</div>
+<div class="wrap">
+	 <div class="container pat20">
+	 	   <h2 class="stit">穿越火线 分为：穿越火线端游（PC端 H5端），穿越火线手游（PC端 H5端）</h2>	
+	 	   <h2 class="stit"><a href="../demo/PC/CF.htm" target="_blank">CFdemo</a></h2>
+	 	   <h2 class="stit">
+	 	   	<a href="http://cf.qq.com/act/a20161202docs/index.html" target="_blank">CF新规范</a>
+	 	   	<span style="font-size: 16px; color: #f844e1;">（只适用于穿越火线端游前端重构规范，如与CP规范冲突，以此规范为主。）</span>
+	 	   </h2>
+	 	   <h3 class="stit">CF分离路径规范</h3>
+	 	   <div class="info">
+	 	   	 <p>端游的分离地址一样，手游的分离地址一样</p>
+	 	   	    注：如遇到换皮需求，路径用的是  <span>//game.gtimg.cn/images/cf/act/a文件夹名称/</span>则需问产品是否上传到act这里，一般cf用的是<span>//game.gtimg.cn/images/cf/cp/a文件夹名称/</span>
+	 	   	 <p>1.第一种情况：<span>css与js文件和htm文件同级，</span>如下图：</p>
+	 	   	 <img src="../images/pic_fl1.png" width="553" height="300"/>
+	 	   	 <p>2.第二种情况：<span>css与js有各自文件夹，</span>如下图：</p>
+	 	   	 <img src="../images/pic_fl2.png" width="555" height="287"/>
+	 	   </div>
+           
+	 	   <h2 class="stit">活动头部导航接入规范</h2>
+	 	   <h3 class="subtit">CF导航说明</h3>
+	 	   <div class="info">
+	 	   	    <p>1、<span>没有登录态的情况下：</span><br>引用js：&lt;script src="//cf.qq.com/act/a20170117top/cf-v3.js"></script&gt;</p>
+	 	   	    <p>2、<span>有登录态的情况下：</span><br><b>引用：</b>&lt;script src="//ossweb-img.qq.com/images/cf/title/cf.js"></script&gt;</p>
+	 	   	    <p><b>include导航：</b>&lt;!--#include virtual="/act/a20170117top/top-login-v2.htm"--&gt;</p>
+	 	   	    <p><span>注：这个里面包含milo.js,所以页面不用再引入milo.js文件。</span></p>
+	 	   	    <p><b>调用js：</b><span>提交时注释掉，如下图红框所示</span></p>
+	 	   	    <p>
+	 	   	    	<strong>
+	 	   	    		&lt;script&gt;<br>
+						var cftop = new cfTop({<br>
+							iAMSActivityId : '109064',<br>
+							iQueryFlowID : '355918',<br>
+							bIndFlowID : '355917',<br>
+							iLotteryFlowId : '341670',<br>
+							isShowLottery : 1,<br>
+							objClose : 'myGiftList_341670',<br>
+							callback: function(data){ console.log( data ) },<br>
+							isLoginshow: 1,<br>
+							failureFuc:function(){},<br>
+							giftBtnArr:'',<br>
+							isLoginshow: 1,<br>
+							activityList : ''<br>
+						});<br>
+					&lt;/script&gt;<br>
+	 	   	    	</strong>
+	 	   	   </p>
+	 	   </div>
+	 	   <img src="../images/pic-cf.png" alt="" width="640" height="388"/>
+	 	   <h2 class="stit">游戏内嵌页说明文档</h2>
+	 	   <div class="info">
+	 	   	    <p>1、注：内嵌页面<span>无头部，需要领取时间、活动时间、登录。</span>如图所示：</p>
+	 	   	    <img src="../images/pic_cf4.png" alt="" width="553" height="166"/>
+	 	   	    <p>2、内嵌重构地址的后缀统一用 <span>neiqian.html </span></p>
+	 	   </div>
+	 	   <h3 class="stit">CF游戏内合说明</h3>
+	 	   <div class="info">
+	 	   	    <p>1、注意设计稿的所有平台logo是否最新，目前最新如下图所示</p>
+	 	   	    <img src="../images/pic_cf5.png" alt="" width="554" height="198"/>
+	 	   	    <p>2、有几个平台就做几个内合，有公共部分的提出来用inc引入</p>
+	 	   	    <div class="c">
+	 	   	    	 <img src="../images/pic_cf1.png" alt="" width="221" height="177" class="fl"/>
+	 	   	    	 <img src="../images/pic_cf2.png" alt="" width="218" height="54" class="fl ml"/>
+	 	   	    </div>
+	 	   	    <p>3、<b><em>引入方式：</em></b>&lt;!--#include virtual="inc/lq.inc" --&gt; </p>
+	 	   	    <p>4、内合页只需要修改第一模块内容，要么标题不一样，要么道具不一样。（有的内合需要加上每个平台的logo在头部）</p>
+	 	   	    <p>5、内合页的图片和pc的图片包是一个包，内嵌一个图片包。<img src="../images/pic_cf3.png" alt="" /></p>
+	 	   	    <p>6、<span>有时需要静态文件（不具备功能，页面在活动日期前上线，只做展示），将所有按钮加上alert(‘敬请期待！’)；请将静态文件单独提一个包，非静态文件一个包发在组里。</span></p>
+	 	   	    <p>7、内合命名规范：</p>
+	 	   	    <p>管家后缀：guanjia<br>会员后缀：vip<br>TGP后缀：tgp<br>浏览器后缀：browser<br>蓝钻后缀：lz<br>粉钻后缀：fz<br>qq游戏后缀：qqgame<br>黄钻后缀：hz</p>
+	 	   	    <p>8、所有提出来的公共部分页面要用.shtml</p>
+	 	   </div>
+	 	   <h2 class="stit">CF分离路径</h2>
+	 	   <div class="info">
+	 	   	    <p>//game.gtimg.cn/images/cf/cp/a文件夹/</p>
+	 	   </div>
+	 </div>
+</div>
+</body>
+
+</html>

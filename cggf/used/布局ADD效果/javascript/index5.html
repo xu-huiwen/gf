@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//异步加载函数
+			//为封装函数1    这种较好
+			function loadScript(url,callback){        //callback  调用函数
+				var script = document.createElement('script')
+				script.type="text/javascript";
+				if(script.readyState){
+					script.onreadystatechange=function(){ //ie
+						if(script.readyState == "complete" || script.readyState == "loaded"){
+							tools[callback]()
+						}
+					}
+				}else{
+					script.onload = function(){          //兼容其他浏览器
+						tools[callback]()
+					}
+				}
+				script.src= url;  //先绑定事件后加载
+				document.head.appendChild(script)
+			}
+			loadScript("test.js","test")
+			
+			
+			
+			
+			
+			
+			
+			//为封装函数2
+//			function loadScript(url,callback){        //callback  调用函数
+//				var script = document.createElement('script')
+//				script.type="text/javascript";
+//				if(script.readyState){
+//					script.onreadystatechange=function(){ //ie
+//						if(script.readyState == "complete" || script.readyState == "loaded"){
+//							callback();
+//						}
+//					}
+//				}else{
+//					script.onload = function(){     //兼容其他浏览器
+//						callback();
+//					}
+//				}
+//				script.src= url;  //先绑定事件后加载
+//				document.head.appendChild(script)
+//			}
+//			loadScript("test.js",function(){
+//				test1();
+//			})
+
+			</script>
+	</body>
+</html>

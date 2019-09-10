@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:before,q:after{content:'';}
+fieldset,img,abbr,acronym{border:0;}
+
+
+/*页面样式*/
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.c {zoom:1;}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';text-align:justify;padding-top:42px;background: #;overflow-x: hidden;}
+a {text-decoration:none;overflow:hidden;}
+a:hover {text-decoration:none;}
+.wrap1,.wrap,#footer_ied{min-width:1000px;width:100%;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?'1000px':'');}
+.wrap {background:url(ossweb-img/rp2.jpg) no-repeat 50% 910px;overflow: hidden;}
+.wrap1 {background:url(ossweb-img/rp1.jpg) no-repeat 50% 0;}
+.container {width:1000px;margin:0 auto;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.db{display:block;text-indent:-999em;}
+
+
+.listflex{display: flex;display: -webkit-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;justify-content: space-between;-webkit-justify-content: space-between;}    /*两边对齐,中间间隔相等*/
+.list1{width: 500px;margin: 0 auto;background: red;}
+.list1 li{width: 20px;height: 20px;background: #000;font-size: 18px;color: #FFFFFF;text-align: center;line-height: 20px;}
+
+
+.p_ct {display: flex;min-height: 1.4rem;align-items: center;}
+.p_ct p {font-size: 0.22rem;color: #4a332b;line-height: 0.28rem;width: 100%;text-align: center;font-weight: bold;}
+.p_ct2 {padding: 0.2rem 0;justify-content: center;}/*位于容器中心*/
+		</style>
+	</head>
+	<body>
+		<ul class="list1 listflex">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+		</ul>
+		
+		<div class="p_ct">
+			<p>已经没有召唤机会了，<br>要用50积分召唤一次吗？</p>
+		</div>
+		
+		
+		<div class="p_ct p_ct2">
+			<p>你的完成任务排名是XXXX名！<br>很遗憾没有获得抽奖资格。<br>快邀请<span>新用户</span>让他们搭建鹊桥，有机会让Q币<br>翻倍哦！</p>
+		</div>
+		
+	</body>
+</html>

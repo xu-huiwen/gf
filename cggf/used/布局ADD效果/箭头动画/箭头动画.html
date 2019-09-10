@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+*{margin: 0;padding: 0;list-style: none;}
+body{background: #000000;}
+.sp{background: url(sp.png) no-repeat;}
+.bar-s em {background-position: -660px -740px;width: 39px;height: 54px;position: absolute;top: 0;left: 0;}
+.bar-s .s1 {animation: sRight 2s 1s linear both infinite;-webkit-animation: sRight 2s 1s linear both infinite;}
+.bar-s .s2 {animation: sRight 2s linear both infinite;-webkit-animation: sRight 2s linear both infinite;}
+@keyframes sRight{
+	from{transform: translateX(0);opacity: 1;}
+	to{transform: translateX(40px);opacity: 0;}
+}
+@-webkit-keyframes sRight{
+	from{transform: translateX(0);opacity: 1;}
+	to{transform: translateX(40px);opacity: 0;}
+}
+@-moz-keyframes sRight{
+	from{transform: translateX(0);opacity: 1;}
+	to{transform: translateX(40px);opacity: 0;}
+}
+@-ms-keyframes sRight{
+	from{transform: translateX(0);opacity: 1;}
+	to{transform: translateX(40px);opacity: 0;}
+}
+</style>
+	</head>
+	<body>
+		<p class="bar-s pr">
+			<em class="sp db s1"></em>
+			<em class="sp db s2"></em>
+			<em class="sp db s3"></em>
+		</p>
+	</body>
+</html>

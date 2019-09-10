@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-TGideas">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<title>重构规范</title>
+<link href="../css/comm.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="hide">重构规范</h1>
+<div class="topbox">
+     <div class="container c">
+     	  <a href="javascript:;" class="logo db" title="西安奇境文化传播有限公司"><img src="../images/logo.jpg" alt="" /></a>
+     	  <ul class="toplist c">
+     	  	  <li><a href="../index.htm" title="腾讯">腾讯</a></li>
+     	  	  <li><a href="../畅游.htm" title="畅游">畅游</a></li>
+     	  	  <li><a href="../金山.htm" title="金山">金山</a></li>
+     	  	  <li><a href="../effect.htm" title="效果">效果</a></li>
+     	  	  <li><a href="../study.htm" title="学习内容">学习内容</a></li>
+     	  </ul>
+     </div>
+</div>
+<div class="wrap">
+	 <div class="container pat20">
+	 	   <h2 class="stit"><a href="../demo/PC/魂斗罗.htm" target="_blank">魂斗罗demo</a></h2>
+	 	   <h2 class="stit">魂斗罗 分离路径</h2>
+	 	   <div class="info">
+	 	   	    <p><span>//game.gtimg.cn/images/hdl/cp/a2018XXX/</span></p>
+	 	   </div>
+	 	   <h2 class="stit">魂斗罗注意事项</h2>
+	 	   <div class="info">
+	 	   	    <p>1、用<span>include</span>在页面中引入<span>http://hdl.qq.com/web20170413/inc/ztfoot.shtml</span> <br>这个文件中已经包含&lt;script src="//game.gtimg.cn/images/js/2018foot/foot.js "&gt;</script></p>
+	 	   	    <p>2、该js会在页面上面自动生成foot信息的dom结构，需要重构同学自己写css调整foot的样式用这个，怕下回又改什么js地址就坑爹了。用这个统一include，然后下回要改我直接在这里面改</p>
+	 	   	     <p>3、涉及到引用 <b>ossweb-img.qq.com/images/spiderMediaData/hdl_new/mediaURLData.js</b> 的的要改用以下js：<br>
+	 	   	     	<span>//ossweb-img.qq.com/images/spiderMediaData/hdl_new/mediaURLData_https.js</span></p>
+	 	   </div>
+	 	   <p class="tips">注：一开始需要引入js：&lt;script src="//game.gtimg.cn/images/js/2018foot/foot.js "&gt;，样式调整好后删除即可。</p>
+	 </div>
+</div>
+</body>
+
+</html>

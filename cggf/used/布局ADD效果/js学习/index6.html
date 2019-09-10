@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var arr=[];
+			var a={};
+			//判断是否为数组或者对象
+			function Judge(objtype){
+				var toStr=Object.prototype.toString;
+				var arrStr = "[object Array]";
+					if(toStr.call(objtype) == arrStr){
+						alert("这是个数组");
+					}else{
+						alert("这是个对象");
+					}
+			}
+			Judge(a)
+			
+			
+			//遍历
+//			for(var prop in obj){}
+		</script>
+	</body>
+</html>

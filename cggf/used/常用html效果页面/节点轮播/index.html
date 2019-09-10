@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+body{font-family:"\5FAE\8F6F\96C5\9ED1",Helvetica;-webkit-text-size-adjust:none;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong,i{font-weight:normal;font-style:normal;}
+a {text-decoration:none;}
+.hide {display:none;}
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+.pr {position:relative;}
+.pa {position:absolute;}
+img{border: none;}
+:focus{outline: none;}
+.db {display:block;text-indent:-999em;}
+html,body{width: 100%;background-color: #fff;}
+.sp{ background: url(ossweb-img/sp.png) no-repeat;}
+
+/*slider*/
+.slider_bx{width:944px;margin: 27px auto 0;background: #17293c;height: 260px;}		
+.picScroll-left{ overflow:hidden; background: #101623;}
+.picScroll-left .hd .prev{ display:block;  width:26px; height:38px;cursor:pointer; background-position:-445px -30px;top:95px ;left: -40px;}
+.picScroll-left .hd .next{ display:block;  width:26px; height:38px;cursor:pointer; background-position:-525px -31px;top:95px ;right: -40px;}
+.picScroll-left .bd ul{ overflow:hidden; zoom:1; }
+.picScroll-left .bd ul li{float:left; _display:inline; overflow:hidden;text-align:center;width: 236px;height: 223px;padding-top: 15px;  }
+
+.picScroll-left .hd ul li {
+    float: left;
+    width: 9px;
+    height: 9px;
+    overflow: hidden;
+    margin-right: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background: red;
+}
+
+.picScroll-left .hd ul li.on {
+    background: blue;
+}
+		</style>
+	</head>
+	<body>
+		<div class="slider_bx pr">
+			<div class="picScroll-left">
+				<div class="hd">
+					<a class="next sp pa"></a>
+					<a class="prev sp pa"></a>
+					<ul>
+						<li class="on">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+					</ul>
+				</div>
+				<div class="bd">
+					<ul class="picList">
+						<li>
+							<img src="ossweb-img/v1.jpg" alt="" />
+						</li>
+						<li>
+							<img src="ossweb-img/v2.jpg" alt="" />
+						</li>
+						<li>
+							<img src="ossweb-img/v3.jpg" alt="" />
+						</li>
+						<li>
+							<img src="ossweb-img/v4.jpg" alt="" />
+						</li>
+						<li>
+							<img src="ossweb-img/v5.jpg" alt="" />
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+		<script src="jquery.SuperSlide.2.1.1.js"></script>
+		<script>
+			jQuery(".picScroll-left").slide({
+				titCell:".hd ul",
+				mainCell:".bd ul",
+				autoPage:true,            //停止自动运行
+				effect:"leftLoop",      //效果
+				scroll:1,            //滚动个数
+				vis:4          //可视个数
+			});
+		</script>
+	</body>
+</html>

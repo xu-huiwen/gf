@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="gbk" />
+		<meta name="applicable-device" content="mobile">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta content="yes" name="mobile-web-app-capable">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta name="robots" content="all" />
+		<meta name="author" content="Tencent-TGideas" />
+		<meta name="keywords" content="英雄联盟,LOL,英雄联盟周边商城,7周年,周年庆,Q币,T恤,毛绒,限定手办,仙剑皮肤" />
+		<meta name="description" content="英雄联盟7周年狂欢盛典，周边特别献礼。首款LOL情侣手办全球首发，参与商城点亮活动即有机会免费获得仙剑皮肤、Q币手办等诸多奖品，更多精彩，尽在英雄联盟周边商城。" />
+		<title>英雄联盟七周年-周边狂欢盛典</title>
+		<script>
+			if(!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+				//window.location.href = "//lolriotmall.qq.com/cp/a20180718master/index.htm" + location.search;
+			}
+			(function(win) {
+				if(!win.addEventListener) return;
+				var html = document.documentElement;
+
+				function setFont() {
+					var cliWidth = html.clientWidth;
+					html.style.fontSize = 100 * (cliWidth / 750) + 'px';
+				}
+				win.addEventListener('resize', setFont, false);
+				setFont();
+			})(window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="//mall.qq.com/act/a20180718master/mobile.css" />
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="top_link">
+				<a href="javascript:;" class="logo_game" ontouchend="PTTSendClick('logo','logo_game','英雄联盟logo');">英雄联盟</a>
+				<em class="logo_six" ontouchend="PTTSendClick('logo','logo_six','7周年logo');">7周年</em>
+				<a href="//lolriotmall-wx.qq.com/act/a20180718master/mobile.html?plat_support=all" class="logo_shop" target="_blank" ontouchend="PTTSendClick('logo','logo_shop','周边商城');">周边商城</a>
+				<nav class="nav_list">
+					<a href="//lolriotmall-wx.qq.com/act/a20180808love/mobile.html" ontouchend="PTTSendClick('nav','nav1','放肆爱');">
+						<span>放肆爱</span>
+						<em>8.08</em>
+					</a>
+					<a href="javascript:alert('该活动还未开启，敬请期待哦~');" ontouchend="PTTSendClick('nav','nav2','享生活');">
+						<span>享生活</span>
+						<em>8.23</em>
+					</a>
+					<a href="javascript:alert('该活动还未开启，敬请期待哦~');" ontouchend="PTTSendClick('nav','nav3','忆美好');">
+						<span>忆美好</span>
+						<em>8.30</em>
+					</a>
+					<a href="javascript:alert('该活动还未开启，敬请期待哦~');" ontouchend="PTTSendClick('nav','nav4','去开黑');">
+						<span>去开黑</span>
+						<em>9.07</em>
+					</a>
+					<a href="javascript:alert('该活动还未开启，敬请期待哦~');" ontouchend="PTTSendClick('nav','nav5','去远方');">
+						<span>去远方</span>
+						<em>9.13</em>
+					</a>
+				</nav>
+			</div>
+			<header>
+				<h1 class="hide">因为热爱所以陪伴 7周年</h1>
+				<p class="hide">七周年狂欢盛典 多款全新周边来袭！8.8-9.16</p>
+				<audio id="audio" loop="loop" src="//game.gtimg.cn/images/zbdaoju/act/a20180718master/m/sound.mp3"></audio>
+				<a href="javascript:;" class="music sp play"></a>
+			</header>
+			<section class="part1">
+				<div class="login">
+					<div id="unlogin">亲爱的召唤师，请
+						<a href="javascript:;" id="dologin">[登录]</a>
+					</div>
+					<div style="display:none;" id="logined">欢迎您，
+						<span id="userinfo" style="display: none;"></span>
+						<span id="userinfo2" style="display: none;"></span>
+						<span id="userinfo3"></span>
+						<a href="javascript:;" id="modifyuser" style="display: none;">[切换账号]</a>
+					</div>
+				</div>
+				<h2 class="tit1 tit">点亮卡纸赢取 七周年限定皮肤</h2>
+				<p class="text_sm">每个子活动开启后即可点亮！每张卡纸会随机点亮五种图案中的一种哦！<br />当点亮五张同款卡纸时，即可召唤大奖！ </p>
+				<ul class="card_list">
+					<li data-jf="2250" data-pick="2255" data-time="0808">
+						<a href="javascript:;" class="btn_pick" ontouchend="PTTSendClick('btn','btn_pick1','pick1');">pick me up</a>
+						<a href="javascript:;" class="cur" ontouchend="PTTSendClick('btn','btn_light1','');"></a>
+						<p class="text_light1 text">8月8日 开启点亮</p>
+						<p class="text_num _2250">点亮剩余次数：0</p>
+					</li>
+					<li data-jf="2251" data-pick="2256" data-time="0823" class="list_right">
+						<a href="javascript:pop('pop1');" class="btn_pick" ontouchend="PTTSendClick('btn','btn_pick2','pick2');">pick me up</a>
+						<a href="javascript:;" class="cur" ontouchend="PTTSendClick('btn','btn_light2','享生活');">享生活</a>
+						<p class="text_light2 text">8月23日 开启点亮</p>
+						<p class="text_num _2251">点亮剩余次数：0</p>
+					</li>
+					<li data-jf="2252" data-pick="2257" data-time="0830">
+						<a href="javascript:pop('pop3');" class="btn_pick" ontouchend="PTTSendClick('btn','btn_pick3','pick3');">pick me up</a>
+						<a href="javascript:;" class="cur" ontouchend="PTTSendClick('btn','btn_light3','忆美好');">忆美好</a>
+						<p class="text_light3 text">8月30日 开启点亮</p>
+						<p class="text_num _2252">点亮剩余次数：0</p>
+					</li>
+					<li data-jf="2253" data-pick="2258" data-time="0907" class="list_right">
+						<a href="javascript:;" class="btn_pick" ontouchend="PTTSendClick('btn','btn_pick4','pick4');">pick me up</a>
+						<a href="javascript:;" class="cur" ontouchend="PTTSendClick('btn','btn_light4','去开黑');">去开黑</a>
+						<p class="text_light4 text">9月7日 开启点亮</p>
+						<p class="text_num _2253">点亮剩余次数：0</p>
+					</li>
+					<li data-jf="2254" data-pick="2259" data-time="0913" class="list_right">
+						<a href="javascript:;" class="btn_pick" ontouchend="PTTSendClick('btn','btn_pick5','pick5');">pick me up</a>
+						<a href="javascript:;" class="cur" ontouchend="PTTSendClick('btn','btn_light5','去远方');">去远方</a>
+						<p class="text_light5 text">9月13日 开启点亮</p>
+						<p class="text_num _2254">点亮剩余次数：0</p>
+					</li>
+				</ul>
+			</section>
+			<section class="part2">
+				<h2 class="tit2 tit">点亮卡纸 赢取奖品</h2>
+				<p class="text_sm">
+					每种奖品数量有限，先点亮五张就可以先领取哦<br /> 您在本活动获得的皮肤道具,Q币,实物奖励,请前往
+					<a href="//m.mall.qq.com/lol/receive">"礼包领取中心"</a>领取<br /> 无门槛优惠券和免邮券会在领取后直接下发到商城账户
+				</p>
+				<a href="javascript:;" class="prize_link1" ontouchend="PTTSendClick('btn','prize_link1','领取七周年限定皮肤');">
+					<!--点击领取时改变下面em的类名切换不同的领取状态-->
+					<img src="//game.gtimg.cn/images/zbdaoju/act/a20180718master/m/pic_dj1.png" alt="七周年限定皮肤" />
+					<em data-lott="1" class="no-draw1 sp">点击领取</em>
+				</a>
+				<a href="javascript:pop('pop13');" class="prize_link2" ontouchend="PTTSendClick('btn','prize_link2','领取英雄手办');">
+					<img src="//game.gtimg.cn/images/zbdaoju/act/a20180718master/m/pic_dj2.png" alt="英雄手办" />
+					<em data-lott="2" class="no-draw2 sp">点击领取</em>
+				</a>
+				<a href="javascript:pop('pop12');" class="prize_link3" ontouchend="PTTSendClick('btn','prize_link3','领取T恤');">
+					<img src="//game.gtimg.cn/images/zbdaoju/act/a20180718master/m/pic_dj3.png" alt="T恤" />
+					<em data-lott="3" class="no-draw3 sp">点击领取</em>
+				</a>
+				<p class="prize_list c">
+					<a href="javascript:;" class="prize_link4" ontouchend="PTTSendClick('btn','prize_link4','领取20元优惠券');">
+						<img src="//game.gtimg.cn/images/zbdaoju/act/a20180718master/m/pic_dj4.png" alt="20元优惠券" />
+						<em data-lott="4" class="no-draw4 sp sp2">点击领取</em>
+					</a>
+					<a href="javascript:;" class="prize_link5" ontouchend="PTTSendClick('btn','prize_link5','领取免邮券');">
+						<img src="//game.gtimg.cn/images/zbdaoju/act/a20180718master/m/pic_dj5.png" alt="免邮券" />
+						<em data-lott="5" class="no-draw5 sp sp2">点击领取</em>
+					</a>
+				</p>
+			</section>
+			<section class="par_act">
+				<a href="//lol.qq.com/act/a20180808pcpick/index.html" class="act_link" target="_blank" ontouchend="PTTSendClick('link','act_link','广告链接');">
+					<img src="//game.gtimg.cn/images/zbdaoju/act/a20180718master/m/act_img.jpg" alt="" />
+				</a>
+				
+			</section>
+			<!--新增模块 2018.07.25 start-->
+			<section class="par_com" style="display: block;">
+				<h2 class="tit_com">晒图评论有奖</h2>
+				<div class="com_main c">
+					<p class="com_text">2018年8月8日-9月30日七周年庆活动期间，所有在<strong>英雄联盟官方周边商城</strong>购买新品并带图评论的玩家，我们将每周从中挑选出精彩评论回馈<strong>20Q币/人</strong>的专属福利，获奖用户将于<strong>每周五于掌盟萌友圈周边商城官方号</strong>公布。</p>
+					<p class="code_quan">
+						<img src="//game.gtimg.cn/images/zbdaoju/act/a20180718master/m/code_quan.jpg" alt="蒙友圈" />
+						<em>扫码关注萌友圈<br /><strong>更多活动抢先看</strong></em>
+					</p>
+				</div>
+			</section>
+			<!--新增模块 2018.07.25 end-->
+			<section class="part3">
+				<h2 class="tit3 tit">福利订阅中心</h2>
+				<ul class="take_list c">
+					<li>
+						<em class="num_icon1 sp">01</em>
+						<p class="take_text">
+							<strong>开启新品上架订阅</strong>
+							<span>新品上架第一时间获取消息<br />新品周边抢先知道</span>
+						</p>
+						<a href="javascript:;" class="btn_take sp new-order" ontouchend="PTTSendClick('btn','btn_take1','新品订阅');">新品订阅</a>
+					</li>
+					<li>
+						<em class="num_icon2 sp">02</em>
+						<p class="take_text">
+							<strong>开启促销活动订阅</strong>
+							<span>有促销活动第一时间获取消息<br />优惠信息随时掌控</span>
+						</p>
+						<a href="javascript:;" class="btn_take sp sale-order" ontouchend="PTTSendClick('btn','btn_take2','促销订阅');">促销订阅</a>
+					</li>
+				</ul>
+			</section>
+			<section class="part4">
+				<h2 class="tit4 tit">活动规则</h2>
+				<ul class="rule_list">
+					<li>
+						<p>Q1：我要怎么做才能点亮卡纸呢？需要满足什么条件吗？</p>
+						<p><em>A：</em>参与点亮活动需要登录账号，QQ账号和微信账号是分开的哦。只要卡纸点亮活动开启就可以直接点击卡纸进行点亮哦，每张卡纸每个账号都有一次免费点亮的机会~</p>
+					</li>
+					<li>
+						<p>Q2：为什么有些卡纸无法点亮？</p>
+						<p><em>A：</em>活动未开始前，卡纸是不能点亮的哦。每张卡纸开始点亮的时间是不一样的。</p>
+					</li>
+					<li>
+						<p>Q3：点亮卡纸的话会有几种可能的纸面结果？</p>
+						<p><em>A：</em>每张卡纸点亮的时候都会有5种可能的结果，只有卡纸的纸面结果符合对应条件才能兑换奖品。</p>
+					</li>
+					<li>
+						<p>Q4：点亮卡纸后我对纸面结果不满意，可以更换吗？</p>
+						<p><em>A：</em>购买七周年相关产品可以获得重新点亮的机会，每张卡纸最多可以被重新点亮三次呢。</p>
+					</li>
+					<li>
+						<p>Q5：购买哪些产品可以获得重新点亮卡纸的机会呢？</p>
+						<p><em>A：</em>每张卡纸对应一个子活动，成功购买每张卡纸对应子活动中的任意一件新品都可以获得一次重新点亮该卡纸的机会。</p>
+					</li>
+					<li>
+						<p>Q6：怎么重新点亮卡纸呢？</p>
+						<p><em>A：</em>在获得机会之后，可返回主页点击卡纸进行重新点亮。</p>
+					</li>
+					<li>
+						<p>Q7：重新点亮卡纸一定能获得我想要的卡纸吗？</p>
+						<p><em>A：</em>卡纸是随机点亮的哦，能不能获得想要的卡纸就要看你的运气啦。</p>
+					</li>
+					<li>
+						<p>Q8：点亮活动会持续多长时间呢？</p>
+						<p><em>A：</em>每张卡纸的点亮时间都是从该卡纸点亮开启到9.30活动结束。在此期间，玩家可以点亮卡纸和多次重新点亮卡纸。</p>
+					</li>
+					<li>
+						<p>Q9：如何能够获得奖励？</p>
+						<p><em>A：</em>只有成功点亮五张卡纸才能根据牌面情况领取相应的奖励哦。</p>
+					</li>
+					<li>
+						<p>Q10：什么时候可以开始领取奖励呢？</p>
+						<p><em>A：</em>点亮五张卡纸之后就可以马上领取奖励，但是每个账号限领一次奖品，领奖之后不可再更换牌纸了哦。</p>
+					</li>
+					<li>
+						<p>Q11：每种纸面情况都只能获得对应的奖品吗？</p>
+						<p><em>A：</em>每种纸面情况都可以在能领取的奖励中选择一种进行领取，不可反悔哦。且每种奖品数量有限，先点亮可以先领取哦~</p>
+					</li>
+					<li>
+						<p>Q12：优惠券和免邮券的类型是怎么样的呢？</p>
+						<p><em>A：</em>优惠券是20元无门槛优惠券，在有效期内，除新品外全场通用。免邮券为单次免邮券，在有效期内可使用一次。</p>
+					</li>
+					<li>
+						<p>Q13：我可以多次重复参与点亮活动吗？</p>
+						<p><em>A：</em>不可以的哦，每个账号只能参与一次活动，在领取奖励之后不能重复参与活动哦。</p>
+					</li>
+					<li>
+						<p>Q14：T恤和手办的款式就是图中的款式吗？可以自由挑选吗？</p>
+						<p><em>A：</em>不是哦，图中只是示意图，当你选择了T恤或手办之后，款式都是随机的哦~ T恤的尺码玩家可以自行选择，我们会尽量满足哈~</p>
+					</li>
+					<li>
+						<p>Q15：实物奖品的运费需要我来承担吗？会发什么快递呢？</p>
+						<p><em>A：</em>是的，实物奖品都会使用顺丰发货哦，运费需要由玩家承担哦~ 如果您未支付运费，我们将不会发放奖品，视为您选择放弃奖品哦。</p>
+					</li>
+					<li>
+						<p>Q16：我需要在什么时间内领取奖品，领取奖品之后多长时间可以获得呢？</p>
+						<p><em>A：</em>道具奖品、实物奖品和Q币将发放至领取中心，请在点击领取奖品之后前往礼包领取中心进行领取。领取过程中，玩家须根据要求填写收货地址、或绑定游戏账号、大区，或绑定QQ号，如活动结束前未领取则视为放弃该道具。优惠券和免邮券将在页面领取后立即发放至玩家登录商城的账号中，如活动结束前未按要求领取则视为放弃该奖品。</p>
+					</li>
+					<li>
+						<p><strong>参与本活动并领取奖品后，您购买的商品将不支持七天无理由退货，如商品有质量问题，可进行同款商品换货。中奖后如进行退货操作，则取消领取奖品的资格。</strong></p>
+					</li>
+				</ul>
+			</section>
+			<section class="part5 c" style="display: none;">
+				<div class="shop_left">
+					<h2 class="tit5 tit">周边商城</h2>
+					<p class="shop_text">扫码进入英雄联盟官方周边商城</p>
+				</div>
+				<p class="shop_right">
+					<img src="//game.gtimg.cn/images/zbdaoju/act/a20180718master/m/code_img.jpg" title="周边微信商城二维码" />
+					<img src="//game.gtimg.cn/images/zbdaoju/act/a20180718master/m/code_xcx.jpg" title="小程序二维码" />
+				</p>
+			</section>
+		</div>
+		<!-- 无法点亮弹窗 End-->
+		<!-- 无法点亮弹窗  Start-->
+		<div class="pop pop1" id="pop1" style="display:none">
+			<p class="pcon">召唤师<br>该活动还未开启，无法点亮卡纸</p>
+			<p class="ptips">您可以在活动开启后再来进行点亮哦！</p>
+			<a class="pop_close" href="javascript:closeDialog();" title="关闭">×</a>
+		</div>
+		<!-- 无法点亮弹窗 End-->
+		<!-- 点亮弹窗-->
+		<div class="pop pop2" id="pop2" style="display:none">
+			<p class="pcon">召唤师<br>恭喜您成功点亮第1张卡纸！</p>
+			<p class="ptips">记得关注后续活动点亮更多卡纸哦~</p>
+			<a href="javascript:;" class="pbtn1 sp" ontouchend="PTTSendClick('btn','pbtn11','点我购买商品可重新点亮卡纸');">点我购买商品可重新点亮卡纸</a>
+			<a class="pop_close" href="javascript:closeDialog();" title="关闭">×</a>
+		</div>
+		<!-- 全部点亮弹窗-->
+		<div class="pop pop2" id="pop3" style="display:none">
+			<p class="pcon">召唤师<br>确认重新点亮该卡纸吗</p>
+			<p class="ptips">已点亮的卡纸图案会随机切换成另一个图案</p>
+			<a href="javascript:w.callback();" class="pbtn1 sp" ontouchend="PTTSendClick('btn','btn_lq1','确认');">确认</a>
+			<a class="pop_close" href="javascript:closeDialog();" title="关闭">×</a>
+		</div>
+		<!-- 获取点亮机会弹窗 -->
+		<div class="pop pop2" id="pop5" style="display:none">
+			<p class="pcon">召唤师<br>很可惜您没有重新点亮的机会！</p>
+			<p class="ptips">重新点亮卡纸的机会有3次哦~</p>
+			<a href="javascript:;" class="pbtn1 sp" ontouchend="PTTSendClick('btn','pbtn14','点我购买商品可重新点亮卡纸');">点我购买商品可重新点亮卡纸</a>
+			<a class="pop_close" href="javascript:closeDialog('pop5')" title="关闭">×</a>
+		</div>
+		<!-- 奖品已领完弹窗-->
+		<div class="pop pop1" id="pop6" style="display:none">
+			<p class="pcon">召唤师<br>领取成功~</p>
+			<a href="//m.mall.qq.com/lol/receive" target="_blank" class="pbtn1 sp" ontouchend="PTTSendClick('btn','pbtn15','前往礼包领取中心');">前往礼包领取中心</a>
+			<a class="pop_close" href="javascript:closeDialog();" title="关闭">×</a>
+		</div>
+		<!-- 公共弹窗-->
+		<div class="pop pop1" id="pop7" style="display:none">
+			<p class="pcon">召唤师<br></p>
+			<a href="javascript:closeDialog();" class="pbtn1 sp" ontouchend="PTTSendClick('btn','pbtn16','确定');">确定</a>
+			<a href="javascript:closeDialog();" class="pop_close" title="关闭">×</a>
+		</div>
+		<!-- 领取奖励确认弹框 -->
+		<div class="pop pop1" id="pop11" style="display:none">
+			<p class="pcon">召唤师<br>优惠券将领取至当前账号~</p>
+			<a href="javascript:w.callback();" class="pbtn1 sp" ontouchend="PTTSendClick('btn','btn_lq2','马上领取2');">好的，马上领取</a>
+			<a href="javascript:closeDialog()" class="pop_close" title="关闭">×</a>
+		</div>
+
+		<!-- 领取T恤弹窗-->
+		<div class="pop pop3" id="pop12" style="display:none;height: 4.6rem;">
+			<p class="pcon">召唤师<br />你可以随机获取一款T恤哦</p>
+			<p class="ptips">款式随机，无法选择说明该奖品已领完</p>
+			<div class="reward_list reward_list1 reward_on">
+				<img src="//game.gtimg.cn/images/zbdaoju/act/a20180718master/m/pic_tx.jpg" alt="T恤" />
+				<p class="reward_link">
+					<i class="icon_gou sp"></i>
+					<em data-size="">点击选择尺码</em>
+				</p>
+				<p class="size_list">
+					<span data-size="31">XS</span>
+					<span data-size="32">S</span>
+					<span data-size="33">M</span>
+					<span data-size="34">L</span>
+					<span data-size="35">XL</span>
+					<span data-size="36">XXL</span>
+				</p>
+			</div>
+			<a href="javascript:w.callback();" class="btn_sub sp" ontouchend="PTTSendClick('btn','btn_sub1','提交1');">提交</a>
+			<a href="javascript:closeDialog()" class="pop_close" title="关闭">×</a>
+		</div>
+		<!-- 当用户领取的是Q币/优惠券奖励-->
+		<div class="pop pop3" id="pop13" style="display:none;height: 3rem;">
+			<p class="pcon">召唤师<br /></p>
+			<p class="ptips">奖品数量有限，先到先得</p>
+			<a href="javascript:w.callback1();" class="pbtn1 sp" ontouchend="PTTSendClick('btn','pbtn112','支付运费2');">领取20Q币</a>
+			<a href="javascript:w.callback2();" class="pbtn1 sp" ontouchend="PTTSendClick('btn','pbtn113','填写收货地址2');">领取20元优惠券</a>
+			<a href="javascript:closeDialog()" class="pop_close" title="关闭">×</a>
+		</div>
+		<!-- 新增遮罩层 -->
+		<div class="pop-mask"></div>
+
+		<!-- 新增绑定电话弹窗 -->
+		<div class="pop-subs" id="pop_bang" style="display:none;">
+			<div class="pop-subs-con">
+				<h3 class="pop-subs-tit">绑定电话号码</h3>
+				<div class="pop-subs-pitbox pop-bang">
+					<input class="uitem-input" value="" type="text" placeholder="请输入手机号" name="phone" verifyreg="^.{1,20}$" verifyerrmsg="" id="phoneNumber">
+					<div class="form-input-validate">
+						<a href="javascript:" title="发送验证码" class="form-validate-send" onclick="getVerifyCode()">发送验证码</a>
+						<a href="javascript:" title="倒计时" class="form-validate-count" style="display: none;">60S后重试</a>
+					</div>
+				</div>
+				<div class="pop-subs-pitbox pop-bang">
+					<input class="uitem-input" value="" type="text" placeholder="请输入验证码" name="phone" verifyreg="^.{1,20}$" verifyerrmsg="" id="verifyCode">
+				</div>
+				<div class="pop-subs-btn clearf">
+					<a href="javascript:hidepop('pop_bang');" class="fl btn-cancel" title="取消">取消</a>
+					<a href="javascript:javascript:bindPhone();" class="fr btn-sure" title="确认" flagvalue="" id="flager">确认</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 新增绑定电话成功弹窗 -->
+		<div class="pop-subs pop-status" id="pop_success" style="display:none;">
+			<div class="pop-subs-con">
+				<h3 class="pop-subs-tit">绑定电话号码</h3>
+				<p class="pop-subs-tip">订阅绑定电话号码成功，我们将通过短信通知您！</p>
+				<div class="pop-subs-btn clearf">
+					<a href="javascript:hidepop('pop_success');" class="btn-sure" title="确认">确认</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 新增订阅确认弹窗 -->
+		<div class="pop-subs" id="pop_subs" style="display:none;">
+			<div class="pop-subs-con">
+				<h3 class="pop-subs-tit">订阅消息将通过短信发送</h3>
+				<div class="pop-subs-pitbox">
+					<input class="uitem-input" value="" type="text" placeholder="" name="phone" verifyreg="^.{1,20}$" verifyerrmsg="" disabled="disabled">
+				</div>
+				<p class="pop-subs-tip changephone">
+					更换手机号
+				</p>
+				<div class="pop-subs-btn clearf">
+					<a href="javascript:hidepop('pop_subs');" class="fl btn-cancel" title="取消">取消</a>
+					<a href="javascript:sureSub();" class="fr btn-sure" title="确认" flagvalue="">确认</a>
+				</div>
+			</div>
+		</div>
+		<script src="//js01.daoju.qq.com/zb/lolriotmall/pc/js/basegoods.js"></script>
+		<script src="//js01.daoju.qq.com/common/js/act/dj_header_h5.js"></script>
+		<script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+		<script src="//ossweb-img.qq.com/images/js/mobile_build/milo.js"></script>
+		<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+		<script src="//mall.qq.com/act/a20180718master/index.js"></script>
+		<script src="//ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+		<script src="//mall.qq.com/act/a20180718master/subscribe.js"></script>
+		<script>
+			$(".reward_list1").click(function() {
+				if($(".size_list").css("display") == "none") {
+					$(".size_list").css("display", "block");
+				} else {
+					$(".size_list").css("display", "none");
+				}
+			})
+			$(".size_list span").click(function() {
+				$(".size_list").addClass("size_hide");
+				$(this).addClass('cur').siblings().removeClass('cur');
+				$(".reward_link em").text($(this).text())
+			})
+
+			// 弹框
+			function TGDialogS(e) {
+				showDialog.show({
+					id: e, //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+					bgcolor: "#000", //弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+					opacity: 70 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			}
+
+			function closeDialog() {
+				showDialog.hide();
+			}
+
+			//music
+			function gE(selector) {
+				return document.querySelector(selector)
+			}
+			var audio = document.getElementById('audio');
+			var audioContorl = gE('.music');
+			var audoUrl = audio.getAttribute('src');
+			audio.play();
+			document.addEventListener("WeixinJSBridgeReady", function () { 
+				audio.play();
+			}, false); 
+			var onClickPaused = false;
+			audioContorl.addEventListener('click', function() {
+				onClickPaused = true;
+				if(audio.paused || audoUrl == '///') {
+					audioContorl.classList.add('play');
+					audio.setAttribute('src', audoUrl);
+					audio.play();
+				} else {
+					audio.pause();
+					audioContorl.classList.remove('play')
+					audio.setAttribute('src', '///');
+				}
+			});
+			document.addEventListener('visibilitychange', function() {
+				var audio = document.querySelector('audio');
+				if(document.hidden) {
+					audio.pause();
+				} else {
+					audio.play();
+				}
+			})
+		</script>
+		<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+		<script>
+			//此段代码不能放到外链JS中，
+			var setSite = { //设置网站属性 
+				siteType: "a20180719anniversary", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx 
+				pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN 
+				pageName: "首页", //必填项:页面中文名 
+				project: "other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;默认other;
+				osact: 0 //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+			};
+			if(typeof(pgvMain) == 'function') pgvMain(); //千万不能忘记！
+		</script>
+	</body>
+
+</html>

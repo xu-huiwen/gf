@@ -1,0 +1,124 @@
+.left-menu {position: fixed;top: 0;left: 0;bottom: 0;background: #2c2c2c;height: 100%;z-index: 1}
+.left-menu .left-btn,.left-menu .left-btn:hover {background-color: transparent}
+.left-menu .left-big {width: 244px;color: #c6c6c6}
+.left-menu .left-btn {position: fixed;top: 50%;left: 244px;z-index: 10;overflow: hidden;cursor: pointer;width: 15px;height: 150px;margin-top: -50px;display: block}
+.left-menu .left-btn span {width: 15px;height: 150px;position: absolute;top: 0;left: -1px;display: block;background: url(../../res/com/side-left-shrink.png) no-repeat}
+.left-menu .left-btn span:hover {background-position: -22px 0}
+.left-menu.small .left-btn span {background-position: 0 -151px}
+.left-menu.small .left-btn span:hover {background-position: -22px -151px}
+.left-menu .channel-cate ul li {height: 38px;line-height: 38px;border-bottom: 1px solid #272727;width: 240px;position: relative}
+.left-menu .channel-cate ul {width: 233px}
+.left-menu .channel-cate ul li a {display: block;height: 37px;font-size: 15px;color: #c6c6c6;padding-left: 28px;border-bottom: 1px solid #313131}
+.left-menu .channel-cate ul li.rank {position: relative}
+.left-menu .channel-cate ul li a:hover {background: #f60;color: #fff}
+.left-menu .channel-cate ul li a .icon {display: inline-block;background: url(../../res/com/side-list-icon.png?20161202) -500px -500px no-repeat;width: 20px;height: 20px;overflow: hidden;float: left;margin-right: 18px;margin-top: 11px}
+.left-menu .channel-cate ul li a .icon-live {background-position: 0 0}
+.left-menu .channel-cate ul li a .icon-game {background-position: 0 -26px}
+.left-menu .channel-cate ul li a .icon-rank {background-position: 1px -206px}
+.left-menu .channel-cate ul li a .icon-focus {background-position: 0 -50px}
+.left-menu .channel-cate ul li a .icon-collect {background-position: 0 -80px}
+.left-menu .channel-cate ul li a .icon-hot {display: block;width: 22px;height: 13px;background: url(../../res/com/icon-hot.png) no-repeat;position: absolute;top: -8px;right: 72px}
+.left-menu .channel-cate ul li.cur span {color: #f60}
+.left-menu .channel-cate ul li a:hover span {color: #fff}
+.left-menu .channel-cate ul li.cur {background: #282828}
+.left-menu .channel-cate ul li.cur a .icon-live {background-position: -63px 0}
+.left-menu .channel-cate ul li.cur .icon-game {background-position: -63px -26px}
+.left-menu .channel-cate ul li.cur .icon-rank {background-position: -63px -206px}
+.left-menu .channel-cate ul li.cur .icon-focus {background-position: -63px -50px}
+.left-menu .channel-cate ul li a:hover .icon-live {background-position: -31px 0}
+.left-menu .channel-cate ul li a:hover .icon-game {background-position: -31px -26px}
+.left-menu .channel-cate ul li a:hover .icon-rank {background-position: -31px -206px}
+.left-menu .channel-cate ul li a:hover .icon-focus {background-position: -31px -50px}
+.left-menu .channel-cate ul li a:hover .icon-collect {background-position: -31px -80px}
+.left-menu .leftnav-cate {padding-top: 5px;color: #c6c6c6}
+.left-menu .leftnav-cate .r-tit {width: 206px;margin: 0 auto;height: 28px;border-bottom: 2px solid #f60;*width: 208px}
+.left-menu .leftnav-cate .r-tit ul li {float: left;width: 50%;height: 30px;line-height: 30px;font-size: 15px;cursor: pointer}
+.left-menu .leftnav-cate .r-tit ul li .icon {display: inline-block;background: url(../../res/com/side-list-icon.png?20161202) -500px -500px no-repeat;width: 20px;height: 20px;overflow: hidden;float: left;margin: 8px 14px 0 18px}
+.left-menu .leftnav-cate .r-tit ul li.cur {background: #f60;color: #fff;border-radius: 2px 2px 0 0}
+.left-menu .leftnav-cate .r-tit ul li .icon-column {background-position: 0 -107px}
+.left-menu .leftnav-cate .r-tit ul li .icon-recom {background-position: 0 -131px}
+.left-menu .leftnav-cate .r-tit ul li.cur .icon-column {background-position: -31px -107px}
+.left-menu .leftnav-cate .r-cont {width: 240px}
+.left-menu .leftnav-cate .r-cont dl {margin-top: 4px}
+.left-menu .leftnav-cate .recom-cont dl {margin-top: 0}
+.left-menu .leftnav-cate .r-cont dl .recommendHos ul {padding: 4px 15px 7px}
+.left-menu .leftnav-cate .r-cont ul li {float: left;height: 24px;width: 66px;margin: 2px}
+.left-menu .leftnav-cate .r-cont ul li a {display: block;background: #3f3f3f;line-height: 24px;width: 62px;padding: 0 2px;color: #d0d0d0;font-size: 12px;text-align: center;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;-moz-border-radius: 2px;-o-border-radius: 2px;-webkit-border-radius: 2px;border-radius: 2px}
+.left-menu .leftnav-cate .r-cont ul li a.current {color: #f60}
+.left-menu .leftnav-cate .r-cont ul li a:hover {background: #f60;color: #fff}
+.left-menu .leftnav-cate .r-cont a.more {color: #f60}
+.left-menu .leftnav-cate .column-cont dl dt {width: 217px;padding-left: 15px;height: 28px;line-height: 30px;font-size: 15px;position: relative;border-top: 1px solid #2c2c2c;margin-top: 0}
+.left-menu .leftnav-cate .column-cont dl dd.cur,.left-menu .leftnav-cate .column-cont dl dt.cur {background: #272727}
+.left-menu .leftnav-cate .column-cont dl dt a {display: block}
+.left-menu .leftnav-cate .column-cont dl dt i {display: inline-block;background: url(../../res/com/left_cion.png) no-repeat;width: 5px;height: 14px;overflow: hidden;float: left;margin: 10px 0 0 3px;transition: all .3s ease-in-out;-o-transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;-webkit-transition: all .3s ease-in-out}
+.left-menu .leftnav-cate .column-cont dl dt span {display: inline-block;padding: 0 9px;color: #c6c6c6}
+.left-menu .leftnav-cate .column-cont dl dt.cur span {color: #f60}
+.left-menu .leftnav-cate .column-cont dl dd {overflow: hidden;padding: 0 4px 5px 15px;width: 213px;border-bottom: 1px solid #2c2c2c}
+.left-menu .leftnav-cate .recom-cont {padding-top: 0}
+.left-menu .leftnav-cate .recom-cont ul {padding-left: 15px}
+.left-menu .left-footer {background: #2c2c2c;width: 210px;padding: 0 17px;position: fixed;left: 0;bottom: 0}
+.left-menu .left-footer .f-line {width: 100%;height: 1px;background: #2c2c2c}
+.left-menu .left-footer .btn-live a {display: block;width: 100%;height: 30px;line-height: 30px;background: #f60;border-radius: 2px;margin: 12px auto auto;transition: all .5s ease-in-out;-webkit-transition: all .5s ease-in-out;color: #fff}
+.left-menu .left-footer .btn-live a:hover {background: #f14700}
+.left-menu .left-footer .btn-live span {float: left}
+.left-menu .left-footer .btn-live .icon-r {display: inline-block;margin-left: 3.8%;margin-top: 15px;width: 0;height: 0;border-top: 5px solid transparent;border-left: 5px solid #fff;border-bottom: 5px solid transparent}
+.left-menu .left-footer ul {padding: 0 12px;*padding: 0 10px}
+.left-menu .left-footer ul li {float: left;line-height: 30px;margin: 0 5px 9px}
+.left-menu .left-footer ul li a {color: #c6c6c6}
+.left-menu .left-footer ul li a:hover {color: #fff}
+.left-menu .left-small {width: 50px}
+.left-menu .c-ser .c-link a,.left-menu .small-nav ul li a {display: block;color: #c6c6c6;text-align: center;height: 44px;padding: 18px 0}
+.left-menu .c-ser .c-link a:hover,.left-menu .small-nav ul li a:hover {color: #fff;background: #1b1b1b}
+.left-menu .c-ser .line,.left-menu .small-nav ul li.line {height: 0;font-size: 0;overflow: hidden;border-bottom: 1px solid #323232;border-top: 1px solid #1b1b1b}
+.left-menu .c-ser .cr_icon,.left-menu .small-nav ul li .icon {display: block;background: url(../../res/com/side-list-icon.png?20161202) -500px -500px no-repeat;width: 20px;height: 20px;overflow: hidden;margin-left: 15px;margin-bottom: 5px;*margin-left: 0}
+.left-menu .small-nav ul li .is1 {background-position: 0 0}
+.left-menu .small-nav ul li .is2 {background-position: 0 -26px}
+.left-menu .small-nav ul li .is3 {background-position: 0 -50px}
+.left-menu .small-nav ul li .is4 {background-position: 0 -80px}
+.left-menu .small-nav ul li .icon-rank {background-position: 1px -206px}
+.left-menu .small-nav ul li a:hover .is1 {background-position: -31px 0}
+.left-menu .small-nav ul li a:hover .is2 {background-position: -31px -26px}
+.left-menu .small-nav ul li a:hover .is3 {background-position: -31px -50px}
+.left-menu .small-nav ul li a:hover .is4 {background-position: -31px -80px}
+.left-menu .small-nav ul li a:hover .icon-rank {background-position: -31px -206px}
+.left-menu .c-ser {width: 50px;position: fixed;left: 0;bottom: 0}
+.left-menu .c-ser .line {margin: 12px 0 0}
+.left-menu .c-ser .cr_icon {background-position: 0 -182px}
+.left-menu .c-ser a:hover .cr_icon {background-position: -31px -182px}
+.left-menu .left-small,.left-menu.small .left-big {display: none}
+.left-menu.small .left-small {display: block}
+.left-menu.small .left-btn {left: 50px}
+.left-menu .left-footer .btn-app,.left-menu .left-footer .btn-live {padding-bottom: 0!important;width: 103px;display: inline-block;*display: inline;*zoom: 1}
+.left-menu .left-footer .btn-app {*margin-right: 3px}
+.left-menu .left-footer .btn-app a {display: block;height: 30px;line-height: 30px;font-size: 14px;background: #f60;border-radius: 2px;transition: all .5s ease-in-out;-webkit-transition: all .5s ease-in-out;color: #fff}
+.left-menu .left-footer .btn-app a:hover {background: #f14700}
+.left-menu .left-footer .btn-app .icon-l {display: block;background: url(../../res/com/left-list-icon.png?20160830) no-repeat;height: 19px;width: 13px;overflow: hidden;float: left;margin: 5px 5px 10px 14px}
+.left-menu .left-footer .btn-app span {float: left}
+.left-menu .left-footer .btn-live .icon-l {display: block;background: url(../../res/com/left-list-icon.png?20160830) 0 -35px no-repeat;height: 13px;width: 21px;overflow: hidden;float: left;margin: 9px 4px 12px 9px}
+.left-menu .left-footer .btn-live a {font-size: 14px!important}
+.left-menu .leftnav-cate .r-tit ul li .icon-recom {display: inline-block;background: url(../../res/com/left-list-icon.png?20160830) 0 -19px no-repeat;height: 16px;width: 21px;overflow: hidden;float: left;margin: 8px 14px 0 18px}
+.left-menu .leftnav-cate .r-tit ul li.cur .icon-recom {background-position: 0 -48px}
+.left-menu .leftnav-cate .recom-cont dl dt {width: 217px;padding-left: 15px;height: 34px;line-height: 38px;font-size: 15px;position: relative;border-top: 1px solid #2c2c2c}
+.left-menu .leftnav-cate .recom-cont dl dt a {display: block}
+.left-menu .leftnav-cate .recom-cont dl dt i {display: inline-block;background: url(../../res/com/left_cion.png) no-repeat;width: 5px;height: 14px;overflow: hidden;float: left;margin: 13px 0 0 -5px;transition: all .3s ease-in-out;-o-transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;-webkit-transition: all .3s ease-in-out}
+.left-menu .leftnav-cate .recom-cont dl dt span {display: inline-block;padding: 0 9px;color: #c6c6c6}
+.left-menu .leftnav-cate .recom-cont dl dd {overflow: hidden;padding: 0 4px 0 15px;width: 213px;border-bottom: 1px solid #2c2c2c}
+.left-menu .leftnav-cate .recom-cont dl dd ul {padding: 0}
+.left-menu .c-ser .c-link a:active,.left-menu .small-nav ul li a.cur,.left-menu .small-nav ul li a:active {color: #f60;background: #1b1b1b}
+.left-menu .small-nav ul li a.cur .is1,.left-menu .small-nav ul li a:active .is1 {background-position: -63px 0}
+.left-menu .small-nav ul li a.cur .is2,.left-menu .small-nav ul li a:active .is2 {background-position: -63px -26px}
+.left-menu .small-nav ul li a.cur .is3,.left-menu .small-nav ul li a:active .is3 {background-position: -63px -50px}
+.left-menu .small-nav ul li a.cur .is4,.left-menu .small-nav ul li a:active .is4 {background-position: -63px -80px}
+.left-menu .small-nav ul li a.cur .icon-rank,.left-menu .small-nav ul li a:active .icon-rank {background-position: -63px -206px}
+.left-menu .c-ser .c-link a.cur .cr_icon,.left-menu .c-ser .c-link a:active .cr_icon {background-position: -63px -182px}
+.channel-catelist-resize {height: 33px!important;line-height: 33px!important}
+.left-menu .channel-cate ul li.channel-catelist-resize .icon {margin-top: 8px}
+.footer-otherlist-resize {height: 40px!important;line-height: 40px!important}
+.left-menu .leftnav-cate .recom-cont .yb-list-24 {margin-top: 5px}
+.left-menu .leftnav-cate .recom-cont .yb-list-24 .yb-num {float: left;width: 16px;height: 16px;line-height: 16px;background: #aeaeae;color: #fff;font-size: 12px;text-align: center;margin-right: 10px}
+.left-menu .leftnav-cate .recom-cont .yb-list-24 .yb-num.yb-num-1 {background: #ff2400}
+.left-menu .leftnav-cate .recom-cont .yb-list-24 .yb-num.yb-num-2 {background: #f70}
+.left-menu .leftnav-cate .recom-cont .yb-list-24 .yb-num.yb-num-3 {background: #349ff9}
+.left-menu .leftnav-cate .recom-cont .yb-list-24 li {margin: 5px 0}
+.left-menu .leftnav-cate .recom-cont .yb-list-24 li a {display: inline-block;*display: inline;*zoom: 1;width: 180px;height: 18px;color: #d0d0d0;overflow: hidden;text-overflow: ellipsis}
+.left-menu .leftnav-cate .recom-cont .yb-list-24 li a:hover {color: #f60}

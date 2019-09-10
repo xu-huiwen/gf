@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GBK">
+<title></title>
+<style type="text/css">
+.s_lol{width:455px;height:648px;position:absolute;left:284px;top:0;z-index:9999;}
+/* focus_Box */
+#focus_Box{position:relative;width:1000px;height:465px;margin:0 auto ;}
+#focus_Box ul{position:relative;width:950px;height:465px;margin-left:50px;}
+#focus_Box li{z-index:0;position:absolute; width:0px;height:0px;top:146px;cursor:pointer;left:377px;}
+#focus_Box li img{width:100%;height:100%;vertical-align:top}
+
+#focus_Box .prev,#focus_Box .next{display:block;z-index:100;overflow:hidden;cursor:pointer;position:absolute;width:28px;height:71px;top:331px;}
+#focus_Box .prev{background-position:0 0;left:25px}
+#focus_Box .next{background-position:-75px -1px;right:65px} 
+.spr{background: url(http://ac.gtimg.com/hd/lol201601/images/sprite.png?v=aaddbdeac699d6a7) no-repeat;}
+.c_stop{font-size:18px;color:#3169df;text-align:center;position:absolute;width:150px;text-align:center;text-decoration:underline;position:absolute;bottom:20px;left:50%;margin-left:-75px;}
+.c_stop:hover{color:#F00;}
+
+</style>
+</head>
+<body>
+<div id="focus_Box">
+	<span class="prev spr" onclick='pgvSendClick({hottag:"AC.EVENT.lol201601.sprprev"});'>&nbsp;</span>
+	<span class="next spr" onclick='pgvSendClick({hottag:"AC.EVENT.lol201601.ssprnext"});'>&nbsp;</span>
+    <div class="s_lol"></div>
+	<ul>
+		<li>
+			<img src="http://ac.gtimg.com/hd/lol201601/images/pic1.png?v=df6d2466979b6ebe" alt="" />
+		</li>
+		<li>
+			<img src="http://ac.gtimg.com/hd/lol201601/images/pic2.png?v=f37903edc7212769" alt="" />
+		</li>
+		<li>
+			<img src="http://ac.gtimg.com/hd/lol201601/images/pic3.png?v=a68f6ea6df57ccf5" alt="" />
+		</li>
+		<li>
+			<img src="http://ac.gtimg.com/hd/lol201601/images/pic4.png?v=20660b46e1a03a23" alt="" />
+		</li>
+		<li>
+			<img src="http://ac.gtimg.com/hd/lol201601/images/pic5.png?v=b202314652a62ed4" alt="" />
+		</li>
+        <li>
+			<img src="http://ac.gtimg.com/hd/lol201601/images/pic6.png?v=25dd0a773e530396" alt="" />
+		</li>
+        <li>
+			<img src="http://ac.gtimg.com/hd/lol201601/images/pic7.png?v=56391cc839dcc97f" alt="" />
+		</li>
+      
+	</ul>
+</div>
+<a href="javascript:void(0);" class="c_stop" id="c_stop" data-temp="1" onclick='pgvSendClick({hottag:"AC.EVENT.lol201601.cstop"});'>停止自动播放</a>
+
+<script type="text/javascript">
+
+function ZoomPic ()
+{
+	this.initialize.apply(this, arguments)	
+}
+ZoomPic.prototype = 
+{
+	initialize : function (id)
+	{
+		var _this = this;
+		var sfzd= true;
+		this.wrap = typeof id === "string" ? document.getElementById(id) : id;
+		this.oUl = this.wrap.getElementsByTagName("ul")[0];
+		this.aLi = this.wrap.getElementsByTagName("li");
+		this.prev = this.wrap.getElementsByTagName("span")[0];
+		this.next = this.wrap.getElementsByTagName("span")[1];
+		this.timer = 1000;
+		this.aSort = [];
+		this.iCenter = 1;
+		this._doPrev = function () {return _this.doPrev.apply(_this)};
+		this._doNext = function () {return _this.doNext.apply(_this)};
+		this.options = [
+			{width:400, height:557, top:80, left:30, zIndex:2},
+			{width:465, height:648, top:0, left:230, zIndex:3},
+			{width:400, height:557, top:80, left:430, zIndex:2},
+		];
+		for (var i = 0; i < this.aLi.length; i++) this.aSort[i] = this.aLi[i];
+		this.aSort.unshift(this.aSort.pop());
+		this.setUp();
+		this.addEvent(this.prev, "click", this._doPrev);
+		this.addEvent(this.next, "click", this._doNext);
+		this.doImgClick();		
+		this.timer = setInterval(function ()
+		{
+			if(sfzd){
+			_this.doNext()}	
+		}, 2000);
+		
+		var playV =true;
+		$('.c_stop').click(function ()
+		{
+		
+			if(playV){
+				clearInterval(_this.timer);
+				//sfzd=false;
+				$('.c_stop').text('开始自动播放');
+				playV =false;
+			}else{
+				//sfzd=true;
+				$('.c_stop').text('停止自动播放');
+				_this.timer = setInterval(function ()
+				{
+					_this.doNext()	
+				}, 2000);
+				playV =true;
+			}
+		});
+		
+		$('.s_lol').mouseover(function ()
+		{if(playV){
+			clearInterval(_this.timer)}	
+		});
+	
+		$('.s_lol').mouseout(function ()
+		{if(playV){
+			_this.timer = setInterval(function ()
+			{
+				_this.doNext()	
+			}, 2000);	}
+		});
+	
+	},
+	doPrev : function ()
+	{
+		this.aSort.unshift(this.aSort.pop());
+		this.setUp()
+	},
+	doNext : function ()
+	{
+		this.aSort.push(this.aSort.shift());
+		this.setUp()
+	},
+	doImgClick : function ()
+	{
+		var _this = this;
+		for (var i = 0; i < this.aSort.length; i++)
+		{
+			this.aSort[i].onclick = function ()
+			{
+				if (this.index > _this.iCenter)
+				{
+					for (var i = 0; i < this.index - _this.iCenter; i++) _this.aSort.push(_this.aSort.shift());
+					_this.setUp()
+				}
+				else if(this.index < _this.iCenter)
+				{
+					for (var i = 0; i < _this.iCenter - this.index; i++) _this.aSort.unshift(_this.aSort.pop());
+					_this.setUp()
+				}
+			}
+		}
+	},
+	setUp : function ()
+	{
+		var _this = this;
+		var i = 0;
+		for (i = 0; i < this.aSort.length; i++) this.oUl.appendChild(this.aSort[i]);
+		for (i = 0; i < this.aSort.length; i++)
+		{
+			this.aSort[i].index = i;
+			if (i < 3)
+			{
+				this.css(this.aSort[i], "display", "block");
+				this.doMove(this.aSort[i], this.options[i], function ()
+				{
+					_this.doMove(_this.aSort[_this.iCenter].getElementsByTagName("img")[0], {opacity:100}, function ()
+					{
+						_this.doMove(_this.aSort[_this.iCenter].getElementsByTagName("img")[0], {opacity:100}, function ()
+						{
+						})
+					})
+				});
+			}
+			else
+			{
+				this.css(this.aSort[i], "display", "none");
+				this.css(this.aSort[i], "width", 0);
+				this.css(this.aSort[i], "height", 0);
+				this.css(this.aSort[i], "top", 37);
+				this.css(this.aSort[i], "left", this.oUl.offsetWidth / 2)
+			}
+			if (i < this.iCenter || i > this.iCenter)
+			{
+				this.css(this.aSort[i].getElementsByTagName("img")[0], "opacity", 100)
+				this.aSort[i].onmouseover = function ()
+				{
+					_this.doMove(this.getElementsByTagName("img")[0], {opacity:100})	
+				};
+				this.aSort[i].onmouseout = function ()
+				{
+					_this.doMove(this.getElementsByTagName("img")[0], {opacity:100})
+				};
+				this.aSort[i].onmouseout();
+			}
+			else
+			{
+				this.aSort[i].onmouseover = this.aSort[i].onmouseout = null
+			}
+		}		
+	},
+	addEvent : function (oElement, sEventType, fnHandler)
+	{
+		return oElement.addEventListener ? oElement.addEventListener(sEventType, fnHandler, false) : oElement.attachEvent("on" + sEventType, fnHandler)
+	},
+	css : function (oElement, attr, value)
+	{
+		if (arguments.length == 2)
+		{
+			return oElement.currentStyle ? oElement.currentStyle[attr] : getComputedStyle(oElement, null)[attr]
+		}
+		else if (arguments.length == 3)
+		{
+			switch (attr)
+			{
+				case "width":
+				case "height":
+				case "top":
+				case "left":
+				case "bottom":
+					oElement.style[attr] = value + "px";
+					break;
+				case "opacity" :
+					oElement.style.filter = "alpha(opacity=" + value + ")";
+					oElement.style.opacity = value / 100;
+					break;
+				default :
+					oElement.style[attr] = value;
+					break
+			}	
+		}
+	},
+	doMove : function (oElement, oAttr, fnCallBack)
+	{
+		var _this = this;
+		clearInterval(oElement.timer);
+		oElement.timer = setInterval(function ()
+		{
+			var bStop = true;
+			for (var property in oAttr)
+			{
+				var iCur = parseFloat(_this.css(oElement, property));
+				property == "opacity" && (iCur = parseInt(iCur.toFixed(2) * 100));
+				var iSpeed = (oAttr[property] - iCur) / 5;
+				iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+				
+				if (iCur != oAttr[property])
+				{
+					bStop = false;
+					_this.css(oElement, property, iCur + iSpeed)
+				}
+			}
+			if (bStop)
+			{
+				clearInterval(oElement.timer);
+				fnCallBack && fnCallBack.apply(_this, arguments)	
+			}
+		}, 30)
+	}
+};
+window.onload = function ()
+{
+	new ZoomPic("focus_Box");
+};
+
+
+</script>
+</body>
+</html>

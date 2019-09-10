@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-CP" />
+<meta name="Copyright" content="Tencent">
+<meta name="Keywords" content="相聚时刻 建个岛一起乐" />
+<meta name="Description" content="《全民岛主》手游不删档预约火热进行中" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<style>
+/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+body{font-family:"\5FAE\8F6F\96C5\9ED1",Helvetica;-webkit-text-size-adjust:none;font-size:0.24rem;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong{font-weight:normal;font-style:normal;}
+a {text-decoration:none;}
+b{font-weight: bold;}
+.hide {display:none;}
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db {display:block;text-indent:-999em;}
+.sp{background: url(//game.gtimg.cn/images/syhm/cp/a20180112love/sp.png) no-repeat;}
+
+body,html{background:#f0f1f0;width: 100%;height: 100%;overflow: hidden;}
+.wrap{overflow:hidden;width: 640px;height: 1136px;}
+
+.loading{background: url(//game.gtimg.cn/images/syhm/cp/a20180112love/load_bg.jpg) no-repeat;width: 640px;height: 1136px;position: absolute;}
+.river{background: url(//game.gtimg.cn/images/syhm/cp/a20180112love/river.jpg) no-repeat;width: 640px;height: 201px;position: absolute;top: 416px;left: 0;-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-animation: river 3s linear both infinite;animation: river 3s linear both infinite;}
+@-webkit-keyframes river{
+	50%{-webkit-transform: skew(30deg) scale(1.05);}
+}
+@keyframes river{
+	50%{transform: skew(30deg) scale(1.05);}
+}
+
+.load_icon{width: 146px;height: 151px;background-position: -586px -12px;position: absolute;top: 424px;left: 237px;-webkit-animation: load_icon 2s linear both infinite;animation: load_icon 2s linear both infinite;}
+@-webkit-keyframes load_icon{
+	50%{-webkit-transform: translateY(10px);}
+}
+@keyframes load_icon{
+	50%{transform: translateY(10px);}
+}
+.load_txt{font-size: 30px;color: #ffffff;text-align: center;width: 100%;position: absolute;top: 606px;left: 0;}
+
+.video_box{background: url(//game.gtimg.cn/images/syhm/cp/a20180112love/poster.jpg) no-repeat;width: 640px;height: 1136px;display: none;}
+.start_video{width: 192px;height: 192px;top: 50%;left: 50%;margin: -96px 0 0 -96px;position: absolute;}
+.start_video .icon1{display: block;width: 100%;height: 100%;-webkit-animation: rot 8s linear both;animation: rot 8s linear both;}
+.start_video .icon2{display: block;width: 61px;height: 103px;background-position: -207px 0;position: absolute;top: 43px;left: 78px;}
+
+@-webkit-keyframes rot{
+	0%{-webkit-transform: rotate(0);}
+	100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes rot{
+	0%{transform: rotate(0);}
+	100%{transform: rotate(360deg);}
+}
+
+.main{background: url(//game.gtimg.cn/images/syhm/cp/a20180112love/bg.jpg) no-repeat;width: 640px;height: 1136px;position: relative;display: none;}
+.put{width: 560px;position: absolute;top: 860px;left: 50%;margin-left: -280px;}
+.btn_want{width: 249px;height: 87px;background-position:-302px -96px;;float: left;}
+.btn_home{width: 249px;height: 87px;background-position:-302px 0;float: right;}
+</style>
+</head>
+<body>
+<div class="wrap" view-mode="v" view-rotation="auto" view-scale="noborder" view-width="640" view-height="1136" view-align="">
+	<div class="loading">
+		<div class="river"></div>
+		<div class="load_icon sp"></div>
+		<div class="load_ct">
+			<p class="load_txt">
+				<span class="ready">Loading...</span>
+				<span class="val">0%</span>
+			</p>
+		</div>
+	</div>
+	 <div class="video_box">
+		<div class="start_video">
+			<i class="icon1 sp"></i>
+			<i class="icon2 sp"></i>
+		</div>
+        <video id="video" width="640" height="1136"></video>
+    </div>
+	<div class="main">
+		<div class="put c">
+			<a href="//qmdz.qq.com/cp/a20180102yyzm/index_wqm.shtml" class="btn_want sp db" ontouchend="PTTSendClick('btn','btn_want','预约不删档');">预约不删档</a>
+			<a href="//qmdz.qq.com" class="btn_home sp db" ontouchend="PTTSendClick('btn','btn_home','进入官网');">进入官网</a>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
+
+<script src="//ossweb-img.qq.com/images/js/mmdPlugin/mmd-plugin.min.1.0.2.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mmdVideoPlayer/mmd.videoplayer.min.1.0.1.js"></script>
+<script>
+	function g(e){
+		return typeof e=='object' ? e :document.querySelector(e);
+	};
+	
+	var imgPath = "//game.gtimg.cn/images/syhm/cp/a20180112love/",
+	sourceArr = ['sp.png','bg.jpg','load_bg.jpg','poster.jpg','river.jpg','share.jpg'];
+	for (var i = 0; i < sourceArr.length; i++) {
+		sourceArr[i] = imgPath + sourceArr[i] ;
+	};
+	var loadImage = function(path, callback) {
+		var img = new Image();
+		img.onload = function() {
+			img.onload = null;
+			callback(path);
+		}
+		img.src = path;
+	};
+	var imgLoader = function(imgs, callback) {
+		var len = imgs.length,
+			i = 0;
+		while (imgs.length) {
+			loadImage(imgs.shift(), function(path) {
+				callback(path, ++i, len);
+			});
+		}
+	};
+	imgLoader(sourceArr, function(path, curNum, total) {
+		var percent = curNum / total;
+		g('.val').innerHTML = Math.floor(percent * 100)+'%';
+		if(percent===1){
+			setTimeout(function(){
+				g('.loading').style.display='none'
+       		 	g('.video_box').style.display='block';
+       		 	showVideo()
+			},1000);
+		};
+	});
+ 	var src='//game.gtimg.cn/images/syhm/cp/a20180112love/video.mp4';
+    var videoPlayer=new MMD.VideoPlayer(
+        {
+            videoElement:document.getElementById('video'),//[必填],video元素;
+            src:src,
+            loop:false,
+            muted:false,
+            poster:'//game.gtimg.cn/images/syhm/cp/a20180112love/poster.jpg',
+            onStart:function(){
+            	PTTSendClick('video','start','播放视频');
+            },
+            onEnd:function(){
+            	g('.video_box').style.display='none';
+            	g('.main').style.display='block';
+            	PTTSendClick('video','end','停止视频');
+            }
+        }
+    );
+    document.addEventListener('touchmove',function(event){
+    	if (event.cancelable) {
+	        // 判断默认行为是否已经被禁用
+	        if (!event.defaultPrevented) {
+	            event.preventDefault();
+	        }
+	    }
+    },false);
+    function showVideo(){
+    	var btnPlay = g('.start_video');
+    	if(videoPlayer.isVideoCanAutoPlay){
+    		btnPlay.style.display='none';
+	        videoPlayer.play();
+	    }else {        
+	        btnPlay.addEventListener('touchend',function(){
+				this.style.display='none';
+		   		videoPlayer.play();
+			},false);
+	    }
+	};
+    
+</script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+ siteType:"a20180112love", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName:"相聚时刻 建个岛一起乐 ", //必填项:页面中文名
+ osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+};
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+//
+ TGMobileShare({
+	 shareTitle:'腾讯首款好友互怼手游《全民岛主》来啦！', //不设置或设置为空时，页面有title，则调取title
+	 shareDesc:'《全民岛主》手游不删档预约火热进行中', //不设置或设置为空时，页面有Description，则调取Description
+	 shareImgUrl:'//game.gtimg.cn/images/syhm/cp/a20180112love/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+	 shareLink:'', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+	 actName:'a20180112love' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+ });
+</script>
+</body>
+</html>

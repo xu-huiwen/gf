@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+		.bg{background: #89DBFE;height: 5000px;width: 100%;}	
+.star {
+	display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 1920px;
+    margin-left: -960px;
+    height: 1080px;
+    pointer-events: none;
+}
+		</style>
+	</head>
+	<body>
+		<div class="bg"></div>
+		
+		
+		<canvas class="star" id="canvas" width="1920" height="1080"></canvas>
+		
+		<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+		<script src="particleCanvas.js"></script>
+		<script>
+			 var particleCanvas = new particleCanvas("canvas",[{
+		        "type": {"typeName": "image", "url": "//game.gtimg.cn/images/bns/cp/a20180723swimwear/pao.png"},
+		        "number": 16,
+		        "area": {"leftTop": [1920, 300], "rightBottom": [1920, 3000]},
+		        "op": {"min": 0.2, "max": .6},
+		        "size": {"min": 32, "max": 64},
+		        "zoom": {"min": 0.1, "max": 1},
+		        "speed": {"min": 1, "max": 3},
+		        "angle": {"value": 175, "float": 30},
+		        "rota": {"value": 30, "speed": 3, "floatValue": 120, "floatSpeed": 2},
+		        "reIn": "init",
+		        "delayFill":{initNumber:5,fixed:30,oneTimesNumber:2}
+		    }]);
+		</script>
+	</body>
+</html>

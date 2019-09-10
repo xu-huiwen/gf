@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+	</head>
+	<body>
+		<!--es5.0严格模式-->
+		<script>
+			"use strict"   //必须写在js逻辑的最顶端               启用5.0     全局严格模式       局部严格模式（推荐）
+			function test(){
+				console.log(arguments.callee);
+			}
+			test()
+		</script>
+	</body>
+</html>

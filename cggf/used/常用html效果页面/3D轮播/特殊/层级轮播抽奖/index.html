@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+        <title>仿英雄杀游戏官网幻灯片JS代码</title>
+		<style>
+			body,div,ul,li,h4,p{margin:0;padding:0;}
+		body{font:12px/1.8 arial;color:#fff;background-color: #d0f1e9}
+		a{color:#fff;text-decoration:none;background:#666;padding:2px 5px;}
+		#box{position:relative;width:754px;height:292px;margin:115px auto 0;}
+		#box ul{position:relative;width:754px;height:292px;-webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-o-transform-style: preserve-3d;-ms-transform-style: preserve-3d;transform-style: preserve-3d;-webkit-perspective: 1000px;-moz-perspective: 1000px;-o-perspective: 1000px;-ms-perspective: 1000px;perspective: 1000px;}
+		#box li{position:absolute;border:2px solid #000;list-style:none;background:#000;width:0;height:0;top:146px;left:377px;z-index:0;cursor:pointer;overflow:hidden;border-radius:3px;}
+		#box li img{width:100%;height:100%;vertical-align:top;}
+		#box ul li{display: block}
+		.pos1{transform: rotateY(30deg);}
+		.pos2{transform: rotateY(45deg);}
+		.pos3{transform: rotateY(0);}
+		.pos4{transform: rotateY(-45deg);}
+		.pos5{transform: rotateY(-30deg);}
+		.put{text-align: center;margin-top: 20px;}
+		.put a{display: inline-block;padding:5px 20px;margin: 0 10px;}
+		.put a:hover{background:#F90;}
+		</style>
+</head>
+<body>
+<div id="box">
+    <ul>    
+	    <li style="width: 120px; height: 150px; top: 71px; left: 134px; z-index: 1;">
+	    	<img src="ossweb-img/1/1.jpg">
+	    </li>
+	    <li style=" width: 130px; height: 170px; top: 61px; left: 0px; z-index: 2;">
+	    	<img src="ossweb-img/1/2.jpg" >
+	    </li>
+	    <li style="width: 170px; height: 218px; top: 37px; left: 110px; z-index: 3;">
+	    	<img src="ossweb-img/1/3.jpg" >
+	    </li>
+	    <li style="width: 224px; height: 288px; top: 0px; left: 262px; z-index: 4;">
+	    	<img src="ossweb-img/1/4.jpg" >
+	    </li>
+	    <li style="width: 170px; height: 218px; top: 37px; left: 468px; z-index: 3;">
+	    	<img src="ossweb-img/1/5.jpg" >
+	    </li>
+	    <li style="width: 130px; height: 170px; top: 61px; left: 620px; z-index: 2;">
+	    	<img src="ossweb-img/1/6.jpg" >
+	    </li>
+	    <li style="width: 120px; height: 150px; top: 71px; left: 496px; z-index: 1;">
+	    	<img src="ossweb-img/1/7.jpg" >
+	    </li>
+    </ul>
+    <div class="put">
+    <a href="javascript:;" class="prev" id="prev">prev</a>
+    <a href="javascript:;" class="next" id="next">next</a>	
+	<a href="javascript:;" class="start" id="start">start</a>
+	<a href="javascript:;" class="stop" id="stop">stop</a>
+	<a href="javascript:;" class="rest" id="rest">rest</a>
+</div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

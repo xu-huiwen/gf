@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-TGideas">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<title>重构规范</title>
+<link href="css/comm.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="hide">重构规范</h1>
+<div class="topbox">
+     <div class="container c">
+     	  <a href="javascript:;" class="logo db" title="西安奇境文化传播有限公司"><img src="images/logo.jpg" alt="" /></a>
+     	  <ul class="toplist c">
+     	  	  <li><a href="index.htm" title="腾讯">腾讯</a></li>
+     	  	  <li><a href="畅游.htm" title="畅游">畅游</a></li>
+     	  	  <li><a href="金山.htm" title="金山">金山</a></li>
+     	  	  <li><a href="effect.htm" title="效果">效果</a></li>
+     	  	  <li><a href="study.htm" title="学习内容">学习内容</a></li>
+     	  </ul>
+     </div>
+</div>
+<div class="wrap">
+	 <div class="container pab1">
+	 	  <ul id="tab1" class="tab1 c">
+				<li class="on"><a href="javascript:;">PC相关</a></li>
+				<li><a href="javascript:;">移动相关</a></li>
+		  </ul>
+		  <div id="ct1" class="ctbox">
+		  	   <div class="gamebox">
+		  	   	   <h2><a href="http://tgideas.qq.com/doc/" target="_blank" title="腾讯游戏" class="tlink">腾讯游戏</a></h2>
+		  	   	   <a href="tx_list/海外规范.htm" title="双端官网规范" target="_blank" class="cur" title="海外官网&活动页面开发规范">海外官网&活动页面开发规范</a>
+		  	   	   <a href="http://tgideas.qq.com/webplat/info/news_version3/804/25810/26096/m16274/201708/628340.shtml" title="双端官网规范" target="_blank" class="cur">双端官网规范</a>
+		  	   	   <a href="http://tgideas.qq.com/webplat/info/news_version3/804/25810/28310/m16274/201610/517622.shtml" title="页游官网" target="_blank" class="cur">页游官网规范</a>
+		  	   	   <a href="http://tgideas.qq.com/webplat/info/news_version3/804/25810/25811/25812/25815/m16274/201803/700317.shtml" title="通用foot" target="_blank" class="cur">通用foot(官网和专题不同)</a>
+		  	   	   <a href="http://tgideas.qq.com/webplat/info/news_version3/804/25810/26096/m16274/201609/509399.shtml#goto3" title="所有的css文件、JS文件、图片链接路径修改为绝对路径" target="_blank" class="cur">图片/js/css分离</a>
+		  	   	   <a href="tx_list/刺激战场.htm" title="刺激战场" target="_blank" class="on">刺激战场</a>
+		  	       <a href="tx_list/CF.htm" title="穿越火线" target="_blank" class="on">穿越火线</a>
+		  	       <a href="tx_list/QQ飞车.htm" title="QQ飞车" target="_blank" class="on">QQ飞车</a>
+		  	       <a href="tx_list/海外需求.htm" title="海外需求" target="_blank" class="on">海外需求</a>
+		  	       <a href="tx_list/DNF.htm" title="地下城与勇士" target="_blank">地下城与勇士</a>
+		  	       <a href="tx_list/剑灵.htm" title="剑灵" target="_blank">剑灵</a>
+		  	       <a href="tx_list/剑灵页游.htm" title="剑灵页游" target="_blank" class="on">剑灵页游</a>
+		  	       <a href="demo/PC/罗博造造.htm" title="罗博造造" target="_blank">罗博造造</a>
+		  	       <a href="demo/PC/流放之路.htm" title="流放之路" target="_blank">流放之路</a>
+		  	   	   <a href="demo/PC/乱世王者.htm" title="乱世王者" target="_blank">乱世王者</a>
+		  	   	   <a href="tx_list/天涯明月刀.htm" title="天涯明月刀" target="_blank" class="on">天涯明月刀</a>
+		  	       <a href="tx_list/魂斗罗.htm" title="魂斗罗" class="on" target="_blank">魂斗罗</a>
+		  	       <a href="tx_list/火影忍者.htm" title="火影忍者" class="on" target="_blank">火影忍者</a>
+		  	       <a href="demo/PC/火源计划.htm" title="火源计划" target="_blank">火源计划</a>
+		  	       <a href="demo/PC/疾风之刃.htm" title="疾风之刃" target="_blank">疾风之刃</a>
+		  	       <a href="tx_list/FIFAOL3.htm" title="FIFAOL3" target="_blank" class="on">FIFAOL3</a>
+		  	   	   <a href="demo/PC/极品飞车/index.htm" title="极品飞车" target="_blank">极品飞车</a>
+		  	   	   <a href="http://gamevip.qq.com/widget/guide/html/intro.html" title="蓝钻" target="_blank">蓝钻</a>
+		  	   	   <a href="tx_list/逆战.htm" title="逆战" target="_blank" class="on">逆战</a>
+		  	   	   <a href="demo/PC/传奇霸业.htm" title="传奇霸业" target="_blank">传奇霸业</a>
+		  	   	   <a href="demo/PC/QQ三国.htm" title="QQ三国" target="_blank" class="on">QQ三国</a>
+		  	   	   <a href="tx_list/QQ炫舞.htm" title="QQ炫舞" target="_blank" class="on">QQ炫舞</a>
+		  	   	   <a href="demo/PC/QQ仙灵.htm" title="QQ仙灵" target="_blank">QQ仙灵</a>
+		  	   	   <a href="demo/PC/QQ自由幻想.htm" title="QQ自由幻想" target="_blank">QQ自由幻想</a>
+		  	   	   <a href="tx_list/枪火游侠.htm" title="枪火游侠" target="_blank" class="on">枪火游侠</a>
+		  	   	   <a href="demo/PC/枪神纪.htm" title="枪神纪" target="_blank">枪神纪</a>
+		  	   	   <a href="demo/PC/上古世纪.htm" title="上古世纪" target="_blank">上古世纪</a>
+		  	   	   <a href="demo/PC/使命召唤.htm" title="使命召唤" target="_blank">使命召唤</a>
+		  	   	   <a href="demo/PC/兽人必须死.htm" title="兽人必须死" target="_blank">兽人必须死</a>
+		  	   	   <a href="demo/PC/天堂.htm" title="天堂" target="_blank">天堂</a>
+		  	   	   <a href="demo/PC/天天炫斗.htm" title="天天炫斗" target="_blank">天天炫斗</a>
+		  	   	   <a href="demo/PC/王者荣耀.htm" title="王者荣耀" target="_blank">王者荣耀</a>
+		  	   	   <a href="tx_list/心悦俱乐部.htm" title="心悦俱乐部" target="_blank" class="on">心悦俱乐部</a>
+		  	   	   <a href="demo/PC/御龙在天.htm" title="御龙在天" target="_blank">御龙在天</a>
+		  	   	   <a href="javascript:alert('敬请期待！');" title="英雄联盟" target="_blank">英雄联盟</a>
+		  	   	   <a href="demo/PC/战地之王.htm" title="战地之王" target="_blank">战地之王</a>
+		  	   	   <a href="demo/PC/最强NBA.htm" title="最强NBA" target="_blank">最强NBA</a>
+		  	   	   <a href="tx_list/战争雷霆.htm" title="战争雷霆" target="_blank" class="on">战争雷霆</a>
+		  	   	   <p class="tips">
+		  	   	   	注：凡是标注其他颜色的，都有重点或者有特殊要求，要注意哦~<br/>
+		  	   	   </p>
+		  	   	   <h2 class="tit">其他规范</h2>
+		  	   	   <a href="tx_list/folder.htm" target="_blank" title="文件夹结构规范" target="_blank">文件夹结构规范</a>
+		  	   	   <a href="http://tgideas.qq.com/cpexp/qcp2zz/docs/readme-pd.html" target="_blank" title="qcp上传同步蜘蛛规范" target="_blank">qcp上传同步蜘蛛规范</a>
+		  	   	   <a href="http://tgideas.qq.com/cguide/datateam/pcactdata.shtml" target="_blank" title="PC端CP专题统计规范" target="_blank">PC端CP专题统计规范</a>
+		  	   	   <a href="http://codol.qq.com/2017/atemple/cp.html" target="_blank" title="前端模板化指引文档" target="_blank">前端模板化指引文档</a>
+		  	   	   <a href="tx_list/seo.htm" target="_blank" title="qcp上传同步蜘蛛规范" target="_blank">活动需求SEO填写规范</a>
+		  	   	   <a href="http://codol.qq.com/2017/atemple/cp_index.html" target="_blank" title="前端模板化承载页弹窗调用示例" target="_blank">前端模板化承载页弹窗调用示例</a>
+		  	   	   <p class="tips">页面上不要用以下的js，不再更新，后续下线</p>
+		  	   	   <div class="tbox">
+		  	   	   	    <p>http://ossweb-img.qq.com/images/js/mobile/biz/login-min.js</p>
+				  	   	<p>http://ossweb-img.qq.com/images/js/milo/milo-min.js</p>
+				  	    <p>http://ossweb-img.qq.com/images/js/login/loginmanagerv3.js</p>
+		  	   	   </div>
+		  	   	   <h2 class="tit">专题分离路径汇总</h2>
+		  	   	   <p><b>传奇霸业：</b>//game.gtimg.cn/images/mirs/cp/a文件夹名称/</p>
+		  	   	   <p class="on"><b>奇迹觉醒：</b>//webp-img.qq.com/images/qjjx/cp/a文件夹名称/</p>
+		  	   	   <p><b>穿越火线手游：</b>//game.gtimg.cn/images/cfm/cp/a文件夹名称/</p>
+		  	   	   <p><b>地下城与勇士：</b>//game.gtimg.cn/images/dnf/cp/a文件夹名称/</p>
+		  	   	   <p><b>绝地求生 （光子）：</b>//game.gtimg.cn/images/cjm/cp/a文件夹名称/</p>
+		  	   	   <p><b>极品飞车：</b>//game.gtimg.cn/images/nfsol/cp/a文件夹名称/</p>
+		  	   	   <p><b>流放之路：</b>//game.gtimg.cn/images/poe/cp/a文件夹名称/</p>
+		  	   	   <p><b>乱世王者：</b>//game.gtimg.cn/images/slg/cp/a文件夹名称/</p>
+		  	   	   <p><b>QQ仙灵：</b>//game.gtimg.cn/images/h2/cp/a文件夹名称/</p>
+		  	   	   <p><b>QQ自由幻想：</b>//game.gtimg.cn/images/ffo/act/a文件夹名称/</p>
+		  	   	   <p><b>枪神纪：</b>//game.gtimg.cn/images/tps/cp/a文件夹名称/</p>
+		  	   	   <p><b>上古世纪：</b>//game.gtimg.cn/images/age/cp/a文件夹名称/</p>
+		  	   	   <p><b>使命召唤：</b>//game.gtimg.cn/images/codo/cp/a文件夹名称/</p>
+		  	   	   <p><b>兽人必须死：</b>//ossweb-img.qq.com/images/chanpin/omd/public/a文件夹名称/</p>
+		  	   	   <p><b>天堂：</b>//ossweb-img.qq.com/images/chanpin/tiantang/public/a文件夹名称/</p>
+		  	   	   <p><b>天天炫斗：</b>//game.gtimg.cn/images/ttxd/cp/a文件夹名称/</p>
+		  	   	   <p><b>王者荣耀：</b>//game.gtimg.cn/images/yxzj/cp/a文件夹名称/</p>
+		  	   	   <p><b>御龙在天：</b>//game.gtimg.cn/images/ylztweb/cp/a文件夹名称/</p>
+		  	   	   <p><b>战地之王：</b>//game.gtimg.cn/images/ava/cp/a文件夹名称/</p>
+		  	   	   <p><b>最强NBA：</b>//game.gtimg.cn/images/zqnba/cp/a文件夹名称/</p>
+		  	   </div>
+		  </div>
+		  <div id="ct2"  class="ctbox" style="display: none;">
+		  	   <div class="gamebox">
+		  	   	    <h2 class="tit">特殊规范需求</h2>
+		  	   	    <a href="http://tgideas.qq.com/webplat/info/news_version3/804/25810/28310/m16274/201610/517622.shtml" title="页游官网" target="_blank" class="cur">页游官网规范</a>
+		  	   	    <a href="tx_list/微社区.htm" title="微社区" target="_blank" class="cur">微社区</a>
+		  	   	    <a href="demo/H5/掌飞适配.htm" title="QQ飞车掌飞适配" target="_blank">QQ飞车掌飞适配</a>
+		  	   	    <a href="tx_list/QQ飞车移动端.htm" title="QQ飞车移动端" target="_blank" class="on">QQ飞车移动端</a>
+		  	   	    <a href="demo/H5/H5_video.html" title="视频相关demo" target="_blank">视频相关demo</a>
+		  	   	    <a href="http://xinyue.qq.com/vipmb/standard/mobile/appAndH5.html" title="心悦需求规范" target="_blank" class="on">心悦需求规范</a>
+		  	   	    <a href="http://gamevip.qq.com/widget/guide/html/intro.html" title="蓝钻规范" target="_blank">蓝钻规范</a>
+		  	   	    <a href="http://huanle.qq.com/topic/gamelibrary/view.shtml?path=/webplat/info/news_version3/1187/24139/24140/24150/24214/m15263/201605/468948.shtml" title="欢乐游戏规范" target="_blank">欢乐游戏规范</a>
+		  	   	    <a href="http://ac.qq.com/event/CPGuide/index.html" title="腾讯动漫" target="_blank" class="on">腾讯动漫</a>
+		  	   	    
+		  	   	    <a href="http://wximg.qq.com/wxgame/doc/#4-1-4-sample" title="微信游戏规范" target="_blank">微信游戏规范</a>
+		  	   	    <a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115" title="微信公众平台规范" target="_blank">微信公众平台规范</a>
+		  	   	    <p class="tips">注：凡是标注其他颜色的，都有重点或者有特殊要求，要注意哦~</p>
+		  	   	    <h2 class="tit">一般专题</h2>
+		  	   	    <a href="http://tgideas.qq.com/webplat/info/news_version3/804/25810/26096/m16274/201610/517971.shtml" title="移动端规范" target="_blank">移动端规范</a>
+		  	        <a href="demo/H5/刺激战场H5.htm" title="刺激战场" target="_blank" class="cur">刺激战场适配</a>
+		  	        <a href="demo/H5/H5-rem.htm" title="一般专题rem适配" target="_blank">一般专题rem适配</a>
+		  	        <a href="demo/H5/H5-px.htm" title="一般专题px适配" target="_blank">一般专题px适配</a>
+		  	        <a href="demo/H5/pageSwitch 切屏/index.htm" title="切屏rem适配" target="_blank">切屏rem适配</a>
+		  	        <a href="demo/H5/px切屏/index.htm" title="切屏rem适配" target="_blank">切屏px适配</a>
+		  	        <a href="demo/H5/横竖版.htm" title="横竖版适配demo" target="_blank">横竖版适配demo</a>
+		  	        <h2 class="tit">移动端加分享（DNF）</h2>
+		  	        <div class="tbox">
+		  	        		<p>&lt;script src="//dnf.qq.com/app/js/appShare.js">&lt;/script&gt;<br></p>
+							<p>
+								&lt;script&gt;<br>
+		  	        	 		function appShare() {<br>
+									  if (typeof (GameHelper) != 'undefined' && typeof (GameHelper.shareWebPageDIY) != 'undefined') {<br>
+									  var title = "DNF迎国庆，天天签到有好礼",//活动标题<br>
+									  summary = "DNF国庆版本提前知，纯净的黄金增幅书，安徒恩灵魂碎片等你来拿",//活动简介<br>
+									  icon = "https://game.gtimg.cn/images/dnf/cp/a20180906prevm/share.jpg",//分享图片200*200<br>
+									  url = encodeURI(document.location),<br>
+									  types = "1,2,3,4,5,6,7";<br>
+									  GameHelper.shareWebPage(title, summary, icon, url, types);<br>
+									  }<br>
+									}<br>
+								&lt;/script&gt;
+		  	        	   </p>		
+		  	        </div>
+		  	   </div>
+		  </div>
+	 </div>
+</div>
+<script>
+//页签
+function g(e) {
+		return (typeof e == 'object') ? e : document.getElementById(e)
+	}
+	function hasClass(o,c) {
+		var regexp = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
+		return regexp.test(o.className)
+	}
+	function setTab(a,b) {
+		var tabs = g(a).getElementsByTagName('li'),
+			cts = []
+		for (var i = 1; i <= tabs.length; i++) {
+			cts.push(g(b+i));
+		};
+		for (var i = 0; i < tabs.length; i++) {
+			tabs[i].n = i;
+			tabs[i].onclick = function() {
+				if (!hasClass(this,'on')) {
+					for (var j = 0; j < tabs.length; j++) {
+						tabs[j].className = tabs[j].className.replace(RegExp("(^|\\s)" + 'on' + "(\\s|$)", "g"), "");
+						cts[j].style.display = 'none'
+					};
+					this.className += (this.className ? " " : "") + 'on';
+					cts[this.n].style.display = 'block'
+				}
+			}
+		};
+	}
+	setTab('tab1','ct');
+</script>
+</body>
+</html>

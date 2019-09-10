@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			.pr {position:relative;}
+			.pa {position:absolute;}
+			.pr1-l{float:left;width:668px;height:217px;}
+			/*倒计时*/
+			.time-day{width:144px;height:89px;left:218px;top:34px;padding:12px 0 0 8px;}			
+				.time-day span{background: url(num.png) no-repeat;width:63px;height:63px;float:left;margin-left:3px;}
+				.time-day .day0{background-position:-30px -15px;}
+				.time-day .day1{background-position:-108px -14px;}
+				.time-day .day2{background-position:-183px -13px;}
+				.time-day .day3{background-position:-257px -14px;}
+				.time-day .day4{background-position:-332px -12px;}
+				.time-day .day5{background-position:-31px -109px;}
+				.time-day .day6{background-position:-105px -108px;}
+				.time-day .day7{background-position:-183px -109px;}
+				.time-day .day8{background-position:-252px -111px;}
+				.time-day .day9{background-position:-330px -108px;}
+			/*预约*/
+			.num{width:211px;height:38px;background-position:-3px -174px;left:207px;top:153px;color:#ffe701;font-size:38px;font-weight:bold;text-align:center;line-height:38px;*line-height:42px;}
+		</style>
+	</head>
+	<body>
+		<div class="pr1-l pr">
+			<!--倒计时-->
+			<div class="time-day pa" id="day">
+				<span></span>
+				<span></span>
+			</div>
+			<!--预约人数-->
+		</div>
+		<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+		<script src="http://apps.game.qq.com/cgi-bin/comm_act/tgc2013/chicken/get_time.cgi"></script>
+		<script>
+			var ddt = Date.parse(new Date(nowDate.replace(/-/g, "/")));
+		    var endDay = Date.parse(new Date(Date.parse('2017-9-30'.replace(/-/g, "/"))));
+		    var stillDay = Math.floor((endDay - ddt) / (1000 * 60 * 60 * 24));
+		    if (stillDay < 0) stillDay = '0';
+		    if (stillDay < 10) stillDay = '0' + stillDay;
+		    else stillDay = stillDay + '';
+		    stillDay = stillDay.split("");
+		    document.getElementById('day').innerHTML = '<span class="day' + stillDay[0] + '"></span><span class="day' + stillDay[1] + '"></span>';
+		</script>
+	</body>
+</html>

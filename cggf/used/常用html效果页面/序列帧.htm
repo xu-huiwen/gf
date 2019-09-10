@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="Tencent-CP" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="Keywords" content="乱世王者、乱世王者手游,乱世王者官网,乱世王者官方手游、乱世王者官方手游下载,乱世王者移动版,乱世王者手机版,乱世王者手游正版,乱世王者官方手游测试">
+<meta name="Description" content="腾讯天美工作室打造的《乱世王者》是一款历史架空背景的战争策略手游。《乱世王者》最大程度还原战争策略游戏的精髓，玩家将化身为在这个乱世中的一方诸侯，从招兵买马到安邦治国，逐步走向问鼎天下的争霸之路。">
+<title>王者之巅 称雄乱世-乱世王者官方网站-腾讯游戏-腾讯首款战争策略手游</title>
+<!-- 设计：cp  | 重构：cp | 创建：2018/02/22  -->
+<script>
+function AutoPage(){ 
+	document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 640 + 'px';
+ } ;
+AutoPage();
+window.addEventListener('resize',AutoPage,false)  
+</script>
+<style>
+/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+body{font-family:"\5FAE\8F6F\96C5\9ED1",Helvetica;-webkit-text-size-adjust:none;font-size:0.24rem;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong{font-weight:normal;font-style:normal;}
+a {text-decoration:none;}
+:focus {outline: none;}
+b{font-weight: bold;}
+img{display: block;border: none;}
+.hide {display:none;}
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.db {display:block;text-indent:-999em;}
+.sp{background: url(ossweb-img/sp.png) no-repeat;background-size: 7.11rem 3.01rem;}
+.tabsp{background: url(ossweb-img/tabsp.png) no-repeat;background-size: 6.12rem 1.85rem;}
+.popsp{background: url(ossweb-img/popsp.png) no-repeat;background-size: 4.14rem 2.26rem;}
+body,html{background-color: #f8ecce;}
+.wrap{position: relative;}
+/*footer*/
+#afooter{text-align:center;font-size:0.24rem;line-height:0.4rem;color:#fffae1;background-color: #6e261c;padding: 0.1rem 0;}
+#afooter a{color: #fffae1;}
+/*header*/
+header {height: 6.88rem;background: url(ossweb-img/bg1.jpg) no-repeat 50% 0; background-size: 100%;-webkit-background-size: 100%;position: relative;}
+/*弹幕*/
+.content{width:100%;height:5.51rem;position:relative;top:0;left:0;z-index:1;}
+.danmustage{width:100%;height:100%;z-index:2;color:#fff;overflow:hidden;font-size:20px;}
+.danmu{height:24px;line-height:24px;display:block;}
+.mydanmu{height:24px;line-height:24px;display:block;padding:6px;border:1px solid #fff;border-radius:15px}
+.alwaysdanmu{display:block}
+.controls{position:relative;width:100%;height:1.37rem;line-height: normal;z-index:1;}
+.danmuForm{position:relative;width:5.64rem;height:0.87rem;margin: 0 auto; background-position: 0 0;display:block;overflow: hidden;padding: 0.5rem 0.2rem 0 0.2rem;}
+.commentInput{width:4.55rem;height:0.57rem;display:block;background:#bc7533;font-size:0.18rem;outline:0;z-index:2;color:#fdbe84;float:left;border-radius:0 !important;padding:0 !important;border:0 !important;outline: none;letter-spacing: -1px;}
+.commentSubmit{display:block;width:0.95rem;height:0.59rem;background-position: -6.16rem 0;color:#fedbab;font-size:0.18rem;text-align:center;z-index:2;outline:0;float:left;border-radius:0 !important;padding:0 !important;border:0 !important;margin-left: 0.1rem;}
+.keyboardSubmit{position: absolute;bottom: -9999px;right: -9999px;visibility: hidden;}
+input::-webkit-input-placeholder{color: #fdbe84;}
+input:-moz-placeholder{color:#fdbe84;}
+input::-moz-placeholder{color:#fdbe84;}
+input:-ms-input-placeholder{color:#fdbe84;}
+.danmustage span{text-shadow: 0.1rem 0px 0px #000;}
+
+/*section1*/
+.section1{height: 2.11rem;background: url(ossweb-img/bg2.jpg) no-repeat 50% 0; background-size: 100%;-webkit-background-size: 100%;position: relative;overflow: hidden;}
+.tab{width: 6.12rem;height: 1.85rem;background: url(ossweb-img/tab.png) no-repeat;background-size: 100% 100%;margin: 0 auto;margin-top: 0.2rem;}
+.tab li {width: 1.51rem;height: 1.85rem;float: left;display: inline; margin-right: 0.02rem;}
+.tab li a{display: block;width: 100%;height: 1.65rem;background-position: 999rem 999rem;font-size: 0.22rem;color: #ffeaaf;line-height: 0.24rem;text-align: center;padding-top: 0.2rem;}
+.tab li a span{display: block;color: #FFFFFF;}
+.tab .on a{color: #442b15;}
+.tab .on a span{color: #bd0000;font-size: 0.26rem;line-height: 0.28rem;font-weight: bold;text-shadow: 0.02rem 0.02rem 0 #570000;}
+.tab .on .tabh1{background-position: 0 0;}
+.tab .on .tabh2{background-position: -1.51rem 0;}
+.tab .on .tabh3{background-position: -3.02rem 0;}
+.tab .on .tabh4{background-position: -4.53rem 0;}
+/*.tab .on {background-color: #f00;}*/
+.hide {position:absolute;left:-999em;}
+.show {position:static;}
+
+/*section2  height: 1.99rem;*/
+.section2{background: url(ossweb-img/text_bg.jpg) no-repeat 50% 0; background-size: 100%;-webkit-background-size: 100%;position: relative;}
+.ct{width: 5.7rem;height: 1.69rem;background: url(ossweb-img/text_ct.jpg) no-repeat;background-size: 100% 100%;margin: 0 auto;padding: 0.15rem;font-size: 0.2rem;color: #7f4211;line-height: 0.3rem;}
+
+/*section3*/
+.section3{height: 18.85rem;background: url(ossweb-img/bg3.jpg) no-repeat 50% 0; background-size: 100%;-webkit-background-size: 100%;position: relative;}
+.pr3_msg{width: 100%;height: 0.28rem; font-size: 0.22rem;color: #ffe8bc;line-height: 0.28rem;text-align: center;padding-top: 0.3rem;}
+.pr3_msg span{color: #fff25d;font-size: 0.26rem;line-height: 0.28rem;}
+.order{display: block;width: 1.29rem;height: 0.49rem;background-position: 0 -1.52rem;margin: 0 auto;margin-top: 0.15rem;font-size: 0.22rem;color: #630000;text-align: center;line-height: 0.49rem;text-shadow: 1px 1px 0 #edc95d;}
+.flash{display: block;width: 100% ;height: 6.47rem;margin: 0 auto;}
+.flash img{height: 100%;display: block;margin: 0 auto;}
+.timeline{width: 100%;height: 9.6rem;padding-top: 0.6rem;}
+.time_bg{width: 1.59rem;height: 9.41rem;background: url(ossweb-img/time_bg.png) no-repeat;margin: 0 auto;background-size: 100% 100%;}
+.s_tit1{width: 1.96rem;height: 0.67rem;background-position: -1.42rem -1.52rem;left: 1.5rem;top: 1.1rem;}
+.s_tit2{width: 1.9rem;height: 0.67rem;background-position: -3.57rem -1.52rem;left: -1.95rem;top: 3.45rem;}
+.s_tit3{width: 2rem;height: 0.67rem;background-position: 0 -2.34rem;left: 1.52rem;top: 5.8rem;}
+.s_tit4{width: 1.9rem;height: 0.67rem;background-position: -2.23rem -2.34rem;left: -1.95rem;top: 8.15rem;}
+.time_bg a{width: 2.27rem;height: 2.12rem;position: absolute;}
+.time_bg a img{width: 100%;height: 100%;}
+.pos1{left: -2.2rem;top: 0.4rem;}
+.pos2{left: 1.6rem;top: 2.75rem;}
+.pos3{left: -2.2rem;top: 5.1rem;}
+.pos4{left: 1.6rem;top: 7.45rem;}
+
+/*弹窗*/
+#popmask{position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index: 999;}
+.pop{display: none;position: relative;}
+.pop_close{display: block;width: 0.28rem;height: 0.28rem;text-indent: -999em;background-position:-2.88rem -0.62rem;position: absolute;top: -0.42rem;right: 0;}
+
+/*登录*/
+.pop1{background:url(ossweb-img/pop2.png);width: 4.84rem;height: 1.42rem;background-size: 100% 100%;padding-top: 0.7rem;}/*必须写宽高*/
+.pop_tit1{width: 4.14rem;height: 0.32rem;background-position: 0 -1.59rem;margin: 0 auto;margin-bottom: 0.35rem;}
+.login_btn {width: 3.9rem;height: 0.48rem;margin: 0 auto;}
+.login_btn a {display: block;width: 1.55rem;height: 0.48rem;}
+.btn_qq {float: left;background-position: 0 0;}
+.btn_wx {float: right;background-position: -1.61rem 0;}
+
+/*登录平台*/
+.pop2{background:url(ossweb-img/pop1.png) no-repeat;width: 4.84rem;height: 2.54rem;background-size: 100% 100%;padding-top: 2.1rem;}/*必须写宽高*/
+.pop_tit2{width: 3.88rem;height: 0.36rem;background-position: 0 -2.41rem;margin: 0 auto;margin-bottom: 0.3rem;}
+.pop_sec {width: 3rem;height: 0.4rem;margin: 0.1rem auto 0;}
+.pop_sec span {float: left;width: 1.0rem;color: #a65926;font-size: 0.22rem;text-align: center;line-height: 0.4rem;}
+.pop_sec select {float: left;width: 2rem;height: 0.4rem;color: #e09767;font-size: 0.20rem;text-align: center;vertical-align: middle;background-color: #a65926;border: none;border-radius: 0.02rem;}
+.pop_btn {width: 3rem;height: 0.48rem;margin: 0 auto;margin-top: 0.25rem;}
+.pop_btn a {display: block;width: 1.39rem;height: 0.48rem;font-size: 0.24rem;color: #553207;line-height: 0.64rem;text-align: center;}
+.btn_qx {float: left;background-position: -1.43rem -1.05rem;}
+.btn_qr1 {float: right;background-position: 0 -1.05rem;}
+
+/*pop3*/
+.pop3{background:url(ossweb-img/pop2.png);width: 4.84rem;height: 2.92rem;background-size: 100% 100%;padding-top: 0.7rem;}/*必须写宽高*/
+.pop_tit3{width: 3.85rem;height: 0.31rem;background-position:  0 -1.95rem;margin: 0 auto;margin-bottom: 0.3rem;}
+.pop3-pic{display: block;width: 1.5rem;height: 1.25rem;margin: 0 auto;margin-top: 0.25rem;}
+.pop3-msg{width: 100%;font-size: 0.22rem;color: #a65926;line-height: 0.3rem;text-align: center;margin-bottom: 0.1rem;}
+.pop-btn{display: block;width: 1.39rem;height: 0.48rem;font-size: 0.24rem;color: #553207;line-height: 0.75rem;text-align: center;background-position: 0 -0.52rem;margin: 0 auto;}
+.pop-btned{display: block;width: 1.39rem;height: 0.48rem;font-size: 0.24rem;color: #553207;line-height: 0.75rem;text-align: center;background-position: -1.43rem -0.52rem;margin: 0 auto;}
+
+
+/*横屏提示*/	
+@media all and (orientation : landscape){
+    html,body  { position:relative; overflow:hidden;width:100%; height:100%;padding:0;margin:0;}
+    html::before {content: ""; position:fixed; top:0; left:0; height:100%; width:100%; background:#333; z-index:99999; }
+html::after {content: "为了更好的体验，请将手机/平板竖过来";position:absolute; top:50%; left:0; height:30px; width:100%; margin-top:40px; z-index:99999; text-align:center; font-size:16px; color:#fff;  }
+body::before  { content: ""; position:absolute; z-index:99999; height:200px; width:100px; left:50%; top:50%; margin:-130px 0 0 -50px; color:#fff;-webkit-transform: rotate(-90deg);transform: rotate(-90deg); background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB2CAYAAAAZUrcsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDAwMjcwNkVEQzczMTFFNjlFMDFGQTEzNkM3N0JBMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDAwMjcwNkREQzczMTFFNjlFMDFGQTEzNkM3N0JBMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0NzhCMTlBREM1ODExRTZCNTdFRjQ0Q0I1QzRCODZBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQ0NzhCMTlCREM1ODExRTZCNTdFRjQ0Q0I1QzRCODZBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+J30rNQAACRRJREFUeNrsXQlsFVUU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"); background-repeat:no-repeat; background-position:center center; background-size:100px auto;}
+}
+/*序列帧*/
+.img1{display: block;width: 100% ;height: 7.47rem;}
+.zyz{display: block;width: 2rem;height: 0.5rem;left: 50%;margin-left: -1rem; top: 6.48rem;}
+.img2{display: none;width: 100% ;height: 7.47rem;}
+.dkbx{display: block;width: 2rem;height: 0.5rem;left: 50%;margin-left: -1rem; top: 6.4rem;}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<h1 class="hide">王者之巅 称雄乱世</h1>
+		<div class="content">
+		    <div class="danmustage"></div>
+		</div>
+		<div class="controls">
+	        <form class="danmuForm sp">
+		        <input id="comment" name="comment" type="text" class="commentInput" maxlength="20" autocomplete="off" placeholder="发送原创祝福弹幕，有机会获得抽奖礼品翻倍buff哦~">
+		        <button type="button" class="commentSubmit sp" id="submit_btn" name="submit_btn" onclick="return false;">发送</button>
+		        <input type="submit" class="keyboardSubmit" value="手机键盘enter键" id="kb_submit_btn" name="kb_submit_btn">
+	        </form>
+	    </div>
+	</header>
+	<div class="main">
+		<section class="section section1">
+			<ul class="tab c">
+				<li>
+					<a href="javascript:;" class="tabsp tabh1" ontouchend="PTTSendClick('btn','tabh1','木材');">抽奖主题<span>木材</span></a>
+				</li>
+				<li>
+					<a href="javascript:;" class="tabsp tabh2" ontouchend="PTTSendClick('btn','tabh2','粮草');">抽奖主题<span>粮草</span></a>
+				</li>
+				<li>
+					<a href="javascript:;" class="tabsp tabh3" ontouchend="PTTSendClick('btn','tabh3','加速');">抽奖主题<span>加速</span></a>
+				</li>
+				<li>
+					<a href="javascript:;" class="tabsp tabh4" ontouchend="PTTSendClick('btn','tabh4','将魂');">抽奖主题<span>将魂</span></a>
+				</li>
+			</ul>
+		</section>
+		<section class="section section2">
+			<div class="ct hide">文字介绍文字介绍文字介绍1</div>
+			<div class="ct hide">文字介绍文字介绍文字介绍2</div>
+			<div class="ct hide">文字介绍文字介绍文字介绍3</div>
+			<div class="ct hide">文字介绍文字介绍文字介绍4</div>
+		</section>
+		<section class="section section3">
+			<p class="pr3_msg">现在的抽奖buff：<span>3倍</span></p>
+			<a href="javascript:;" class="order sp" title="订阅提醒" ontouchend="PTTSendClick('btn','order','订阅提醒');">订阅提醒</a>
+			<div class="flash">
+				<div class="img1 pr" id="section0">
+					<a href="javascript:;" class="zyz pa"></a>
+				</div>
+				<div class="img2 pr" id="section1">
+					<a href="javascript:;" class="dkbx pa"></a>
+				</div>
+			</div>
+			<div class="timeline">
+				<div class="time_bg pr">
+					<h2 class="s_tit1 sp pa"></h2>
+					<h2 class="s_tit2 sp pa"></h2>
+					<h2 class="s_tit3 sp pa"></h2>
+					<h2 class="s_tit4 sp pa"></h2>
+					<a href="javascript:;" class="pos1" ontouchend="PTTSendClick('link','link1','周年庆豪礼');">
+						<img src="ossweb-img/pic1.png" alt="" />
+					</a>
+					<a href="javascript:;" class="pos2" ontouchend="PTTSendClick('link','link2','周年庆豪礼');">
+						<img src="ossweb-img/pic2.png" alt="" />
+					</a>
+					<a href="javascript:;" class="pos3" ontouchend="PTTSendClick('link','link3','周年庆豪礼');">
+						<img src="ossweb-img/pic3.png" alt="" />
+					</a>
+					<a href="javascript:;" class="pos4" ontouchend="PTTSendClick('link','link4','周年庆豪礼');">
+						<img src="ossweb-img/pic4.png" alt="" />
+					</a>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+<!-- 登录 Start-->
+<div class="pop pop1"id="pop1"style="display: none;">
+	<p class="pop_tit1 popsp"></p>
+	<div class="login_btn c">
+		<a href="javascript:;" class="btn_qq popsp db" ontouchend="PTTSendClick('btn','btn_qq','QQ登陆');" title="QQ登陆">QQ登陆</a>
+		<a href="javascript:;" class="btn_wx popsp db" ontouchend="PTTSendClick('btn','btn_wx','微信登陆');" title="微信登陆">微信登陆</a>
+	</div>	
+	<a href="javascript:hidePopOk('#pop1');" class="pop_close popsp db" title="关闭">&times;</a>
+</div>
+<!-- 登录 End-->
+
+<!-- 登录平台 Start-->
+<div class="pop pop2" id="pop2" style="display:none;">
+    <p class="pop_sec c">
+        <span>平台</span>
+        <select id="systemContentId">
+            <option>请选择平台</option>
+        </select>
+    </p>
+    <p class="pop_sec c">
+        <span>大区</span>
+        <select id="areaContentId">
+            <option>请选择大区</option>
+        </select>
+    </p>
+    <p class="pop_sec c">
+        <span>角色</span>
+        <select id="roleContentId">
+            <option>请选择角色</option>
+        </select>
+    </p>
+    <p class="pop_btn c">
+        <a href="javascript:hidePopOk('#pop2');" class="btn_qx popsp db" ontouchend="PTTSendClick('btn','btn_qx','取消');" title="取消">取消</a>
+        <a href="javascript:;" class="btn_qr1 popsp db" ontouchend="PTTSendClick('btn','btn_qr1','确认选择');" title="确认选择">确认选择</a>
+    </p>
+    <a class="pop_close popsp db" href="javascript:hidePopOk('#pop2')" title="关闭">×</a>
+</div>
+<!-- 登录平台 End-->
+
+<!-- 恭喜获得抽奖 Start-->
+<div class="pop pop3" id="pop3" style="display: none;">
+	<p class="pop_tit3 popsp"></p>
+	<img src="ossweb-img/pop-pic1.png" alt=""class="pop3-pic" />           <!-- 换图片即可-->
+	<p class="pop3-msg">郭嘉将魂x100</p>
+	<a href="javascript:;" class="pop-btn popsp db" ontouchend="PTTSendClick('btn','true1','确认');" title="确认">确认</a>     <!--灰质按钮加类名pop-btned-->
+	<a href="javascript:hidePopOk('#pop3');" class="pop_close popsp db" title="关闭">&times;</a>
+</div>
+<!-- 恭喜获得抽奖 End-->
+<script src="http://game.gtimg.cn/images/js/2018foot/foot.js "></script>
+<script src="http://game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script src="http://game.gtimg.cn/images/js/su/danMu.beta.min.js"></script> 
+<script src="http://ossweb-img.qq.com/images/js/mobile_build/milo.js"></script>
+<script>
+//序列帧    把图片写在div里
+//function kvdh(dom){
+//	var kvnum=0;
+//	setInterval(function(){
+//		kvnum++;
+//		kvnum%=$(dom).length;
+//		$(dom).css("opacity","0");
+//		$(dom).eq(kvnum).css("opacity","1");
+//	},70)
+//}
+//kvdh(".role_img1 img");
+//kvdh(".role_img2 img");
+//kvdh(".role_img3 img");
+//kvdh(".role_img4 img");
+
+
+/*预加载*/
+var imgPath1 = "ossweb-img/",
+	sourceArr1 = ['box1.png','box2.png','box3.png','box4.png','box5.png','box6.png','box7.png','box8.png','box9.png','box10.png','box11.png','box12.png','box13.png','box14.png','box15.png','box16.png','box17.png','box18.png','box19.png','box20.png','box21.png','box21.png','box22.png','box23.png'];
+	/*传图片*/
+for(j=1;j<sourceArr1.length;j++){
+	(function (oNewImg1){
+		var oImg1=new Image();
+		oImg1.onload=function (){
+			oNewImg1.src=this.src;
+		};
+		oImg1.src='ossweb-img/box'+j+'.png';
+		oNewImg1.style.display='none';
+		document.getElementById('section1').appendChild(oNewImg1);})(document.createElement('img'));
+}
+	
+/*动画*/
+var  timer1;
+function def(d,e,f){
+	clearInterval(timer);
+var j=f,aImg1=$('#section1 img');
+var oLastImg1=$('.img');
+	timer1=setInterval(function(){
+		if(j<d){
+			$('#section1 img').css('display','none');
+			$('#section1 img').eq(j).css('display','block')
+			j++;
+		}else{
+			j=e;
+			clearInterval(timer1);
+		}
+	},80)
+}	
+clearInterval(timer1);	
+
+
+
+/*预加载*/
+var imgPath = "ossweb-img/",
+	sourceArr = ['zp1.png','zp2.png','zp3.png','zp4.png','zp5.png','zp6.png','zp7.png','zp8.png','zp9.png','zp10.png','zp11.png','zp12.png','zp13.png','zp14.png','zp15.png','zp16.png','zp17.png'];
+	/*传图片*/
+for(i=1;i<=sourceArr.length;i++){
+	(function (oNewImg){
+		var oImg=new Image();
+		oImg.onload=function (){
+			oNewImg.src=this.src;
+		};
+		oImg.src='ossweb-img/zp'+i+'.png';
+		oNewImg.style.display='none';
+		document.getElementById('section0').appendChild(oNewImg);})(document.createElement('img'));
+}
+	
+/*动画*/
+var  timer;
+function abc(a,b,c){
+	clearInterval(timer);
+var i=c,aImg=$('#section0 img');
+//var oLastImg=$('.img');
+	timer=setInterval(function(){
+		if(i<a){
+			$('#section0 img').css('display','none');
+			$('#section0 img').eq(i).css('display','block')
+			i++;
+		}else{
+			i=b;
+		}
+	},80)
+}	
+var bool=false;
+var bule=true;
+clearInterval(timer);
+abc(17,0,0);
+
+//抽奖
+
+$(".zyz").click(function(){
+	clearInterval(timer);
+	$(".img1").css({"display":"none"})
+	$(".img2").css({"display":"block"})
+	def(23,0,0);
+})
+$(".dkbx").click(function(){
+	clearInterval(timer1);
+	$(".img2").css({"display":"none"})
+	$(".img1").css({"display":"block"})
+	abc(17,0,0);
+})
+	
+//初始的弹幕数据
+  var danmuData = [
+    '哈哈哈哈哈哈哈',
+    '弹幕来袭~',
+    '前面的 你肥皂掉了！！',
+    "前方高能，一大波弹幕来袭！",
+    "不约，叔叔我们不约~",
+    "今天没吃药，感觉自己萌萌哒",
+    "走开，让专业的来",
+    "23333333333~~~~~",
+    "请允许我做一个悲伤的表情",
+    "警察叔叔，就是这个人",
+    "为什么放弃治疗",
+    "放开那个人，让我来",
+    "噗……节操去了哪里啊都！！",
+    "膜拜老司机",
+    "你咋不上天呢",
+    "666",
+    "666666666666666666666666~~~",
+    "放开她，让我来！！！",
+    "德里克。。。。test 。。。",
+    "666~~~~~~~~~！！！！！",
+    "前方高能 非战斗人员紧急撤离",
+    "妈妈问我为什么跪着看电脑_(:_」∠)_",
+    "他说的好有道理 我竟无言以对",
+    '小六 你好靓吖',
+    '我基本是只废猫(≥◇≤)',
+    '这个是真的耶',
+    '弹幕走一波~~~~~~~~~~~~~~~~~~~~~~~~~~',
+    '我似乎听到有人说我帅',
+    '什么？！你刚才说我帅？',
+    '~~~~~~~~~~~~~~~~~~~~~~~~~~我是天空中最亮的星星~~~~~~~~~~~~~~~~~~~~~',
+    '好多人啊',
+    '最近变胖了，悲伤'
+  ];
+
+  //实例化弹幕
+  var dm = new danMu({
+    device:'m',//m代表移动端弹幕,不设置或设为pc代表pc端弹幕
+    stage: $(".danmustage"),
+    comments: danmuData,
+    danMuHtml: "<span>{comment}</span>",
+    colors: ["#5a0a06","#5a0a06","#5a0a06","#5a0a06","#5a0a06"],
+    flyTime:10000, 
+    timeInterval:1200,
+    randomSort:true,
+    hSpacing:0.8
+  });
+
+  //发送弹幕
+  var sendDanmuCheck = function(){
+    var commVal = $.trim($("#comment").val());
+    if(commVal == ''){
+      $("#comment").blur();
+      alert('不能没写东西啊！');
+      return false;
+    }else if(commVal.length > 20){
+      $("#comment").blur();
+      alert('你是不是写超过20个字了？');
+      return false;
+    }
+    $("#comment").blur();
+    dm.send(commVal,function(){
+      $("#comment").val('');
+    });
+  };
+  $("#submit_btn").bind('tap', function(e) {
+    sendDanmuCheck();
+  });
+  $("#kb_submit_btn").bind('click', function(e) {
+    sendDanmuCheck();
+    return false;
+  });
+  
+ //弹窗     调用弹窗：pop('#pop1')     关闭弹窗hidePopOk('#pop1')
+	window.popNames=null;
+	function gE(e) {
+			return document.querySelector(e)
+	};
+	
+	function pop(e) {
+		if(window.popNames!==null){
+			hidePopOk(window.popNames);
+		}else{
+			window.popNames=e;
+		};
+		showpop(e);
+		hidePop(e);
+	};
+	function showpop(e){
+		gE(e).style.display = "block";
+		var popH = gE(e).offsetHeight,
+				popW = gE(e).offsetWidth;
+		gE(e).style.cssText = "position:fixed;left:50%;display:block;top:50%;z-index:9999;" + "margin-left:-" + popW / 2 + "px;" + "margin-top:-" + popH / 2 + "px;"
+		if(!gE('#popmask')) {
+			var bgObj = document.createElement("div");
+			bgObj.setAttribute('id', 'popmask');
+			document.body.appendChild(bgObj);
+		};
+		var conH = document.body.offsetHeight;
+		gE('#popmask').style.height = conH + "px";
+		
+		window.popNames=e;
+	};
+	window.addEventListener('resize',function(){
+		if(window.popNames!==null){
+			 showpop(window.popNames);
+		};
+	},false)
+	
+	function hidePop(e) {
+		gE('#popmask').addEventListener('click', function () {
+			hidePopOk(e)
+		});
+	};
+	function hidePopOk(e) {
+		if(window.popNames!==null){
+			gE(window.popNames).style.display = "none";
+			var bgObj = gE("#popmask");
+			document.body.removeChild(bgObj);
+			window.popNames=null;
+			PTTSendClick('btn','popclose','关闭')
+		};
+	}; 
+
+function setTab(a, b) {
+	var tabs = document.querySelectorAll(a),
+		cts = document.querySelectorAll(b);
+	for (var i = tabs.length - 1; i >= 0; i--) {
+		tabs[i].current = i;
+		tabs[i].addEventListener('touchend', function(e) {
+			if (!this.classList.contains('on')) {
+				for (var j = 0; j < tabs.length; j++) {
+					tabs[j].classList.remove('on');
+					cts[j].classList.remove('show')
+					cts[j].classList.add('hide');
+				};
+				this.classList.add('on');
+				cts[this.current].classList.remove('hide');
+				cts[this.current].classList.add('show');
+			}
+		})
+	};
+}
+setTab('.tab li', '.ct');
+</script>
+<!--统计-->
+<script src="http://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+ siteType:"a20180709hjz", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName:"首页", //必填项:页面中文名
+ osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>
+

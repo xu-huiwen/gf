@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="gbk"/>
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="robots" content="all"/>
+    <meta name="author" content="Tencent-TGideas"/>
+    <meta name="Description"
+          content="腾讯光子工作室群自研大作，正版战斗特训手游《绝地求生：刺激战场》！虚幻4引擎,次世代完美画质,重现端游视听感受;8000M×8000M实景地图,全面自由施展战术;百人竞技,真实射击手感;好友一键组队,语音开黑;给您带来一场刺激的竞技体验"/>
+    <meta name="Keywords"
+          content="绝地求生,绝地求生刺激战场,绝地求生手游,刺激战场,绝地求生手游下载,绝地求生刺激战场下载,绝地求生国服,吃鸡手游,刺激战场下载,绝地求生 刺激战场,绝地求生下载,掘地求生刺激战场,腾讯吃鸡手游,绝地求生大逃杀,腾讯绝地求生手游"/>
+    <title>2018 TGA大奖赛</title>
+    <script src="//js.aq.qq.com/js/aq_common.js"></script>
+    <script>
+        if (!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            //window.location.href = "//pg.qq.com/cp/a20180320enroll/index.shtml";
+        }
+        (function (win) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+
+            function setFont() {
+                var cliWidth = html.clientWidth;
+                html.style.fontSize = 100 * (cliWidth / 750) + 'px';
+            }
+
+            win.addEventListener('resize', setFont, false);
+            setFont();
+        })(window);
+
+    </script>
+    <link rel="stylesheet" href="//game.gtimg.cn/images/cjm/m/m201801/css/comm.css">
+    <link rel="stylesheet" href="//game.gtimg.cn/images/cjm/cp/a20180322signupm/style.css?d=20180408"/>
+</head>
+<body>
+<!--#include virtual="/m/m201801/inc/header.inc" -->
+<!--#include virtual="/m/m201801/inc/nav_top.inc" -->
+<div class="wrap">
+    <section class="head">
+        <h1 class="hide">2018 TGA大奖赛</h1>
+        <div class="login">
+            <p id="unlogin">亲爱的玩家，请[<a href="javascript:pop('#pop_login');">登录</a>]</p>
+            <p id="logined" style="display:none;">hi，[<span id='login_qq_span'></span>]</p>
+        </div>
+        <p class="time1_hd">报名日期:<strong>4月9日—4月18日</strong></p>
+        <!--<p class="time2_hd">提交成绩时间:<strong>4月10日—4月22日</strong></p>-->
+        <div class="btn_hd c">
+            <a href="javascript:void(0);" id="bmcs" class="btn_enter sp">报名参赛</a>
+            <a id="ckbmxx" href="javascript:void(0);" class="btn_make sp">查看报名信息</a>
+        </div>
+        <!--<a id="ckbmxx" class="link_see" ontouchend="PTTSendClick('link','link_see','查看报名信息');">查看报名信息</a>-->
+    </section>
+    <ul class="nav_list c">
+        <li class="on">
+            <a href="javascript:void(0);" onclick="pos(1)" ontouchend="PTTSendClick('link','link_a1','赛事流程');">赛事流程</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" onclick="pos(2)" ontouchend="PTTSendClick('link','link_a2','赛事排行');">赛事排行</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" onclick="pos(3)" ontouchend="PTTSendClick('link','link_a3','赛事奖励');">赛事奖励</a>
+        </li>
+        <li>
+            <a href="page.shtml" ontouchend="PTTSendClick('link','link_a4','赛事规则');">赛事规则</a>
+        </li>
+    </ul>
+    <section class="part1" style="display: none">
+        <div class="par_tit c">
+            <h2 class="tit tit1">报名奖励</h2>
+            <span>完成报名，即可领取</span>
+        </div>
+        <div class="enroll_dj">
+            <img src="//game.gtimg.cn/images/cjm/cp/a20180322signupm/pic_dj.png" alt="报名奖励"/>
+            <p class="dj_name">
+                <em>法斗尖角面罩(1天)</em>
+                <em>金币×666</em>
+            </p>
+            <p class="enroll_tips">所有报名奖励将在报名结束后7个工作日内发放<br />请务必确保报名信息填写准确。</p>
+            <!--<a href="javascript:void(0);" class="btn_lq sp" ontouchend="PTTSendClick('btn','btn_lq','立即领取');">立即领取</a>-->
+            <!--<a href="javascript:void(0);" id="ljlq"  class="btn_lq sp">立即领取</a>
+            <a href="javascript:void(0);" id="tjcj" title="提交成绩">提交成绩</a>-->
+        </div>
+    </section>
+    <section class="part2" id="part1">
+        <h2 class="tit tit2">赛事流程</h2>
+        <p class="step_img">
+            <img src="//game.gtimg.cn/images/cjm/cp/a20180322signupm/pic_step.jpg" alt="赛事流程"/>
+        </p>
+        <div class="tit_sm c">
+            <h2 class="tit tit3" id="part2">月赛团队排行</h2>
+            <!--<em>（排行榜将在4月26日正式公布）</em>-->
+        </div>
+        <p class="match_sm">4月线上海选赛战队积分排行榜TOP20<strong>(手Q区)</strong>:</p>
+        <div class="par_tab">
+            <div class="tab_head">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>队伍名称</th>
+                        <th>队伍积分</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tab_list">
+                <!-- <p class="tab_none">暂无</p> -->
+                <div style="display: block;"><!--如果无信息，请隐藏这里-->
+                	<table>
+	                    <tr>
+	                        <td>
+	                            <span class="num_one">NO.1</span>
+	                        </td>
+	                        <td>XQF</td>
+	                        <td>18508</td>
+	                    </tr>
+	                    <tr>
+	                        <td>
+	                            <span class="num_two">NO.2</span>
+	                        </td>
+	                        <td>XQw</td>
+	                        <td>17784</td>
+	                    </tr>
+	                    <tr>
+	                        <td>
+	                            <span class="num_three">NO.3</span>
+	                        </td>
+	                        <td>AgFoxBlack</td>
+	                        <td>17440</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.4</td>
+	                        <td>EMP</td>
+	                        <td>17404</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.5</td>
+	                        <td>奇迹俱乐部</td>
+	                        <td>17192</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.6</td>
+	                        <td>AgFoxblue</td>
+	                        <td>17146</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.7</td>
+	                        <td>SC</td>
+	                        <td>17038</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.8</td>
+	                        <td>Eagle Esports</td>
+	                        <td>16888</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.9</td>
+	                        <td>TEC电竞</td>
+	                        <td>16580</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.10</td>
+	                        <td>BOY</td>
+	                        <td>16213</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.11</td>
+	                        <td>XQm</td>
+	                        <td>16087</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.12</td>
+	                        <td>SDG</td>
+	                        <td>15652</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.13</td>
+	                        <td>TYLOO</td>
+	                        <td>15520</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.14</td>
+	                        <td>TGWar</td>
+	                        <td>15383</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.15</td>
+	                        <td>RBGM</td>
+	                        <td>15225</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.16</td>
+	                        <td>4th</td>
+	                        <td>14806</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.17</td>
+	                        <td>5Power 7Hero</td>
+	                        <td>14788</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.18</td>
+	                        <td>Killer</td>
+	                        <td>14700</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.19</td>
+	                        <td>FGT</td>
+	                        <td>14420</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.20</td>
+	                        <td>CJZC</td>
+	                        <td>13576</td>
+	                    </tr>
+	                </table>
+                </div>
+            </div>
+        </div>
+        <p class="match_sm">4月线上海选赛战队积分排行榜TOP20<strong>(微信区)</strong>:</p>
+        <div class="par_tab">
+            <div class="tab_head">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>队伍名称</th>
+                        <th>队伍积分</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tab_list">
+              	<!-- <p class="tab_none">暂无</p> -->
+                <div style="display: block;">
+                	<table>
+	                    <tr>
+	                        <td>
+	                            <span class="num_one">NO.1</span>
+	                        </td>
+	                        <td>AG丶FC</td>
+	                        <td>20128</td>
+	                    </tr>
+	                    <tr>
+	                        <td>
+	                            <span class="num_two">NO.2</span>
+	                        </td>
+	                        <td>WZM战队</td>
+	                        <td>18196</td>
+	                    </tr>
+	                    <tr>
+	                        <td>
+	                            <span class="num_three">NO.3</span>
+	                        </td>
+	                        <td>DR电子竞技俱乐部</td>
+	                        <td>17944</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.4</td>
+	                        <td>5Power</td>
+	                        <td>17872</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.5</td>
+	                        <td>VG电子竞技俱乐部</td>
+	                        <td>17272</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.6</td>
+	                        <td>冲吧酸奶</td>
+	                        <td>17020</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.7</td>
+	                        <td>My Queen</td>
+	                        <td>16888</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.8</td>
+	                        <td>FS</td>
+	                        <td>16489</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.9</td>
+	                        <td>DNZ</td>
+	                        <td>14956</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.10</td>
+	                        <td>WT电竞俱乐部</td>
+	                        <td>13310</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.11</td>
+	                        <td>Shg俱乐部</td>
+	                        <td>12706</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.12</td>
+	                        <td>BA</td>
+	                        <td>12037</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.13</td>
+	                        <td>4ST</td>
+	                        <td>11465</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.14</td>
+	                        <td>Fy丶电竞</td>
+	                        <td>10897</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.15</td>
+	                        <td>LDC</td>
+	                        <td>10719</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.16</td>
+	                        <td>夜生活</td>
+	                        <td>10519</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.17</td>
+	                        <td>MZD</td>
+	                        <td>9936</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.18</td>
+	                        <td>掰牙游击队</td>
+	                        <td>9351</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.19</td>
+	                        <td>红鲤鱼绿鲤鱼</td>
+	                        <td>9346</td>
+	                    </tr>
+	                    <tr>
+	                        <td>NO.20</td>
+	                        <td>3Anice</td>
+	                        <td>9335</td>
+	                    </tr>
+	                </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="part3" id="part3">
+        <h2 class="tit tit4">赛事奖金</h2>
+        <p class="tit match_bonus">奖金总额：￥1,000,000 </p>
+        <p class="pic_bonus">
+            <img src="//game.gtimg.cn/images/cjm/cp/a20180322signupm/bonus_team.jpg?d=20180409" alt="全国总决赛（四人）奖金"/>
+        </p>
+        <p class="pic_bonus">
+            <img src="//game.gtimg.cn/images/cjm/cp/a20180322signupm/bonus_month.jpg?d=20180409" alt="月赛（四人）奖金"/>
+        </p>
+        <p class="pic_bonus">
+            <img src="//game.gtimg.cn/images/cjm/cp/a20180322signupm/bonus_finals.jpg?d=20180409" alt="全国总决赛（单人）奖金"/>
+        </p>
+        <p class="pic_bonus">
+            <img src="//game.gtimg.cn/images/cjm/cp/a20180322signupm/bonus_monthff.jpg?d=20180409" alt="月赛（单人）奖金"/>
+        </p>
+    </section>
+    <section class="part4">
+        <h2 class="tit tit5">赛事简介</h2>
+        <div class="match_main c">
+            <img src="//game.gtimg.cn/images/cjm/cp/a20180322signupm/match_logo.png" alt="TGA大奖赛logo" class="match_logo"/>
+            <p class="match_text">
+                刺激战场TGA大奖赛是由腾讯游戏竞技平台联合《绝地求生:刺激战场》项目共同举办的针对游戏内顶尖玩家的专业性赛事。赛事采用TGA大奖赛独创的“3+1”模式，赛事由月赛、总决赛构成，游戏内玩家通过海选参加月赛，月赛优胜者晋级总决赛，最后争夺半年总冠军。</p>
+        </div>
+    </section>
+</div>
+<!--登录弹窗-->
+<div class="pop_login" id="pop_login" style="display:none">
+    <h3 class="login_tit">请选择登录平台</h3>
+    <p class="login_btn c">
+        <a href="javascript:void(0);" id="btn_wx" class="btn_wx sp" ontouchend="PTTSendClick('btn','btn_wx','微信登录');">微信登录</a>
+        <a href="javascript:void(0);" id="btn_qq" class="btn_qq sp" ontouchend="PTTSendClick('btn','btn_qq','QQ登录');">QQ登录</a>
+    </p>
+    <a class="pop_close" href="javascript:hidePopOk('#pop_login');" title="关闭">&times;</a>
+</div>
+<!--报名弹窗-->
+<div class="pop_enroll" id="pop_enroll" style="display:block">
+    <div class="pop_main">
+        <h4 class="pop_tit">队长及战队信息填写</h4>
+        <p class="pop_text" style="color: red">只接受由队长统一提交报名，不允许重复参赛，<br/>报名一旦提交不可更改，谨慎操作</br>请根据参赛区服填入计算积分的QQ账号或微信账号，</br>队长队员务必保持一致</p>
+        <ul class="pop_list c">
+            <li>
+                <em>队伍名称:</em>
+                <input id="sTeamName" type="text" placeholder="队伍名称"/>
+            </li>
+            <li>
+                <em>队长手机号:</em>
+                <input id="sMobile" type="text" placeholder="队长手机号"/>
+            </li>
+            <li>
+                <em>队长姓名:</em>
+                <input id="name1" type="text" placeholder="队长姓名"/>
+            </li>
+            <li>
+                <em>参赛账号:</em>
+                <input id="num1" type="text" placeholder="参赛QQ帐号或微信帐号"/>
+            </li>
+            <li>
+                <em>参赛区服:</em>
+                <select id="csqf">
+                    <option>请选择</option>
+                    <option value="1">微信</option>
+                    <option value="2">手Q</option>
+                </select>
+            </li>
+            <li>
+                <em>平台:</em>
+                <select id="pt1">
+                    <option>请选择</option>
+                    <option value="0">iOS</option>
+                    <option value="1">安卓</option>
+                </select>
+            </li>
+            <li>
+                <em>队长身份证:</em>
+                <input id="card1" type="text" placeholder="队长身份证"/>
+            </li>
+        </ul>
+        <p class="pop_tips"></p>
+        <ul class="pop_list c">
+            <li>
+                <em>队员姓名:</em>
+                <input id="name2" type="text" placeholder="队员名称"/>
+            </li>
+            <li>
+                <em>队员身份证:</em>
+                <input id="card2" type="text" placeholder="队员身份证"/>
+            </li>
+            <li>
+                <em>参赛账号:</em>
+                <input id="num2" type="text" placeholder="参赛QQ帐号或微信帐号"/>
+            </li>
+            <li>
+                <em>平台:</em>
+                <select id="pt2">
+                    <option>请选择</option>
+                    <option value="0">iOS</option>
+                    <option value="1">安卓</option>
+                </select>
+            </li>
+        </ul>
+        <p class="pop_tips"></p>
+        <ul class="pop_list c">
+            <li>
+                <em>队员姓名:</em>
+                <input id="name3" type="text" placeholder="队员名称"/>
+            </li>
+            <li>
+                <em>队员身份证:</em>
+                <input id="card3" type="text" placeholder="队员身份证"/>
+            </li>
+            <li>
+                <em>参赛账号:</em>
+                <input id="num3" type="text" placeholder="参赛QQ帐号或微信帐号"/>
+            </li>
+            <li>
+                <em>平台:</em>
+                <select id="pt3">
+                    <option>请选择</option>
+                    <option value="0">iOS</option>
+                    <option value="1">安卓</option>
+                </select>
+            </li>
+        </ul>
+        <p class="pop_tips"></p>
+        <ul class="pop_list c">
+            <li>
+                <em>队员姓名:</em>
+                <input id="name4" type="text" placeholder="队员名称"/>
+            </li>
+            <li>
+                <em>队员身份证:</em>
+                <input id="card4" type="text" placeholder="队员身份证"/>
+            </li>
+            <li>
+                <em>参赛账号:</em>
+                <input id="num4" type="text" placeholder="参赛QQ帐号或微信帐号"/>
+            </li>
+            <li>
+                <em>平台:</em>
+                <select id="pt4">
+                    <option>请选择</option>
+                    <option value="0">iOS</option>
+                    <option value="1">安卓</option>
+                </select>
+            </li>
+        </ul>
+        <p class="pop_tips"></p>
+        <a id="qrtj" href="javascript:void(0);" class="btn_enroll">立即报名</a>
+        <p class="pop_item">
+            <input id="isAgree" type="checkbox">本人保证以上信息真实有效，提交后无法更改如有虚假，后果自负。
+        </p>
+    </div>
+    <a class="pop_close sp" href="javascript:hidePopOk('#pop_enroll');" title="关闭">×</a>
+</div>
+<!--提交成绩弹窗1-->
+<div class="tips_pop" id="pop_tips1" style="display:none">
+    <p class="tip_text1">提交成绩后，我们将按照提交时间往前取您和报名队友组队出战的近20场比赛战绩进行积分计算，<strong>一旦提交不可更改</strong>！</p>
+    <p class="tip_text2">您确认要提交成绩吗？</p>
+    <p class="pop_btn c">
+        <a id="zztjcj" href="javascript:void(0);" class="btn_qd sp">确定</a>
+        <a href="javascript:hidePopOk('#pop_tips1');" class="btn_see sp">我再看看</a>
+    </p>
+    <a class="pop_close" href="javascript:hidePopOk('#pop_tips1');" title="关闭">&times;</a>
+</div>
+<!--提交成绩弹窗2-->
+<div class="tips_pop" id="pop_tips2" style="display:none">
+    <p class="tip_text1">报名信息<strong>一旦提交，不可更改</strong>，请务必确认所有账号及个人信息填写准确！</p>
+    <p class="tip_text2">确认准确并提交报名信息吗？</p>
+    <p class="pop_btn c">
+        <a id="zzqrtjxx" href="javascript:void(0);" class="btn_qd sp">确定</a>
+        <a href="javascript:hidePopOk('#pop_tips2');" class="btn_see sp">我再看看</a>
+    </p>
+    <a class="pop_close" href="javascript:hidePopOk('#pop_tips2');" title="关闭">&times;</a>
+</div>
+<!--提交成绩弹窗3-->
+<div class="tips_pop" id="pop_tips3" style="display:none">
+    <p class="tip_text1">提交成功，我们将计算您提交成绩前的20场4人组队比赛积分，统计排行榜，4月22日前请务必记得<strong>提交成绩</strong>！</p>
+    <a href="javascript:window.location.reload();" class="btn_qd sp">确定</a>
+    <a class="pop_close" href="javascript:window.location.reload();" title="关闭">&times;</a>
+</div>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//game.gtimg.cn/images/cjm/m/m201801/js/comm.js"></script>
+<script src="//ossweb-img.qq.com/images/js/login/loginmanagerv3.js" charset="gb2312"></script>
+<script src="//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
+<script>
+    //锚点缓动
+    function pos(num) {
+        var t = $(window).scrollTop();
+        var bt = $("#part" + num).offset().top;
+        var index = 0;
+        var issub = bt - t;
+        clearInterval(timer);
+        var timer = setInterval(function () {
+            index += parseInt(issub / 200) * 20;
+            if (index >= issub) {
+                index = issub;
+                clearInterval(timer);
+            }
+            $(window).scrollTop(t + index - 70);
+        }, 40);
+    }
+
+    var bool = false;
+    //弹窗
+    window.popNames = null;
+
+    function gE(e) {
+        return document.querySelector(e)
+    }
+
+    function pop(e) {
+        if (window.popNames !== null) {
+            hidePopOk(window.popNames);
+        } else {
+            window.popNames = e;
+        }
+        showpop(e);
+        hidePop(e);
+    }
+
+    function showpop(e) {
+        gE(e).style.display = "block";
+        var popH = gE(e).offsetHeight,
+            popW = gE(e).offsetWidth;
+        gE(e).style.cssText = "position:fixed;left:50%;display:block;top:50%;z-index:9999;" + "margin-left:-" + popW / 2 + "px;" + "margin-top:-" + popH / 2 + "px;"
+        if (!gE('#pop-mask')) {
+            var bgObj = document.createElement("div");
+            bgObj.setAttribute('id', 'pop-mask');
+            document.body.appendChild(bgObj);
+        }
+        var conH = document.body.offsetHeight;
+        gE('#pop-mask').style.height = conH + "px";
+
+        window.popNames = e;
+    }
+
+    var defaultWidth = 0;
+    var defaultBool = true;//true 是竖屏
+    function scaleScreen() {
+        var w = $(window).width();
+        var h = $(window).height();
+        var bool = false;
+        if (defaultWidth <= 0) {
+            defaultWidth = w;
+            defaultBool = h > w ? true : false;//true为竖屏
+            bool = defaultBool;
+        } else {
+            if (defaultWidth == w) {
+                bool = defaultBool;
+            } else {
+                bool = !defaultBool;
+            }
+        }
+        if (bool) {
+            $('html,body').addClass('isshu');
+        } else {
+            $('html,body').removeClass('isshu');
+        }
+    }
+
+    scaleScreen();
+    window.addEventListener('resize', function () {
+        scaleScreen();
+        if (window.popNames !== null) {
+            showpop(window.popNames);
+        }
+    }, false);
+
+    function hidePop(e) {
+        gE('#pop-mask').addEventListener('click', function () {
+            hidePopOk(e)
+        });
+    }
+
+    function hidePopOk(e) {
+        if (window.popNames !== null) {
+            gE(window.popNames).style.display = "none";
+            var bgObj = gE("#pop-mask");
+            document.body.removeChild(bgObj);
+            window.popNames = null;
+            PTTSendClick('btn', 'pop_close', '关闭')
+        }
+    }
+
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType: "a20180322signupm", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "首页", //必填项:页面中文名
+        osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+    };
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+</script>
+</body>
+<script type="text/javascript" src="Common.js"></script>
+<script type="text/javascript" src="index_share_test.js"></script>
+</html>

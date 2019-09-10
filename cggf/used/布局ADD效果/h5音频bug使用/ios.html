@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>ios</title>
+	</head>
+	<body>
+		<audio src="//game.gtimg.cn/images/huihe/cp/a20180614audio/muling.mp3" id="myaudio"></audio>
+		
+		
+		<script src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
+		<script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script>
+			var myaudio =document.getElementById('myaudio');
+			myaudio.play();
+			//解决苹果手机下不自动播放
+			function autoPlayAu(){
+				wx.config({
+					debug:false,
+					appId:'',
+					timestamp:1,
+					signature:'',
+					jsApiList:[]
+				})
+				wx.ready(function(){
+					var glbala=document.getElementById('myaudio')
+					glbala.play();
+				})
+			}
+			autoPlayAu()
+		</script>
+	</body>
+</html>

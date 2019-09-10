@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			html,body{width: 100%;height: 100%;}
+			.section {
+			    position: relative;
+			    width: 100%;
+			    height: 100%;
+			    overflow: hidden;
+			    background: url(//game.gtimg.cn/images/bns/cp/a20181015version/bg.jpg) no-repeat 50%;
+			}
+			.section.active {
+			    -webkit-mask: url(masky.png);
+			    -webkit-mask-size: 4000% 100%;
+			    -webkit-mask-position: 0 0;
+			    -webkit-animation: mask .9s steps(39) forwards;
+			}
+			.btn{display: block;width: 100px;height: 100px;background: red;position: fixed;left: 0;top: 0;z-index: 9;}
+			@-webkit-keyframes mask{from{-webkit-mask-position:0 0}to{-webkit-mask-position:100% 0}}
+			@keyframes mask{from{-webkit-mask-position:0 0}to{-webkit-mask-position:100% 0}}
+			
+		</style>
+	</head>
+	<body>
+		<a href="javascript:;" class="btn"></a>
+		<div class="section"></div>
+		<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+		<script>
+			$(".btn").click(function(){
+				$(".section").toggleClass('active');
+			})
+		</script>
+	</body>
+</html>

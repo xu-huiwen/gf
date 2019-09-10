@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title></title>
+		<style>
+			/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:before,q:after{content:'';}
+fieldset,img,abbr,acronym{border:0;}
+
+/*footer*/
+#footer_ied{text-align:center;font-size:12px;line-height:19px;min-width:1000px;color:#89766d;_margin-top: -110px;}
+.wrap_ied{margin:0 auto;padding:25px 30px;width:940px;margin-top: -110px;_margin-top: 0;}
+.wrap_ied a{color:#89766d;}
+#footer_ied .e{font-size:10px;-webkit-text-size-adjust:none;}
+
+/*页面样式*/
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.c {zoom:1;}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;text-align:justify;background:#e0e0df}
+a {text-decoration:none;overflow:hidden;}
+a:hover {text-decoration:none;}
+.wrap_t,.wrap_b,.wrap_f,#footer_ied {min-width:1000px;width:100%;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?'1000px':'');}
+.wrap_t{background:url(ossweb-img/rp_t.jpg) no-repeat 50% 0;min-width:1000px;}
+.wrap_b{background:url(ossweb-img/rp_b.jpg) no-repeat 50% 1271Px}
+.wrap_f{background:url(ossweb-img/rp_f.jpg) no-repeat 50% 2559px}
+.container {width:1000px;margin:0 auto;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.db{display:block;text-indent:-999em;}
+.sp,.btn:hover{background:url(ossweb-img/sp.png) no-repeat;}
+
+
+
+/*幻灯*/		
+.slider-bg {background: url(ossweb-img/bg4.jpg) no-repeat;width: 920px;height: 498px;padding: 38px 0 0 50px;overflow: hidden;}	
+.slides {width:854px;}
+.prev {left: -39px;top: 165px;z-index: 99;display: block;width:26px;height:38px;background-position:-445px -30px;}
+.next {left: 877px;top: 165px;z-index: 99;display: block;width:26px;height:38px;background-position:-525px -31px;}/*ie6下最好用left*/
+.slides_container{overflow: hidden;border:2px solid #b5501e;_border:none}
+.slides_container li{width:854px;height:336px;display: none;}
+
+.pagination{z-index: 999 ;position: absolute;top: 338px;left:334px;}
+.pagination li{float: left;display: inline;width: 34px;height: 40px;overflow: hidden;}
+.pagination a{font-size:25px;color: #d4a056;display: block;}
+.pagination .current a{font-size:25px;color: #e3cb59;display: block;}
+.btn-bo a:hover{background-position:-379px -104px;}	
+
+		</style>
+	</head>
+	<body>
+		<div class="slider-bg">
+			<div id="slides" class="slides pr">
+				<ul class="slides_container">
+					<li>
+						<img src="ossweb-img/v1.jpg" alt="" width="854"height="336"/>
+					</li>
+					<li>
+						<img src="ossweb-img/v2.jpg" alt="" width="854"height="336"/>
+					</li>
+	 				<li>
+	 					<img src="ossweb-img/v3.jpg" alt="" width="854"height="336"/>
+	 				</li>
+					<li>
+						<img src="ossweb-img/v4.jpg" alt="" width="854"height="336"/>
+					</li>
+	 				<li>
+	 					<img src="ossweb-img/v5.jpg" alt="" width="854"height="336"/>
+	 				</li>
+				</ul>
+				<ul class="pagination  c">
+					<li><a href="javascript:;">●</a></li>
+					<li><a href="javascript:;">●</a></li>
+					<li><a href="javascript:;">●</a></li>
+					<li><a href="javascript:;">●</a></li>
+					<li><a href="javascript:;">●</a></li>
+				</ul>
+				<a href="JavaScript:;" class="prev pa sp" title="上一张"></a>
+				<a href="JavaScript:;" class="next pa sp" title="上一张"></a>
+			</div>
+		</div>
+		
+		
+	<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.4.4.min.js"></script>     <!--必须为低版本jquery-->
+	<script src="slides.js"></script>
+	<script>
+		//轮播
+		slides("#slides");
+		function slides(num){
+			$(num).slides({
+			generatePagination: false,
+			play: 3000,
+			pause: 1500,
+			effect: 'fade',
+			hoverPause: true
+		});
+		}
+	</script>
+	</body>
+</html>
