@@ -66,14 +66,19 @@ header,#afooter {width:100%;margin:0 auto;}
 .listflex{display: flex;display: -webkit-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;justify-content: space-between;-webkit-justify-content: space-between;}
 .text_center{display: flex;align-items: center;justify-content: center;}
 
- /* 横屏提示 */
-.horizon{width:100%;height:100%;background:#32373b;position:fixed;left:0;top:0;z-index:1001;display:none;}
-.horizon-box{width:100%;height:3rem;position:absolute;top:50%;left:0;margin-top:-1.5rem;}
-.horizon-pic{width:1.5rem;height:2.3rem;margin:0 auto;text-align:center;}
-.horizon span{font-size:0.22rem;display:block;color:#ffd40a;text-align:center;}
-.horizon i{width:1.5rem;height:2.27rem;background:url(hengping.png) 0 0 no-repeat;background-size:1.5rem 2.27rem;margin:0 auto;-webkit-animation: maskAni 1.5s ease infinite alternate;position:static;display:block;}
-@-webkit-keyframes maskAni{0% {-webkit-transform:rotate(-90deg);}30% {-webkit-transform:rotate(-90deg);}70%{-webkit-transform:rotate(0deg);}100% {-webkit-transform:rotate(0deg);}}
-@media screen and (orientation:landscape) {.horizon{display:block}}
+/*强制竖屏样式*/
+.w_pop{position:fixed;left:0;top:0;width: 100%;height: 100%;background: rgba(0,0,0,1);z-index:9999;display: none;}
+.w_pop_img{width:1.8rem;height:2.73rem;background: url(hengping.png) no-repeat center center;background-size: 1.8rem 2.73rem;position: absolute;left: 50%;margin-left:-0.9rem;top: 50%;margin-top: -1.56rem;animation:  rotateA 1.5s ease infinite alternate;}
+@keyframes rotateA{
+    0%{transform: rotate(-90deg);}
+    30%{transform: rotate(-90deg);}
+    70%{transform: rotate(0);}
+    100%{transform: rotate(0);}
+}
+@media screen and (orientation:landscape){
+    .w_pop{ display: block;}
+}
+.w_tips{width:100%;height:1.0rem;font-size: 0.18rem;color: #FFFFFF;text-align: center;position: absolute;left:0;top:50%;margin-top: 1.2rem;}
 
 /*main*/
 	
@@ -88,7 +93,7 @@ header,#afooter {width:100%;margin:0 auto;}
 </div>
 <div class="wrap">
 	<header>
-		 <h1 class="hide"></h1>
+		<h1 class="hide"></h1>
 		<a href="javascript:;" title="下载游戏" class="btn_down sp db"  ontouchend="PTTSendClick('btn','download','下载游戏');">下载游戏</a>
 	</header>
 	<div class="main"></div>
@@ -96,6 +101,20 @@ header,#afooter {width:100%;margin:0 auto;}
 <script src="https://ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
 <script src="https://game.gtimg.cn/images/js/2018foot/foot.js"></script>
 <script src="https://ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script>
+//判断手机横竖屏状态：
+function checkDirect(){
+    if(window.orientation==180||window.orientation==0){
+      $("#w_pop").hide();
+    }
+    if(window.orientation==90||window.orientation==-90){
+      $("#w_pop").show();
+    }
+  } checkDirect();
+  window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function(){
+  	checkDirect();
+}, false);
+</script>
 <script src="https://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script>
 //此段代码不能放到外链JS中，
